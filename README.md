@@ -1,4 +1,4 @@
-![Logo](/grupo_3_CamisasKechian/design/logoKechian.jpeg)
+![Logo](https://github.com/imthejota/la_prueba/blob/main/design/logoKechian.jpeg)
 
 
 # Kechian - Camisas de autor
