@@ -22,3 +22,8 @@ Hombres de entre 18 y 40 años, NSE C2 y C3.
 - [El Burgués](https://www.elburgues.com) es el ejemplo argentino al buen gusto tanto en indumentaria como en sus tipografías clásicas. 
 - [Giesso](https://store.giesso.com.ar) presenta imágenes claras, promociones que sobresalen sin necesidad de utilizar carruseles.
 - [Bermies](https://bermies.com) maneja estructuras clásicas, simples, que permite que lo único a resaltar sean los productos que ofrece.
+
+## Wireframes
+- [Home, detalle de producto y carrito de compras](https://www.figma.com/file/aJCrFoWfFlJHivTahtuMcq/home?node-id=0%3A1)
+- [Inicio de Sesión y registro de usuario](https://www.figma.com/file/Rrc617WHplz06PpDmIPaRx/Untitled?node-id=0%3A1)
+
