@@ -6,9 +6,6 @@
     --grisObscuro:rgb(55,59,59);
 }
 
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -20,11 +17,6 @@
 a{
     text-decoration: none;
 }
-
-
-
-
-
 
 .top-header{
     height: 20vh;
@@ -86,9 +78,6 @@ a{
     text-transform: uppercase;
 }
 
-
-
-
 /*tablet*/
 
 @media (min-width:768px){
@@ -115,15 +104,11 @@ a{
         
     }
     
-    
-    
-     
     .logo{
         color: var(--amarillo);
         display: flex;
 
     }
-    
     
     /*MENU*/
     .menu{
@@ -132,7 +117,6 @@ a{
         list-style: none;
     
     }
-    
     
     .menu li{
        /*tampoco sie*/
@@ -149,30 +133,6 @@ a{
     
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*EDICION FOOTER*/
 
@@ -204,19 +164,12 @@ footer{
 
 }
 
-
-
 .info-f{
     padding-top: 50px;
     color: rgb(198 138 46);
     text-align: start;
 }
 
-
 /*
 media margin 40 min width 200
 */
-
-
-
-

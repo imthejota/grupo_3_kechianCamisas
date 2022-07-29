@@ -20,13 +20,14 @@ body {
 
 .oferta {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .caja-producto-oferta {
+    margin-top: 10%;
     background-color: white;
-    width: 20%;
-    height: 30%;
+    width: 80%;
     border-radius: 20px; /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
 }
@@ -59,6 +60,7 @@ body {
 
 .muestra-productos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 5%;
 }
@@ -81,8 +83,8 @@ body {
 /*a partir de acá trabajo con la parte de abajo del proyecto*/
 .producto-caja {
     background-color: white;
-    width: 10%;
-    height: 25%;
+    margin: 3%;
+    width: 40%;
     border-radius: 20px; /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
 }
@@ -90,4 +92,32 @@ body {
 .imagen-producto {
     width:100%;
     border-radius: 20px; /*le da el radio a la oferta*/
+}
+
+/* DE ACA EN ADELANTE ES TABLET */
+
+@media (min-width:480px){
+
+    .caja-producto-oferta {
+        width: 40%;
+    }
+
+    .producto-caja {
+        width: 20%;
+    }
+}
+
+/* DE ACA EN ADELANTE ES COMPUTADORA */
+
+@media (min-width:800px){ 
+    .caja-producto-oferta {
+        margin-top: 3%;
+        width: 23%;
+    }
+
+    .producto-caja {
+        margin:none;
+        width: 10%;
+    }
+}
 }
