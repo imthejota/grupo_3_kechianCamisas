@@ -101,7 +101,6 @@ a{
     .top-header{
         box-shadow: 0 3px var(--grisAzulado);
         background-color: var(--azul);
-        position: sticky;
         left: 0;
         top: 0;
         width: 100%;
@@ -182,7 +181,6 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(31 56 86);
-    margin-top: 100%
 }
 
 .f-res{
