@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+body {
+    background-image: url(/images/background.jfif);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caja1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.caja2{
+    color: rgb(198,138,46);
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(31,56,86);
+    border-radius: 2%;
+}
+
+.elemento1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin-bottom: 15px;
+}
+
+.elemento2{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.elemento3{
+    margin-top: 20px;;
+    margin-bottom: 25px;
+    color:  rgb(198,138,46);
+}
+
+.elemento4{
+    margin-bottom: 5px;
+    position: relative;
+    left: 30%;
+}
+.elemento4 a{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(198,138,46);
+}
+
+.boton{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin-bottom: 20px;
+    background-color: rgb(31,56,86);
+    font-size: 16px;
+    color: rgb(198,138,46);
+    position: relative;
+    left: 30%;
+}
+
+#nombre{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 50%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#apellido{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 50%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#dni{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#ubicacion{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#correoe{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#contra{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#rcontra{
+    border-radius: 5px;
+    background-color: rgb(140,154,156);
+    padding: 5px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

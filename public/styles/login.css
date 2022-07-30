@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+body {
+    background-image: url(/images/background.jfif);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caja1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.caja2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 35%;
+    padding: 20px;
+    background-color: rgb(31,56,86);
+    border-radius: 2%;
+}
+
+
+.elemento1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: rgb(198,138,46);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.elemento2{
+    display: flex;
+    align-items: left;
+}
+
+.elemento3{
+    display: flex;
+    align-items: left;
+}
+
+.elemento4{
+    text-align: left;
+    margin-bottom: 25px;
+    color:  rgb(198,138,46);
+}
+
+.elemento5{
+    list-style: none;
+    text-decoration: none;
+    color:  rgb(198,138,46);
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.elemento6{
+    margin-bottom: 5px;
+}
+
+.elemento6 a{
+    list-style: none;
+    text-decoration: none;
+    color:  rgb(198,138,46);
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.boton{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin-bottom: 20px;
+    background-color: rgb(31,56,86);
+    font-size: 16px;
+    color: rgb(198,138,46);
+}
+
+#recuerdame{
+    margin-right: 10px;
+}
+
+#correo{
+    background-color:  rgb(140,154,156);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    color: black;
+}
+
+#contraseña{
+    background-color: rgb(140,154,156);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+
