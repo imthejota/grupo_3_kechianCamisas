@@ -16,38 +16,38 @@ body {
 .caja1{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .caja2{
     color: rgb(198,138,46);
     font-family: 'Montserrat', sans-serif;
     width: 30%;
-    padding: 20px;
+    padding: 2%;
     background-color: rgb(31,56,86);
     border-radius: 2%;
 }
 
 .elemento1{
     font-family: 'Montserrat Subrayada', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 4%;
 }
 
 .elemento2{
     font-family: 'Montserrat Subrayada', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 6%;
+    margin-bottom: 1%;
 }
 
 .elemento3{
-    margin-top: 20px;;
+    margin-top: 5%;
     margin-bottom: 25px;
     color:  rgb(198,138,46);
 }
 
 .elemento4{
-    margin-bottom: 5px;
+    margin-bottom: 1%;
     position: relative;
     left: 30%;
 }
@@ -61,7 +61,7 @@ body {
 
 .boton{
     font-family: 'Montserrat Subrayada', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 6%;
     background-color: rgb(31,56,86);
     font-size: 16px;
     color: rgb(198,138,46);
@@ -72,69 +72,69 @@ body {
 #nombre{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 50%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }
 
 #apellido{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 50%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }
 
 #dni{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 100%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }
 
 #ubicacion{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 100%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }
 
 #correoe{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 100%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }
 
 #contra{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 100%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }
 
 #rcontra{
     border-radius: 5px;
     background-color: rgb(140,154,156);
-    padding: 5px;
+    padding: 1.3%;
     width: 100%;
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
 }

@@ -16,8 +16,8 @@ body {
 .caja1{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4%;
+    margin-bottom: 4%;
    
 }
 
@@ -25,7 +25,7 @@ body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     width: 35%;
-    padding: 20px;
+    padding: 2%;
     background-color: rgb(31,56,86);
     border-radius: 2%;
 }
@@ -34,8 +34,8 @@ body {
 .elemento1{
     font-family: 'Montserrat Subrayada', sans-serif;
     color: rgb(198,138,46);
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .elemento2{
@@ -50,7 +50,7 @@ body {
 
 .elemento4{
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 5%;
     color:  rgb(198,138,46);
 }
 
@@ -60,11 +60,11 @@ body {
     color:  rgb(198,138,46);
     display: flex;
     align-items: left;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 }
 
 .elemento6{
-    margin-bottom: 5px;
+    margin-bottom: 1%;
 }
 
 .elemento6 a{
@@ -76,32 +76,32 @@ body {
 
 .boton{
     font-family: 'Montserrat Subrayada', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 4%;
     background-color: rgb(31,56,86);
     font-size: 16px;
     color: rgb(198,138,46);
 }
 
 #recuerdame{
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 #correo{
     background-color:  rgb(140,154,156);
     border-radius: 5px;
-    padding: 5px;
+    padding: 1.5%;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 6%;
+    margin-bottom: 6%;
     color: black;
 }
 
 #contraseña{
     background-color: rgb(140,154,156);
     border-radius: 5px;
-    padding: 5px;
+    padding: 1.5%;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     color: black;
 }
 
