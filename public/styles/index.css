@@ -1,5 +1,13 @@
+:root {
+    --amarillo: rgb(198, 138, 46);
+    --grisClaro: rgb(149, 154, 156);
+    --grisAzulado: rgb(87, 102, 115);
+    --azul: rgb(31, 56, 86);
+    --grisObscuro: rgb(55, 59, 59);
+}
+
 img {
-    width:100%
+    width: 100%
 }
 
 body {
@@ -8,14 +16,6 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-:root {
-    --amarillo: rgb(198,138,46);
-    --grisClaro: rgb(149,154,156);
-    --grisAzulado:rgb(87,102,115);
-    --azul:rgb(31,56,86);
-    --grisObscuro:rgb(55,59,59);
 }
 
 .oferta {
@@ -28,17 +28,20 @@ body {
     margin-top: 10%;
     background-color: white;
     width: 80%;
-    border-radius: 20px; /*le da el radio a la oferta*/
+    border-radius: 20px;
+    /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
 }
 
-.caja-off{
+.caja-off {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--amarillo);
-    border-bottom-right-radius: 20px; /*le da el radio a la oferta*/
-    border-bottom-left-radius: 20px; /*le da el radio a la oferta*/
+    border-bottom-right-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-bottom-left-radius: 20px;
+    /*le da el radio a la oferta*/
     align-items: center;
     margin: center;
 }
@@ -49,13 +52,17 @@ body {
 }
 
 .imagen-oferta {
-    border-top-left-radius: 20px; /*le da el radio a la oferta*/
-    border-top-right-radius: 20px; /*le da el radio a la oferta*/
+    border-top-left-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-top-right-radius: 20px;
+    /*le da el radio a la oferta*/
 }
 
 .div-imagen-producto {
-    width: 100%; /* ancho de la imagen dentro de la caja*/
-    margin: auto; /*coloca la imagen en el centro*/
+    width: 100%;
+    /* ancho de la imagen dentro de la caja*/
+    margin: auto;
+    /*coloca la imagen en el centro*/
 }
 
 .muestra-productos {
@@ -65,7 +72,7 @@ body {
     padding: 5%;
 }
 
-.tipografia-nombre-producto{
+.tipografia-nombre-producto {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -80,43 +87,46 @@ body {
     justify-content: flex-end;
 }
 
+
 /*a partir de acá trabajo con la parte de abajo del proyecto*/
+
 .producto-caja {
     background-color: white;
     margin: 3%;
     width: 40%;
-    border-radius: 20px; /*le da el radio a la oferta*/
+    border-radius: 20px;
+    /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
 }
 
 .imagen-producto {
-    width:100%;
-    border-radius: 20px; /*le da el radio a la oferta*/
+    width: 100%;
+    border-radius: 20px;
+    /*le da el radio a la oferta*/
 }
+
 
 /* DE ACA EN ADELANTE ES TABLET */
 
-@media (min-width:480px){
-
+@media (min-width:480px) {
     .caja-producto-oferta {
         width: 40%;
     }
-
     .producto-caja {
         width: 20%;
     }
 }
 
+
 /* DE ACA EN ADELANTE ES COMPUTADORA */
 
-@media (min-width:800px){ 
+@media (min-width:800px) {
     .caja-producto-oferta {
         margin-top: 3%;
         width: 23%;
     }
-
     .producto-caja {
-        margin:none;
+        margin: none;
         width: 10%;
     }
 }

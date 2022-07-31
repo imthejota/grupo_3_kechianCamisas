@@ -1,8 +1,14 @@
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    border:none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+main {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -13,81 +19,79 @@ body {
     background-size: cover;
 }
 
-.caja1{
+.caja1 {
     display: flex;
     justify-content: center;
     margin-top: 4%;
     margin-bottom: 4%;
-   
 }
 
-.caja2{
+.caja2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     width: 35%;
     padding: 2%;
-    background-color: rgb(31,56,86);
+    background-color: rgb(31, 56, 86);
     border-radius: 2%;
 }
 
-
-.elemento1{
+.elemento1 {
     font-family: 'Montserrat Subrayada', sans-serif;
-    color: rgb(198,138,46);
+    color: rgb(198, 138, 46);
     margin-bottom: 2%;
     margin-top: 2%;
 }
 
-.elemento2{
+.elemento2 {
     display: flex;
     align-items: left;
 }
 
-.elemento3{
+.elemento3 {
     display: flex;
     align-items: left;
 }
 
-.elemento4{
+.elemento4 {
     text-align: left;
     margin-bottom: 5%;
-    color:  rgb(198,138,46);
+    color: rgb(198, 138, 46);
 }
 
-.elemento5{
+.elemento5 {
     list-style: none;
     text-decoration: none;
-    color:  rgb(198,138,46);
+    color: rgb(198, 138, 46);
     display: flex;
     align-items: left;
     margin-bottom: 3%;
 }
 
-.elemento6{
+.elemento6 {
     margin-bottom: 1%;
 }
 
-.elemento6 a{
+.elemento6 a {
     list-style: none;
     text-decoration: none;
-    color:  rgb(198,138,46);
+    color: rgb(198, 138, 46);
     font-family: 'Montserrat Subrayada', sans-serif;
 }
 
-.boton{
+.boton {
     font-family: 'Montserrat Subrayada', sans-serif;
     margin-bottom: 4%;
-    background-color: rgb(31,56,86);
+    background-color: rgb(31, 56, 86);
     font-size: 16px;
-    color: rgb(198,138,46);
+    color: rgb(198, 138, 46);
 }
 
-#recuerdame{
+#recuerdame {
     margin-right: 2%;
 }
 
-#correo{
-    background-color:  rgb(140,154,156);
+#correo {
+    background-color: rgb(140, 154, 156);
     border-radius: 5px;
     padding: 1.5%;
     width: 100%;
@@ -96,14 +100,11 @@ body {
     color: black;
 }
 
-#contraseña{
-    background-color: rgb(140,154,156);
+#contraseña {
+    background-color: rgb(140, 154, 156);
     border-radius: 5px;
     padding: 1.5%;
     width: 100%;
     margin-bottom: 5%;
     color: black;
 }
-
-
-

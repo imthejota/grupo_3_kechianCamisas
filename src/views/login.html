@@ -1,165 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href = "/styles/login.css"> 
-    <link rel = "stylesheet" href = "/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/header_footer.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>Inicio Sesión</title>
 </head>
 
 <body>
-    <header class="top-header">
-        <nav class="top-nav">
-
-
-        <input type="checkbox" id="btn-menu">
-        <label id="nav-label" for="btn-menu">
-            <i class="fas fa-bars"></i>
-        </label>
-
-        
-        <ul class="menu-tablet">
-                <li>
-                  <a href="">Home</a>  
-                </li>
-
-                <li>
-                    <a href="">Productos</a>
-                </li>
-                
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>     
-                </li>
-
-                <li>
-                <a href="">
-                    <i class="fa-regular fa-address-card"></i>
-                </a> 
-                </li>
-        </ul>
-    
-            <ul class="menu m-1">
-                <li>
-                    <a href="">Home</a>
-                </li>
-    
-                <li>
-                    <a href="">Productos</a>
-                </li>
-            </ul>
-    
-                
-                    <h1 class="logo">KECHIAN</h1>
-                
-            
-                <ul class="menu m-2">
-                <li>
-                    <a  href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                </li>
-    
-                <li>
-                    <a  href=""><i class="fa-solid fa-cart-shopping"></i>                
-                    </a>
-                </li>
-    
-                <li>
-                    <a href=""><i class="fa-regular fa-address-card"></i></a>
-                </li>
-            </ul>
+    <header>
+        <nav>
+            <div class="navAdelante">
+                <a class="navDesktop indice home" href="/">Home</a>
+                <a class="navDesktop indice" href="/">Productos</a>
+            </div>
+            <div class="navCentro">
+                <a href="/"><img class="logo" src="/images/kechian.jpg" alt=""></a>
+            </div>
+            <div class="hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navAtras">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-address-card"></i></a>
+            </div>
         </nav>
     </header>
 
     <main>
         <div class="caja1">
-        <form class="caja2">
-            <p class="elemento1"> INGRESA TUS DATOS </p>
+            <form class="caja2">
+                <p class="elemento1"> INGRESÁ TUS DATOS </p>
 
-            <div class="elemento2">
-            <label for="correo"></label>
-            <input type="email" id="correo" name="correo" value="e-mail" required><br>
-            </div>
+                <div class="elemento2">
+                    <label for="correo"></label>
+                    <input type="email" id="correo" name="correo" value="e-mail" required><br>
+                </div>
 
-            <div class="elemento3">
-            <label for="contraseña"></label>
-            <input type="password" id="contraseña" name="contraseña" value="constraseña" required><br>
-            </div>
+                <div class="elemento3">
+                    <label for="contraseña"></label>
+                    <input type="password" id="contraseña" name="contraseña" value="constraseña" required><br>
+                </div>
 
-            <div class="elemento4">
-            <input type="checkbox" id="recuerdame" name="recuerdame" value="recuerdame">
-            <label for="recuerdame">Recuerdame</label><br>
-            </div>
-            
-            <a href="" class="elemento5">¿Olvidaste tu constraseña?</a><br>
+                <div class="elemento4">
+                    <input type="checkbox" id="recuerdame" name="recuerdame" value="recuerdame">
+                    <label for="recuerdame">Recuérdame</label><br>
+                </div>
 
-            <input type="submit" value="INICIAR SESION" class="boton"><br>
+                <a href="" class="elemento5">¿Olvidaste tu constraseña?</a><br>
 
-            <div class="elemento6">
-            <a href="/register">CREAR CUENTA</a>
-            </div>
-        </form>
+                <input type="submit" value="INICIAR SESIÓN" class="boton"><br>
+
+                <div class="elemento6">
+                    <a href="/register">CREAR CUENTA</a>
+                </div>
+            </form>
         </div>
     </main>
 
     <footer>
-        <article class="f-res">
-            
-                <p class="f-t">AYUDA</p>
-            
-    
-            <div class="info-f">
-            <p>Preguntas frecuentes</p>
-            <p>Cambios y devoluciones</p>
-            <p>Envios</p>
+        <div class="noventa">
+            <div class="ayuda">
+                <h3 class="">AYUDA</h3>
+                <div class="alinea">
+                    <p>Preguntas frecuentes</p>
+                    <p>Cambios y devoluciones</p>
+                    <p>Envíos</p>
+                </div>
             </div>
-        </article>
-    
-        <article class="f-res">
-            
-                <p class="f-t">EMPRESA</p>
-            
-    
-            <div class="info-f">
-            <p>Politicas de privacidad</p>
-            <p>Cambios y devoluciones</p>
-            <p>Contacto</p>
-        </div>
-        </article>
-    
-        <article class="f-res">
-            
-                <p class="f-t">CONTACTO</p>
-            
-    
-            <div class="info-f">
-            <p>Atencion al cliente</p>
-            <p>biribiri@gmail.com</p>
-            <p>11-1234-5678</p>
+            <div class="empresa">
+                <h3 class="">EMPRESA</h3>
+                <div class="alinea">
+                    <p>Políticas de privacidad</p>
+                    <p>Cambios y devoluciones</p>
+                    <p>Contacto</p>
+                </div>
             </div>
-        </article>
-    
-        <article class="f-res">
-            
-                <p class="f-t">REDES</p>
-            
-    
-            <div class="info-f">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+            <div class="contacto">
+                <h3 class="">CONTACTO</h3>
+                <div class="alinea">
+                    <p>Atención al cliente</p>
+                    <p>kechian.ba@gmail.com</p>
+                    <p>11-1234-5678</p>
+                </div>
+            </div>
+            <div class="redes">
+                <h3 class="">REDES</h3>
+                <div class="iconosRedes alinea">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
         </div>
-        </article>
     </footer>
 </body>
+
 </html>

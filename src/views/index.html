@@ -10,111 +10,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header_footer.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Kechian</title>
 </head>
 
 <body>
-
-    <header class="top-header">
-        <nav class="top-nav">
-
-
-        <input type="checkbox" id="btn-menu">
-        <label id="nav-label" for="btn-menu">
-            <i class="fas fa-bars"></i>
-        </label>
-
-        
-        <ul class="menu-tablet">
-                <li>
-                  <a href="">Home</a>  
-                </li>
-
-                <li>
-                    <a href="">Productos</a>
-                </li>
-                
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>     
-                </li>
-
-                <li>
-                <a href="">
-                    <i class="fa-regular fa-address-card"></i>
-                </a> 
-                </li>
-        </ul>
-    
-            <ul class="menu m-1">
-                <li>
-                    <a href="">Home</a>
-                </li>
-    
-                <li>
-                    <a href="">Productos</a>
-                </li>
-            </ul>
-    
-                
-                    <h1 class="logo">KECHIAN</h1>
-                
-            
-                <ul class="menu m-2">
-                <li>
-                    <a  href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                </li>
-    
-                <li>
-                    <a  href=""><i class="fa-solid fa-cart-shopping"></i>                
-                    </a>
-                </li>
-    
-                <li>
-                    <a href=""><i class="fa-regular fa-address-card"></i></a>
-                </li>
-            </ul>
+    <header>
+        <nav>
+            <div class="navAdelante">
+                <a class="navDesktop indice home" href="/">Home</a>
+                <a class="navDesktop indice" href="/">Productos</a>
+            </div>
+            <div class="navCentro">
+                <a href="/"><img class="logo" src="/images/kechian.jpg" alt=""></a>
+            </div>
+            <div class="hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navAtras">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="/login"><i class="fa-regular fa-address-card"></i></a>
+            </div>
         </nav>
     </header>
 
-<section class="oferta">
+    <section class="oferta">
 
-    <article class="caja-producto-oferta">
-        <div class="div-imagen-producto"><img src="images/camisa-8.jpg" class="imagen-oferta"></div>
-        <div class="caja-off">
-            <div class="texto">
-                <a class="tipografia-nombre-producto">Nombre producto</a>
-                <a class="tipografia-oferta">25%Off</a>
-            </div>
-            <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
-        </div>
-    </article>
-
-    <article class="caja-producto-oferta">
-        <div><img src="images/camisa-9.jpg" class="imagen-oferta"></div>
-        <div>
-            <div class="caja-off">
-                <div class="texto">
-                    <a class="escrito tipografia-nombre-producto">Nombre producto</a>
-                    <a class="escrito tipografia-oferta">25%Off</a>
-                </div>
-                <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
-            </div>
-        </div>
-    </article>
-
-    <article class="caja-producto-oferta">
-        <div><img src="images/camisa-10.jpg" class="imagen-oferta"></div>
-        <div>
+        <article class="caja-producto-oferta">
+            <div class="div-imagen-producto"><img src="images/camisa-8.jpg" class="imagen-oferta"></div>
             <div class="caja-off">
                 <div class="texto">
                     <a class="tipografia-nombre-producto">Nombre producto</a>
@@ -122,102 +47,114 @@
                 </div>
                 <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
             </div>
-        </div>
-    </article>
+        </article>
 
-    <article class="caja-producto-oferta">
-        <div><img src="images/camisa-13.jpg" class="imagen-oferta"></div>
-
-        <div>
-            <div class="caja-off">
-                <div class="texto">
-                    <a class="tipografia-nombre-producto">Nombre producto</a>
-                    <a class="tipografia-oferta">25%Off</a>
+        <article class="caja-producto-oferta">
+            <div><img src="images/camisa-9.jpg" class="imagen-oferta"></div>
+            <div>
+                <div class="caja-off">
+                    <div class="texto">
+                        <a class="escrito tipografia-nombre-producto">Nombre producto</a>
+                        <a class="escrito tipografia-oferta">25%Off</a>
+                    </div>
+                    <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
                 </div>
-                <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+        </article>
+
+        <article class="caja-producto-oferta">
+            <div><img src="images/camisa-10.jpg" class="imagen-oferta"></div>
+            <div>
+                <div class="caja-off">
+                    <div class="texto">
+                        <a class="tipografia-nombre-producto">Nombre producto</a>
+                        <a class="tipografia-oferta">25%Off</a>
+                    </div>
+                    <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="caja-producto-oferta">
+            <div><img src="images/camisa-13.jpg" class="imagen-oferta"></div>
+
+            <div>
+                <div class="caja-off">
+                    <div class="texto">
+                        <a class="tipografia-nombre-producto">Nombre producto</a>
+                        <a class="tipografia-oferta">25%Off</a>
+                    </div>
+                    <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="muestra-productos">
+        <article class="producto-caja">
+            <img src="images/camisa-4.jpg" class="imagen-producto">
+        </article>
+
+        <article class="producto-caja">
+            <img src="images/camisa-5.jpg" class="imagen-producto">
+        </article>
+
+        <article class="producto-caja">
+            <img src="images/camisa-6.jpg" class="imagen-producto">
+        </article>
+
+        <article class="producto-caja">
+            <img src="images/camisa-7.jpg" class="imagen-producto">
+        </article>
+
+        <article class="producto-caja">
+            <img src="images/camisa-3.jpg" class="imagen-producto">
+        </article>
+
+        <article class="producto-caja">
+            <img src="images/camisa-2.jpg" class="imagen-producto">
+        </article>
+
+    </section>
+
+
+    <footer>
+        <div class="noventa">
+            <div class="ayuda">
+                <h3 class="">AYUDA</h3>
+                <div class="alinea">
+                    <p>Preguntas frecuentes</p>
+                    <p>Cambios y devoluciones</p>
+                    <p>Envios</p>
+                </div>
+            </div>
+            <div class="empresa">
+                <h3 class="">EMPRESA</h3>
+                <div class="alinea">
+                    <p>Politicas de privacidad</p>
+                    <p>Cambios y devoluciones</p>
+                    <p>Contacto</p>
+                </div>
+            </div>
+            <div class="contacto">
+                <h3 class="">CONTACTO</h3>
+                <div class="alinea">
+                    <p>Atencion al cliente</p>
+                    <p>kechian.ba@gmail.com</p>
+                    <p>11-1234-5678</p>
+                </div>
+            </div>
+            <div class="redes">
+                <h3 class="">REDES</h3>
+                <div class="iconosRedes alinea">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
             </div>
         </div>
-    </article>
-
-</section>
-    
-<section class="muestra-productos">
-    <article class="producto-caja">
-        <img src="images/camisa-4.jpg" class="imagen-producto">
-    </article>
-
-    <article class="producto-caja">
-        <img src="images/camisa-5.jpg" class="imagen-producto">
-    </article>
-
-    <article class="producto-caja">
-        <img src="images/camisa-6.jpg" class="imagen-producto">
-    </article>
-
-    <article class="producto-caja">
-        <img src="images/camisa-7.jpg" class="imagen-producto">
-    </article>
-
-    <article class="producto-caja">
-        <img src="images/camisa-3.jpg" class="imagen-producto">
-    </article>
-    
-    <article class="producto-caja">
-        <img src="images/camisa-2.jpg" class="imagen-producto">
-    </article>
-
-</section>
-
-<footer>
-    <article class="f-res">
-        
-            <p class="f-t">AYUDA</p>
-        
-
-        <div class="info-f">
-        <p>Preguntas frecuentes</p>
-        <p>Cambios y devoluciones</p>
-        <p>Envios</p>
-        </div>
-    </article>
-
-    <article class="f-res">
-        
-            <p class="f-t">EMPRESA</p>
-        
-
-        <div class="info-f">
-        <p>Politicas de privacidad</p>
-        <p>Cambios y devoluciones</p>
-        <p>Contacto</p>
-    </div>
-    </article>
-
-    <article class="f-res">
-        
-            <p class="f-t">CONTACTO</p>
-        
-
-        <div class="info-f">
-        <p>Atencion al cliente</p>
-        <p>biribiri@gmail.com</p>
-        <p>11-1234-5678</p>
-        </div>
-    </article>
-
-    <article class="f-res">
-        
-            <p class="f-t">REDES</p>
-        
-
-        <div class="info-f">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-    </div>
-    </article>
-</footer>
-
+    </footer>
 </body>
 
 </html>
