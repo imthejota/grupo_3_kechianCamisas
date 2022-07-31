@@ -106,6 +106,7 @@ body {
     color: rgb(225, 221, 221);
     display: flex;
     flex: wrap;
+    white-space: pre;
 }
 
 .finalDetalle {
@@ -116,7 +117,15 @@ body {
 
 .inputUnidades input {
     width: 20%;
-    margin-left: 40%;
+    margin-left: 20%;
+}
+
+.añadir {
+    background-color: var(--amarillo);
+    min-width: fit-content;
+    width: 30%;
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
 }
 
 @media (min-width: 480px) {}
