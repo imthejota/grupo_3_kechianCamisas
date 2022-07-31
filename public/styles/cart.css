@@ -97,27 +97,34 @@ main {
     display: flex;
     flex-basis: 50%;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 .div6 {
     grid-area: 2 / 2 / 3 / 3;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .div7 {
     grid-area: 2 / 3 / 3 / 4;
     border-bottom: 1px solid black;
-    align-items: center;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div8 {
     grid-area: 2 / 4 / 3 / 5;
     border-bottom: 1px solid black;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .div9 {
@@ -133,28 +140,42 @@ main {
 .div10 {
     grid-area: 3 / 2 / 4 / 3;
     border-bottom: 1px solid black;
-    align-items: center;
     border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div11 {
     grid-area: 3 / 3 / 4 / 4;
     border-bottom: 1px solid black;
-    align-items: center;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div12 {
     grid-area: 3 / 4 / 4 / 5;
     border-bottom: 1px solid black;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .div13 {
     grid-area: 4 / 2 / 5 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .div14 {
     grid-area: 4 / 4 / 5 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
