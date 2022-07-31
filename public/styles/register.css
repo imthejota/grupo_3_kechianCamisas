@@ -40,7 +40,7 @@ main {
     font-family: 'Montserrat Subrayada', sans-serif;
 }
 
-.titulo2{
+.titulo2 {
     margin-top: 4%;
 }
 
@@ -50,13 +50,11 @@ main {
     color: rgb(198, 138, 46);
 }
 
-.elemento4 {
-    margin-bottom: 1%;
-    position: relative;
-    left: 30%;
+.botonInicio {
+    margin-top: 3%;
 }
 
-.elemento4 a {
+.botonInicio a {
     font-family: 'Montserrat Subrayada', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -70,8 +68,15 @@ main {
     background-color: rgb(31, 56, 86);
     font-size: 16px;
     color: rgb(198, 138, 46);
-    position: relative;
-    left: 30%;
+    margin-top: 2%;
+}
+
+.botonesCrearInicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
 }
 
 #nombre {
@@ -107,7 +112,6 @@ main {
 ::placeholder {
     color: black;
 }
-
 
 #ubicacion {
     border-radius: 5px;
@@ -149,6 +153,7 @@ main {
     margin-bottom: 1.4%;
 }
 
+
 /* DE ACA EN ADELANTE ES TABLET */
 
 @media (min-width:480px) {
@@ -158,15 +163,16 @@ main {
     #apellido {
         width: 60%;
     }
-    .caja2{
+    .caja2 {
         width: 60%;
     }
 }
 
+
 /* DE ACA EN ADELANTE ES COMPUTADORA */
 
 @media (min-width:800px) {
-    .caja2{
+    .caja2 {
         width: 40%;
     }
     #nombre {
@@ -175,5 +181,4 @@ main {
     #apellido {
         width: 60%;
     }
-
 }
