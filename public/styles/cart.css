@@ -188,7 +188,23 @@ main {
     justify-content: center;
 }
 
-@media (min-width:480px) {
+.botonesCompra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.botoncin {
+    background-color: var(--azul);
+    color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    min-width: fit-content;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+@media (min-width: 480px) {
     .miniatura {
         display: flex;
         width: 10%;
@@ -200,14 +216,8 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    .botoncin {
-        background-color: var(--azul);
-        color: var(--amarillo);
-        font-family: Montserrat, sans-serif;
-        min-width: fit-content;
-        padding: 2%;
-        border-radius: 10px;
+        margin-bottom: 5%;
+        margin-top: 0%;
     }
     .titulo {
         font-size: 1em;
