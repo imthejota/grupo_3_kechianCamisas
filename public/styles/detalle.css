@@ -19,6 +19,7 @@ body {
 }
 
 .mainDetail {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -26,9 +27,8 @@ body {
 .contenedorDetalle {
     margin: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 80%;
-    margin-top: 10%;
     background-color: var(--azul);
     border-radius: 20px;
     box-shadow: 10px 10px 5px #242424;
@@ -63,19 +63,20 @@ body {
 }
 
 .nombreCamisa {
-    color: var(--amarillo);
-    text-transform: uppercase;
-    margin-bottom: 8%;
+    display: none;
 }
 
 .precios {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .precioUno {
     color: rgb(225, 221, 221);
+    text-decoration: line-through;
+    font-size: 1.5em;
 }
 
 .precioDos,
@@ -83,10 +84,56 @@ body {
     color: var(--amarillo);
 }
 
+.precioDos {
+    font-size: 2em;
+}
+
+.descuento {
+    font-size: 1.5em;
+}
+
 .detalle {
     color: rgb(225, 221, 221);
+    height: 100%;
+}
+
+.detalle p,
+.finalDetalle {
+    margin-top: 5%;
 }
 
 .cantidadUnidades {
     color: rgb(225, 221, 221);
+    display: flex;
+    flex: wrap;
+}
+
+.finalDetalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.inputUnidades input {
+    width: 20%;
+    margin-left: 40%;
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width:800px) {
+    .contenedorDetalle {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        background-color: var(--azul);
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px #242424;
+    }
+    .nombreCamisa {
+        display: flex;
+        color: var(--amarillo);
+        text-transform: uppercase;
+        margin-bottom: 8%;
+    }
 }

@@ -73,6 +73,7 @@ footer {
     font-size: 0.5rem;
     color: var(--amarillo);
     background-color: var(--azul);
+    min-height: fit-content;
 }
 
 .noventa {
@@ -97,7 +98,7 @@ footer {
         justify-content: space-evenly;
         background-color: var(--azul);
         color: var(--amarillo);
-        height: 26vh;
+        min-height: fit-content;
         width: 100%;
     }
     .noventa {
@@ -109,7 +110,6 @@ footer {
         padding-bottom: 1%;
         padding-left: 2%;
         padding-right: 2%;
-        height: 26vh;
     }
     .iconosRedes {
         display: flex;
