@@ -46,58 +46,109 @@ main {
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    align-items: center;
 }
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    align-items: center;
+    border-left: 1px solid black;
 }
 
 .div3 {
     grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    align-items: center;
 }
 
 .div4 {
     grid-area: 1 / 4 / 2 / 5;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    align-items: center;
 }
 
 .div5 {
     grid-area: 2 / 1 / 3 / 2;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1%;
+    border-bottom: 1px solid black;
 }
 
 .miniatura {
     width: 10%;
 }
 
+.nombreProd {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
 .div6 {
     grid-area: 2 / 2 / 3 / 3;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    align-items: center;
 }
 
 .div7 {
     grid-area: 2 / 3 / 3 / 4;
+    border-bottom: 1px solid black;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .div8 {
     grid-area: 2 / 4 / 3 / 5;
+    border-bottom: 1px solid black;
+    align-items: center;
 }
 
 .div9 {
     grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    border-bottom: 1px solid black;
 }
 
 .div10 {
     grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 1px solid black;
+    align-items: center;
+    border-left: 1px solid black;
 }
 
 .div11 {
     grid-area: 3 / 3 / 4 / 4;
+    border-bottom: 1px solid black;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .div12 {
     grid-area: 3 / 4 / 4 / 5;
+    border-bottom: 1px solid black;
+    align-items: center;
 }
 
 .div13 {
