@@ -8,6 +8,8 @@
 
 main {
     font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -24,6 +26,7 @@ body {
 main {
     min-height: fit-content;
     margin: 5%;
+    height: 60vh;
 }
 
 .contenedorCart {
@@ -90,7 +93,7 @@ main {
 }
 
 .miniatura {
-    width: 10%;
+    display: none;
 }
 
 .nombreProd {
@@ -178,4 +181,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width:480px) {
+    .miniatura {
+        display: flex;
+        width: 10%;
+    }
+    .parent {
+        margin-bottom: 5%;
+    }
 }
