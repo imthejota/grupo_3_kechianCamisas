@@ -1,0 +1,92 @@
+:root {
+    --amarillo: rgb(198, 138, 46);
+    --grisClaro: rgb(149, 154, 156);
+    --grisAzulado: rgb(87, 102, 115);
+    --azul: rgb(31, 56, 86);
+    --grisObscuro: rgb(55, 59, 59);
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-image: url(/images/background.jfif);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainDetail {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorDetalle {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 10%;
+    background-color: var(--azul);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #242424;
+}
+
+.imagenDetalle {
+    margin: auto;
+    width: 100%;
+}
+
+.nombreDetalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--amarillo);
+    border-bottom-left-radius: 20px;
+    align-items: center;
+}
+
+.fichaDetalle {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.nombreProd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-color: var(--amarillo);
+}
+
+.nombreCamisa {
+    color: var(--amarillo);
+    text-transform: uppercase;
+    margin-bottom: 8%;
+}
+
+.precios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.precioUno {
+    color: rgb(225, 221, 221);
+}
+
+.precioDos,
+.descuento {
+    color: var(--amarillo);
+}
+
+.detalle {
+    color: rgb(225, 221, 221);
+}
+
+.cantidadUnidades {
+    color: rgb(225, 221, 221);
+}

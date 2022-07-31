@@ -16,6 +16,7 @@
 header {
     height: 15vh;
     background-color: var(--azul);
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -64,6 +65,7 @@ nav div a {
 }
 
 footer {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
