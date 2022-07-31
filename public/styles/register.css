@@ -107,6 +107,11 @@ main {
     margin-bottom: 1.4%;
 }
 
+::placeholder {
+    color: black;
+}
+
+
 #ubicacion {
     border-radius: 5px;
     background-color: rgb(140, 154, 156);
