@@ -126,6 +126,7 @@ body {
     width: 30%;
     font-family: Montserrat, sans-serif;
     font-style: italic;
+    margin-right: 2%;
 }
 
 @media (min-width: 480px) {}
