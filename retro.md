@@ -11,7 +11,7 @@
 ### Comenzar a:
 - Implementar por lo menos una reunión general en zoom para debatir ideas y ver el avance general, definir rápidamente los roles en el equipo.
 
-## A destacar y mantener:
+## A destacar y mantener
 - La predisposición para ayudar al otro.
 - El buen ambiente de grupo.
 - La constancia que manejamos a la hora de trabajar.
