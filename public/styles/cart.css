@@ -113,6 +113,10 @@ main {
     font-size: 0.8em;
 }
 
+.num input {
+    width: 30%;
+}
+
 .div6 {
     grid-area: 2 / 2 / 3 / 3;
     border-bottom: 1px solid black;
