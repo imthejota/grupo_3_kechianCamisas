@@ -1,13 +1,17 @@
+# Retrospectiva general
 
+## A mejorar
+### Más de:
+- La organización por completo, realizarla de manera más temprana y prudente.
+- La comunicación del equipo en pos de una mejor convivencia y que todo fluya de manera más fácil.
+### Menos de:
+- Poco eficiente división de tareas.
+### Dejar de hacer:
+- Deadlines largos para las tareas internas.
+### Comenzar a:
+- Implementar por lo menos una reunión general en zoom para debatir ideas y ver el avance general, definir rápidamente los roles en el equipo.
 
-# En retrospectiva, las cosas a mejorar son:
-- Mas de: una mejor y temprana organización de acá en adelante, comunicación interna en el avance del proyecto.
-- Menos de: una poco eficiente división de tareas.
-- Deja de hacer: largos deadlines internos en las tareas asignadas.
-- Comenzar a: implementar por lo menos una reunión general en zoom para debatir ideas y ver el avance general, implementar una rapida defincion de roles.
-
-# En cuanto a cosas a destacar  y mantener:
-Seguir haciendo: 
-- Predisposición para ayudar al otro.
-- Mantener un buen ambiente de grupo.
-- Constancia que manejamos a la hora de trabajar.
+## A destacar y mantener:
+- La predisposición para ayudar al otro.
+- El buen ambiente de grupo.
+- La constancia que manejamos a la hora de trabajar.
