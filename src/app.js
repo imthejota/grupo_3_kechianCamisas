@@ -1,6 +1,6 @@
 const express = require('express');
 const server = express();
-const port = 0.0 .0 .0: $PORT;
+const port = process.env.PORT || 2020;
 const start = () => console.log('Starting server');
 server.listen(port, start());
 
