@@ -7,7 +7,7 @@
 - Comenzar a: implementar por lo menos una reunión general en zoom para debatir ideas y ver el avance general, implementar una rapida defincion de roles.
 
 # En cuanto a cosas a destacar  y mantener:
-- Seguir haciendo: 
+Seguir haciendo: 
 - Predisposición para ayudar al otro.
 - Mantener un buen ambiente de grupo.
 - Constancia que manejamos a la hora de trabajar.
