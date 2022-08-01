@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "name": "grupo_3_kechiancamisas",
+  "description": "![Logo](https://github.com/imthejota/la_prueba/blob/main/design/logoKechian.jpeg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imthejota/grupo_3_kechianCamisas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imthejota/grupo_3_kechianCamisas/issues"
+  },
+  "homepage": "https://github.com/imthejota/grupo_3_kechianCamisas#readme"
 }
