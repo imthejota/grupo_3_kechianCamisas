@@ -13,23 +13,23 @@ server.use(statics);
 
 
 server.get('/', function(req, res) {
-    let file = path.join(__dirname, 'views', 'index.html');
-    res.sendFile(file);
+    let file = path.join(__dirname, 'views', 'index.ejs');
+    res.render(file);
 })
 
 server.get('/productDetail', function(req, res) {
-    let file = path.join(__dirname, 'views', 'productDetail.html');
-    res.sendFile(file);
+    let file = path.join(__dirname, 'views', 'productDetail.ejs');
+    res.render(file);
 })
 
 server.get('/productCart', function(req, res) {
-    let file = path.join(__dirname, 'views', 'productCart.html');
-    res.sendFile(file);
+    let file = path.join(__dirname, 'views', 'productCart.ejs');
+    res.render(file);
 })
 
 server.get('/register', function(req, res) {
-    let file = path.join(__dirname, 'views', 'register.html');
-    res.sendFile(file);
+    let file = path.join(__dirname, 'views', 'register.ejs');
+    res.render(file);
 })
 
 /* server.post('/register', function(req, res) {
@@ -37,6 +37,6 @@ server.get('/register', function(req, res) {
 }) */
 
 server.get('/login', function(req, res) {
-    let file = path.join(__dirname, 'views', 'login.html');
-    res.sendFile(file);
+    let file = path.join(__dirname, 'views', 'login.ejs');
+    res.render(file);
 })
