@@ -21,12 +21,16 @@ server.get('/', function(req, res) {
 })
 
 server.get('/productDetail', function(req, res) {
-    let file = path.join(__dirname, 'views', 'product' , 'productDetail.ejs');
+    let file = path.join(__dirname, 'views', 'product', 'productDetail.ejs');
+    res.render(file);
+})
+server.get('/crear', function(req, res) {
+    let file = path.join(__dirname, 'views', 'product', 'crear.ejs');
     res.render(file);
 })
 
 server.get('/productCart', function(req, res) {
-    let file = path.join(__dirname, 'views','product' , 'productCart.ejs');
+    let file = path.join(__dirname, 'views', 'product', 'productCart.ejs');
     res.render(file);
 })
 
@@ -40,6 +44,6 @@ server.get('/register', function(req, res) {
 }) */
 
 server.get('/login', function(req, res) {
-    let file = path.join(__dirname, 'views','user', 'login.ejs');
+    let file = path.join(__dirname, 'views', 'user', 'login.ejs');
     res.render(file);
 })
