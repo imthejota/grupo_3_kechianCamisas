@@ -1,1 +1,61 @@
-lalal
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head.ejs', {estilo: 'crear', titulo: 'Crear nuevo producto'}) %>
+
+<body>
+    <%- include ('../partials/header.ejs') %>
+
+    <main>
+        <div class="c1">
+            <form class="c2">
+                <p class="crea"> Crea un nuevo producto </p>
+
+                <div>
+                    <label class="elemento" for="nombre-producto"></label>
+                    <input class="grl-top" type="text" id="nombre-producto" name="nombre-producto" value="nombre-producto" required><br>
+                </div>
+
+                <div>
+                    <label class="elemento" for="descripción"></label>
+                    <input class="grl" type="text" id="descripción" name="descripción" value="descripción" required><br>
+                </div>
+
+
+                <div>
+                    <label class="elemento" for="categoria"></label>
+                    <input class="grl" type="text" id="categoria" name="categoria" value="categoria" required><br>
+                </div>
+
+                <div>
+                    <label class="elemento" for="imagen"></label>
+                    <input class="grl" type="file" id="imagen" name="imagen" value="imagen" required><br>
+                </div>
+
+                <div>
+                    <label class="elemento" for="talle"></label>
+                    <input class="grl" type="number" id="talle" name="talle" value="talle" required><br>
+                </div>
+
+                <div>
+                    <label class="elemento" for="precio"></label>
+                    <input class="grl" type="number" id="precio" name="precio" value="precio" required><br>
+                </div>
+                
+
+
+                <div class="agrega">
+                    <a href="#">AGREGA TU PRODCUTO</a>
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+
+
+    <%- include ('../partials/footer.ejs') %>
+
+</body>
+
+</html>
