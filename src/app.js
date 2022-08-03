@@ -4,7 +4,7 @@ const port = process.env.PORT || 2020;
 const start = () => console.log('Starting server');
 server.listen(port, start());
 
-server.set('views', join(__dirname, './views'))
+server.set('views', __dirname, './views');
 server.set('view engine', 'ejs')
 
 const path = require('path');
