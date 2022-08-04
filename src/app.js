@@ -29,6 +29,11 @@ server.get('/crear', function(req, res) {
     res.render(file);
 })
 
+server.get('/modificar', function(req, res) {
+    let file = path.join(__dirname, 'views', 'product', 'modificar.ejs');
+    res.render(file);
+})
+
 server.get('/productCart', function(req, res) {
     let file = path.join(__dirname, 'views', 'product', 'productCart.ejs');
     res.render(file);

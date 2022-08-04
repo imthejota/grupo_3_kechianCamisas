@@ -201,9 +201,12 @@ footer {
         width: 80px;
         height: 80px;
     }
-    .alinea p {
+    .alinea p,
+    .alinea a {
         display: block;
         margin-top: 2%;
         font-size: 0.8rem;
+        text-decoration: none;
+        color: var(--amarillo);
     }
 }
