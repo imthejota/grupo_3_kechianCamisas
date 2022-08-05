@@ -20,7 +20,7 @@ body {
 }
 
 
-.crea {
+.modificar {
     font-family: 'Montserrat Subrayada', sans-serif;
     color: rgb(198, 138, 46);
     margin-bottom: 2%;
@@ -46,6 +46,7 @@ body {
 .elemento {
     display: flex;
     align-items: left;
+    
 }
 
 .grl-top {
@@ -68,11 +69,11 @@ body {
 }
 
 
-.agrega {
+.modificar {
     margin-bottom: 1%;
 }
 
-.agrega a {
+.modificar a {
     list-style: none;
     text-decoration: none;
     color: rgb(198, 138, 46);
