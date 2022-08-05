@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+main {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url(/images/background.jfif);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.crea {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: rgb(198, 138, 46);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.c1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.c2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    padding: 2%;
+    background-color: rgb(31, 56, 86);
+    border-radius: 2%;
+}
+
+.elemento {
+    display: flex;
+    align-items: left;
+}
+
+.grl-top {
+    background-color: rgb(140, 154, 156);
+    border-radius: 5px;
+    padding: 1.5%;
+    width: 100%;
+    margin-bottom: 6%;
+    color: black;
+    margin-top: 6%;
+}
+
+.grl {
+    background-color: rgb(140, 154, 156);
+    border-radius: 5px;
+    padding: 1.5%;
+    width: 100%;
+    margin-bottom: 6%;
+    color: black;
+}
+
+
+.agrega {
+    margin-bottom: 1%;
+}
+
+.agrega a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(198, 138, 46);
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+/* DE ACA EN ADELANTE ES TABLET */
+
+@media (min-width:480px) {
+    .c2 {
+        width: 50%;
+    }
+}
+
+/* DE ACA EN ADELANTE ES COMPUTADORA */
+
+@media (min-width:800px) {
+    .c2 {
+        width: 35%;
+    }
+}
