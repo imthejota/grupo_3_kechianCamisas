@@ -1,3 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<%- include ('../partials/head.ejs', {estilo: 'modificar', titulo: 'Modificar producto'}) %>
+
+    <body>
+        <%- include ('../partials/header.ejs') %>
+
+            <main>
+                <div class="c1">
+                    <form class="c2">
+                        <p class="modificar"> Modificar producto </p>
+
+                        <div>
+                            <label class="elemento" for="nombre-producto"></label>
+                            <input type="text" id="nombre-producto" name="nombre-producto" value="nombre-producto" required>
+                        </div>
+
+                        <div>
+                            <label class="elemento" for="descripción"></label>
+                            <input class="grl" type="text" id="descripción" name="descripción" value="descripción" required>
+                        </div>
+
+
+                        <div>
+                            <label class="elemento" for="categoria"></label>
+                            <input class="grl" type="text" id="categoria" name="categoria" value="categoria" required>
+                        </div>
+
+                        <div>
+                            <label class="elemento" for="imagen"></label>
+                            <input class="grl" type="file" id="imagen" name="imagen" value="imagen" required>
+                        </div>
+
+                        <div>
+                            <label class="elemento" for="talle"></label>
+                            <select class="grl" type="number" id="talle" name="talle" value="talle" required>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="extraLarge">Extra large</option>    
+                            </select><br>
+                        </div>
+
+                        <div>
+                            <label class="elemento" for="precio"></label>
+                            <input class="grl" type="number" id="precio" name="precio" value="precio" required>
+                        </div>
+
+                        <div class="modificar">
+                            <a href="#">MODIFICAR PRODUCTO</a>
+                        </div>
+
+                    </form>
+                </div>
+            </main>
+
+
+            <%- include ('../partials/footer.ejs') %>
+
+    </body>
+
+</html>
 
 
