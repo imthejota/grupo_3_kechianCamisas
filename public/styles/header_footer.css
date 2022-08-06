@@ -73,6 +73,8 @@ nav div a {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
