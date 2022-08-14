@@ -23,7 +23,7 @@ body {
     flex-wrap: wrap;
 }
 
-main {
+main {  
     min-height: fit-content;
     margin: 5%;
     height: 60vh;

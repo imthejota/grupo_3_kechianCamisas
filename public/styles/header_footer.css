@@ -47,7 +47,7 @@ nav div a {
     display: none;
 }
 
-.navCentro {
+.navAdelante {
     display: flex;
     flex-basis: 30vw;
     justify-content: center;
@@ -155,7 +155,7 @@ footer {
     .home {
         margin-left: 2%;
     }
-    .navAdelante {
+    .navCentro {
         display: flex;
         justify-content: space-between;
         flex-basis: 20vw;
@@ -167,7 +167,7 @@ footer {
     .navAtras {
         display: flex;
         justify-content: space-around;
-        flex-basis: 15vw;
+        flex-basis: 30vw;
     }
     .fa-bars {
         display: none;

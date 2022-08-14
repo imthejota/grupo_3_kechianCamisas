@@ -36,7 +36,7 @@ body {
 }
 
 .elemento1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
     margin-bottom: 2%;
     margin-top: 2%;
@@ -75,11 +75,11 @@ body {
     list-style: none;
     text-decoration: none;
     color: rgb(198, 138, 46);
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .boton {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 4%;
     background-color: rgb(31, 56, 86);
     font-size: 16px;
