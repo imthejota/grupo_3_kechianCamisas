@@ -5,11 +5,16 @@ const path = require('path');
 const public = path.join(__dirname, '../public');
 const statics = express.static(public);
 const start = () => console.log('Starting server in http://localhost:2020');
-
 server.listen(port, start());
+
+
+// Middlewares
+server.use(statics);
+
+// EJS
 server.set('views', __dirname, './views');
 server.set('view engine', 'ejs')
-server.use(statics);
+
 
 
 server.get('/', function(req, res) {
