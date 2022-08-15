@@ -4,7 +4,7 @@ const port = process.env.PORT || 2020;
 const path = require('path');
 const public = path.join(__dirname, '../public');
 const statics = express.static(public);
-const start = () => console.log('Starting server');
+const start = () => console.log('Starting server in http://localhost:2020');
 
 server.listen(port, start());
 server.set('views', __dirname, './views');
