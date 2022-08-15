@@ -1,7 +1,7 @@
-let express = require('express');
+const {Router} = require('express');
 const productsControllers = require('../controllers/productsController.js');
 
-let router = express.Router();
+const router = Router();
 
 
 router.get('/productDetail', productsControllers.detail);
@@ -13,4 +13,10 @@ router.get('/modificar', productsControllers.modificar)
 router.get('/productCart', productsControllers.productCart)
 
 module.exports = router;
+
+/* route.get('/productos/crear');
+route.post('/productos/guardar');
+route.get('/productos/detalle');
+route.put('/productos/editar/:id')
+ */
 

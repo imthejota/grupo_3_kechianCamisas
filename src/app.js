@@ -9,9 +9,15 @@ const start = () => console.log('Starting server in http://localhost:2020');
 const rutasProduct = require('./routes/productsRoutes.js');
 
 server.listen(port, start());
+
+
+// Middlewares
+server.use(statics);
+
+// EJS
 server.set('views', __dirname, './views');
 server.set('view engine', 'ejs')
-server.use(statics);
+
 
 server.use('/products', rutasProduct);
 
