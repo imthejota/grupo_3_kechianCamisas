@@ -13,13 +13,14 @@ server.listen(port, start());
 
 // Middlewares
 server.use(statics);
+server.use('/products', rutasProduct);
 
 // EJS
 server.set('views', __dirname, './views');
 server.set('view engine', 'ejs')
 
 
-server.use('/products', rutasProduct);
+
 
 server.get('/', function(req, res) {
     let file = path.join(__dirname, 'views', 'index.ejs');
