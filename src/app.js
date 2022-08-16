@@ -8,29 +8,31 @@ const start = () => console.log('Starting server in http://localhost:2020');
 
 const rutasProduct = require('./routes/productsRoutes.js');
 
+// Primero listen, luego set, luego use
 server.listen(port, start());
 
+// EJS
+server.set('views', __dirname, './views');
+server.set('view engine', 'ejs')
 
 // Middlewares
 server.use(statics);
 server.use('/products', rutasProduct);
 
-// EJS
-server.set('views', __dirname, './views');
-server.set('view engine', 'ejs')
+
 
 
 
 
 server.get('/', function(req, res) {
     let file = path.join(__dirname, 'views', 'index.ejs');
-    res.render(file);
+    return res.render(file);
 })
 
 
 server.get('/register', function(req, res) {
     let file = path.join(__dirname, 'views', 'user', 'register.ejs');
-    res.render(file);
+    return res.render(file);
 })
 
 /* server.post('/register', function(req, res) {
@@ -39,5 +41,5 @@ server.get('/register', function(req, res) {
 
 server.get('/login', function(req, res) {
     let file = path.join(__dirname, 'views', 'user', 'login.ejs');
-    res.render(file);
+    return  res.render(file);
 })
