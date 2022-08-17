@@ -7,20 +7,16 @@ const path = require('path');
 
 const productsControllers = {
     'crear': (req, res) => {
-        let file = ('product/crear');
-        res.render(file);
+        res.render('product/crear');
     },
     'detail': (req, res) => {
-        let file = ('product/productDetail');
-        res.render(file);
+        res.render('product/productDetail');
     },
     'modificar': (req, res) => {
-        let file = ('product/modificar');
-        res.render(file);
+        res.render('product/modificar');
     },
     'productCart': (req, res) => {
-        let file = ('product/productCart');
-        res.render(file);
+        res.render('product/productCart');
     },
 }
 
