@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include ('../partials/head.ejs', {estilo: 'modificar', titulo: 'Modificar producto'}) %>
+<%- include ('./partials/head.ejs', {estilo: 'crear', titulo: 'Crear nuevo producto'}) %>
 
     <body>
-        <%- include ('../partials/header.ejs') %>
+        <%- include ('./partials/header.ejs') %>
 
             <main>
                 <div class="c1">
-                    <form  action="/product/actualizar?_method=PUT" method="POST" class="c2">
-
-                        <input type="hidden" name="sku" value="<%= product.id %> ">
-                        
-                        <p class="modificar"> Modificar producto </p>
+                    <form class="c2" action="/guardar" method="POST">
+                        <p class="crea"> Creá un nuevo producto </p>
 
                         <div>
                             <label class="elemento" for="nombre-producto"></label>
-                            <input class = "grl-top" type="text" id="nombre-producto" name="nombre-producto" value="Nombre-producto" required>
+                            <input class="grl-top" type="text" id="nombre-producto" name="nombre-producto" value="Nombre-producto" required>
                         </div>
 
                         <div>
@@ -42,7 +39,7 @@
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                         <option value="extraLarge">Extra large</option>    
-                            </select><br>
+                    </select><br>
                         </div>
 
                         <div>
@@ -50,18 +47,20 @@
                             <input class="grl" type="number" id="precio" name="precio" value="Precio" required>
                         </div>
 
-                        <div class="modificar">
-                            <a href="#">MODIFICAR</a>
+
+
+                        <div class="agrega">
+                            <a href="#">AGREGA TU PRODUCTO</a>
                         </div>
+
 
                     </form>
                 </div>
             </main>
 
-            <%- include ('../partials/footer.ejs') %>
+
+            <%- include ('./partials/footer.ejs') %>
 
     </body>
 
 </html>
-
-
