@@ -7,6 +7,7 @@ const statics = express.static(public);
 const start = () => console.log('Starting server in http://localhost:2020');
 
 
+
 //Agregando override
 const methodOverride = require('method-override');
 

@@ -6,9 +6,10 @@ const {resolve} = require('path'); // para método remove
 const path = require('path');
 
 const productsControllers = {
-    'crear': (req, res) => {
-        res.render('crear');
-    },
+    //'crear': (req, res) => {
+    //    res.render('crear');
+    //},
+    
     'detail': (req, res) => {
         res.render('productDetail');
     },
@@ -45,6 +46,7 @@ const productsControllers = {
     },
 
     "save": (req, res) => {
+      
         let store = generar (req.body) /*guardar la varibale*/ 
         write(todos)
         return res.redirect('/productos/');
