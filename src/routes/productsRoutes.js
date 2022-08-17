@@ -4,7 +4,7 @@ const productsControllers = require('../controllers/productsController.js');
 const router = Router();
 
 
-router.get('/productDetail', productsControllers.detail);
+router.get('/detail', productsControllers.detail);
 
 router.get('/crear', productsControllers.crear)
 

@@ -6,20 +6,20 @@
 const path = require('path');
 
 const productsControllers = {
-    crear: function(req, res) {
-        let file = ('views/product/crear.ejs');
+    'crear': (req, res) => {
+        let file = ('product/crear');
         res.render(file);
     },
-    detail: function(req, res) {
-        let file = ('views/product/productDetail.ejs');
+    'detail': (req, res) => {
+        let file = ('product/productDetail');
         res.render(file);
     },
-    modificar: function(req, res) {
-        let file = ('views/product/modificar.ejs');
+    'modificar': (req, res) => {
+        let file = ('product/modificar');
         res.render(file);
     },
-    productCart: function(req, res) {
-        let file = ('views/product/productCart.ejs');
+    'productCart': (req, res) => {
+        let file = ('product/productCart');
         res.render(file);
     },
 }
