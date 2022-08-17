@@ -1,12 +1,10 @@
 const {Router} = require('express');
 const productsControllers = require('../controllers/productsController.js');
 
-const router = Router();
+const router = Router(); 
 
 
 router.get('/detail', productsControllers.detail);
-
-router.get('/crear', productsControllers.crear)
 
 router.get('/cart', productsControllers.productCart)
 
@@ -14,6 +12,9 @@ router.get('/editar/:producto', productsControllers.edit)
 
 router.put('actualizar', productsControllers.update)
 
+router.get('/crear', productsControllers.create) /*Mateo: armado de ruta create*/ 
+
+router.post ("/guardar", productsControllers.save) /*Mateo: armado de ruta a save*/ 
 
 
 module.exports = router;

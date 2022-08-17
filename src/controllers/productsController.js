@@ -1,5 +1,5 @@
 const { todos, uno, generar, escribir } = require('../models/products.models')
-const {unlinkSync} = require('fs'); // para método remove
+const {unlinkSync, write} = require('fs'); // para método remove
 const {resolve} = require('path'); // para método remove
 
 
@@ -38,6 +38,21 @@ const productsControllers = {
     'productCart': (req, res) => {
         res.render('productCart');
     },
+
+    /*Mateo:"creo el formulario de resgistro"*/ 
+    "create": (req, res) => {
+        return res.render ("product/crear")
+    },
+
+    "save": (req, res) => {
+        let store = generar (req.body) /*guardar la varibale*/ 
+        write(todos)
+        return res.redirect('/productos/');
+
+        /*usar el metodo. escrbir como guardarlo en la base de datos*/
+        
+    },
+    
 }
 
 
