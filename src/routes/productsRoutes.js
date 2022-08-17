@@ -10,13 +10,9 @@ router.get('/crear', productsControllers.crear)
 
 router.get('/modificar', productsControllers.modificar)
 
-router.get('/productCart', productsControllers.productCart)
+router.get('/cart', productsControllers.productCart)
 
 module.exports = router;
 
-/* route.get('/productos/crear');
-route.post('/productos/guardar');
-route.get('/productos/detalle');
-route.put('/productos/editar/:id')
- */
+
 
