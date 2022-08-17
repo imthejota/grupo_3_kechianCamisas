@@ -52,3 +52,6 @@ server.get('/login', function(req, res) {
 
 const productoRoutes = require('./routes/productsRoutes');
 server.use(productoRoutes);
+
+
+server.use (express.urlencoded({extended:true}))

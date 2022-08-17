@@ -40,19 +40,18 @@ const productsControllers = {
         res.render('productCart');
     },
 
-    /*Mateo:"creo el formulario de resgistro"*/ 
+    /*Mateo:"creo el formulario de resgistro Y el de save"*/ 
     "create": (req, res) => {
         return res.render ("product/crear")
     },
 
     "save": (req, res) => {
-      
-        let store = generar (req.body) /*guardar la varibale*/ 
-        write(todos)
-        return res.redirect('/productos/');
-
-        /*usar el metodo. escrbir como guardarlo en la base de datos*/
-        
+        let datosDelForm = req.body
+        let nuevo = generar (datosDelForm) /*guardar la varibale*/
+        let todos = all()
+        todos.push(nuevo)
+        escribir (todos) 
+        return res.redirect ("/product")
     },
     
 }
