@@ -17,7 +17,8 @@ server.use('/products', rutasProduct);
 
 // EJS
 server.set('views', path.join(__dirname, './views'));
-server.set('views', path.join(__dirname, './views/product'));
+server.set('views', path.join(__dirname, './views/product')); /* si esta linea desaparece 
+deberia agregarse en las rutas de los controladores */
 server.set('view engine', 'ejs')
 
 

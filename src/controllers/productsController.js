@@ -1,6 +1,6 @@
-//const { todos, uno, generar, escribir } = require('../models/products.models')
-//const {unlinkSync} = require('fs');
-//const {resolve} = require('path');
+const { todos, uno, generar, escribir } = require('../models/products.models')
+const {unlinkSync} = require('fs'); // para método remove
+const {resolve} = require('path'); // para método remove
 
 
 const path = require('path');
