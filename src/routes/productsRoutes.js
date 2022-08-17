@@ -8,9 +8,13 @@ router.get('/detail', productsControllers.detail);
 
 router.get('/crear', productsControllers.crear)
 
-router.get('/modificar', productsControllers.modificar)
-
 router.get('/cart', productsControllers.productCart)
+
+router.get('/editar/:producto', productsControllers.edit)
+
+router.put('actualizar', productsControllers.update)
+
+
 
 module.exports = router;
 

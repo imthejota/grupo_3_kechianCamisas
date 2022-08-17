@@ -6,7 +6,12 @@ const public = path.join(__dirname, '../public');
 const statics = express.static(public);
 const start = () => console.log('Starting server in http://localhost:2020');
 
+
+//Agregando override
+const methodOverride = require('method-override');
+
 const rutasProduct = require('./routes/productsRoutes.js');
+const { appendFile } = require('fs');
 
 server.listen(port, start());
 
@@ -14,6 +19,9 @@ server.listen(port, start());
 // Middlewares
 server.use(statics);
 server.use('/products', rutasProduct);
+
+server.use(methodOverride("_method"));
+
 
 // EJS
 server.set('views', path.join(__dirname, './views'));
@@ -40,3 +48,6 @@ server.get('/register', function(req, res) {
 server.get('/login', function(req, res) {
     res.render('user/login');
 })
+
+const productoRoutes = require('./routes/productsRoutes');
+server.use(productoRoutes);

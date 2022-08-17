@@ -8,7 +8,10 @@
 
             <main>
                 <div class="c1">
-                    <form class="c2">
+                    <form  action="/product/actualizar?_method=PUT" method="POST" class="c2">
+
+                        <input type="hidden" name="sku" value="<%= product.id %> ">
+                        
                         <p class="modificar"> Modificar producto </p>
 
                         <div>
