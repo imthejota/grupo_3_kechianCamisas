@@ -40,7 +40,7 @@ const productsControllers = {
         res.render('productCart');
     },
 
-    /*Mateo:"creo el formulario de resgistro Y el de save"*/ 
+    /*Mateo:"creo el formulario de create Y el de save"*/ 
     "create": (req, res) => {
         return res.render ("product/crear")
     },

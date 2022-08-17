@@ -20,7 +20,6 @@ server.listen(port, start());
 // Middlewares
 server.use(statics);
 server.use('/products', rutasProduct);
-
 server.use(methodOverride("_method"));
 
 
