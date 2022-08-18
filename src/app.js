@@ -10,8 +10,6 @@ const start = () => console.log('Starting server in http://localhost:2020');
 
 //Agregando override
 const methodOverride = require('method-override');
-
-const rutasProduct = require('./routes/productsRoutes.js');
 const { appendFile } = require('fs');
 
 server.listen(port, start());
@@ -19,8 +17,12 @@ server.listen(port, start());
 
 // Middlewares
 server.use(statics);
+server.use (express.urlencoded({extended:true}))
+server.use(methodOverride("m"));
+
+
+const rutasProduct = require('./routes/productsRoutes.js');
 server.use('/products', rutasProduct);
-server.use(methodOverride("_method"));
 
 
 // EJS
@@ -47,8 +49,6 @@ server.get('/login', function(req, res) {
     res.render('user/login');
 })
 
-const productoRoutes = require('./routes/productsRoutes');
-server.use(productoRoutes);
 
 
-server.use (express.urlencoded({extended:true}))
+
