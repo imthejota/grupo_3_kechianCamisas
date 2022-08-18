@@ -11,7 +11,7 @@ const productsControllers = {
     //},
     
     'detail': (req, res) => {
-        res.render('productDetail');
+        res.render('product/productDetail');
     },
     'edit': (req, res) => {
         let product = uno(req.params.producto)
@@ -37,12 +37,12 @@ const productsControllers = {
 
 
     'productCart': (req, res) => {
-        res.render('productCart');
+        res.render('product/productCart');
     },
 
     /*Mateo:"creo el formulario de create Y el de save"*/ 
-    "create": (req, res) => {
-        return res.render ("product/crear")
+    'create': (req, res) => {
+        return res.render ('product/crear')
     },
 
     "save": (req, res) => {
