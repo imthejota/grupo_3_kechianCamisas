@@ -6,13 +6,13 @@ const router = Router();
 
 router.get('/crear', productsControllers.create) /*Mateo: armado de ruta create*/ 
 
-router.post ('/guardar', productsControllers.save) /*Mateo: armado de ruta a save*/ 
+router.post('/guardar', productsControllers.save) /*Mateo: armado de ruta a save*/ 
 
 router.get('/detail', productsControllers.detail);
 
 router.get('/cart', productsControllers.productCart)
 
-router.get('/editar/:producto', productsControllers.edit)
+router.get('/editar/:id', productsControllers.edit)
 
 router.put('/actualizar', productsControllers.update)
 

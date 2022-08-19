@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include ('./partials/head.ejs', {estilo: 'modificar', titulo: 'Modificar producto'}) %>
+<%- include ('../partials/head.ejs', {estilo: 'modificar', titulo: 'Modificar producto'}) %>
 
     <body>
-        <%- include ('./partials/header.ejs') %>
+        <%- include ('../partials/header.ejs') %>
 
             <main>
                 <div class="c1">
-                    <form  action="/product/actualizar?_method=PUT" method="POST" class="c2">
+                    <form  action="/products/actualizar?_method=PUT" method="POST" class="c2">
 
                         <input type="hidden" name="sku" value="<%= product.id %> ">
                         
@@ -58,7 +58,7 @@
                 </div>
             </main>
 
-            <%- include ('./partials/footer.ejs') %>
+            <%- include ('../partials/footer.ejs') %>
 
     </body>
 

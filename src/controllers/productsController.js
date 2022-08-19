@@ -1,8 +1,5 @@
-const models = require('../models/products.models')
+const {  uno, generar, escribir, todos } = require('../models/products.models')
 const {unlinkSync, write} = require('fs'); // para método remove
-const {resolve} = require('path'); // para método remove
-
-
 const path = require('path');
 
 const productsControllers = {
@@ -11,23 +8,28 @@ const productsControllers = {
         return res.render ('product/crear')
     },
     'save': (req, res) => {
-        let nuevo = generar(req.body) /*guardar la varibale*/
-        let todos = todos()
-        todos.push(nuevo)
-        escribir(todos) 
-        /* return res.redirect ('/product/') */ /* para poder ver si funciona o no lo dejo comentado */
-        return res.send("FUNCIONA")
+        if (req.files && req.files.length > 0){
+            req.body.image = req.files[0].filename
+        } else {
+            req.body.image = 'default.png'
+        }
+        let all = todos();
+        let nuevo = generar(req.body);
+        all.push(nuevo);
+        escribir(all) ;
+        return res.redirect ('/');
+        
     },
     'detail': (req, res) => {
         res.render('product/productDetail');
     },
     'edit': (req, res) => {
         let product = uno(req.params.producto)
-        res.render('edit',{product});
+        res.render('product/edit',{ product });
     },
     'update': (req,res) => {
-        let todos = todos();
-        let actualizados = todos.map(elemento => {
+        let all = todos();
+        let actualizados = all.map(elemento => {
             if(elemento.id == req.body.id){
                 elemento.name = req.body.name;
                 elemento.price = parseInt(req.body.price);

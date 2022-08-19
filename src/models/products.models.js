@@ -19,11 +19,11 @@ let model = {
         producto.price = data.price;
         producto.category = data.category;
         producto.id = !ultimo? 1 : ultimo.id + 1;
-        /* producto.image = data.image; */
+        producto.image = data.image;
         return producto;
     },
     escribir: (data) => {
-        let file = resolve(__dirname, '../data', 'products.json');
+        let file = path.join(__dirname, '../data/products.json');
         let json = JSON.stringify(data, null, " ");
         return fs.writeFileSync(file, json);
     }
