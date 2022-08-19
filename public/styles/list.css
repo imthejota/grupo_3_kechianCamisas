@@ -5,6 +5,10 @@
     border: none;
 }
 
-body {
-   background-color: white;
+.noventa{
+    width: 90%;
+}
+
+.white {
+   color: white;
 }
