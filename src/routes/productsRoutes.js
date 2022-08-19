@@ -4,6 +4,7 @@ const productsControllers = require('../controllers/productsController.js');
 const router = Router(); 
 
 
+router.get('/', productsControllers.index)
 router.get('/crear', productsControllers.create) /*Mateo: armado de ruta create*/ 
 
 router.post('/guardar', productsControllers.save) /*Mateo: armado de ruta a save*/ 

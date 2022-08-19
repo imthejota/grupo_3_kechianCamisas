@@ -3,11 +3,19 @@ const {unlinkSync, write} = require('fs'); // para método remove
 const path = require('path');
 
 const productsControllers = {
+    index: (req, res) => {
+        let products = todos()
+        if (req.params.category) {
+            products = products.filter(e => e.category == req.params.category)
+            return res.render('product/list', { products })
+        }
+        return res.render('product/list', { products })
+    },
     /*Mateo:"creo el formulario de create Y el de save"*/ 
-    'create': (req, res) => {
+    create: (req, res) => {
         return res.render ('product/crear')
     },
-    'save': (req, res) => {
+    save: (req, res) => {
         if (req.files && req.files.length > 0){
             req.body.image = req.files[0].filename
         } else {
@@ -20,14 +28,14 @@ const productsControllers = {
         return res.redirect ('/'); // habría que modificar el redirect
         
     },
-    'detail': (req, res) => {
+    detail: (req, res) => {
         res.render('product/productDetail');
     },
-    'edit': (req, res) => {
+    edit: (req, res) => {
         let product = uno(req.params.producto)
         res.render('product/edit',{ product });
     },
-    'update': (req,res) => {
+    update: (req,res) => {
         let all = todos();
         let actualizados = all.map(elemento => {
             if(elemento.id == req.body.id){
@@ -41,7 +49,7 @@ const productsControllers = {
         })
         return res.send('Actualizando')
     },
-    'productCart': (req, res) => {
+    productCart: (req, res) => {
         res.render('product/productCart');
     },
 }

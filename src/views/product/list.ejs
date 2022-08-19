@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <%- include('../partials/head.ejs', {estilo: 'modificar', titulo: 'Lista'})  %>
+
+
+<body>
+    <%- include ('../partials/header.ejs') %>
+    
+    <main>
+    <% if (products.length > 0) { %>
+        <ul>
+            <% products.forEach(element => { %>
+                <%- include('../partials/product.ejs',{element:element})  %>
+                    <% }) %>
+        </ul>
+        <% } else { %>
+            <h2>
+                No hay productos <a href="/productos">Volver</a>
+            </h2>
+            <% } %>
+
+                <nav>
+                    <a href="/products/crear">Nuevo</a>
+                </nav>
+    </main>
+
+</body>
+
+</html>
