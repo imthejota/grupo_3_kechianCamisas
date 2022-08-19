@@ -8,12 +8,12 @@ let model = {
         return JSON.parse(data);
     },
     uno: (id) => {
-        let todos = model.todos();
-        return todos.find(e => e.id == id);
+        let all = model.todos();
+        return all.find(e => e.id == id);
     },
     generar: (data) => {
-        let todos = model.todos();
-        let ultimo = todos.pop();
+        let all = model.todos();
+        let ultimo = all.pop();
         let producto = {};
         producto.name = data.name;
         producto.price = parseInt(data.price);

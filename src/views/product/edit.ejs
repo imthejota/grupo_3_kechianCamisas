@@ -3,41 +3,41 @@
 
 <%- include ('../partials/head.ejs', {estilo: 'modificar', titulo: 'Modificar producto'}) %>
 
-    <body>
+<body>
         <%- include ('../partials/header.ejs') %>
 
             <main>
                 <div class="c1">
                     <form  action="/products/actualizar?m=PUT" method="POST" class="c2" enctype="multipart/form-data">
 
-                        <input type="hidden" name="sku" value="<%= product.id %> ">
+                       <!--  <input type="hidden" name="id" value=" "> -->
                         
                         <p class="modificar"> Modificar producto </p>
 
                         <div>
                             <label class="elemento" for="nombre-producto"></label>
-                            <input class = "grl-top" type="text" id="nombre-producto" name="nombre-producto" value="Nombre-producto" required>
+                            <input class = "grl-top" type="text" id="nombre-producto" name="name" value="<%= product.name %> " >
                         </div>
 
                         <div>
                             <label class="elemento" for="descripción"></label>
-                            <input class="grl" type="text" id="descripción" name="descripción" value="Descripción" required>
+                            <input class="grl" type="text" id="descripción" name="description" value="<%= product.description %>" >
                         </div>
 
 
                         <div>
                             <label class="elemento" for="categoria"></label>
-                            <input class="grl" type="text" id="categoria" name="categoria" value="Categoria" required>
+                            <input class="grl" type="text" id="categoria" name="category" value="<%= product.category %>" >
                         </div>
 
                         <div>
                             <label class="elemento" for="imagen"></label>
-                            <input class="grl" type="file" id="imagen" name="imagen" value="Imagen" required>
+                            <input class="grl" type="file" id="imagen" name="image" value="<%= product.image %>" >
                         </div>
 
                         <div>
                             <label class="elemento" for="talle"></label>
-                            <select class="grl" type="number" id="talle" name="talle" value="Talle" required>
+                            <select class="grl" type="number" id="talle" name="size" value="<%= product.size %>" >
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
@@ -47,7 +47,7 @@
 
                         <div>
                             <label class="elemento" for="precio"></label>
-                            <input class="grl" type="number" id="precio" name="precio" value="Precio" required>
+                            <input class="grl" type="number" id="precio" name="price" value="<%= product.price %>" >
                         </div>
 
                         <div class="modificar">

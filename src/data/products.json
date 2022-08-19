@@ -19,5 +19,14 @@
   "size": "small",
   "id": 3,
   "image": "default.png"
+ },
+ {
+  "name": "Camisuli",
+  "price": 10000,
+  "category": "Estampada",
+  "description": "La gran camisuli del Jota",
+  "size": "medium",
+  "id": 4,
+  "image": "default.png"
  }
 ]

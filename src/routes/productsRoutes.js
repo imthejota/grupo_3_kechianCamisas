@@ -8,13 +8,15 @@ router.get('/crear', productsControllers.create) /*Mateo: armado de ruta create*
 
 router.post('/guardar', productsControllers.save) /*Mateo: armado de ruta a save*/ 
 
+router.get('/editar/:producto', productsControllers.edit);
+
 router.get('/detail', productsControllers.detail);
 
-router.get('/cart', productsControllers.productCart)
+router.get('/cart', productsControllers.productCart);
 
-router.get('/editar/:id', productsControllers.edit)
 
-router.put('/actualizar', productsControllers.update)
+
+router.put('/actualizar', productsControllers.update);
 
 
 

@@ -17,7 +17,7 @@ const productsControllers = {
         let all = todos();
         all.push(nuevo);
         escribir(all);
-        return res.redirect ('/');
+        return res.redirect ('/'); // habría que modificar el redirect
         
     },
     'detail': (req, res) => {
