@@ -12,11 +12,11 @@ const productsControllers = {
             req.body.image = req.files[0].filename
         } else {
             req.body.image = 'default.png'
-        }
-        let all = todos();
+        };
         let nuevo = generar(req.body);
+        let all = todos();
         all.push(nuevo);
-        escribir(all) ;
+        escribir(all);
         return res.redirect ('/');
         
     },

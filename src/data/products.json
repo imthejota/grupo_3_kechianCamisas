@@ -1,10 +1,23 @@
 [
  {
-  "id": 1,
   "name": "Versalles",
-  "description": "lalala prueba con la description",
+  "price": 7500,
   "category": "Estampada",
-  "size": "L",
-  "price": 7500
+  "description": "lalala prueba con la description",
+  "size": "Large",
+  "id": 1
+ },
+ {
+  "price": null,
+  "id": 2,
+  "image": "default.png"
+ },
+ {
+  "price": 123,
+  "category": "lo mejor",
+  "description": "esperando lo mejor",
+  "size": "small",
+  "id": 3,
+  "image": "default.png"
  }
 ]

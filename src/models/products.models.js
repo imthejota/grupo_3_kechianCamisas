@@ -16,8 +16,10 @@ let model = {
         let ultimo = todos.pop();
         let producto = {};
         producto.name = data.name;
-        producto.price = data.price;
+        producto.price = parseInt(data.price);
         producto.category = data.category;
+        producto.description = data.description;
+        producto.size = data.size;
         producto.id = !ultimo? 1 : ultimo.id + 1;
         producto.image = data.image;
         return producto;

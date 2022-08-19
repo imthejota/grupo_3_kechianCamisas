@@ -17,7 +17,7 @@ server.listen(port, start());
 
 // Middlewares
 server.use(statics);
-server.use (express.urlencoded({extended:true}))
+server.use (express.urlencoded({extended:true}));
 server.use(methodOverride("m"));
 
 
