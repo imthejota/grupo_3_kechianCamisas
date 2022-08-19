@@ -37,17 +37,18 @@ const productsControllers = {
     },
     update: (req,res) => {
         let all = todos();
-        let actualizados = all.map(elemento => {
+        let actualizado = all.map(elemento => {
             if(elemento.id == req.body.id){
                 elemento.name = req.body.name;
                 elemento.price = parseInt(req.body.price);
                 elemento.category = req.body.category;
                 elemento.size = req.body.size;
-                elemento.image = req.body.image;
+                elemento.image = req.files && req.files.length > 0 ? req.files[0].filename : elemento.image;
             }
             return elemento
         })
-        return res.send('Actualizando')
+        escribir(actualizado);
+        return res.redirect ('/');
     },
     productCart: (req, res) => {
         res.render('product/productCart');
