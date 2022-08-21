@@ -16,9 +16,9 @@ const productsControllers = {
         return res.render ('product/crear')
     },
     save: (req, res) => {
-        if (req.files && req.files.length > 0){
+         if (req.files && req.files.length > 0){
             req.body.image = req.files[0].filename
-        } else {
+         } else {
             req.body.image = 'default.png'
         };
         let nuevo = generar(req.body);

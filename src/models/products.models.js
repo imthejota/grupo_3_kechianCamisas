@@ -3,7 +3,7 @@ const fs = require('fs');
 
 let model = {
     todos: () => {
-        let file = path.join(__dirname, '../data/products.json');
+        let file = path.resolve(__dirname, '../data', 'products.json')
         let data = fs.readFileSync(file);
         return JSON.parse(data);
     },

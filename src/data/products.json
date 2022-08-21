@@ -1,19 +1,27 @@
 [
  {
-  "name": "Versalles",
+  "name": "Versalles ",
   "price": 7500,
   "category": "Estampada",
   "description": "lalala prueba con la description",
-  "size": "Large",
+  "size": "small",
   "id": 1
  },
  {
-  "name": "Scat Dog",
-  "price": 12,
-  "category": "Estampada",
-  "description": "esperando lo mejor",
-  "size": "extraLarge",
-  "id": 2,
-  "image": "default.png"
+  "name": "lala",
+  "price": 123,
+  "category": "lalal3",
+  "description": "lalal2",
+  "size": "small",
+  "id": 2
+ },
+ {
+  "name": "Otra",
+  "price": 123,
+  "category": "otra otra",
+  "description": "otra vez",
+  "size": "small",
+  "id": 3,
+  "image": "image-1661123841446-2439459.jpg"
  }
 ]

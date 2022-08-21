@@ -10,10 +10,11 @@
                 <div class="c1">
                     <form  action="/products/actualizar?m=PUT" method="POST" class="c2" enctype="multipart/form-data">
 
-                       <!--  <input type="hidden" name="id" value=" "> -->
+                        
                         
                         <p class="modificar"> Modificar producto </p>
-
+                        
+                        <input type="hidden" name="id" value="<%= product.id %>  ">
                         <div>
                             <label class="elemento" for="nombre-producto"></label>
                             <input class = "grl-top" type="text" id="nombre-producto" name="name" value="<%= product.name %> " >
