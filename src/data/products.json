@@ -8,25 +8,12 @@
   "id": 1
  },
  {
-  "price": null,
-  "id": 2,
-  "image": "default.png"
- },
- {
-  "price": 123,
-  "category": "lo mejor",
-  "description": "esperando lo mejor",
-  "size": "small",
-  "id": 3,
-  "image": "default.png"
- },
- {
-  "name": "Camisuli",
-  "price": 10000,
+  "name": "Scat Dog",
+  "price": 12,
   "category": "Estampada",
-  "description": "La gran camisuli del Jota",
-  "size": "medium",
-  "id": 4,
+  "description": "esperando lo mejor",
+  "size": "extraLarge",
+  "id": 2,
   "image": "default.png"
  }
 ]

@@ -1,5 +1,5 @@
 const {  uno, generar, escribir, todos } = require('../models/products.models')
-const {unlinkSync, write} = require('fs'); // para método remove
+const {unlinkSync} = require('fs'); // para método remove
 const path = require('path');
 
 const productsControllers = {
@@ -45,10 +45,11 @@ const productsControllers = {
                 elemento.size = req.body.size;
                 elemento.image = req.files && req.files.length > 0 ? req.files[0].filename : elemento.image;
             }
+            
             return elemento
         })
         escribir(actualizado);
-        return res.redirect ('/');
+        return res.send('Lo cambia');
     },
     productCart: (req, res) => {
         res.render('product/productCart');
