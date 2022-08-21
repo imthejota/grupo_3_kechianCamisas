@@ -129,6 +129,19 @@ body {
     margin-right: 2%;
 }
 
+.eliminar {
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-self: flex-end; 
+}
+
+.beliminar {
+    background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+}
+
 @media (min-width: 480px) {}
 
 @media (min-width:800px) {
