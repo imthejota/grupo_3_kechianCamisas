@@ -2,4 +2,7 @@
     <a href="/products/editar/<%= element.id %>">
         <%= element.name %> <span> $<%= element.price %></span>
     </a>
+    <form method="POST" action="/products/delete/<%= element.id %>?_method=DELETE" class="eliminar">
+        <button type="submit" class="beliminar">Eliminar</button>
+    </form>
 </li>

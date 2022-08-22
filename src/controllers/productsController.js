@@ -55,7 +55,7 @@ const productsControllers = {
         res.render('product/productCart');
     },
     delete: (req, res) => {
-        res.render('product/delete');
+
     }
 }
 

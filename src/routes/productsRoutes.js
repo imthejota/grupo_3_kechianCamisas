@@ -39,7 +39,9 @@ router.get('/detail', productsControllers.detail);
 
 router.get('/cart', productsControllers.productCart);
 
-router.delete('/delete', productsControllers.delete); /* Ruta delete */
+router.delete('/delete/:producto', productsControllers.delete);
+
+
 
 
 
