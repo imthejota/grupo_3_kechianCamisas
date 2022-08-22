@@ -55,7 +55,11 @@ const productsControllers = {
         res.render('product/productCart');
     },
     delete: (req, res) => {
-
+        let all = todos();
+        all.filter(function(elemento){
+            return elemento.producto != req.params.producto;
+        });
+        res.redirect('/products');
     }
 }
 

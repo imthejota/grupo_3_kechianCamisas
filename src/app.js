@@ -20,10 +20,6 @@ server.use (express.urlencoded({extended:true}));
 server.use(methodOverride("m"));
 
 
-const rutasProduct = require('./routes/productsRoutes.js');
-server.use('/products', rutasProduct);
-
-
 // EJS
 server.set('views', path.join(__dirname, './views'));
 server.set('view engine', 'ejs')
@@ -41,12 +37,12 @@ server.get('/register', function(req, res) {
 })
 
 
-
 // Ruta login
 server.get('/login', function(req, res) {
     res.render('user/login');
 })
 
-
+const rutasProduct = require('./routes/productsRoutes.js');
+server.use('/products', rutasProduct);
 
 
