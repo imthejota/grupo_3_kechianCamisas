@@ -12,6 +12,7 @@ const productsControllers = {
         return res.render('product/list', { products })
     },
     
+    
     create: (req, res) => {
         return res.render ('product/crear')
     },
