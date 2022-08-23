@@ -8,7 +8,7 @@
 <body>
     <%- include ('../partials/header.ejs') %>
     
-    <main class="noventa">
+    <main class="noventa listaProducto">
     <% if (products.length > 0) { %>
         <ul>
             <% products.forEach(element => { %>
@@ -22,10 +22,10 @@
             <% } %>
 
                 <nav>
-                    <a href="/products/crear">Nuevo</a>
+                    <a href="/products/crear">Agregar un Nuevo Producto</a>
                 </nav>
     </main>
-
+    <%- include('../partials/footer.ejs', {estilo: 'footer', titulo: 'Lista'})  %>
 </body>
-
+    
 </html>

@@ -1,15 +1,68 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: none;
+    list-style-type: none;
+    text-decoration:none;
 }
+
+/*mateo: la clase "noventa" esta tomando el footer y el main.
+para solucionar la posicion del "box" de "list", decidi meter un margin, pero OJO ESE "MARGIN:9%" TOCA EL FOOTER*/
+.noventa{
+    margin: 9%;
+}
+/*mateo:esto hice*/
 
 main {
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
 }
+
+main ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+
+.listaProducto{
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    padding: 2%;
+    background-color: rgb(31, 56, 86);
+    border-radius: 2%;
+    
+}
+
+.listaProducto a {
+    color: rgb(198, 138, 46);
+}
+
+.listaProducto button{
+    background-color: antiquewhite;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+.listaProducto nav a{
+    color: aliceblue;
+    text-decoration:underline;
+}
+    
+
+
+.listaProducto li{
+    padding: 12px;
+    border-radius: 5px;
+
+}
+
+/*mateo:aca termine*/
 
 body {
     background-image: url(/images/background.jfif);
@@ -79,6 +132,8 @@ body {
     color: rgb(198, 138, 46);
     font-family: 'Montserrat Subrayada', sans-serif;
 }
+
+
 
 /* DE ACA EN ADELANTE ES TABLET */
 
