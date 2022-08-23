@@ -31,16 +31,8 @@ server.get('/', function(req, res) {
     res.render('index');
 })
 
-// Ruta register
-server.get('/user/register', function(req, res) {
-    res.render('user/register');
-})
-
-
-// Ruta login
-server.get('/user/login', function(req, res) {
-    res.render('user/login');
-})
+const rutasUser = require('./routes/userRoutes.js')
+server.use('/user', rutasUser);
 
 const rutasProduct = require('./routes/productsRoutes.js');
 server.use('/products', rutasProduct);
