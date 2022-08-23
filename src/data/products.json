@@ -8,14 +8,6 @@
   "id": 1
  },
  {
-  "name": "lala",
-  "price": 123,
-  "category": "lalal3",
-  "description": "lalal2",
-  "size": "small",
-  "id": 2
- },
- {
   "name": "Otra",
   "price": 123,
   "category": "otra otra",
@@ -23,15 +15,6 @@
   "size": "small",
   "id": 3,
   "image": "image-1661123841446-2439459.jpg"
- },
- {
-  "name": "camisa 6 ",
-  "price": 15000,
-  "category": "hombre",
-  "description": "larga",
-  "size": "small",
-  "id": 4,
-  "image": "default.png"
  },
  {
   "name": "remera de mateo",
