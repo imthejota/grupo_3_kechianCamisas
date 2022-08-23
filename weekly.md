@@ -1,21 +1,21 @@
-# Weekly Standups Tercer Sprint 
+# Weekly Standups Cuarto Sprint 
 
 ## Tareas Completadas:
-- Instalar la dependencia de EJS (Lucía)
-- Ordenar los componentes repetidos en las vistas (Lucía)
-- Agregar el motor de plantilla en EJS y directorio en views (Ulises) 
-- Agregar carpetas al views y cambiar las rutas (Ulises)
-- Acomodar las carpetas y las rutas de todos los archivos (Lucía)
-- Agregar npm start (Jonathan)
-- Agregar el archivo crear.ejs (Ulises)
-- Instalar nodemon, cambios en forms y agregado de links a crear y modificar + creación ejs (Jonathan)
-- Agregar el archivo modificar.ejs y cambios en crear.ejs (Trinidad)
-- Agregar el archivo modificar.css (Trinidad)
-- Modificar estilos cart, correcciones footer y cambios en css cart (Jonathan)
+- Ordenar Middlewares (Jonathan)
+- Actualizar rutas, carpeta views (Lucia)
+- Actualizar Controllers (Lucia)
+- Json Usuario, rutas controller + views en app (Jonathan)
+- Agregar update / edit (Ulises)
+- Cambios en product-controles y product-routes (Mateo)
+- Mejoras en save (Mateo)
+- Correciones rutas y vistas, prueba de Json producto, agregar vista de lista para editar (Jonathan)
+- Boton eliminar, ruta delete, productsController delete (Trinidad)
+- Correciones update (Jonathan)
 - Modificar retro.md y agregar weekly.md (Trinidad)
+- Estilizar list.ejs (Mateo)
 
 ## Impedimentos y Soluciones Propuestas:
-- No tuvimos grandes impedimentos en este Sprint, cada uno realizó las tareas que le correspondían y a medida que se avanzaba o se realizaba alguna modificación se informaba a todos los integrantes del grupo. Además las dudas que surgían se consultaban por el grupo y rápidamente se llegaba a una solución. 
+- En este sprint tuvimos mayores dificultades para resolver las tareas correspondientes a comparación del anterior, sin embargo, utilizamos las consultas con los profesores y entre los integrantes del grupo para resolver todos los inconvenientes y dudas. 
 
 
 
