@@ -39,7 +39,7 @@ router.get('/detail', productsControllers.detail);
 
 router.get('/cart', productsControllers.productCart);
 
-router.delete('/delete/:producto', productsControllers.delete);
+router.delete('/delete/:id', productsControllers.delete);
 
 
 

@@ -57,7 +57,7 @@ const productsControllers = {
     delete: (req, res) => {
         let all = todos();
         all.filter(function(elemento){
-            return elemento.producto != req.params.producto;
+            return elemento.id != req.params.id;
         });
         res.redirect('/products');
     }
