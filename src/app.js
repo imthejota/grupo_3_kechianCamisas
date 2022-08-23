@@ -32,13 +32,13 @@ server.get('/', function(req, res) {
 })
 
 // Ruta register
-server.get('/register', function(req, res) {
+server.get('/user/register', function(req, res) {
     res.render('user/register');
 })
 
 
 // Ruta login
-server.get('/login', function(req, res) {
+server.get('/user/login', function(req, res) {
     res.render('user/login');
 })
 
