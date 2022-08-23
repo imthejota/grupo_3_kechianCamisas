@@ -11,7 +11,7 @@ const productsControllers = {
         }
         return res.render('product/list', { products })
     },
-    /*Mateo:"creo el formulario de create Y el de save"*/ 
+    
     create: (req, res) => {
         return res.render ('product/crear')
     },
