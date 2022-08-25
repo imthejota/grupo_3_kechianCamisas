@@ -1,20 +1,38 @@
 [
  {
-  "name": "Otra",
-  "price": 123,
-  "category": "otra otra",
-  "description": "otra vez",
+  "name": "Camisa 1",
+  "price": 1800,
+  "category": "Mujer",
+  "description": "Rosada",
   "size": "small",
-  "id": 3,
-  "image": "image-1661123841446-2439459.jpg"
+  "id": 1,
+  "image": "image-1661404487184-473893273.png"
  },
  {
-  "name": "camisa 1",
-  "price": 9000,
-  "category": "mujer",
-  "description": "celeste",
-  "size": "small",
+  "name": "Camisa 2",
+  "price": 4000,
+  "category": "Hombre",
+  "description": "Celeste",
+  "size": "large",
+  "id": 2,
+  "image": "image-1661404551018-454202554.png"
+ },
+ {
+  "name": "Camisa 3",
+  "price": 7000,
+  "category": "Niño",
+  "description": "Naranja",
+  "size": "extraLarge",
+  "id": 3,
+  "image": "image-1661404757072-208136466.png"
+ },
+ {
+  "name": "Camisa 4",
+  "price": 8000,
+  "category": "Mujer",
+  "description": "Larga",
+  "size": "large",
   "id": 4,
-  "image": "default.png"
+  "image": "image-1661404931352-573235014.png"
  }
 ]
