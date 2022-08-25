@@ -35,7 +35,7 @@ router.post('/guardar', upload.any(), productsControllers.save) /*Mateo: armado 
 router.get('/editar/:producto', productsControllers.edit);
 router.put('/actualizar', upload.any(), productsControllers.update);
 
-router.get('/detail', productsControllers.detail);
+router.get('/detail/:producto', productsControllers.detail);
 
 router.get('/cart', productsControllers.productCart);
 

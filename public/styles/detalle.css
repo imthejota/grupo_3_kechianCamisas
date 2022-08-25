@@ -129,6 +129,20 @@ body {
     margin-right: 2%;
 }
 
+.editarProducto a {
+    background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    color: black; 
+    font-size: 14px;
+}
+
+.botonEliminar {
+    background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+}
+
 @media (min-width: 480px) {}
 
 @media (min-width:800px) {

@@ -1,13 +1,5 @@
 [
  {
-  "name": "Versalles ",
-  "price": 7500,
-  "category": "Estampada",
-  "description": "lalala prueba con la description",
-  "size": "small",
-  "id": 1
- },
- {
   "name": "Otra",
   "price": 123,
   "category": "otra otra",
@@ -17,12 +9,12 @@
   "image": "image-1661123841446-2439459.jpg"
  },
  {
-  "name": "remera de mateo",
-  "price": 15000,
-  "category": "hombre",
-  "description": "large",
+  "name": "camisa 1",
+  "price": 9000,
+  "category": "mujer",
+  "description": "celeste",
   "size": "small",
-  "id": 5,
+  "id": 4,
   "image": "default.png"
  }
 ]

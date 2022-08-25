@@ -30,7 +30,8 @@ const productsControllers = {
         
     },
     detail: (req, res) => {
-        res.render('product/productDetail');
+        let product = uno(req.params.producto);
+        res.render('product/productDetail', { product });
     },
     edit: (req, res) => {
         let product = uno(req.params.producto)
@@ -62,7 +63,7 @@ const productsControllers = {
         });
         escribir(filtrar);
         res.redirect('/products');
-    }
+    }  
 }
 
 

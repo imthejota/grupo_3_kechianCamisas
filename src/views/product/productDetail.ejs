@@ -12,23 +12,23 @@
                 <picture class="imagenDetalle">
                     <img src="/images/camisa-1.jpg" alt="">
                 </picture>
-                <p class="nombreDetalle">Nombre del producto</p>
+                <p class="nombreDetalle"></p>
             </div>
             <section class="fichaDetalle">
                 <div class="nombreProd">
-                    <h2 class="nombreCamisa">Camisa lalala</h2>
+                    <h2 class="nombreCamisa"> <%= product.name %> </h2>
                 </div>
                 <section class="precios">
                     <p class="precioUno">$12.600</p>
-                    <p class="precioDos">$7.875</p>
+                    <p class="precioDos"><%= product.price %></p>
                     <p class="descuento">(60% off)</p>
                 </section>
                 <section class="detalle">
-                    <p>Camisa exclusiva entallada sin variedad de colores. Confeccionada con lalala de Albus Dumbledore.</p>
+                    <p><%= product.description %></p>
                     <p>Largo: 72 cms</p>
-                    <p>Composición: Seda fina de locro patrio.</p>
+                    <p>Categoría: <%= product.category %></p>
                     <p>CUIDADO: Lavar con agua fría.</p>
-                    <p>Talle: Único</p>
+                    <p>Talle: <%= product.size %></p>
                 </section>
                 <section class="finalDetalle">
                     <p class="cantidadUnidades">Cantidad de unidades:</p>
@@ -37,10 +37,15 @@
                         <input type="number" id="unidades" name="unidades" value="1" required><br>
                     </div>
                     <button class="añadir">Añadir al carrito</button>
+                    <nav class="editarProducto">
+                        <a href="/products/editar/<%= product.id %>">Editar</a>
+                    </nav>
+                    <form method="POST" action="/products/delete/<%= product.id %>?m=DELETE" class="eliminarProducto">
+                        <button type="submit" class="botonEliminar">Eliminar</button>
+                    </form>
                 </section>
             </section>
         </section>
     </main>
-
     <%- include ('../partials/footer.ejs') %>
 </body>
