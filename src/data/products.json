@@ -6,7 +6,8 @@
   "description": "Rosada",
   "size": "small",
   "id": 1,
-  "image": "image-1661404487184-473893273.png"
+  "image": "image-1661404487184-473893273.png",
+  "discount": 60
  },
  {
   "name": "Camisa 2",
@@ -15,7 +16,8 @@
   "description": "Celeste",
   "size": "large",
   "id": 2,
-  "image": "image-1661404551018-454202554.png"
+  "image": "image-1661404551018-454202554.png",
+  "discount": 20
  },
  {
   "name": "Camisa 3",
@@ -24,7 +26,8 @@
   "description": "Naranja",
   "size": "extraLarge",
   "id": 3,
-  "image": "image-1661404757072-208136466.png"
+  "image": "image-1661404757072-208136466.png",
+  "discount": 80
  },
  {
   "name": "Prueba",
@@ -33,6 +36,7 @@
   "description": "muchas pruebas",
   "size": "small",
   "id": 4,
-  "image": "image-1661472570003-941381080.jpg"
+  "image": "image-1661472570003-941381080.jpg",
+  "discount": 15
  }
 ]

@@ -10,24 +10,26 @@
         <section class="contenedorDetalle">
             <div class="contenedorImagenDetalle">
                 <picture class="imagenDetalle">
-                    <%= product.image %>
+                    <img src="/products/<%= product.image %>" alt=""> 
                 </picture>
                 <p class="nombreDetalle"></p>
             </div>
             <section class="fichaDetalle">
                 <div class="nombreProd">
-                    <h2 class="nombreCamisa"> <%= product.name %> </h2>
+                    <h2 class="nombreCamisa"><%= product.name %></h2>
                 </div>
                 <section class="precios">
-                    <p class="precioUno">$12.600</p>
-                    <p class="precioDos"><%= product.price %></p>
-                    <p class="descuento">(60% off)</p>
+                    <%  
+                    let precio = product.price;
+                    let descuento = 100 - product.discount;
+                    %>
+                    <p class="precioUno">$<%= product.price %></p>
+                    <p class="precioDos">$<%= (descuento * product.price) / 100  %></p>
+                    <p class="descuento">(<%= descuento %>% off)</p>
                 </section>
                 <section class="detalle">
                     <p><%= product.description %></p>
-                    <p>Largo: 72 cms</p>
                     <p>Categoría: <%= product.category %></p>
-                    <p>CUIDADO: Lavar con agua fría.</p>
                     <p>Talle: <%= product.size %></p>
                 </section>
                 <section class="finalDetalle">
