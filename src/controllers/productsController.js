@@ -26,7 +26,7 @@ const productsControllers = {
         let all = todos();
         all.push(nuevo);
         escribir(all);
-        return res.redirect ('/'); // habría que modificar el redirect
+        return res.redirect ('/list'); 
         
     },
     detail: (req, res) => {
@@ -62,7 +62,7 @@ const productsControllers = {
             return elemento.id != req.params.id;
         });
         escribir(filtrar);
-        res.redirect('/products');
+        res.redirect('/list');
     }  
 }
 

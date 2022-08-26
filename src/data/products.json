@@ -27,12 +27,12 @@
   "image": "image-1661404757072-208136466.png"
  },
  {
-  "name": "Camisa 4",
-  "price": 8000,
-  "category": "Mujer",
-  "description": "Larga",
-  "size": "large",
+  "name": "Prueba",
+  "price": 121212,
+  "category": "por que no muestra la foto",
+  "description": "muchas pruebas",
+  "size": "small",
   "id": 4,
-  "image": "image-1661404931352-573235014.png"
+  "image": "image-1661472570003-941381080.jpg"
  }
 ]

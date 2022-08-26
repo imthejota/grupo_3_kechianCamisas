@@ -26,7 +26,7 @@ const multer = require('multer');
 const upload = multer({storage: multer.diskStorage({destination, filename})})
 
 
-router.get('/', productsControllers.index)
+router.get('/list', productsControllers.index)
 
 router.get('/crear', productsControllers.create) /*Mateo: armado de ruta create*/ 
 
