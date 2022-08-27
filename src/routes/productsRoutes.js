@@ -28,9 +28,9 @@ const upload = multer({storage: multer.diskStorage({destination, filename})})
 
 router.get('/list', productsControllers.index)
 
-router.get('/crear', productsControllers.create) /*Mateo: armado de ruta create*/ 
+router.get('/crear', productsControllers.create) 
 
-router.post('/guardar', upload.any(), productsControllers.save) /*Mateo: armado de ruta a save*/ 
+router.post('/guardar', upload.any(), productsControllers.save) 
 
 router.get('/editar/:producto', productsControllers.edit);
 router.put('/actualizar', upload.any(), productsControllers.update);
