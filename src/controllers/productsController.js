@@ -26,7 +26,7 @@ const productsControllers = {
         let all = todos();
         all.push(nuevo);
         escribir(all);
-        return res.redirect ('/list'); 
+        return res.redirect ('/'); 
         
     },
     detail: (req, res) => {
@@ -43,6 +43,7 @@ const productsControllers = {
             if(elemento.id == req.body.id){
                 elemento.name = req.body.name;
                 elemento.price = parseInt(req.body.price);
+                elemento.discount = parseInt(req.body.discount);
                 elemento.category = req.body.category;
                 elemento.size = req.body.size;
                 elemento.image = req.files && req.files.length > 0 ? req.files[0].filename : elemento.image;
@@ -62,7 +63,7 @@ const productsControllers = {
             return elemento.id != req.params.id;
         });
         escribir(filtrar);
-        res.redirect('/list');
+        res.redirect('/');
     }  
 }
 

@@ -1,42 +1,12 @@
 [
  {
-  "name": "Camisa 1",
+  "name": "Camisa 1 ",
   "price": 1800,
   "category": "Mujer",
   "description": "Rosada",
   "size": "small",
   "id": 1,
   "image": "image-1661404487184-473893273.png",
-  "discount": 60
- },
- {
-  "name": "Camisa 2",
-  "price": 4000,
-  "category": "Hombre",
-  "description": "Celeste",
-  "size": "large",
-  "id": 2,
-  "image": "image-1661404551018-454202554.png",
-  "discount": 20
- },
- {
-  "name": "Camisa 3",
-  "price": 7000,
-  "category": "Niño",
-  "description": "Naranja",
-  "size": "extraLarge",
-  "id": 3,
-  "image": "image-1661404757072-208136466.png",
-  "discount": 80
- },
- {
-  "name": "Prueba",
-  "price": 121212,
-  "category": "por que no muestra la foto",
-  "description": "muchas pruebas",
-  "size": "small",
-  "id": 4,
-  "image": "image-1661472570003-941381080.jpg",
-  "discount": 15
+  "discount": 50
  }
 ]

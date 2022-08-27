@@ -17,6 +17,7 @@ let model = {
         let producto = {};
         producto.name = data.name;
         producto.price = parseInt(data.price);
+        producto.discount = parseInt(data.discount);
         producto.category = data.category;
         producto.description = data.description;
         producto.size = data.size;

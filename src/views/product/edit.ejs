@@ -14,7 +14,7 @@
                         
                         <p class="modificar"> Modificar producto </p>
                         
-                        <input type="hidden" name="id" value="<%= product.id %>  ">
+                        <input type="hidden" name="id" value="<%= product.id %> ">
                         <div>
                             <label class="elemento" for="nombre-producto"></label>
                             <input class = "grl-top" type="text" id="nombre-producto" name="name" value="<%= product.name %> " >
@@ -49,6 +49,11 @@
                         <div>
                             <label class="elemento" for="precio"></label>
                             <input class="grl" type="number" id="precio" name="price" value="<%= product.price %>" >
+                        </div>
+
+                        <div>
+                            <label class="elemento" for="descuento"></label>
+                            <input class="grl" type="number" id="descuento" name="discount" value="<%= product.discount %>" >
                         </div>
 
                         <div class="modificar">
