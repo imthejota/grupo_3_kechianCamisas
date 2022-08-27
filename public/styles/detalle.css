@@ -32,11 +32,20 @@ body {
     background-color: var(--azul);
     border-radius: 20px;
     box-shadow: 10px 10px 5px #242424;
+    
+}
+
+.contenedorImagenDetalle{
+    flex-basis: 50%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .imagenDetalle {
     margin: auto;
-    width: 100%;
+    
+    
 }
 
 .nombreDetalle {
@@ -111,7 +120,7 @@ body {
 
 .finalDetalle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -127,6 +136,18 @@ body {
     font-family: Montserrat, sans-serif;
     font-style: italic;
     margin-right: 2%;
+}
+
+.botonesAnteultimos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonesFinales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .editarProducto a {

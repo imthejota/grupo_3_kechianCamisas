@@ -1,12 +1,22 @@
 [
  {
-  "name": "Camisa 1 ",
-  "price": 1800,
-  "category": "Mujer",
+  "name": "Las Flores",
+  "price": 10000,
+  "category": "Hombre",
   "description": "Rosada",
-  "size": "small",
+  "size": "medium",
   "id": 1,
-  "image": "image-1661404487184-473893273.png",
-  "discount": 50
+  "image": "image-1661642479567-11612336.jpg",
+  "discount": 20
+ },
+ {
+  "name": "Prueba 2",
+  "price": 12312,
+  "discount": 23,
+  "category": "lalal 2",
+  "description": "lalal",
+  "size": "small",
+  "id": 2,
+  "image": "image-1661642652932-75951228.jpg"
  }
 ]

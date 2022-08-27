@@ -52,7 +52,7 @@ const productsControllers = {
             return elemento
         })
         escribir(actualizado);
-        return res.send('Lo cambia');
+        return res.redirect ('list')
     },
     productCart: (req, res) => {
         res.render('product/productCart');
