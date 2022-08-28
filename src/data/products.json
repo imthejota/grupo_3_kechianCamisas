@@ -18,5 +18,45 @@
   "size": "small",
   "id": 2,
   "image": "image-1661642652932-75951228.jpg"
+ },
+ {
+  "name": "Oh La La",
+  "price": 12000,
+  "discount": 0,
+  "category": "Estampada",
+  "description": "La descripción está acá!",
+  "size": "small",
+  "id": 3,
+  "image": "image-1661729921083-268609367.jpg"
+ },
+ {
+  "name": "Otra camisa",
+  "price": 13000,
+  "discount": 5,
+  "category": "Lisa",
+  "description": "Más descripciones para probar",
+  "size": "medium",
+  "id": 4,
+  "image": "image-1661729951154-864397455.jpg"
+ },
+ {
+  "name": "Dominguicidio",
+  "price": 13000,
+  "discount": 15,
+  "category": "Estampada",
+  "description": "Más más y más",
+  "size": "extraLarge",
+  "id": 5,
+  "image": "image-1661729987909-548062559.jpg"
+ },
+ {
+  "name": "Otra más",
+  "price": 15000,
+  "discount": 5,
+  "category": "Estampada",
+  "description": "Todo anda bien!",
+  "size": "large",
+  "id": 6,
+  "image": "image-1661730027162-837228070.jpg"
  }
 ]
