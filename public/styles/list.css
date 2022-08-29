@@ -14,17 +14,120 @@ body {
     background-size: cover;
 }
 
+
+img{
+    width: 100%;
+}
+
 .lista-producto {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-} 
+}
 
-.lista-producto li {
+.caja-producto-oferta {
     margin-top: 10%;
-    background-color: var(--azul);
+    background-color: white;
     width: 80%;
     border-radius: 20px;
     /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
+    list-style: none;
+}
+
+.caja-off {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--amarillo);
+    border-bottom-right-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-bottom-left-radius: 20px;
+    /*le da el radio a la oferta*/
+    align-items: center;
+    margin: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-oferta {
+    border-top-left-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-top-right-radius: 20px;
+    /*le da el radio a la oferta*/
+}
+
+.div-imagen-producto {
+    width: 100%;
+    /* ancho de la imagen dentro de la caja*/
+    margin: auto;
+    /*coloca la imagen en el centro*/
+}
+
+.muestra-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.tipografia-nombre-producto {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipografia-oferta {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+.caja-carrito {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.add-product{
+    display: flex;
+    justify-content: center;
+    background-color: var(--amarillo);
+    margin: 40px 0;
+    height: 40px;
+    align-items: center;
+    
+}
+
+
+/* DE ACA EN ADELANTE ES TABLET */
+
+@media (min-width:480px) {
+    .caja-producto-oferta {
+        width: 40%;
+    }
+    .producto-caja {
+        width: 20%;
+    }
+}
+
+
+/* DE ACA EN ADELANTE ES COMPUTADORA */
+
+@media (min-width:800px) {
+    .caja-producto-oferta {
+        margin-top: 3%;
+        width: 23%;
+    }
+    .producto-caja {
+        margin: none;
+        width: 10%;
+    }
+    main {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }

@@ -1,9 +1,22 @@
 
-<li>
-    <a href="/products/detail/<%= element.id %>">
-        <%= element.name %> <span> $<%= element.price %>  </span>
-        <img src="<%= element.image %> " alt="" width="20%">
+
+
+
+<li class="caja-producto-oferta">
+    <a class="caja-producto-oferta" href="/products/detail/<%= element.id %>">
+
+       
+            <div class="div-imagen-producto"><img src="<%= element.image %>" class="imagen-oferta"></div>
+            <div class="caja-off">
+                <div class="texto">
+                    <a class="tipografia-nombre-producto"><%= element.name %></a>
+                    <a class="tipografia-oferta"><%= element.price %></a>
+                </div>
+                <div class="caja-carrito"><i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+ 
+
+
     </a>
 </li>
-
 
