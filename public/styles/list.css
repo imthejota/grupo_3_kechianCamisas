@@ -5,10 +5,26 @@
     border: none;
 }
 
-.noventa{
-    width: 90%;
+
+body {
+    background-image: url(/images/background.jfif);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.white {
-   color: white;
+.lista-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.lista-producto li {
+    margin-top: 10%;
+    background-color: var(--azul);
+    width: 80%;
+    border-radius: 20px;
+    /*le da el radio a la oferta*/
+    box-shadow: 10px 10px 5px #242424;
 }

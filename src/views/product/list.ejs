@@ -2,15 +2,15 @@
 <html lang="en">
 
 
-    <%- include('../partials/head.ejs', {estilo: 'modificar', titulo: 'Lista'})  %>
+    <%- include('../partials/head.ejs', {estilo: 'list', titulo: 'Lista'})  %>
 
 
 <body>
     <%- include ('../partials/header.ejs') %>
     
-    <main class="noventa listaProducto">
+    <main>
     <% if (products.length > 0) { %>
-        <ul>
+        <ul class="lista-producto">
             <% products.forEach(element => { %>
                 <%- include('../partials/product.ejs',{element:element})  %>
                     <% }) %>
