@@ -48,15 +48,5 @@
   "size": "extraLarge",
   "id": 5,
   "image": "image-1661729987909-548062559.jpg"
- },
- {
-  "name": "Otra más",
-  "price": 15000,
-  "discount": 5,
-  "category": "Estampada",
-  "description": "Todo anda bien!",
-  "size": "large",
-  "id": 6,
-  "image": "image-1661730027162-837228070.jpg"
  }
 ]

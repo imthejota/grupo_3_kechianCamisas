@@ -3,9 +3,13 @@
 
 const userControllers = {
     register: function(req, res) {
-        res.render('user/register');},
+        res.render('user/register');
+    },
+
     login: function(req, res) {
-        res.render('user/login');},
+        res.render('user/login');
+    },
+
 
 }
 

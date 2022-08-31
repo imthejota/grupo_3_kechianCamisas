@@ -7,6 +7,10 @@ const statics = express.static(public);
 const start = () => console.log('Starting server in http://localhost:2020');
 
 
+//Agregando session
+const session = require('express-session')
+server.use(session({secret: "Secreto"}));
+
 
 //Agregando override
 const methodOverride = require('method-override');
@@ -35,6 +39,7 @@ const rutasUser = require('./routes/userRoutes.js')
 server.use('/user', rutasUser);
 
 const rutasProduct = require('./routes/productsRoutes.js');
+const { appendFile } = require('fs');
 server.use('/products', rutasProduct);
 
 
