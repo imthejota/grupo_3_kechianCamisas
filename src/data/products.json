@@ -44,12 +44,6 @@
   "price": 123123,
   "discount": 12,
   "category": "Estampada",
-<<<<<<< HEAD
-  "description": "Más más y más",
-  "size": "extraLarge",
-  "id": 5,
-  "image": "image-1661729987909-548062559.jpg"
-=======
   "description": "lalal",
   "size": "small",
   "id": 7,
@@ -64,6 +58,5 @@
   "size": "small",
   "id": 8,
   "image": "image-1661802884149-463239126.jpeg"
->>>>>>> ed7d3a1ac067f964f2ecb690db0052a8dc7563e4
  }
 ]
