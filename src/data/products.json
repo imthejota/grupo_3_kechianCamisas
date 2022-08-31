@@ -1,13 +1,13 @@
 [
  {
-  "name": "Las Flores",
+  "name": "Las Flores ",
   "price": 10000,
   "category": "Hombre",
   "description": "Rosada",
-  "size": "medium",
+  "size": "small",
   "id": 1,
   "image": "image-1661642479567-11612336.jpg",
-  "discount": 20
+  "discount": 30
  },
  {
   "name": "Prueba 2",
@@ -40,13 +40,30 @@
   "image": "image-1661729951154-864397455.jpg"
  },
  {
-  "name": "Dominguicidio",
-  "price": 13000,
-  "discount": 15,
+  "name": "Va para Ulises",
+  "price": 123123,
+  "discount": 12,
   "category": "Estampada",
+<<<<<<< HEAD
   "description": "Más más y más",
   "size": "extraLarge",
   "id": 5,
   "image": "image-1661729987909-548062559.jpg"
+=======
+  "description": "lalal",
+  "size": "small",
+  "id": 7,
+  "image": "image-1661802849527-2025920.jpg"
+ },
+ {
+  "name": "lalala",
+  "price": 123123,
+  "discount": 22,
+  "category": "estamp",
+  "description": "lalal",
+  "size": "small",
+  "id": 8,
+  "image": "image-1661802884149-463239126.jpeg"
+>>>>>>> ed7d3a1ac067f964f2ecb690db0052a8dc7563e4
  }
 ]
