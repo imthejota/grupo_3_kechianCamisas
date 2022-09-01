@@ -32,7 +32,8 @@ img{
     border-radius: 20px;
     /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
-    list-style: none;
+    list-style: none; /* EL ERROR ESTA ACA ULI */
+ 
 }
 
 .caja-off {
@@ -45,7 +46,7 @@ img{
     border-bottom-left-radius: 20px;
     /*le da el radio a la oferta*/
     align-items: center;
-    margin: center;
+    /* margin: center; QUE ES ESTO??? */
 }
 
 .texto {
