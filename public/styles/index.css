@@ -6,6 +6,26 @@
     --grisObscuro: rgb(55, 59, 59);
 }
 
+.lista-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagen-oferta {
+    border-top-left-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-top-right-radius: 20px;
+    /*le da el radio a la oferta*/
+}
+
+.div-imagen-producto {
+    width: 100%;
+    /* ancho de la imagen dentro de la caja*/
+    margin: auto;
+    /*coloca la imagen en el centro*/
+}
+
 img {
     width: 100%
 }

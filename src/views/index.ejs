@@ -61,6 +61,20 @@
 
     </section>
 
+    <section>
+        <% if (products.length > 0) { %>
+            <ul class="lista-producto">
+                <% products.forEach(element => { %>
+                    <%- include('./partials/product.ejs',{element:element})  %>
+                        <% }) %>
+            </ul>
+            <% } else { %>
+                <h2>
+                    No hay productos <a href="/productos">Volver</a>
+                </h2>
+                <% } %>
+    </section>
+
     <section class="muestra-productos">
         <article class="producto-caja">
             <img src="images/camisa-4.jpg" class="imagen-producto">

@@ -31,9 +31,15 @@ server.set('view engine', 'ejs')
 
 
 // Ruta index
+const {  uno, generar, escribir, todos } = require('./models/products.models')
 server.get('/', function(req, res) {
-    res.render('index');
-})
+    let products = todos()
+        if (req.params.category) {
+            products = products.filter(e => e.category == req.params.category)
+            return res.render('index', { products })
+        }
+        return res.render('index', { products })
+    })
 
 const rutasUser = require('./routes/userRoutes.js')
 server.use('/user', rutasUser);
