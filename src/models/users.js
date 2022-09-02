@@ -2,21 +2,31 @@ const path = require('path');
 const fs = require('fs');
 
 let model = {
-    todos: () => {/*no recibe parametros y tiene que traer el listado de todos los usuarios*/
+    todos: () => {
         let file = path.join(__dirname,"../data/usuarios.json")
-        let line = fs.readFileSync(file)
-        return 
+        let data = fs.readFileSync(file)
+        return JSON.parse (data)
         
         
     },
-    uno: (id) => { /*Recibe un id por parametro y tiene que buscar en "todos (el metodo)" el producto que tenga dicho "ID" */
-        
+    uno: (id) => { 
+        let todos = model.todos();
+        return todos.find (e => e.id == id)
     },
-    generar: (data) => { /*Recibe por parametro un formulario (req.body), lo que viene. Tiene que convertir el formulario al objeto que tengo en la base de datos  */
-        
+    generar: (data) => { 
+         let nuevo = {}
+        nuevo.id = model.todos().length > 0 ? model.todos().pop().id ++ : 1    
+        nuevo.email = data.correoe   
+        nuevo.firstName = data.nombre
+        nuevo.lastName = data.apellido
+        nuevo.contraseña = data.contra
+        nuevo.category = "cliente"
+        //nuevo.dni = parseInt(data.dni)
+       return nuevo
     },
-    escribir: (data) => { /*recibe un array de usuarios y sobre escribe la base de datos actual*/
-        
+    escribir: (listadoNuevo) => { 
+        let nuevoJson = JSON.stringify(listadoNuevo, null, 2)
+        return fs.writeFileSync(path.join(__dirname,"../data/usuarios.json"), nuevoJson)
     }
 }
 

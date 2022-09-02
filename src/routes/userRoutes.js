@@ -8,6 +8,7 @@ const userControllers = require('../controllers/userController.js');
 // Ruta register
 router.get('/register', userControllers.register)
 
+router.post ("/guardarUsuario", userControllers.guardarUsuario)
 
 // Ruta login
 router.get('/login', userControllers.login)
