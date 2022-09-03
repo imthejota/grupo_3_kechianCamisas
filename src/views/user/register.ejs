@@ -8,33 +8,30 @@
 
     <main>
         <div class="caja1">
-            <form class="caja2" action="/guardarUsuario" method="POST">
+            <form class="caja2" action="/save" method="POST" enctype="multipart/form-data">
                 <p class="titulo"> CREAR CUENTA </p>
 
                 <p class="titulo2"> Información personal: </p>
 
                 <label for="nombre"></label>
-                <input type="text" id="nombre" name="nombre" value="Nombre" required><br>
+                <input type="text" id="nombre" name="firstName" placeholder="Nombre" required><br>
 
                 <label for="apellido"></label>
-                <input type="text" id="apellido" name="apellido" value="Apellido" required><br>
-
-                <label for="dni"></label>
-                <input type="number" id="dni" name="dni" placeholder="DNI" required><br>
+                <input type="text" id="apellido" name="lastName" placeholder="Apellido" required><br>
 
                 <label for="ubicacion"></label>
-                <input type="text" id="ubicacion" name="ubicacion" value="Ubicación" required><br>
+                <input type="text" id="ubicacion" name="location" placeholder="Ubicación" required><br>
 
                 <p class="titulo"> INFORMACIÓN DE CUENTA: </p>
 
                 <label for="correoe"></label>
-                <input type="email" id="correoe" name="correoe" value="E-mail" required><br>
+                <input type="email" id="correoe" name="email" placeholder="E-mail" required><br>
 
                 <label for="contra"></label>
-                <input type="password" id="contra" name="contra" value="Contraseña" required><br>
+                <input type="password" id="contra" name="password" placeholder="Contraseña" required><br>
 
-                <label for="rcontra"></label>
-                <input type="password" id="rcontra" name="rcontra" value="Contraseña" required><br>
+                <label for="imagen">Imagen de perfil:</label>
+                <input type="file" id="imagen" name="image"><br>
 
                 <div class="TerminosCondiciones">
                     <input type="checkbox" id="condiciones" name="condiciones" value="condiciones">
@@ -43,7 +40,7 @@
 
                 <div class="botonesCrearInicio">
                     <div class="botonCrearCuenta">
-                        <input type="submit" value="CREAR CUENTA" class="boton"><br>
+                        <button type="submit" class="boton">CREAR CUENTA</button><br>
                     </div>
                     <div class="botonInicio">
                         <a href="/login">INICIAR SESION</a>

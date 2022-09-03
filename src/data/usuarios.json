@@ -1,9 +1,12 @@
-[{
+[
+{
     "id": 1,
     "firstName": "Nombrecito",
     "lastName": "Apellidito",
+    "location": "rincon",
     "email": "elmail@mail.com",
-    "contraseña": "shalalala",
+    "password": "shalalala",
     "category": "ni idea",
     "image": 
-}]
+}
+]

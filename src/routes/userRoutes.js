@@ -1,14 +1,27 @@
 const {Router} = require('express');
 const router = Router(); 
 const userControllers = require('../controllers/userController.js');
-//const path = require('path');
+const path = require('path');
+const multer = require('multer');
 //const {existsSync, mkdirSync} = require('fs')
 
+const multerDiskStorage = multer.diskStorage({
+    destination: (req, file, cb) =>
+{   let folder = path.join(__dirname, '..','..', 'public', 'users');
+    cb(null, folder);
+},
+    filename: (req, file, cb) =>
+{   let imageName = 'user-' + Date.now() + path.extname(file.originalname);
+    cb(null, imageName);
+}
+})
+
+const fileUpload = multer({storage: multerDiskStorage});
 
 // Ruta register
 router.get('/register', userControllers.register)
 
-router.post ("/guardarUsuario", userControllers.guardarUsuario)
+router.post ('/save', fileUpload.single('image'), userControllers.save)
 
 // Ruta login
 router.get('/login', userControllers.login)
