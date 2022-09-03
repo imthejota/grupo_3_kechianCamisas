@@ -31,7 +31,7 @@ server.set('view engine', 'ejs')
 
 
 // Ruta index
-const {  uno, generar, escribir, todos } = require('./models/products.models')
+const { todos } = require('./models/products.models')
 server.get('/', function(req, res) {
     let products = todos()
         if (req.params.category) {

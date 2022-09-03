@@ -58,5 +58,15 @@
   "size": "small",
   "id": 8,
   "image": "image-1661802884149-463239126.jpeg"
+ },
+ {
+  "name": "Vampireza gotica",
+  "price": 9500,
+  "discount": 10,
+  "category": "Gotica",
+  "description": "Esta persona se alquila como acompañante para ir a una fiesta. El conjunto puede variar dependiendo de las necesidades del comprador. No muerde, a menos que tu lo quieras (?",
+  "size": "small",
+  "id": 9,
+  "image": "image-1662166744987-362391341.jpg"
  }
 ]

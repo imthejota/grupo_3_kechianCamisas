@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 2%;
 }
 
 .imagen-oferta {
@@ -26,6 +27,11 @@
     /*coloca la imagen en el centro*/
 }
 
+.descuento {
+    font-weight: 700;
+    display: flex;
+}
+
 img {
     width: 100%
 }
@@ -38,12 +44,6 @@ body {
     background-size: cover;
 }
 
-.oferta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .caja-producto-oferta {
     margin-top: 10%;
     background-color: white;
@@ -51,19 +51,15 @@ body {
     border-radius: 20px;
     /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
+    height: 30%;
 }
 
 .caja-off {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     background-color: var(--amarillo);
     border-bottom-right-radius: 20px;
     /*le da el radio a la oferta*/
     border-bottom-left-radius: 20px;
     /*le da el radio a la oferta*/
-    align-items: center;
-    margin: center;
 }
 
 .texto {
@@ -85,48 +81,37 @@ body {
     /*coloca la imagen en el centro*/
 }
 
-.muestra-productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 5%;
-}
-
 .tipografia-nombre-producto {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 1.5em;
 }
 
 .tipografia-oferta {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    
-
+    font-family: 'Montserrat', sans-serif;  
 }
 
-.caja-carrito {
+.precios {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-
-/*a partir de acá trabajo con la parte de abajo del proyecto*/
-
-.producto-caja {
-    background-color: white;
-    margin: 3%;
-    width: 40%;
-    border-radius: 20px;
-    /*le da el radio a la oferta*/
-    box-shadow: 10px 10px 5px #242424;
+.precio-uno {
+    color: rgb(225, 221, 221);
+    text-decoration: line-through;
+    font-size: 1.2em;
 }
 
-.imagen-producto {
-    width: 100%;
-    border-radius: 20px;
-    /*le da el radio a la oferta*/
+.precio-dos {
+    font-size: 1.5em;
 }
 
+.precio-tres {
+    font-size: 1.5em;
+}
 
 /* DE ACA EN ADELANTE ES TABLET */
 
