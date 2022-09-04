@@ -1,6 +1,6 @@
 const {Router} = require('express');
 const router = Router(); 
-const userControllers = require('../controllers/userController.js');
+const userControllers = require('../controllers/usersController.js');
 const path = require('path');
 const multer = require('multer');
 //const {existsSync, mkdirSync} = require('fs')
@@ -21,7 +21,7 @@ const fileUpload = multer({storage: multerDiskStorage});
 // Ruta register
 router.get('/register', userControllers.register)
 
-router.post ('/save', fileUpload.single('image'), userControllers.save)
+router.post('/saveUser', fileUpload.single('image'), userControllers.save)
 
 // Ruta login
 router.get('/login', userControllers.login)

@@ -1,5 +1,5 @@
 [
-{
+  {
     "id": 1,
     "firstName": "Nombrecito",
     "lastName": "Apellidito",
@@ -7,6 +7,65 @@
     "email": "elmail@mail.com",
     "password": "shalalala",
     "category": "ni idea",
-    "image": 
-}
+    "image": ""
+  },
+  {
+    "id": 1,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "Santa Fe",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$F3BAL/lUDhvmoQwtM67t6.Bl8T.Qwk.DLP4U74QHezI/XshKB41De",
+    "category": "cliente"
+  },
+  {
+    "id": 1,
+    "firstName": "Trinidad",
+    "lastName": "Echeva",
+    "location": "Santa Fe",
+    "email": "trinieche13@gmail.com",
+    "password": "$2a$10$BSv92IDwkkKp5FdGGaN04ebCdORQjeBGnc..j64bzy3Or5cqfMlEi",
+    "image": "user-1662317008498.png",
+    "category": "cliente"
+  },
+  {
+    "id": 1,
+    "firstName": "Facu",
+    "lastName": "Echevarria",
+    "location": "Rosario",
+    "email": "faceche131313@gmail.com",
+    "password": "$2a$10$tAzNX3cWGYdwLdZCXVn7D.hj4u14lbBl36k8lpP.ecuOIXckrietq",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 1,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "dghj",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$Kuzr1QnVMH1CUMKB/UNkfuFIMdoSpf912Nz7W6on0UWW2V4DQbMrW",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 2,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "rrrrrrrrrrrr",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$0hkNskBSBIgH0MxG/MvKIujxMIprXo1r9sdopZtFxIN6fJie1f.t2",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 3,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "hhhhhhhhh",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$w8pg7q3yMgZXK5b3Vh9KOuTYnBiD99pHh8v2j1NcV3RF8FmroIJXq",
+    "image": "default.png",
+    "category": "cliente"
+  }
 ]

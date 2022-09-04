@@ -8,8 +8,8 @@ const start = () => console.log('Starting server in http://localhost:2020');
 
 
 //Agregando session
-const session = require('express-session')
-server.use(session({secret: "Secreto"}));
+const session = require('express-session');
+server.use(session({secret: "Secreto", resave: "resave", saveUninitialized: "saveUninitialized"}));
 
 
 //Agregando override
@@ -31,7 +31,7 @@ server.set('view engine', 'ejs')
 
 
 // Ruta index
-const { todos } = require('./models/products.models')
+const { todos } = require('./models/productsModel.js')
 server.get('/', function(req, res) {
     let products = todos()
         if (req.params.category) {
@@ -41,8 +41,8 @@ server.get('/', function(req, res) {
         return res.render('index', { products })
     })
 
-const rutasUser = require('./routes/userRoutes.js')
-server.use('/user', rutasUser);
+const rutasUser = require('./routes/usersRoutes.js')
+server.use(rutasUser);
 
 const rutasProduct = require('./routes/productsRoutes.js');
 const { appendFile } = require('fs');

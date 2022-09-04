@@ -1,4 +1,4 @@
-const modelo = require ("../models/users.js")  
+const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
 const userControllers = {
     register: function(req, res) {
@@ -9,8 +9,8 @@ const userControllers = {
         if(req.file){ //Pregunto si el file existe o no
             req.body.image = req.file.filename; //Dentro de la propiedad image guardo el nombre de la imagen que envio la persona 
         } else {
-            req.body.image = 'default.png'
-        };
+            req.body.image = 'default.png';
+        }
         let nuevo = generar(req.body); //Genero el usuario como en la base de datos, solo con una funcion (un metodo del modelo) y le paso el parametro el req.body (que viene del formulario)
         let all = todos(); //Traigo todos los usuarios actuales 
         all.push(nuevo); //Hago push de mi nuevo usuario a la lista de usuarios actuales 

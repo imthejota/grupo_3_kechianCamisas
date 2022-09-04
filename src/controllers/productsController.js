@@ -1,4 +1,4 @@
-const {  uno, generar, escribir, todos } = require('../models/products.models')
+const {  uno, generar, escribir, todos } = require('../models/productsModel.js')
 const {unlinkSync} = require('fs'); // para método remove
 const path = require('path');
 
