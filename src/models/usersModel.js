@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 
 let model = {
     todos: () => {
-        let file = path.join(__dirname,"../data/usuarios.json");
+        let file = path.join(__dirname,"../data/users.json");
         let data = fs.readFileSync(file);
         return JSON.parse (data);  
     },
@@ -26,7 +26,7 @@ let model = {
     },
     escribir: (listadoNuevo) => { 
         let nuevoJson = JSON.stringify(listadoNuevo, null, 2);
-        return fs.writeFileSync(path.join(__dirname,"../data/usuarios.json"), nuevoJson);
+        return fs.writeFileSync(path.join(__dirname,"../data/users.json"), nuevoJson);
     }
 }
 

@@ -67,5 +67,15 @@
     "password": "$2a$10$w8pg7q3yMgZXK5b3Vh9KOuTYnBiD99pHh8v2j1NcV3RF8FmroIJXq",
     "image": "default.png",
     "category": "cliente"
+  },
+  {
+    "id": 4,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "hjk",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$HPo.GElYpbZSM7pJxipjjemWOMDqwXibmH5M9BVFUZZQDiAgVU2XC",
+    "image": "default.png",
+    "category": "cliente"
   }
 ]
