@@ -77,5 +77,15 @@
     "password": "$2a$10$HPo.GElYpbZSM7pJxipjjemWOMDqwXibmH5M9BVFUZZQDiAgVU2XC",
     "image": "default.png",
     "category": "cliente"
+  },
+  {
+    "id": 5,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "Mendoza",
+    "email": "jkechian@gmail.com",
+    "password": "$2a$10$QQp0QTeWj2YAYIoUMeLgpum8GdyNPuNaU1WWXZy14rxA1wriGCRHu",
+    "image": "user-1662334707139.jpg",
+    "category": "cliente"
   }
 ]
