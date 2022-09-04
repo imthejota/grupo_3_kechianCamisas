@@ -1,3 +1,4 @@
+const { validationResult } = require("express-validator");
 const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
 const userControllers = {
@@ -20,6 +21,19 @@ const userControllers = {
 
     login: function(req, res) {
         res.render('user/login');
+    },
+    access : (req,res) => {
+        //control de validaciones
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            return res.render('user/login',{
+                style:'login',
+                errores: errores,
+                data: req.body
+            })
+        }
+        return res.send(req.body)
     }
 }
 

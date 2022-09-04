@@ -6,10 +6,14 @@ const public = path.join(__dirname, '../public');
 const statics = express.static(public);
 const start = () => console.log('Starting server in http://localhost:2020');
 
+//Agregando express-validator
+const expressValidator = require('express-validator');
+
 
 //Agregando session
 const session = require('express-session');
-server.use(session({secret: "Secreto", resave: "resave", saveUninitialized: "saveUninitialized"}));
+const cookie = require('cookie-parser');
+
 
 
 //Agregando override
@@ -20,8 +24,22 @@ server.listen(port, start());
 
 // Middlewares
 server.use(statics);
+
 server.use (express.urlencoded({extended:true}));
+
 server.use(methodOverride("m"));
+
+server.use(session({
+    secret: "Secreto",
+    resave: "resave",
+    saveUninitialized: "saveUninitialized"
+}));// Agrega al request la propiedad session
+
+server.use(cookie())
+ // Agrega al request la propiedad response (lee una cookie)
+// Agrega al response el method cookie (agrega un cookie que el req. pueda leer )
+
+server.use(require('./middelwares/user'))
 
 
 // EJS
