@@ -31,8 +31,8 @@ server.use(methodOverride("m"));
 
 server.use(session({
     secret: "Secreto",
-    resave: "resave",
-    saveUninitialized: "saveUninitialized"
+    resave: true,
+    saveUninitialized: true
 }));// Agrega al request la propiedad session
 
 server.use(cookie())

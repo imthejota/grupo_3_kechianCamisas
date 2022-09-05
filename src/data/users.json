@@ -87,5 +87,15 @@
     "password": "$2a$10$QQp0QTeWj2YAYIoUMeLgpum8GdyNPuNaU1WWXZy14rxA1wriGCRHu",
     "image": "user-1662334707139.jpg",
     "category": "cliente"
+  },
+  {
+    "id": 6,
+    "firstName": "Ulises ",
+    "lastName": "Magnarelli",
+    "location": "mi casa ",
+    "email": "uli.magnarelli@gmail.com",
+    "password": "$2a$10$j7m9wKGGKFx2KB7S0BXKr.QQl4aWrH.vyUz1au5.eweg6ZLe6bx9q",
+    "image": "user-1662379417905.jpeg",
+    "category": "cliente"
   }
 ]

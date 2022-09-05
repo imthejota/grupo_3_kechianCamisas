@@ -34,10 +34,14 @@ const userControllers = {
             })
         }
 
-        req.cookie('user', req.body.email,{maxAge: 3000})
+        req.cookie('user', req.body.email,{maxAge: 1000 * 60 * 3})
         let all = todos();
         req.session.user = all.find(user => user.email == req.body.email)
-
+        return res.redirect('/')
+    },
+    logout: (req,res) => {
+        delete req.session.user
+        req.cookie('user', null,{maxAge: -1})
         return res.redirect('/')
     }
 }

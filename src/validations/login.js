@@ -1,5 +1,7 @@
 const {body} = require("express-validator");
 const {todos} = require('../models/usersModel')
+const {compareSync} = require('bcrypt');
+
 
 let email = body('email').notEmpty().withMessage('Email no puede quedar vacio').bail().isEmail().withMessage('Email no valido').custom((value,{req}) => {
     let users = todos()
@@ -18,7 +20,7 @@ let password = body('password').notEmpty().withMessage('Contraseña no valida').
         throw new Error('Credenciales invalidas')
     }
 
-    if(result.password != value){
+    if(!compareSync(value,result.password) ){
         throw new Error('La contraseña no coincide')
     }
 
