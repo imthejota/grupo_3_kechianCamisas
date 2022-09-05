@@ -29,13 +29,18 @@ router.get('/register', userControllers.register)
 router.post('/saveUser', fileUpload.single('image'), userControllers.save)
 
 // Ruta login
-router.get('/logout', userControllers.logout)
+router.get('/login', userControllers.login)
+router.post('/access', validatorLogin, userControllers.access)
+
+// Ruta logout
+router.post('/logout', userControllers.logout)
+
+
 
 //agregando ruta logout
 router.get('/register', userControllers.register)
 
 
-router.post('/access', validatorLogin, userControllers.access)
 
 module.exports = router;
 

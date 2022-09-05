@@ -3,7 +3,7 @@ const {todos} = require('../models/usersModel')
 const {compareSync} = require('bcrypt');
 
 
-let email = body('email').notEmpty().withMessage('Email no puede quedar vacio').bail().isEmail().withMessage('Email no valido').custom((value,{req}) => {
+let email = body('correo').notEmpty().withMessage('Email no puede quedar vacio').bail().isEmail().withMessage('Email no valido').custom((value,{req}) => {
     let users = todos()
     let listOfEmails = users.map(user => user.email)
     if(listOfEmails.indexOf(value) == -1){
@@ -12,9 +12,13 @@ let email = body('email').notEmpty().withMessage('Email no puede quedar vacio').
     return true
 })
 
-let password = body('password').notEmpty().withMessage('Contraseña no valida').bail().isLength({min:4}).withMessage('Minimo 4 caracteres').custom((value,{req}) => {
+let password = body('contraseña').notEmpty().withMessage('Contraseña no valida').bail().isLength({min:4}).withMessage('Minimo 4 caracteres').custom((value,{req}) => {
     let users = todos()
-    let result = users.find(user => user.email == req.body.email)
+    let result = users.find(user => {
+        console.log( user.email, req.body.correo)
+        return user.email == req.body.correo
+
+    })
 
     if(!result){
         throw new Error('Credenciales invalidas')

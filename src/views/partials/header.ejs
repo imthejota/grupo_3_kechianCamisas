@@ -16,7 +16,15 @@
             <a class="" href="/products/list"><i class="fa-solid fa-shop"></i></a> <!-- Products -->
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <% if (locals.user) { %>
+                
+                <form action="/logout" method="post"><button type="submit"><i class="fa-regular fa-door-open"></i></button></form>
+
+            <% }else{  %>
+                
             <a href="/login"><i class="fa-regular fa-address-card"></i></a>
+
+            <% } %> 
         </nav>
     
 </header>

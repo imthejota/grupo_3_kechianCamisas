@@ -15,12 +15,12 @@
                     type="email" 
                     id="correo" 
                     name="correo" 
-                    value="<%= locals.errores && !locals.errores.email && locals.data ? locals.data.email : null %> " 
+                    value="<%= locals.errores && !locals.errores.correo && locals.data ? locals.data.correo : null %> " 
                     required>
 
-                    <% if (locals.errors && locals.errors.email) { %>
+                    <% if (locals.errores && locals.errores.correo) { %>
                         <p class="feedback">
-                            <%= locals.errores.email.msg %> 
+                            <%= locals.errores.correo.msg %> 
                         </p> 
                     <% } %>     
                     <br>
@@ -32,12 +32,12 @@
                     type="password" 
                     id="contraseña" 
                     name="contraseña" 
-                    value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>" 
+                    value="<%= locals.errores && !locals.errores.contraseña && locals.data ? locals.data.contraseña : null %>" 
                     required>
 
-                    <% if (locals.errors && locals.errors.password) { %>
+                    <% if (locals.errores && locals.errores.contraseña) { %>
                         <p class="feedback">
-                            <%= locals.errores.password.msg %> 
+                            <%= locals.errores.contraseña.msg %> 
                         </p> 
                     <% } %>  
                     
