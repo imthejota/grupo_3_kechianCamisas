@@ -33,7 +33,12 @@ const userControllers = {
                 data: req.body
             })
         }
-        return res.send(req.body)
+
+        req.cookie('user', req.body.email,{maxAge: 3000})
+        let all = todos();
+        req.session.user = all.find(user => user.email == req.body.email)
+
+        return res.redirect('/')
     }
 }
 
