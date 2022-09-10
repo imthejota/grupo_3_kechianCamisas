@@ -26,14 +26,16 @@ const multer = require('multer');
 const upload = multer({storage: multer.diskStorage({destination, filename})})
 
 const isLogged = require('../middelwares/isLogged')
+const isAdmin = require ('../middelwares/isAdmin')
+
 //middleware que solo permite acceder a ciertas funcionalidades si estoy logeado
 router.get('/list', productsControllers.index)
 
-router.get('/crear', isLogged , productsControllers.create) 
+router.get('/crear', isLogged, isAdmin, productsControllers.create) 
 
 router.post('/guardar', upload.any(), productsControllers.save) 
 
-router.get('/editar/:producto', isLogged , productsControllers.edit);
+router.get('/editar/:producto', isLogged,  productsControllers.edit);
 router.put('/actualizar', upload.any(), productsControllers.update);
 
 router.get('/detail/:producto', productsControllers.detail);

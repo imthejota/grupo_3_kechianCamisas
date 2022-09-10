@@ -68,5 +68,15 @@
   "size": "small",
   "id": 9,
   "image": "image-1662166744987-362391341.jpg"
+ },
+ {
+  "name": "azul",
+  "price": 15000,
+  "discount": 10,
+  "category": "lisa",
+  "description": "empanada",
+  "size": "extraLarge",
+  "id": 10,
+  "image": "image-1662838982828-319466919.jpg"
  }
 ]

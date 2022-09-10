@@ -21,7 +21,8 @@ const fileUpload = multer({storage: multerDiskStorage});
 //agrrgando ruta de validacion
 const validatorLogin = require('../validations/login')
 
-const isLogged = require('../middelwares/isLogged')
+
+
 
 // Ruta register
 router.get('/register', userControllers.register)

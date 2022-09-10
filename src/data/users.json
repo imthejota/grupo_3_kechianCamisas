@@ -97,5 +97,25 @@
     "password": "$2a$10$j7m9wKGGKFx2KB7S0BXKr.QQl4aWrH.vyUz1au5.eweg6ZLe6bx9q",
     "image": "user-1662379417905.jpeg",
     "category": "cliente"
+  },
+  {
+    "id": 7,
+    "firstName": "mateo",
+    "lastName": "ga",
+    "location": "calle",
+    "email": "dh@kechian.com",
+    "password": "$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6C",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 8,
+    "firstName": "mateo",
+    "lastName": "gaa",
+    "location": "calle",
+    "email": "mateo@gmail.com",
+    "password": "$2a$10$jafpW.WpXJZosjkzwQJRt.ET7lKlmdOLU53hhWsG.Kw1LTXlME.2O",
+    "image": "default.png",
+    "category": "cliente"
   }
 ]

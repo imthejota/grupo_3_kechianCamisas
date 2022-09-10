@@ -11,8 +11,10 @@
         <article class="empresa">
             <h3 class="">EMPRESA</h3>
             <section class="alinea">
+                <% if (locals.user && locals.user.email.includes("@kechian")) { %> <!-- usar el mismo if para la vista de productos -->
                 <a href="/products/crear" class="">Crear</a>
                 <a href="/products" class="">Modificar</a>
+                <% } %>   
                 <p>Sobre nosotros</p>
             </section>
         </article>
