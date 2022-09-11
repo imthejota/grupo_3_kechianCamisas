@@ -23,8 +23,12 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 2%;
 }
 
+.fa-solid{
+    font-size: xx-large;
+}
 .caja-producto-oferta {
     margin-top: 10%;
     background-color: white;
@@ -32,7 +36,7 @@ img{
     border-radius: 20px;
     /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
-    list-style: none; /* EL ERROR ESTA ACA ULI */
+    height: 30%;
  
 }
 
@@ -48,10 +52,17 @@ img{
     align-items: center;
     /* margin: center; QUE ES ESTO??? */
 }
+ul {
+    list-style:none
+}
 
 .texto {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 1.5em;
 }
 
 .imagen-oferta {
@@ -90,6 +101,7 @@ img{
 .caja-carrito {
     display: flex;
     justify-content: flex-end;
+    width: 20%;
 }
 
 
