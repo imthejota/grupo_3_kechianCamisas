@@ -21,6 +21,28 @@
                 <% } %>
     </section>
 
+    <section>
+        <h2>Productos Lisos</h2>
+        <% if (lisas.length > 0) { %>
+            <ul class="lista-producto">
+                <% lisas.forEach(element => { %>
+                    <%- include('./partials/index.ejs',{element:element})  %>
+                <% }) %>
+            </ul>
+        <% } %>
+    </section>
+
+    <section>
+        <h2>Productos Estampados</h2>
+        <% if (estampadas.length > 0) { %>
+            <ul class="lista-producto">
+                <% estampadas.forEach(element => { %>
+                    <%- include('./partials/index.ejs',{element:element})  %>
+                <% }) %>
+            </ul>
+        <% } %>
+    </section>
+
     </main>
     <%- include ('partials/footer.ejs') %>
 

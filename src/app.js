@@ -56,7 +56,9 @@ server.get('/', function(req, res) {
             products = products.filter(e => e.category == req.params.category)
             return res.render('index', { products })
         }
-        return res.render('index', { products })
+        let lisas = products.filter(product => product.category == "lisa");
+        let estampadas = products.filter(product => product.category == "estampada");
+        return res.render('index', { products, lisas, estampadas })
     })
 
 const rutasUser = require('./routes/usersRoutes.js')
