@@ -124,6 +124,18 @@ body {
     font-size: 1.5em;
 }
 
+.titulo-filtro {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--azul);
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size:xx-large;
+}
+
+
+
 /* DE ACA EN ADELANTE ES TABLET */
 
 @media (min-width:480px) {
