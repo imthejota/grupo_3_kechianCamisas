@@ -40,6 +40,10 @@ img {
     width: 100%
 }
 
+.p-filtro {
+    font-size: 0.8em;
+}
+
 body {
     background-image: url(/images/fondo.jpg);
     background-position: top-;
@@ -99,6 +103,13 @@ body {
     font-size: 1.5em;
 }
 
+.tipografia-nombre-producto-filtro {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 1.0em;
+}
+
 .tipografia-oferta {
     text-align: center;
     font-family: 'Montserrat', sans-serif;  
@@ -116,13 +127,20 @@ body {
     font-size: 1.2em;
 }
 
-.precio-dos {
+.precio-normal {
     font-size: 1.5em;
 }
 
-.precio-tres {
-    font-size: 1.5em;
+.precio-uno-filtro {
+    color: rgb(225, 221, 221);
+    text-decoration: line-through;
+    font-size: 0.8em;    
 }
+
+.precio-normal-filtro{
+    font-size:  0.9em;
+}
+
 
 .titulo-filtro {
     text-align: center;
@@ -144,7 +162,7 @@ body {
     }
 
     .caja-producto-filtro {
-        width: 35%;
+        width: 20%;
     }
 
     .producto-caja {

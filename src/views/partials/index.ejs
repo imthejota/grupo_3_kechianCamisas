@@ -10,9 +10,9 @@
                         <div class="tipografia-oferta precios">
                         <% let precioDescuento = ((100- element.discount) * element.price) / 100 %>
                         <p class="precio-uno">$<%=  element.price %> </p>
-                        <p class="precio-dos">$<%= precioDescuento %></p>
+                        <p class="precio-normal">$<%= precioDescuento %></p>
                         <% } else { %> 
-                        <a class="tipografia-oferta precio-tres">$<%= element.price %></a>
+                        <a class="tipografia-oferta precio-normal">$<%= element.price %></a>
                         <% } %> 
                         </div>
                 </div>

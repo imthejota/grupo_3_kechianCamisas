@@ -29,6 +29,7 @@ img{
 .icono-carrito {
     font-size: xx-large;
 }
+
 .caja-producto-oferta {
     margin-top: 10%;
     background-color: white;
@@ -37,7 +38,6 @@ img{
     /*le da el radio a la oferta*/
     box-shadow: 10px 10px 5px #242424;
     height: 30%;
- 
 }
 
 .caja-off {
@@ -108,13 +108,20 @@ ul {
 .add-product{
     display: flex;
     justify-content: center;
-    background-color: var(--amarillo);
     margin: 40px 0;
     height: 40px;
     align-items: center;
+    width: 29%;
     
 }
 
+.newProduct{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 1.5em;
+    background-color: var(--amarillo);
+    
+}
 
 /* DE ACA EN ADELANTE ES TABLET */
 
