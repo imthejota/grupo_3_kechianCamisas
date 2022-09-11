@@ -1,0 +1,21 @@
+<li class="caja-producto-filtro caja-producto-oferta">
+    <a href="/products/detail/<%= element.id %>">
+
+       
+            <div class="div-imagen-producto"><img src="/products/<%= element.image %>" class="imagen-oferta"></div>
+            <div class="caja-off-filtro">
+                <div class="texto">
+                    <a class="tipografia-nombre-producto"><%= element.name %></a>
+                    <% if (element.discount > 0) { %> 
+                        <div class="tipografia-oferta precios">
+                        <% let precioDescuento = ((100- element.discount) * element.price) / 100 %>
+                        <p class="precio-uno">$<%=  element.price %> </p>
+                        <p class="precio-dos">$<%= precioDescuento %></p>
+                        <% } else { %> 
+                        <a class="tipografia-oferta precio-tres">$<%= element.price %></a>
+                        <% } %> 
+                        </div>
+                </div>
+            </div>
+    </a>
+</li>

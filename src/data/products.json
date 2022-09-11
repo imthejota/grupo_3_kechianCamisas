@@ -2,7 +2,7 @@
  {
   "name": "Las Flores ",
   "price": 10000,
-  "category": "lisa",
+  "category": "estampada",
   "description": "Rosada",
   "size": "small",
   "id": 1,
@@ -13,7 +13,7 @@
   "name": "Prueba 2",
   "price": 12312,
   "discount": 23,
-  "category": "estampada",
+  "category": "lisa",
   "description": "lalal",
   "size": "small",
   "id": 2,

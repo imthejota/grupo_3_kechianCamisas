@@ -26,7 +26,7 @@
         <% if (lisas.length > 0) { %>
             <ul class="lista-producto">
                 <% lisas.forEach(element => { %>
-                    <%- include('./partials/index.ejs',{element:element})  %>
+                    <%- include('./partials/index-filtro.ejs',{element:element})  %>
                 <% }) %>
             </ul>
         <% } %>
@@ -37,7 +37,7 @@
         <% if (estampadas.length > 0) { %>
             <ul class="lista-producto">
                 <% estampadas.forEach(element => { %>
-                    <%- include('./partials/index.ejs',{element:element})  %>
+                    <%- include('./partials/index-filtro.ejs',{element:element})  %>
                 <% }) %>
             </ul>
         <% } %>
