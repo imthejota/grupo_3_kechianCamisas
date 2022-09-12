@@ -1,23 +1,22 @@
-# Retrospectiva General Cuarto Sprint 
+# Retrospectiva General Quinto Sprint 
 
 ## A mejorar
 ### Más de:
-- Seguir trabajando en mejorar la comunicación del equipo y la organización a la hora de dividir las tareas, realizarla de manera más temprana y prudente.
-- Estar más atentos a los mensajes del grupo e intentar responder lo antes posible para una mejor organización. 
-- Organizar y dividir las tareas en las reuniones semanales por zoom. 
+- Mejorar la comunicación entre los integrantes del equipo, consultar las dudas, notificar los avances y cambios en el proyecto.
+- Mejorar la organización a la hora de dividir las tareas, teniendo en cuenta el orden de prioridad de las mismas y la disponibilidad de los integrantes. 
 ### Menos de:
-- Realizar las tareas correspondidas sin chequear que las mismas estén correctas y/o funcionen.
-- Comenzar a trabajar sin definir previamente las tareas que debe realizar cada integrante del grupo.   
+- No estar atentos a los mensajes del grupo y tardar en responder provocando malentendidos y desorganización.  
+- Poca comunicación entre los integrantes que comparten tareas. 
 ### Dejar de hacer:
-- Tardar bastante tiempo en organizar y concretar una reunión de zoom para dividir las tareas. 
+- Utilizar el grupo de WhatsApp como único medio de comunicación y comenzar a utilizar el canal de discord. 
 ### Comenzar a:
-- En primera instancia concretar rápidamente una reunión para definir los roles en el equipo.
-- Implementar una o dos reuniónes por semana en zoom. 
+- Implementar una reunión por semana obligatoria en zoom. 
 - Optimizar el tiempo de las reuniones semanales y enfocarnos no solo en repartir las tareas, sino que en debatir ideas, consultar dudas y ver el avance general. 
+- Mejorar la utilización de Trello, al completar una tarea, encargarse de asignarla como terminada o aclarar el avance y lo que falta realizar. 
 
 ## A destacar y mantener
 - La predisposición para ayudar al otro.
 - El buen ambiente de grupo.
-- La constancia que manejamos a la hora de trabajar.
-- El cumplimiento en tiempo y forma de las tareas que le corresponden a cada integrante del grupo. 
+- La constancia y compromiso a la hora de trabajar.
+- El cumplimiento en tiempo y forma de las tareas que le corresponden a cada integrante del grupo.
 - El diálogo, la escucha y el respeto hacia el otro a la hora de recibir una critica y en situaciones de desacuerdo.
