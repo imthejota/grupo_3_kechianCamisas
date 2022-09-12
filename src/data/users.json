@@ -77,5 +77,45 @@
     "password": "$2a$10$HPo.GElYpbZSM7pJxipjjemWOMDqwXibmH5M9BVFUZZQDiAgVU2XC",
     "image": "default.png",
     "category": "cliente"
+  },
+  {
+    "id": 5,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "Mendoza",
+    "email": "jkechian@gmail.com",
+    "password": "$2a$10$QQp0QTeWj2YAYIoUMeLgpum8GdyNPuNaU1WWXZy14rxA1wriGCRHu",
+    "image": "user-1662334707139.jpg",
+    "category": "cliente"
+  },
+  {
+    "id": 6,
+    "firstName": "Ulises ",
+    "lastName": "Magnarelli",
+    "location": "mi casa ",
+    "email": "uli.magnarelli@gmail.com",
+    "password": "$2a$10$j7m9wKGGKFx2KB7S0BXKr.QQl4aWrH.vyUz1au5.eweg6ZLe6bx9q",
+    "image": "user-1662379417905.jpeg",
+    "category": "cliente"
+  },
+  {
+    "id": 7,
+    "firstName": "mateo",
+    "lastName": "ga",
+    "location": "calle",
+    "email": "dh@kechian.com",
+    "password": "$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6C",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 8,
+    "firstName": "mateo",
+    "lastName": "gaa",
+    "location": "calle",
+    "email": "mateo@gmail.com",
+    "password": "$2a$10$jafpW.WpXJZosjkzwQJRt.ET7lKlmdOLU53hhWsG.Kw1LTXlME.2O",
+    "image": "default.png",
+    "category": "cliente"
   }
 ]

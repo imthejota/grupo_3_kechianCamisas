@@ -1,3 +1,4 @@
+const { validationResult } = require("express-validator");
 const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
 const userControllers = {
@@ -19,7 +20,33 @@ const userControllers = {
     },
 
     login: function(req, res) {
+        console.log(req.session)
         res.render('user/login');
+    },
+    access : (req,res) => {
+        //control de validaciones
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            console.log(errores)
+            return res.render('user/login',{
+                style:'login',
+                errores: errores,
+                data: req.body
+            })
+        }
+        if (req.body.recuerdame){
+
+            res.cookie('user', req.body.correo,{maxAge: 1000 * 60 * 3})
+        }
+        let all = todos();
+        req.session.user = all.find(user => user.email == req.body.correo)
+        return res.redirect('/')
+    },
+    logout: (req,res) => {
+        delete req.session.user
+        res.cookie('user', null,{maxAge: -1})
+        return res.redirect('/')
     }
 }
 
