@@ -117,5 +117,15 @@
     "password": "$2a$10$jafpW.WpXJZosjkzwQJRt.ET7lKlmdOLU53hhWsG.Kw1LTXlME.2O",
     "image": "default.png",
     "category": "cliente"
+  },
+  {
+    "id": 9,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "Tu vieja",
+    "email": "jonathan@kechian.com.ar",
+    "password": "$2a$10$idtXahD1VW35kCgEnkafMObvEqQGG5IdaYe.qwBOSShzU5E93P0Wm",
+    "image": "user-1662990204867.png",
+    "category": "cliente"
   }
 ]
