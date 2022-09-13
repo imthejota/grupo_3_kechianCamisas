@@ -74,21 +74,18 @@ body {
 .elemento6 a {
     list-style: none;
     text-decoration: none;
-    color: rgb(31, 56, 86);
+    color:  rgb(198, 138, 46);
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(198, 138, 46);
     padding: 1%;
-    border-radius: 5px;
 }
 
 .boton {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 4%;
-    background-color: rgb(198, 138, 46);
     font-size: 16px;
-    color: rgb(31, 56, 86);
+    background-color: rgb(31, 56, 86);
+    color:   rgb(198, 138, 46);
     padding: 1%;
-    border-radius: 5px;
 }
 
 #recuerdame {
