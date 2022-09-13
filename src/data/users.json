@@ -117,5 +117,45 @@
     "password": "$2a$10$jafpW.WpXJZosjkzwQJRt.ET7lKlmdOLU53hhWsG.Kw1LTXlME.2O",
     "image": "default.png",
     "category": "cliente"
+  },
+  {
+    "id": 9,
+    "firstName": "trinidad",
+    "lastName": "echevarria",
+    "location": "las heras ",
+    "email": "trinidad@kchain.com",
+    "password": "$2a$10$FuHLmdba5y/6k8XK7nlumu8GyQEZ5yb9x.QtbMxnQuBWxfPr0cxKO",
+    "image": "default.png",
+    "category": "Cliente"
+  },
+  {
+    "id": 10,
+    "firstName": "tri",
+    "lastName": "eche",
+    "location": "Rosario",
+    "email": "trinidad@kchain",
+    "password": "$2a$10$5OPrPtH6lYpuT1S3tzsYoeMH6rtdBuRVt9ptIfY9ULPpGuTBxnTrm",
+    "image": "default.png",
+    "category": "Administrador"
+  },
+  {
+    "id": 11,
+    "firstName": "Trinidad",
+    "lastName": "Echevarria",
+    "location": "Santa Fe",
+    "email": "faceche13@kechian.com",
+    "password": "$2a$10$VHEoykQ5fq7Jy1T8AFPPdOBxHF9DFqvWIe.jBBIEHxrg0Y8RpAX0K",
+    "image": "default.png",
+    "category": "Administrador"
+  },
+  {
+    "id": 12,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "Rosario",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$Nv.4F2BFx2miAdZALefUiO7rxyQmLmZ6EukNBJqfU6e1ViswEq5ne",
+    "image": "default.png",
+    "category": "Cliente"
   }
 ]

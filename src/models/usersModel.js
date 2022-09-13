@@ -21,7 +21,12 @@ let model = {
         nuevo.email = data.email;
         nuevo.password = bcrypt.hashSync(data.password, 10);
         nuevo.image = data.image;
-        nuevo.category = "cliente";
+        if(data.email.includes("@kechian")){
+            nuevo.category = "Administrador"
+        }
+        else{ 
+            nuevo.category = "Cliente"
+        }
        return nuevo;
     },
     escribir: (listadoNuevo) => { 
