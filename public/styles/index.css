@@ -115,21 +115,6 @@ body {
     font-family: 'Montserrat', sans-serif;  
 }
 
-.precios {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.precio-uno-filtro {
-    color: rgb(225, 221, 221);
-    text-decoration: line-through;
-    font-size: 0.8em;    
-}
-
-.precio-normal-filtro{
-    font-size:  0.9em;
-}
 
 
 .titulo-filtro {
@@ -139,7 +124,6 @@ body {
     text-transform: uppercase;
     margin-top: 2%;
     margin-bottom: 2%;
-    font-size:xx-large;
 }
 
 

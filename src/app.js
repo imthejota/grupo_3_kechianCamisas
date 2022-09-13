@@ -49,25 +49,43 @@ server.set('view engine', 'ejs')
 
 
 // Ruta index
-
-
 const { todos } = require('./models/productsModel.js')
+
 server.get('/', function(req, res) {
     let products = todos()
 
     let archivosPrincipales = [];
     for (var i = 0; i < 4; i++){
         archivosPrincipales.push(products[i]);
-    }
-    console.table(archivosPrincipales);
-        if (req.params.category) {
-            products = products.filter(e => e.category == req.params.category)
-            return res.render('index', { products })
-        }
-        let lisas = products.filter(product => product.category == "lisa");
-        let estampadas = products.filter(product => product.category == "estampada");
-        return res.render('index', { products, lisas, estampadas, archivosPrincipales })
+    };
+
+
+    let varFilter = [];
+    for (var i = 3; i < products.length ; i++){
+        varFilter.push(products[i]);
+    };
+
+        return res.render('index', { varFilter , archivosPrincipales })
     })
+
+//Ruta index filtro lisos
+server.get('/lisos', function (req,res){
+    let products = todos();
+    let varFilter = products.filter(product => product.category == "lisa");
+
+    return res.render('index', { varFilter })
+});
+
+//Ruta index filtro estampados
+server.get('/estampados', function (req,res){
+    let products = todos();
+    let varFilter = products.filter(product => product.category == "estampada");
+
+    return res.render('index', { varFilter })
+});
+
+//Ruta index filtro estampados
+
 
 const rutasUser = require('./routes/usersRoutes.js')
 server.use(rutasUser);
