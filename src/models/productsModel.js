@@ -29,6 +29,13 @@ let model = {
         let file = path.join(__dirname, '../data/products.json');
         let json = JSON.stringify(data, null, " ");
         return fs.writeFileSync(file, json);
+    },
+    devolverN: (array, numInicial, numFinal) => {
+        let arrayDevuelve = [];
+        for (var i = numInicial ; i < numFinal; i++){
+            arrayDevuelve.push(array[i]);
+        };
+        return arrayDevuelve;
     }
 }
 

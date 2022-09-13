@@ -9,11 +9,7 @@
                     <% if (element.discount > 0) { %> 
                         <div class="tipografia-oferta precios">
                         <% let precioDescuento = ((100- element.discount) * element.price) / 100 %>
-                        <p class="precio-uno-filtro">$<%=  element.price %> </p>
-                        <p class="precio-normal-filtro">$<%= precioDescuento %></p>
-                        <% } else { %> 
-                        <a class="tipografia-oferta precio-normal-filtro">$<%= element.price %></a>
-                        <% } %> 
+                        <% } %>
                         </div>
                 </div>
             </div>

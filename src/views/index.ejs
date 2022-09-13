@@ -8,24 +8,25 @@
     <main>
 
     <section>
-        <% if (products.length > 0) { %>
+        <% if (locals.archivosPrincipales && archivosPrincipales.length > 0) { %>
             <ul class="lista-producto">
                 <% archivosPrincipales.forEach(product => { %>
                     <%- include('./partials/index.ejs',{product:product})  %>
                 <% }) %>
             </ul>
-            <% } else { %>
-                <h2>
-                    No hay productos <a href="/productos">Volver</a>
-                </h2>
-                <% } %>
+            <% } else if (locals.varFilter && varFilter.length > 0) {} else { %>
+                    <h2>
+                        <a>No hay productos <a href="/productos">Volver</a>
+                    </h2>
+                    <% } %>
+                
+                
     </section>
 
     <section>
-        <div class="caja-subtitulo"><h2 class="titulo-filtro">Productos Lisos</h2></div>
-        <% if (lisas.length > 0) { %>
+        <% if (varFilter.length > 0) { %>
             <ul class="lista-producto">
-                <% lisas.forEach(element => { %>
+                <% varFilter.forEach(element => { %>
                     <%- include('./partials/index-filtro.ejs',{element:element})  %>
                 <% }) %>
             </ul>
@@ -33,14 +34,9 @@
     </section>
 
     <section>
-        <div class="caja-subtitulo"><h2 class="titulo-filtro">Productos Estampados</h2></div>
-        <% if (estampadas.length > 0) { %>
-            <ul class="lista-producto">
-                <% estampadas.forEach(element => { %>
-                    <%- include('./partials/index-filtro.ejs',{element:element})  %>
-                <% }) %>
-            </ul>
-        <% } %>
+        <a href="/lisos"><h2 class="titulo-filtro">Productos Lisos</h2></a>
+
+        <a href="/estampados"><h2 class="titulo-filtro">Productos Estampados</h2></a>
     </section>
 
     </main>
