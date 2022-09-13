@@ -121,16 +121,6 @@ body {
     align-items: center;
 }
 
-.precio-uno {
-    color: rgb(225, 221, 221);
-    text-decoration: line-through;
-    font-size: 1.2em;
-}
-
-.precio-normal {
-    font-size: 1.5em;
-}
-
 .precio-uno-filtro {
     color: rgb(225, 221, 221);
     text-decoration: line-through;
