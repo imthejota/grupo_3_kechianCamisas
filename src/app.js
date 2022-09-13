@@ -46,27 +46,20 @@ server.use(require('./middelwares/user'))
 server.set('views', path.join(__dirname, './views'));
 server.set('view engine', 'ejs')
 
-
+const { todos , devolverN} = require('./models/productsModel.js')
 
 // Ruta index
-const { todos } = require('./models/productsModel.js')
-
 server.get('/', function(req, res) {
     let products = todos()
 
-    let archivosPrincipales = [];
-    for (var i = 0; i < 4; i++){
-        archivosPrincipales.push(products[i]);
-    };
-
+    let archivosPrincipales = devolverN(todos(), 0, 4);
 
     let varFilter = [];
     for (var i = 3; i < products.length ; i++){
         varFilter.push(products[i]);
     };
-
-        return res.render('index', { varFilter , archivosPrincipales })
-    })
+    return res.render('index', { varFilter , archivosPrincipales });
+    });
 
 //Ruta index filtro lisos
 server.get('/lisos', function (req,res){
