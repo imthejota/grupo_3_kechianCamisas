@@ -49,16 +49,24 @@ server.set('view engine', 'ejs')
 
 
 // Ruta index
+
+
 const { todos } = require('./models/productsModel.js')
 server.get('/', function(req, res) {
     let products = todos()
+
+    let archivosPrincipales = [];
+    for (var i = 0; i < 4; i++){
+        archivosPrincipales.push(products[i]);
+    }
+    console.table(archivosPrincipales);
         if (req.params.category) {
             products = products.filter(e => e.category == req.params.category)
             return res.render('index', { products })
         }
         let lisas = products.filter(product => product.category == "lisa");
         let estampadas = products.filter(product => product.category == "estampada");
-        return res.render('index', { products, lisas, estampadas })
+        return res.render('index', { products, lisas, estampadas, archivosPrincipales })
     })
 
 const rutasUser = require('./routes/usersRoutes.js')

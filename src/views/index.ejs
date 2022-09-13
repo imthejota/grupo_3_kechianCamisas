@@ -10,9 +10,9 @@
     <section>
         <% if (products.length > 0) { %>
             <ul class="lista-producto">
-                <% products.forEach(element => { %>
-                    <%- include('./partials/index.ejs',{element:element})  %>
-                        <% }) %>
+                <% archivosPrincipales.forEach(product => { %>
+                    <%- include('./partials/index.ejs',{product:product})  %>
+                <% }) %>
             </ul>
             <% } else { %>
                 <h2>
