@@ -63,8 +63,14 @@ body {
     overflow: hidden;
 }
 
+
+
 .caja-producto-oferta:hover{
     box-shadow: 10px 10px 5px #242424;
+    transition: box-shadow 0.3s ease-in-out;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    
 }
 
 .caja-off {
@@ -88,6 +94,7 @@ body {
 }
 
 .imagen-oferta {
+    object-fit: cover;
     border-top-left-radius: 20px;
     /*le da el radio a la oferta*/
     border-top-right-radius: 20px;
