@@ -58,8 +58,13 @@ body {
     width: 80%;
     border-radius: 20px;
     /*le da el radio a la oferta*/
+    /* box-shadow: 10px 10px 5px #242424; */
+    height: 60vh; /* pro ble mi ta */
+    overflow: hidden;
+}
+
+.caja-producto-oferta:hover{
     box-shadow: 10px 10px 5px #242424;
-    height: 30%;
 }
 
 .caja-off {
