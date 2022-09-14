@@ -57,16 +57,13 @@ body {
     background-color: white;
     width: 80%;
     border-radius: 20px;
-    /*le da el radio a la oferta*/
-    /* box-shadow: 10px 10px 5px #242424; */
-    height: 60vh; /* pro ble mi ta */
-    overflow: hidden;
+    height: 55vh;     
 }
 
 
 
 .caja-producto-oferta:hover{
-    box-shadow: 10px 10px 5px #242424;
+    box-shadow: 10px 15px 10px #242424;
     transition: box-shadow 0.3s ease-in-out;
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
@@ -91,6 +88,9 @@ body {
 .texto {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    
 }
 
 .imagen-oferta {
@@ -99,20 +99,25 @@ body {
     /*le da el radio a la oferta*/
     border-top-right-radius: 20px;
     /*le da el radio a la oferta*/
+    border-radius: 20px;
 }
 
 .div-imagen-producto {
     width: 100%;
+    height: 100%;
+    
     /* ancho de la imagen dentro de la caja*/
     margin: auto;
     /*coloca la imagen en el centro*/
 }
 
 .tipografia-nombre-producto {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight:bolder;
-    font-size: 1.5em;
+    /* font-weight:bolder; */
+    font-size: 1.em;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .tipografia-nombre-producto-filtro {
@@ -125,6 +130,7 @@ body {
 .tipografia-oferta {
     text-align: center;
     font-family: 'Montserrat', sans-serif;  
+    
 }
 
 
