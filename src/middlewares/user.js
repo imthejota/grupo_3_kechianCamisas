@@ -1,7 +1,7 @@
 const {todos} = require('../models/usersModel');
 
 
-let middelware = (req,res,next) => {
+let middleware = (req,res,next) => {
 
     let user = null 
 
@@ -25,4 +25,4 @@ let middelware = (req,res,next) => {
     return next()
 }
 
-module.exports = middelware
+module.exports = middleware

@@ -39,7 +39,7 @@ server.use(cookie())
  // Agrega al request la propiedad response (lee una cookie)
 // Agrega al response el method cookie (agrega un cookie que el req. pueda leer )
 
-server.use(require('./middelwares/user'))
+server.use(require('./middlewares/user'))
 
 
 // EJS

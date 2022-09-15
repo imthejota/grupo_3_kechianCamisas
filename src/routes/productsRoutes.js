@@ -25,8 +25,8 @@ const multer = require('multer');
 // Al multer le paso un objeto que tiene el multer.diskStorage y dentro del mismo paso otro objeto con las 2 constantes creadas antes
 const upload = multer({storage: multer.diskStorage({destination, filename})})
 
-const isLogged = require('../middelwares/isLogged')
-const isAdmin = require ('../middelwares/isAdmin')
+const isLogged = require('../middlewares/isLogged')
+const isAdmin = require ('../middlewares/isAdmin')
 
 //middleware que solo permite acceder a ciertas funcionalidades si estoy logeado
 router.get('/list', productsControllers.index)
