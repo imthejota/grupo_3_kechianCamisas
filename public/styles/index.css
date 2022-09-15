@@ -67,13 +67,7 @@ body {
 
 
 
-.caja-producto-oferta:hover{
-    box-shadow: 10px 15px 10px #242424;
-    transition: box-shadow 0.3s ease-in-out;
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
-    
-}
+
 
 .caja-off {
     background-color: var(--amarillo);
@@ -189,7 +183,7 @@ body {
     .fotosPrincipales{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 2%;
     }
@@ -206,7 +200,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 60vw;
+        width: 70vw;
         flex-wrap: nowrap;
     }
 }
@@ -239,6 +233,21 @@ body {
         padding-right: 2%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .lista-producto{
+        width: 100%;
+    }
+    .fotosPrincipales{
+        flex-wrap: nowrap;
+    }
+
+    .caja-producto-oferta:hover{
+        box-shadow: 10px 15px 10px #242424;
+        transition: box-shadow 0.3s ease-in-out;
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+        
     }
 
     
