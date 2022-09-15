@@ -9,9 +9,14 @@
 .lista-producto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 2%;
+    width: 100%;
+    justify-content: space-between;
 }
+
+
 
 ul {
     list-style:none
@@ -55,9 +60,9 @@ body {
 .caja-producto-oferta {
     margin-top: 10%;
     /* background-color: white; */
-    width: 15vw;
+    width: 60vw;
     border-radius: 20px;
-    height: 55vh;     
+    height: 70vh;     
 }
 
 
@@ -156,6 +161,14 @@ body {
 /* DE ACA EN ADELANTE ES TABLET */
 
 @media (min-width:480px) {
+    .lista-producto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 2%;
+        width: 90%;
+        justify-content: space-between;
+    }
     .caja-producto-oferta {
         width: 40%;
     }
@@ -167,6 +180,20 @@ body {
     .producto-caja {
         width: 20%;
     }
+    .fotosPrincipales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .caja-producto-oferta {
+        margin-top: 10%;
+        /* background-color: white; */
+        width: 15vw;
+        border-radius: 20px;
+        height: 55vh;     
+    }
 
     
 }
@@ -175,6 +202,7 @@ body {
 /* DE ACA EN ADELANTE ES COMPUTADORA */
 
 @media (min-width:800px) {
+    
     .caja-producto-oferta {
         margin-top: 3%;
         width: 21%;
@@ -193,5 +221,9 @@ body {
     main {
         padding-left: 2%;
         padding-right: 2%;
+        display: flex;
+        flex-direction: column;
     }
+
+    
 }
