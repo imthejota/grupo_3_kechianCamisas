@@ -30,17 +30,17 @@
   "image": "image-1661729921083-268609367.jpg"
  },
  {
-  "name": "Otra camisa",
+  "name": "Camisuli",
   "price": 13000,
   "discount": 5,
-  "category": "lisa",
+  "category": "estampada",
   "description": "Más descripciones para probar",
-  "size": "medium",
+  "size": "small",
   "id": 4,
   "image": "image-1661729951154-864397455.jpg"
  },
  {
-  "name": "Va para Ulises",
+  "name": "Ulises",
   "price": 123123,
   "discount": 12,
   "category": "estampada",
@@ -60,7 +60,7 @@
   "image": "image-1661802884149-463239126.jpeg"
  },
  {
-  "name": "Vampireza",
+  "name": "Vamp",
   "price": 9500,
   "discount": 10,
   "category": "estampada",
