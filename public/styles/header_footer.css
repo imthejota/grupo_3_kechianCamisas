@@ -225,4 +225,13 @@ footer {
         text-decoration: none;
         color: var(--amarillo);
     }
+
+    .navAtras a{
+        color: var(--amarillo);
+    }
+
+    .navAtras i {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
 }
