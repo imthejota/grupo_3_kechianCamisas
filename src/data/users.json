@@ -157,5 +157,15 @@
     "password": "$2a$10$Nv.4F2BFx2miAdZALefUiO7rxyQmLmZ6EukNBJqfU6e1ViswEq5ne",
     "image": "default.png",
     "category": "Cliente"
+  },
+  {
+    "id": 13,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "Mendoza",
+    "email": "j@kechian.com.ar",
+    "password": "$2a$10$YeU9xihjAMWcZKe5dpgyTuHh.KsGcrfj8SmgTFhyRTuZiNAn9Uu9e",
+    "image": "user-1663209188602.jpg",
+    "category": "Administrador"
   }
 ]
