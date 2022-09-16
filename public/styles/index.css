@@ -9,11 +9,28 @@
 .lista-producto {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: space-between;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 2%;
     width: 80%;
     justify-content: space-around;
+}
+
+
+
+.fotosPrincipales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fotosAbajo{
+    margin-bottom: 10%;
+    width: 100%;
+}
+.lista-producto-2{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -59,12 +76,10 @@ body {
 
 .caja-producto-oferta {
     margin-top: 10%;
-    /* background-color: white; */
-    width: 40vw;
+    width: 30vw;
     border-radius: 20px;
-    height: 50vh;     
+    height: 40vh;     
 }
-
 
 
 
@@ -143,6 +158,11 @@ body {
     margin-bottom: 2%;
 }
 
+.caja-producto-filtro{
+    width: 20vw;
+    height: 30vh;
+}
+
 
 
 
@@ -203,6 +223,10 @@ body {
         flex-wrap: nowrap;
     }
 }
+
+
+
+
 
     
 
