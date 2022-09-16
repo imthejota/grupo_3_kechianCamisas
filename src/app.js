@@ -55,7 +55,7 @@ server.get('/', function(req, res) {
     let archivosPrincipales = devolverN(todos(), 0, 4);
 
     let varFilter = [];
-    for (var i = 1; i < products.length ; i++){
+    for (var i = 3; i < products.length ; i++){
         varFilter.push(products[i]);
     };
     return res.render('index', { varFilter , archivosPrincipales });
