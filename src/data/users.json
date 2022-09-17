@@ -157,5 +157,25 @@
     "password": "$2a$10$Nv.4F2BFx2miAdZALefUiO7rxyQmLmZ6EukNBJqfU6e1ViswEq5ne",
     "image": "default.png",
     "category": "Cliente"
+  },
+  {
+    "id": 13,
+    "firstName": "trinidad",
+    "lastName": "echevarria",
+    "location": "Santa Fe",
+    "email": "trinidadmeche@kchain.com",
+    "password": "$2a$10$bCfaQQU3eQn9YnKb.yV4wOsIJ6A3WmBQJCZO9GNQPwKs6lI/HyPrW",
+    "image": "default.png",
+    "category": "Cliente"
+  },
+  {
+    "id": 14,
+    "firstName": "Trinidad",
+    "lastName": "Echevarria",
+    "location": "Santa Fe",
+    "email": "faceche1212@kechian.com",
+    "password": "$2a$10$WUrIl9T/i8oBbiSeIVNJbedCGCgTgIE8dR6J15xvKR0nfKytCWC1W",
+    "image": "default.png",
+    "category": "Administrador"
   }
 ]

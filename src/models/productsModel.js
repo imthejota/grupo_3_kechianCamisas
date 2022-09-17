@@ -15,14 +15,16 @@ let model = {
         let all = model.todos();
         let ultimo = all.pop();
         let producto = {};
+        producto.id = !ultimo? 1 : ultimo.id + 1;
         producto.name = data.name;
+        producto.description = data.description;
+        producto.category = data.category;
+        producto.image = data.image;
+        producto.size = data.size;
         producto.price = parseInt(data.price);
         producto.discount = parseInt(data.discount);
-        producto.category = data.category;
-        producto.description = data.description;
-        producto.size = data.size;
-        producto.id = !ultimo? 1 : ultimo.id + 1;
-        producto.image = data.image;
+        
+        
         return producto;
     },
     escribir: (data) => {
