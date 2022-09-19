@@ -13,16 +13,16 @@
         </div>
         <nav class="navAtras">
             <!-- <a class="" href="/"><i class="fa-solid fa-house"></i></a> --> 
-            <a class="productos" href="/products/list"> Productos<!-- <i class="fa-solid fa-shop"></i> --></a> <!-- Products -->
+            <a class="productos" href="/products/list"> PRODUCTOS<!-- <i class="fa-solid fa-shop"></i> --></a> <!-- Products -->
             <a href="#" class="buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="/products/cart" class="carrito" >Carrito <!-- <i class="fa-solid fa-cart-shopping"></i> --></a>
+            <a href="/products/cart" class="carrito" >CARRITO <!-- <i class="fa-solid fa-cart-shopping"></i> --></a>
             <% if (locals.user) { %>
                 
                 <form action="/logout" method="post"><button type="submit"><i class="fa-regular fa-door-open"></i></button></form>
 
             <% }else{  %>
                 
-            <a href="/login" class="logIn">Ingresá<!-- <i class="fa-regular fa-address-card"></i> --></a>
+            <a href="/login" class="logIn">INGRESA<!-- <i class="fa-regular fa-address-card"></i> --></a>
 
             <% } %> 
         </nav>
