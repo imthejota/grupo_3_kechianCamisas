@@ -1,12 +1,12 @@
 [
  {
-  "name": "Las Flores ",
-  "price": 10000,
-  "category": "estampada",
-  "description": "Rosada",
-  "size": "small",
   "id": 1,
+  "name": "Las Flores ",
+  "description": "Rosada",
+  "category": "estampada",
   "image": "image-1661642479567-11612336.jpg",
+  "size": "small",
+  "price": 10000,
   "discount": 30
  },
  {
@@ -60,13 +60,23 @@
   "image": "image-1661802884149-463239126.jpeg"
  },
  {
-  "name": "Vamp",
-  "price": 9500,
-  "discount": 10,
-  "category": "estampada",
-  "description": "Esta persona se alquila como acompañante para ir a una fiesta. El conjunto puede variar dependiendo de las necesidades del comprador. No muerde, a menos que tu lo quieras (?",
-  "size": "small",
   "id": 9,
-  "image": "image-1662166744987-362391341.jpg"
+  "name": "Vamp",
+  "description": "Esta persona se alquila como acompañante para ir a una fiesta. El conjunto puede variar dependiendo de las necesidades del comprador. No muerde, a menos que tu lo quieras (?",
+  "category": "estampada",
+  "image": "image-1662166744987-362391341.jpg",
+  "size": "small",
+  "price": 9500,
+  "discount": 10
+ },
+ {
+  "name": "prueba",
+  "price": 12333,
+  "discount": 12,
+  "category": "estampada",
+  "description": "asdasd",
+  "size": "small",
+  "id": 10,
+  "image": "image-1663558990252-99744759.jpg"
  }
 ]
