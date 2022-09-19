@@ -20,10 +20,10 @@
   "image": "image-1661642652932-75951228.jpg"
  },
  {
-  "name": "Oh La La ",
-  "price": 12000,
+  "name": "Oh La La  ",
+  "price": 15000,
   "discount": 0,
-  "category": "lisa",
+  "category": "estampada",
   "description": "La descripción está acá!",
   "size": "small",
   "id": 3,
@@ -68,15 +68,5 @@
   "size": "small",
   "price": 9500,
   "discount": 10
- },
- {
-  "name": "prueba",
-  "price": 12333,
-  "discount": 12,
-  "category": "estampada",
-  "description": "asdasd",
-  "size": "small",
-  "id": 10,
-  "image": "image-1663558990252-99744759.jpg"
  }
 ]
