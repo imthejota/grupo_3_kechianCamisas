@@ -13,7 +13,12 @@
     box-sizing: border-box;
 }
 
-header {
+.navCentro {
+    display: flex;
+    flex-basis: 50vw;
+}
+
+header { 
     height: 15vh;
     width: 100%;
     background-color: var(--azul);
@@ -34,7 +39,7 @@ header i {
 
 
 .logo {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -233,5 +238,9 @@ footer {
     .navAtras i {
         margin-left: 1px;
         margin-right: 1px;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
     }
 }
