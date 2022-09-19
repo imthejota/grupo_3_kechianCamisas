@@ -12,8 +12,6 @@ let middleware = (req,res,next) => {
         req.session.user = result
     }
 
-
-
         //caso 2 existe un usuario en sesion 
     if(req.session && req.session.user){
         user = req.session.user
