@@ -177,5 +177,15 @@
     "password": "$2a$10$YeU9xihjAMWcZKe5dpgyTuHh.KsGcrfj8SmgTFhyRTuZiNAn9Uu9e",
     "image": "user-1663209188602.jpg",
     "category": "Administrador"
+  },
+  {
+    "id": 15,
+    "firstName": "Prueba",
+    "lastName": "Lalala",
+    "location": "Porteñin",
+    "email": "da@da.com",
+    "password": "$2a$10$eVrDd78K6um6nvcJsuBve.bAEc/22xdly.1GnJiyJ41YUfjEpQ2pq",
+    "image": "user-1663623756494.jpg",
+    "category": "Cliente"
   }
 ]
