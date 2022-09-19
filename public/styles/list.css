@@ -24,17 +24,17 @@ img{
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 2%;
+    gap: 2rem;
+    margin-top: 5%;
 }
 
 
 .caja-producto-oferta {
-    margin-top: 10%;
     background-color: white;
     width: 80%;
     border-radius: 20px;
     height: 30%;
     font-size: 10px;
-    margin: 100px 20px;
 }
 
 .icono-carrito {
@@ -71,13 +71,16 @@ ul {
     /*le da el radio a la oferta*/
     border-top-right-radius: 20px;
     /*le da el radio a la oferta*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .div-imagen-producto {
     width: 100%;
     /* ancho de la imagen dentro de la caja*/
-    margin: auto;
-    /*coloca la imagen en el centro*/
+    height: 40vh;
+    overflow: hidden;
 }
 
 .muestra-productos {
@@ -112,8 +115,6 @@ ul {
     margin: 40px 0;
     height: 40px;
     align-items: center;
-    width: 29%;
-    
 }
 
 .newProduct{
@@ -140,7 +141,6 @@ ul {
 
 @media (min-width:800px) {
     .caja-producto-oferta {
-        margin-top: 3%;
         width: 20%;
     }
     .producto-caja {
