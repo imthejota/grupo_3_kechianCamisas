@@ -20,7 +20,7 @@ const userControllers = {
     },
 
     login: function(req, res) {
-        console.log(req.session)
+        //console.log(req.session)
         res.render('user/login');
     },
     access : (req,res) => {
@@ -28,7 +28,7 @@ const userControllers = {
         const result = validationResult(req);
         if(!result.isEmpty()){
             let errores = result.mapped();
-            console.log(errores)
+           //console.log(errores)
             return res.render('user/login',{
                 style:'login',
                 errores: errores,

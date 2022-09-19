@@ -43,9 +43,66 @@ header i {
     height: auto;
 }
 
-.fa-bars {
+.fa-bars { 
     color: var(--amarillo);
+    
 }
+
+/*Mateo: MENU BURGER INICIO*//*Mateo: MENU BURGER INICIO*//*Mateo: MENU BURGER INICIO*/
+
+.nav-menu{
+    position: fixed;
+    /*width: 100%;/*Tamaño del menu barcs al abrirse*/
+    height: 0vh;
+    top: 100px;/*espacio entre el header y el menu burger*/
+    background-color: rgba(0, 0, 0, .95);/*el 95 es la TRANSPARENCIA DEL FONDO en donde se encuntra el SubMenu ya desplegado*/
+    text-align: center;
+}
+
+
+.nav-menu li{ /*aca le digo que no aparezcan*/
+    display: none; /*con este display none, ya no van a estar las listas*/
+    margin: 50px 0;/*esto ya es dentro del subMenu*/
+}
+
+/*textos dentro del subMenu*/
+.nav-menu li a{ /*ataco a dentro de las etiquetas a. OSEA A LOS TEXTOS*/
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600; /*grosor de las letras*/
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{/*el active se refiere a activado.*/
+    color:red;
+    transition: .3s; /*tiempo de respuesta del color rojo al hacer click*/
+}
+
+
+#check{ /*tiene que ver con el boton de check*/
+    display: none;
+}
+
+
+/*hago que aparezacan los estilos (color de fondo.... etc)"nav-menu" en mi SubMenu*/
+
+#check:checked ~ .nav-menu{ /*Controlo el sub-menu*/
+    /*cuando hago click en el check-box, se me despliega el Submenu
+    Al sacar la plabra ".nav-menu" se quitan los estilos, que ya asigne mas arriba, en el nav-menu */
+    height: 100vh;
+    padding: 50px;
+    background: red;
+}
+
+/*hago que aparezcan los textos ya configurados, dentro de mi SubMenu*/
+#check:checked ~ .nav-menu li{
+    /*prestarle atencion a esto "~" nos idica que selecciona el ítem que esté inmediatamente después y todos los siguientes. */
+    display: block; /*con block, logro que aparezacan los textos del SubMenu*/
+    
+}
+
+/*MENU BURGER FIN*//*MENU BURGER FIN*//*MENU BURGER FIN*//*MENU BURGER FIN*//*MENU BURGER FIN*/
+
 
 nav div a {
     color: var(--amarillo);
