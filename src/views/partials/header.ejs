@@ -12,17 +12,22 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="navAtras">
-            <a class=" " href="/"><i class="fa-solid fa-house"></i></a> <!-- Home -->
-            <a class="" href="/products/list"><i class="fa-solid fa-shop"></i></a> <!-- Products -->
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- <a class="" href="/"><i class="fa-solid fa-house"></i></a> --> 
+            <a class="productos" href="/products/list"> PRODUCTOS<!-- <i class="fa-solid fa-shop"></i> --></a> <!-- Products -->
+            <a href="#" class="buscar"><i class="fa-solid fa-magnifying-glass"></i>
+                <!-- <form class="searchBar" action="/" method="get" id="search-form">
+                    <label for="query"></label>
+                    <input type="text" name="q" id="query" placeholder="" class="searchBar">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </form> --></a>
+            <a href="/products/cart" class="carrito" >CARRITO <!-- <i class="fa-solid fa-cart-shopping"></i> --></a>
             <% if (locals.user) { %>
                 
-                <form action="/logout" method="post"><button type="submit"><i class="fa-regular fa-door-open"></i></button></form>
+                <form action="/logout" method="post"><button type="submit"><i class="fa-solid fa-door-open"></i></button></form>
 
             <% }else{  %>
                 
-            <a href="/login"><i class="fa-regular fa-address-card"></i></a>
+            <a href="/login" class="logIn">INGRESA<!-- <i class="fa-regular fa-address-card"></i> --></a>
 
             <% } %> 
         </nav>

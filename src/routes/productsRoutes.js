@@ -25,24 +25,24 @@ const multer = require('multer');
 // Al multer le paso un objeto que tiene el multer.diskStorage y dentro del mismo paso otro objeto con las 2 constantes creadas antes
 const upload = multer({storage: multer.diskStorage({destination, filename})})
 
-const isLogged = require('../middelwares/isLogged')
-const isAdmin = require ('../middelwares/isAdmin')
+const isLogged = require('../middlewares/isLogged')
+const isAdmin = require ('../middlewares/isAdmin')
 
 //middleware que solo permite acceder a ciertas funcionalidades si estoy logeado
-router.get('/list', productsControllers.index)
+router.get('/list', productsControllers.index) // 3
 
-router.get('/crear', isLogged, isAdmin, productsControllers.create) 
+router.get('/crear', isLogged, isAdmin, productsControllers.create)  // 1
 
-router.post('/guardar', upload.any(), productsControllers.save) 
+router.post('/guardar', upload.any(), productsControllers.save) // 2
 
-router.get('/editar/:producto', isLogged,  productsControllers.edit);
-router.put('/actualizar', upload.any(), productsControllers.update);
+router.get('/editar/:producto', isLogged,  productsControllers.edit); // 4
+router.put('/actualizar', upload.any(), productsControllers.update); // 6
 
-router.get('/detail/:producto', productsControllers.detail);
+router.get('/detail/:producto', productsControllers.detail); // 5
 
-router.get('/cart', productsControllers.productCart);
+router.get('/cart', productsControllers.productCart); // ?
 
-router.delete('/delete/:id', isLogged , productsControllers.delete);
+router.delete('/delete/:id', isLogged , productsControllers.delete); // 8
 
 
 

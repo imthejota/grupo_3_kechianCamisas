@@ -1,12 +1,12 @@
 [
  {
-  "name": "Las Flores ",
-  "price": 10000,
-  "category": "estampada",
-  "description": "Rosada",
-  "size": "small",
   "id": 1,
+  "name": "Las Flores ",
+  "description": "Rosada",
+  "category": "estampada",
   "image": "image-1661642479567-11612336.jpg",
+  "size": "small",
+  "price": 10000,
   "discount": 30
  },
  {
@@ -20,27 +20,27 @@
   "image": "image-1661642652932-75951228.jpg"
  },
  {
-  "name": "Oh La La ",
-  "price": 12000,
+  "name": "Oh La La  ",
+  "price": 15000,
   "discount": 0,
-  "category": "lisa",
+  "category": "estampada",
   "description": "La descripción está acá!",
   "size": "small",
   "id": 3,
   "image": "image-1661729921083-268609367.jpg"
  },
  {
-  "name": "Otra camisa",
+  "name": "Camisuli",
   "price": 13000,
   "discount": 5,
-  "category": "lisa",
+  "category": "estampada",
   "description": "Más descripciones para probar",
-  "size": "medium",
+  "size": "small",
   "id": 4,
   "image": "image-1661729951154-864397455.jpg"
  },
  {
-  "name": "Va para Ulises",
+  "name": "Ulises",
   "price": 123123,
   "discount": 12,
   "category": "estampada",
@@ -60,13 +60,13 @@
   "image": "image-1661802884149-463239126.jpeg"
  },
  {
-  "name": "Vampireza gotica",
-  "price": 9500,
-  "discount": 10,
-  "category": "lisa",
-  "description": "Esta persona se alquila como acompañante para ir a una fiesta. El conjunto puede variar dependiendo de las necesidades del comprador. No muerde, a menos que tu lo quieras (?",
-  "size": "small",
   "id": 9,
-  "image": "image-1662166744987-362391341.jpg"
+  "name": "Vamp",
+  "description": "Esta persona se alquila como acompañante para ir a una fiesta. El conjunto puede variar dependiendo de las necesidades del comprador. No muerde, a menos que tu lo quieras (?",
+  "category": "estampada",
+  "image": "image-1662166744987-362391341.jpg",
+  "size": "small",
+  "price": 9500,
+  "discount": 10
  }
 ]

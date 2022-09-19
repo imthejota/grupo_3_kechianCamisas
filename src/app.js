@@ -39,7 +39,7 @@ server.use(cookie())
  // Agrega al request la propiedad response (lee una cookie)
 // Agrega al response el method cookie (agrega un cookie que el req. pueda leer )
 
-server.use(require('./middelwares/user'))
+server.use(require('./middlewares/user'))
 
 
 // EJS
@@ -55,7 +55,7 @@ server.get('/', function(req, res) {
     let archivosPrincipales = devolverN(todos(), 0, 4);
 
     let varFilter = [];
-    for (var i = 3; i < products.length ; i++){
+    for (var i = 5; i < products.length ; i++){
         varFilter.push(products[i]);
     };
     return res.render('index', { varFilter , archivosPrincipales });
@@ -77,14 +77,13 @@ server.get('/estampados', function (req,res){
     return res.render('index', { varFilter })
 });
 
-//Ruta index filtro estampados
+
 
 
 const rutasUser = require('./routes/usersRoutes.js')
 server.use(rutasUser);
 
 const rutasProduct = require('./routes/productsRoutes.js');
-const { appendFile } = require('fs');
+const { appendFile } = require('fs'); // -> para qué lo estamos usando?
 server.use('/products', rutasProduct);
-
 

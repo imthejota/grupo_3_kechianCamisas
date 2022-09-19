@@ -48,7 +48,7 @@
                     </div>
                     <div class="botonesFinales">
                         <nav class="editarProducto">
-                            <a href="/products/editar/<%= product.id %>">Editar</a>
+                            <button><a class="editProdA"href="/products/editar/<%= product.id %>">Editar</a></button>
                         </nav>
                         <form method="POST" action="/products/delete/<%= product.id %>?m=DELETE" class="eliminarProducto">
                             <button type="submit" class="botonEliminar">Eliminar</button>

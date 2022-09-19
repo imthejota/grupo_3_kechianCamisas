@@ -7,7 +7,7 @@
     <%- include ('partials/header.ejs') %>
     <main>
 
-    <section>
+    <section class="fotosPrincipales">
         <% if (locals.archivosPrincipales && archivosPrincipales.length > 0) { %>
             <ul class="lista-producto">
                 <% archivosPrincipales.forEach(product => { %>
@@ -23,9 +23,9 @@
                 
     </section>
 
-    <section>
+    <section class="fotosAbajo">
         <% if (varFilter.length > 0) { %>
-            <ul class="lista-producto">
+            <ul class="lista-producto-2">
                 <% varFilter.forEach(element => { %>
                     <%- include('./partials/index-filtro.ejs',{element:element})  %>
                 <% }) %>
@@ -33,11 +33,11 @@
         <% } %>
     </section>
 
-    <section>
+  <!--   <section>
         <a href="/lisos"><h2 class="titulo-filtro">Productos Lisos</h2></a>
 
         <a href="/estampados"><h2 class="titulo-filtro">Productos Estampados</h2></a>
-    </section>
+    </section> -->
 
     </main>
     <%- include ('partials/footer.ejs') %>
