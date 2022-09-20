@@ -28,4 +28,4 @@ Hombres de entre 18 y 40 años, NSE C2 y C3.
 - [Inicio de Sesión y registro de usuario](https://www.figma.com/file/Rrc617WHplz06PpDmIPaRx/Untitled?node-id=0%3A1)
 
 ## Organización de tareas
-- [Trello] (https://trello.com/b/XUPYIHg6/dh-supergrupo)
+- [Trello] (https://trello.com/b/K3Bki42n/sprint-5)
