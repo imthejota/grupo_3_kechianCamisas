@@ -45,63 +45,48 @@ header i {
 
 .fa-bars { 
     color: var(--amarillo);
+    padding-top: 30px;
     
 }
 
-/*Mateo: MENU BURGER INICIO*//*Mateo: MENU BURGER INICIO*//*Mateo: MENU BURGER INICIO*/
+/*Mateo: MENU BURGER INICIO*/
 
-.nav-menu{
+#menuBurger{ /*Todo lo que sea el menuBurger esta aca */
+    display: flex;
+    flex-flow:column wrap ; /*combina el flex direction con el wrap*/  
+    justify-content: center;
     position: fixed;
-    /*width: 100%;/*Tamaño del menu barcs al abrirse*/
-    height: 0vh;
-    top: 100px;/*espacio entre el header y el menu burger*/
-    background-color: rgba(0, 0, 0, .95);/*el 95 es la TRANSPARENCIA DEL FONDO en donde se encuntra el SubMenu ya desplegado*/
-    text-align: center;
+    width: 111px;
+    height: 100vw;
+    left: 100vw;
+    top: 135px;
+    transition:all 300ms ;
+    color: var(--azul); 
+    background-color: rgba(31, 56, 86, .95);/*el 95 es la TRANSPARENCIA DEL FONDO en donde se encuntra el SubMenu ya desplegado*/
+    
 }
 
-
-.nav-menu li{ /*aca le digo que no aparezcan*/
-    display: none; /*con este display none, ya no van a estar las listas*/
-    margin: 50px 0;/*esto ya es dentro del subMenu*/
+#menuBurger:target{    
+left: 74vw;
+transition:all 300ms ;
 }
+
 
 /*textos dentro del subMenu*/
-.nav-menu li a{ /*ataco a dentro de las etiquetas a. OSEA A LOS TEXTOS*/
+#menuBurger a{ /*ataco a dentro de las etiquetas a. OSEA A LOS TEXTOS*/
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
     color: aliceblue;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600; /*grosor de las letras*/
-}
-
-.nav-menu li a.active, .nav-menu li a:hover{/*el active se refiere a activado.*/
-    color:red;
-    transition: .3s; /*tiempo de respuesta del color rojo al hacer click*/
-}
-
-
-#check{ /*tiene que ver con el boton de check*/
-    display: none;
-}
-
-
-/*hago que aparezacan los estilos (color de fondo.... etc)"nav-menu" en mi SubMenu*/
-
-#check:checked ~ .nav-menu{ /*Controlo el sub-menu*/
-    /*cuando hago click en el check-box, se me despliega el Submenu
-    Al sacar la plabra ".nav-menu" se quitan los estilos, que ya asigne mas arriba, en el nav-menu */
-    height: 100vh;
-    padding: 50px;
-    background: red;
-}
-
-/*hago que aparezcan los textos ya configurados, dentro de mi SubMenu*/
-#check:checked ~ .nav-menu li{
-    /*prestarle atencion a esto "~" nos idica que selecciona el ítem que esté inmediatamente después y todos los siguientes. */
-    display: block; /*con block, logro que aparezacan los textos del SubMenu*/
     
 }
 
-/*MENU BURGER FIN*//*MENU BURGER FIN*//*MENU BURGER FIN*//*MENU BURGER FIN*//*MENU BURGER FIN*/
+
+
+/*MENU BURGER FIN*/
 
 
 nav div a {
@@ -207,6 +192,14 @@ footer {
     .alinea a {
         display: none;
     }
+    #menuBurger { /*Mateo: adaptacion del menuburger*/
+        display: flex;
+        padding: 100px;
+        align-content: center;
+    }
+    .fa-bars{
+        padding-top: 86px;
+    }
 }
 
 
@@ -299,5 +292,8 @@ footer {
     .logo {
         width: 100%;
         height: auto;
+    }
+    #menuBurger{
+        display: none;
     }
 }
