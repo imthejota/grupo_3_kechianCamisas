@@ -8,8 +8,9 @@
 
 img {
     width: 100%;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
+    /*border-top-left-radius: 3%;*/
+    /*border-bottom-left-radius: 3%;*/
+    border-radius: 21px 21px 0px 0px; /*Mateo: acomede los bordes para que no se salgan del cuadrado*/
     
 }
 
@@ -81,14 +82,16 @@ body {
 .precios {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .precioUno {
     color: rgb(225, 221, 221);
     text-decoration: line-through;
+    text-decoration-color: rgb(165, 94, 94);
     font-size: 1.5em;
+    
 }
 
 .precioDos,
@@ -97,7 +100,7 @@ body {
 }
 
 .precioDos {
-    font-size: 2em;
+    font-size: 26px;
 }
 
 .descuento {
@@ -128,7 +131,7 @@ body {
 }
 
 .inputUnidades input {
-    width: 20%;
+    width: 59%;
     margin-left: 20%;
 }
 
