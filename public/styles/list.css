@@ -79,7 +79,7 @@ ul {
 .div-imagen-producto {
     width: 100%;
     /* ancho de la imagen dentro de la caja*/
-    height: 40vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -122,6 +122,9 @@ ul {
     font-weight:bolder;
     font-size: 1.5em;
     background-color: var(--amarillo);
+    border-radius: 5px;
+    color: var(--azul);
+    padding: 5px;
     
 }
 
@@ -130,6 +133,7 @@ ul {
 @media (min-width:480px) {
     .caja-producto-oferta {
         width: 40%;
+        min-width: 260px;
     }
     .producto-caja {
         width: 20%;
@@ -142,6 +146,7 @@ ul {
 @media (min-width:800px) {
     .caja-producto-oferta {
         width: 20%;
+        min-width: 260px;
     }
     .producto-caja {
         margin: none;
