@@ -187,5 +187,15 @@
     "password": "$2a$10$eVrDd78K6um6nvcJsuBve.bAEc/22xdly.1GnJiyJ41YUfjEpQ2pq",
     "image": "user-1663623756494.jpg",
     "category": "Cliente"
+  },
+  {
+    "id": 16,
+    "firstName": "asdsadsa",
+    "lastName": "asdsa",
+    "location": "sadsdsa",
+    "email": "asdas@sdas",
+    "password": "$2a$10$Fus2FRUylVe8zvAEVAlEEeaC97L5tbw7hjcr7ru9uJjDJS1KLcbiO",
+    "image": "default.png",
+    "category": "Cliente"
   }
 ]
