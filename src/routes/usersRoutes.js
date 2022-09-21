@@ -4,7 +4,6 @@ const userControllers = require('../controllers/usersController.js');
 const path = require('path');
 const multer = require('multer');
 //const {existsSync, mkdirSync} = require('fs')
-
 const multerDiskStorage = multer.diskStorage({
     destination: (req, file, cb) =>
 {   let folder = path.join(__dirname, '..','..', 'public', 'users');
@@ -15,35 +14,20 @@ const multerDiskStorage = multer.diskStorage({
     cb(null, imageName);
 }
 })
-
 const fileUpload = multer({storage: multerDiskStorage});
-
 //agrrgando ruta de validacion
 const validatorLogin = require('../validations/login')
 
-
-
-
 // Ruta register
 router.get('/register', userControllers.register)
-
-router.post('/saveUser', fileUpload.single('image'), userControllers.save)
-
 // Ruta login
 router.get('/login', userControllers.login)
-router.post('/access', validatorLogin, userControllers.access)
-
-// Ruta logout
-router.post('/logout', userControllers.logout)
-
-
-
 //agregando ruta logout
 router.get('/register', userControllers.register)
 
-
+// Ruta logout
+router.post('/logout', userControllers.logout)
+router.post('/saveUser', fileUpload.single('image'), userControllers.save)
+router.post('/access', validatorLogin, userControllers.access)
 
 module.exports = router;
-
-
-
