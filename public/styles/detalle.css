@@ -170,6 +170,11 @@ body {
     border-radius: 11px;
 }
 
+button .editProdA {
+    text-decoration: none;
+    color: black;
+}
+
 
 .botonEliminar {
     background-color: var(--amarillo);
