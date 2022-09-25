@@ -5,13 +5,8 @@
             <a  href="#menuBurger" class="bar-btn">
                 <i class="fa-solid fa-bars"></i>
             </a>
-        </nav>
-        <!-- <div class="navAdelante">
-            <a class="navDesktop indice home" href="/">Home</a>
-            <a class="navDesktop indice" href="/">Productos</a>
-        </div> -->
-        
-        
+        </nav> 
+         
         <nav id="menuBurger"> 
             <a class="active" href="/">home</a>
             <a href="/register">Registro</a>
@@ -20,22 +15,16 @@
         </nav>
 
         <nav class="navAtras">
-            <!-- <a class="" href="/"><i class="fa-solid fa-house"></i></a> --> 
-            <a class="productos" href="/products/list"> PRODUCTOS<!-- <i class="fa-solid fa-shop"></i> --></a> <!-- Products -->
-            <a href="#" class="buscar"><i class="fa-solid fa-magnifying-glass"></i>
-                <!-- <form class="searchBar" action="/" method="get" id="search-form">
-                    <label for="query"></label>
-                    <input type="text" name="q" id="query" placeholder="" class="searchBar">
-                    <button type="submit"><i class="fa-solid fa-search"></i></button>
-                </form> --></a>
-            <a href="/products/cart" class="carrito" >CARRITO <!-- <i class="fa-solid fa-cart-shopping"></i> --></a>
+            <a class="productos" href="/products/list"> PRODUCTOS</a> 
+            <a href="#" class="buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="/products/cart" class="carrito" >CARRITO</a>
             <% if (locals.user) { %>
                 
                 <form action="/logout" method="post"><button type="submit"><i class="fa-solid fa-door-open"></i></button></form>
 
             <% }else{  %>
                 
-            <a href="/login" class="logIn">INGRESA<!-- <i class="fa-regular fa-address-card"></i> --></a>
+            <a href="/login" class="logIn">INGRESA</a>
 
             <% } %> 
         </nav>
