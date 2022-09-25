@@ -62,9 +62,10 @@ body {
 }
 
 .fichaDetalle {
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 2%
 }
 
 .nombreProd {
