@@ -8,7 +8,6 @@ CREATE TABLE productos (
 	nombre VARCHAR NOT NULL,
     descripcion VARCHAR NOT NULL,
     categoria BOOLEAN NOT NULL, 
-    imagen VARCHAR NOT NULL,
     precio FLOAT NOT NULL,
     descuento FLOAT NOT NULL
 );
@@ -23,8 +22,8 @@ CREATE TABLE talles (
 
 CREATE TABLE producto_talle (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    product_id INT NOT NULL,
-    talle_id INT NOT NULL,
+    product_id INT,
+    talle_id INT,
     FOREIGN KEY(product_id) REFERENCES productos(id),
     FOREIGN KEY(product_id) REFERENCES talles(id)
 );
@@ -40,4 +39,8 @@ CREATE TABLE usuarios (
     image VARCHAR NOT NULL
 );
 
-
+CREATE TABLE imagenes (
+    id INT PRIMARY KEY AUTO_INCREMENT
+    product_id INT,
+    FOREIGN KEY(product_id) REFERENCES productos(id)
+);
