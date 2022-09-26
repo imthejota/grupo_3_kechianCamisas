@@ -17,21 +17,21 @@ CREATE TABLE talles (
     small VARCHAR NOT NULL,
     medium VARCHAR NOT NULL,
     large VARCHAR NOT NULL,
-    extra_large VARCHAR NOT NULL
+    extraLarge VARCHAR NOT NULL
 );
 
 CREATE TABLE producto_talle (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    product_id INT,
-    talle_id INT,
-    FOREIGN KEY(product_id) REFERENCES productos(id),
-    FOREIGN KEY(product_id) REFERENCES talles(id)
+    producto_id INT NOT NULL,
+    talle_id INT NOT NULL,
+    FOREIGN KEY(producto_id) REFERENCES productos(id),
+    FOREIGN KEY(talle_id) REFERENCES talles(id)
 );
 
 CREATE TABLE usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    firstname VARCHAR NOT NULL,
-    lastname VARCHAR NOT NULL,
+    firstName VARCHAR NOT NULL,
+    lastName VARCHAR NOT NULL,
     location VARCHAR NOT NULL,
     email VARCHAR NOT NULL,
     password VARCHAR NOT NULL,
@@ -41,6 +41,6 @@ CREATE TABLE usuarios (
 
 CREATE TABLE imagenes (
     id INT PRIMARY KEY AUTO_INCREMENT
-    product_id INT,
-    FOREIGN KEY(product_id) REFERENCES productos(id)
+    producto_id INT NOT NULL,
+    FOREIGN KEY(producto_id) REFERENCES productos(id)
 );
