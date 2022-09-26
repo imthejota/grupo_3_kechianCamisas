@@ -18,7 +18,6 @@ const userControllers = {
         escribir(all); //Escribo el array en la base de datos, solo con una funcion (solo un metodo del modelo) y le paso por parametro (el listado actualizado de usuarios)
         return res.redirect ('/');
     },
-
     login: function(req, res) {
         //console.log(req.session)
         res.render('user/login');
