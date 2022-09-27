@@ -3,16 +3,16 @@ CREATE DATABASE kechian;
 
 -- Creación de las tablas 
 
-CREATE TABLE productos (
+CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
-	nombre VARCHAR NOT NULL,
-    descripcion VARCHAR NOT NULL,
-    categoria BOOLEAN NOT NULL, 
-    precio FLOAT NOT NULL,
-    descuento FLOAT NOT NULL
+	name VARCHAR NOT NULL,
+    description VARCHAR NOT NULL,
+    category BOOLEAN NOT NULL, 
+    price FLOAT NOT NULL,
+    discount FLOAT NOT NULL
 );
 
-CREATE TABLE talles (
+CREATE TABLE sizes (
     id INT PRIMARY KEY AUTO_INCREMENT,
     small VARCHAR NOT NULL,
     medium VARCHAR NOT NULL,
@@ -20,15 +20,15 @@ CREATE TABLE talles (
     extraLarge VARCHAR NOT NULL
 );
 
-CREATE TABLE producto_talle (
+CREATE TABLE product_size (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    producto_id INT NOT NULL,
-    talle_id INT NOT NULL,
-    FOREIGN KEY(producto_id) REFERENCES productos(id),
-    FOREIGN KEY(talle_id) REFERENCES talles(id)
+    product_id INT NOT NULL,
+    size_id INT NOT NULL,
+    FOREIGN KEY(product_id) REFERENCES products(id),
+    FOREIGN KEY(size_id) REFERENCES sizes(id)
 );
 
-CREATE TABLE usuarios (
+CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     firstName VARCHAR NOT NULL,
     lastName VARCHAR NOT NULL,
@@ -39,8 +39,9 @@ CREATE TABLE usuarios (
     image VARCHAR NOT NULL
 );
 
-CREATE TABLE imagenes (
+CREATE TABLE images (
     id INT PRIMARY KEY AUTO_INCREMENT
-    producto_id INT NOT NULL,
-    FOREIGN KEY(producto_id) REFERENCES productos(id)
+    product_id INT NOT NULL,
+    name VARCHAR NOT NULL,
+    FOREIGN KEY(product_id) REFERENCES productos(id)
 );
