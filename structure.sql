@@ -5,19 +5,19 @@ CREATE DATABASE kechian;
 
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR NOT NULL,
-    description VARCHAR NOT NULL,
+	name VARCHAR(50) NOT NULL,
+    description VARCHAR(200) NOT NULL,
     category BOOLEAN NOT NULL, 
-    price FLOAT NOT NULL,
-    discount FLOAT NOT NULL
+    price INT NOT NULL,
+    discount INT NOT NULL
 );
 
 CREATE TABLE sizes (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    small VARCHAR NOT NULL,
-    medium VARCHAR NOT NULL,
-    large VARCHAR NOT NULL,
-    extraLarge VARCHAR NOT NULL
+    small VARCHAR(50) NOT NULL,
+    medium VARCHAR(50) NOT NULL,
+    large VARCHAR(50) NOT NULL,
+    extraLarge VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE product_size (
@@ -30,18 +30,18 @@ CREATE TABLE product_size (
 
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    firstName VARCHAR NOT NULL,
-    lastName VARCHAR NOT NULL,
-    location VARCHAR NOT NULL,
-    email VARCHAR NOT NULL,
-    password VARCHAR NOT NULL,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    location VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
     category BOOLEAN NOT NULL,
-    image VARCHAR NOT NULL
+    image VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE images (
-    id INT PRIMARY KEY AUTO_INCREMENT
+    id INT PRIMARY KEY AUTO_INCREMENT,
     product_id INT NOT NULL,
-    name VARCHAR NOT NULL,
-    FOREIGN KEY(product_id) REFERENCES productos(id)
+    name VARCHAR(50) NOT NULL,
+    FOREIGN KEY(product_id) REFERENCES products(id)
 );
