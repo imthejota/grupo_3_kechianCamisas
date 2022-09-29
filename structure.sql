@@ -14,10 +14,7 @@ CREATE TABLE products (
 
 CREATE TABLE sizes (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    small VARCHAR(50) NOT NULL,
-    medium VARCHAR(50) NOT NULL,
-    large VARCHAR(50) NOT NULL,
-    extraLarge VARCHAR(50) NOT NULL
+    size VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE product_size (
@@ -34,9 +31,9 @@ CREATE TABLE users (
     lastName VARCHAR(50) NOT NULL,
     location VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
     category BOOLEAN NOT NULL,
-    image VARCHAR(50) NOT NULL
+    image VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE images (
