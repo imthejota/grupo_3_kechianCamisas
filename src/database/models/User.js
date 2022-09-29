@@ -23,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
          },
          category: {
-            type: dataTypes.STRING
+            type: dataTypes.INTEGER
          },
          image: {
             type: dataTypes.STRING
