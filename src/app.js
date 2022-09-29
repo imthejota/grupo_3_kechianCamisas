@@ -80,9 +80,9 @@ server.get('/estampados', function (req,res){
 //sequelize probando tablas
 const db = require ('./database/models');
 server.get('/sequelize', function (req,res){
-    db.Product.findAll()
-        .then((products) => {
-            res.send(products);
+    db.Product_size.findAll()
+        .then((product_size) => {
+            res.send(product_size);
         }).catch((error) =>{
             res.send(error);
         })
