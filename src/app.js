@@ -77,6 +77,17 @@ server.get('/estampados', function (req,res){
     return res.render('index', { varFilter })
 });
 
+//sequelize probando tablas
+const db = require ('./database/models');
+server.get('/sequelize', function (req,res){
+    db.Size.findAll()
+        .then((sizes) => {
+            res.send(sizes);
+        }).catch((error) =>{
+            res.send(error);
+        })
+});
+
 
 
 
