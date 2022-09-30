@@ -1,7 +1,7 @@
--- Creación de la base de datos
+
 CREATE DATABASE kechian;
 
--- Creación de las tablas 
+
 
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,

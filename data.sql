@@ -9,7 +9,7 @@ insert into sizes (id, size)
 values (1, "small");
 
 insert into sizes (id, size)
-values (2, "midium");
+values (2, "medium");
 
 insert into sizes (id, size)
 values (3, "large");
