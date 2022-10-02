@@ -1,23 +1,23 @@
 use kechian
 
 insert into products (id, name, category, price, discount )
-values (1, "las flores", "small", 10000, 30 )
+values (1, "Las Flores", "Small", 10000, 30 )
 
 insert into products (id, name, category, price, discount )
-values (2, "CamiSuli", "medium", 12312, 20)
+values (2, "CamiSuli", "Medium", 12312, 20)
 
 insert into products (id, name, category, price, discount )
-values (3, "CamiSaki", "large", 17569, 15)
+values (3, "CamiSaki", "Large", 17569, 15)
 
 
 insert into sizes (id, size)
-values (1, "small");
+values (1, "Small");
 
 insert into sizes (id, size)
-values (2, "medium");
+values (2, "Medium");
 
 insert into sizes (id, size)
-values (3, "large");
+values (3, "Large");
 
 
 insert into product_size (id, product_id, size.id)
