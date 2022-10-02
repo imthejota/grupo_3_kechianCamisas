@@ -33,6 +33,13 @@ module.exports = (sequelize, dataTypes) => {
         Product.hasMany(models.Image, {
             as: "image",
             foreignKey:"product_id"
+        })
+        Product.belongsToMany(models.Size, {
+            as: "sizes",
+            through: "product_size",
+            foreignKey:"product_id",
+            otherKey:"size_id",
+            timestamps:false
         });
     }
 

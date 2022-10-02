@@ -81,7 +81,7 @@ server.get('/estampados', function (req,res){
 //problema en el index significa que tengo un error en algun modelo
 const db = require('./database/models');
 server.get('/sequelize', function (req,res){
-    db.Product.findAll({ include:['image']}) //nombre exportado
+    db.Size.findAll({ include:['products']}) //nombre exportado
         .then((users) => { 
             res.send(users);  //nombre de config-tamblename-
         }).catch((error) =>{
