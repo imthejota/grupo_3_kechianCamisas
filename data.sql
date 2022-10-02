@@ -1,12 +1,12 @@
 use kechian
 
-insert into produts (id, name, category, price, discount )
+insert into products (id, name, category, price, discount )
 values (1, "las flores", "small", 10000, 30 )
 
-insert into produts (id, name, category, price, discount )
+insert into products (id, name, category, price, discount )
 values (2, "CamiSuli", "medium", 12312, 20)
 
-insert into produts (id, name, category, price, discount )
+insert into products (id, name, category, price, discount )
 values (3, "CamiSaki", "large", 17569, 15)
 
 
