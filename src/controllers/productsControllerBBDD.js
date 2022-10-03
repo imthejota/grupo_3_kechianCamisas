@@ -11,13 +11,14 @@ let productsController = {
         return res.render ('product/crear')
     },
     save: (req, res) => {
-        db.Product.create({
-            if (req.files && req.files.length > 0){
+        if (req.files && req.files.length > 0){
                 req.body.image = req.files[0].filename
             } else {
-                req.body.image = 'default.png'},
+                req.body.image = 'default.png'};
+        db.Product.create({
             name: req.body.name,
             description: req.body.description,
+            image: req.body.image,
             category: req.body.category,
             price: req.body.price,
             discount: req.body.discount
@@ -35,19 +36,25 @@ let productsController = {
         let pedidoProduct = db.Product.findByPk(req.params.id);
     },
     update: (req, res) => {
-        db.Product.update({
-            name: req.body.name,
-            description: req.body.description,
-            category: req.body.category,
-            price: req.body.price,
-            discount: req.body.discount,
-            /* image: req.files && req.files.length > 0 ? req.files[0].filename : elemento.image; */
-        }, {
-            where: {
-                id: req.params.id
-            }
-        });
-        res.redirect('product/detail/' + req.params.id)
+        db.Product.findByPk(req.params.id)
+        .then(elemento => {
+            return db.Product.update({
+                name: req.body.name,
+                description: req.body.description,
+                image: req.files && req.files.length > 0 ? req.files[0].filename : elemento.image,
+                category: req.body.category,
+                price: req.body.price,
+                discount: req.body.discount,
+                
+            }, {
+                where: {
+                    id: req.params.id
+                }
+            })
+        }).then(() =>{
+            res.redirect('product/detail/' + req.params.id)
+        })
+        
     },
     productCart: (req, res) => {
         res.render('product/cart');

@@ -1,7 +1,7 @@
 
 CREATE DATABASE kechian;
 
-
+USE kechian;
 
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,

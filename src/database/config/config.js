@@ -4,7 +4,8 @@ module.exports = {
     "password": null,
     "database": "kechian",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3999
   },
   "test": {
     "username": "root",
