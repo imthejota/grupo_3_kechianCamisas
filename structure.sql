@@ -1,4 +1,4 @@
-
+DROP DATABASE IF EXISTS kechian;
 CREATE DATABASE kechian;
 
 USE kechian;

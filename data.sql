@@ -1,52 +1,20 @@
-use kechian
-
-insert into products (id, name, category, price, discount )
-values (1, "Las Flores", "Small", 10000, 30 )
-
-insert into products (id, name, category, price, discount )
-values (2, "CamiSuli", "Medium", 12312, 20)
-
-insert into products (id, name, category, price, discount )
-values (3, "CamiSaki", "Large", 17569, 15)
-
-
-insert into sizes (id, size)
-values (1, "Small");
-
-insert into sizes (id, size)
-values (2, "Medium");
-
-insert into sizes (id, size)
-values (3, "Large");
-
-
-insert into product_size (id, product_id, size.id)
-values (1,5,1);
-
-insert into product_size (id, product_id, size.id)
-values (5,4,2);
-
-insert into product_size (id, product_id, size.id)
-values (7,2,3);
+INSERT INTO products (id, name, category, price, discount, description)
+VALUES (DEFAULT, "Las Flores", 1, 10000, 30,"a" ),(DEFAULT, "CamiSuli", 1, 12312, 20,"b"),(DEFAULT, "CamiSaki", 1, 17569, 15,"c");
 
 
 
-insert into users (id, firstName,lastName,location,email,password,category, image)
-values (1,"mateo", "ga", "mendoza", "dh@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6C","cliente","default.png");
+INSERT INTO sizes (id, size)
+VALUES (DEFAULT, "Small"),(DEFAULT, "Medium"),(DEFAULT, "Large");
 
 
-insert into users (id, firstName,lastName,location,email,password,category, image)
-values (2,"franco", "ma", "jujuy", "francoMa@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6FG","cliente","default.png");
-
-insert into users (id, firstName,lastName,location,email,password,category, image)
-values (3,"augusto", "flo", "caba", "augustoflo@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAASDVRUzW3rp/tqQV7CbAanNffcBLG.6FG","admin","default.png");
+INSERT INTO product_size (id, product_id, size_id)
+VALUES (DEFAULT,5,1),(DEFAULT,4,2),(DEFAULT,2,3);
 
 
-insert into images (id, product_id)
-values (1,6)
 
-insert into images (id, product_id)
-values (2,7)
+INSERT INTO users (id, firstName,lastName,location,email,password,category, image)
+VALUES (DEFAULT,"mateo", "ga", "mendoza", "dh@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6C",0 ,"default.png"),(DEFAULT,"franco", "ma", "jujuy", "francoMa@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6FG",1,"default.png"),(DEFAULT,"augusto", "flo", "caba", "augustoflo@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAASDVRUzW3rp/tqQV7CbAanNffcBLG.6FG",1,"default.png");
 
-insert into images (id, product_id)
-values (3,8)
+
+INSERT INTO images (id, product_id, name)
+VALUES (DEFAULT,6,"delfin"),(DEFAULT,7,"elefante"),(DEFAULT,8,"foca");
