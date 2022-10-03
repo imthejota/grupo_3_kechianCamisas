@@ -12,13 +12,16 @@ let productsController = {
     },
     save: (req, res) => {
         db.Product.create({
+            if (req.files && req.files.length > 0){
+                req.body.image = req.files[0].filename
+            } else {
+                req.body.image = 'default.png'},
             name: req.body.name,
             description: req.body.description,
             category: req.body.category,
             price: req.body.price,
             discount: req.body.discount
         })
-        //TODO imágenes
         return res.redirect ('/');   
     },
     detail: (req, res) => {
@@ -37,7 +40,8 @@ let productsController = {
             description: req.body.description,
             category: req.body.category,
             price: req.body.price,
-            discount: req.body.discount
+            discount: req.body.discount,
+            /* image: req.files && req.files.length > 0 ? req.files[0].filename : elemento.image; */
         }, {
             where: {
                 id: req.params.id
