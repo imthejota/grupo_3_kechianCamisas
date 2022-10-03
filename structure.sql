@@ -7,6 +7,7 @@ CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
     description VARCHAR(200) NOT NULL,
+    image TEXT(200) NOT NULL,
     category BOOLEAN NOT NULL, 
     price INT NOT NULL,
     discount INT NOT NULL
