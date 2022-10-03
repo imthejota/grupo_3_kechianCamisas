@@ -22,8 +22,8 @@ module.exports = (sequelize, dataTypes) => {
          password: {
             type: dataTypes.STRING
          },
-         category: {
-            type: dataTypes.INTEGER
+         admin: {
+            type: dataTypes.BOOLEAN
          },
          image: {
             type: dataTypes.STRING
