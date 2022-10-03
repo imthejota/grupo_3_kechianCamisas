@@ -31,7 +31,7 @@ const productsControllers = {
     },
     detail: (req, res) => {
         let product = uno(req.params.producto);
-        res.render('product/productDetail', { product });
+        res.render('product/detail', { product });
     },
     edit: (req, res) => {
         let product = uno(req.params.producto)
@@ -55,7 +55,7 @@ const productsControllers = {
         return res.redirect ('list')
     },
     productCart: (req, res) => {
-        res.render('product/productCart');
+        res.render('product/cart');
     },
     delete: (req, res) => {
         let all = todos();
