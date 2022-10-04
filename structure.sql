@@ -16,7 +16,7 @@ CREATE TABLE products (
 CREATE TABLE sizes (
     id INT PRIMARY KEY AUTO_INCREMENT,
     size VARCHAR(50) NOT NULL
-);
+);  
 
 CREATE TABLE product_size (
     id INT PRIMARY KEY AUTO_INCREMENT,
