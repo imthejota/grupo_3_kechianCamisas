@@ -20,16 +20,6 @@
   "image": "image-1661642652932-75951228.jpg"
  },
  {
-  "name": "Oh La La  ",
-  "price": 15000,
-  "discount": 0,
-  "category": "estampada",
-  "description": "La descripción está acá!",
-  "size": "small",
-  "id": 3,
-  "image": "image-1661729921083-268609367.jpg"
- },
- {
   "name": "Camisuli",
   "price": 13000,
   "discount": 5,
@@ -50,16 +40,6 @@
   "image": "image-1661802849527-2025920.jpg"
  },
  {
-  "name": "lalala",
-  "price": 123123,
-  "discount": 22,
-  "category": "estampada",
-  "description": "lalal",
-  "size": "small",
-  "id": 8,
-  "image": "image-1661802884149-463239126.jpeg"
- },
- {
   "id": 9,
   "name": "Vamp",
   "description": "Esta persona se alquila como acompañante para ir a una fiesta. El conjunto puede variar dependiendo de las necesidades del comprador. No muerde, a menos que tu lo quieras (?",
@@ -78,5 +58,25 @@
   "size": "small",
   "price": 123,
   "discount": 1
+ },
+ {
+  "id": 11,
+  "name": "nuevo producto ",
+  "description": "borre dos y agrego dos ",
+  "category": "estampada",
+  "image": "image-1664989451166-297120970.JPG",
+  "size": "small",
+  "price": 15000,
+  "discount": 15
+ },
+ {
+  "id": 12,
+  "name": "otro nuevo producto ",
+  "description": "los que borre",
+  "category": "estampada",
+  "image": "image-1664989524250-322672456.JPG",
+  "size": "small",
+  "price": 1800,
+  "discount": 15
  }
 ]
