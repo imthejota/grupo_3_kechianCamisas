@@ -90,8 +90,6 @@ server.get('/sequelize', function (req,res){
 });
 
 
-
-
 const rutasUser = require('./routes/usersRoutes.js')
 server.use(rutasUser);
 

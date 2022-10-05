@@ -54,7 +54,6 @@ let productsController = {
         }).then(() =>{
             res.redirect('product/detail/' + req.params.id)
         })
-        
     },
     productCart: (req, res) => {
         res.render('product/cart');
