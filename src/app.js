@@ -94,6 +94,5 @@ const rutasUser = require('./routes/usersRoutes.js')
 server.use(rutasUser);
 
 const rutasProduct = require('./routes/productsRoutes.js');
-const { appendFile } = require('fs'); // -> para qué lo estamos usando?
 server.use('/products', rutasProduct);
 

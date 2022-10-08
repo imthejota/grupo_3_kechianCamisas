@@ -1,6 +1,7 @@
 const {Router} = require('express');
 const router = Router(); 
-const productsControllers = require('../controllers/productsController.js');
+/* const productsControllers = require('../controllers/productsController.js'); */
+const productsControllers = require('../controllers/productsControllerBBDD');
 const path = require('path');
 const {existsSync, mkdirSync} = require('fs')
 
@@ -31,14 +32,11 @@ const isAdmin = require ('../middlewares/isAdmin')
 //middleware que solo permite acceder a ciertas funcionalidades si estoy logeado
 router.get('/list', productsControllers.index) // 3
 router.get('/crear', isLogged, isAdmin, productsControllers.create)  // 1
-router.get('/editar/:producto', isLogged,  productsControllers.edit); // 4
-router.get('/detail/:producto', productsControllers.detail); // 5
+router.get('/editar/:id', isLogged,  productsControllers.edit); // 4
+router.get('/detail/:id', productsControllers.detail); // 5
 router.get('/cart', productsControllers.productCart); // ?
-
 router.post('/guardar', upload.any(), productsControllers.save) // 2
-
-router.put('/actualizar', upload.any(), productsControllers.update); // 6
-
+router.put('/actualizar/:id', upload.any(), productsControllers.update); // 6
 router.delete('/delete/:id', isLogged , productsControllers.delete); // 8
 
 module.exports = router;

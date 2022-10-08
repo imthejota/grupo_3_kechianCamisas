@@ -1,6 +1,9 @@
 const { validationResult } = require("express-validator");
 const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
+
+// CRUD, LOGIN, MIDDLEWARES! 
+
 const userControllers = {
     register: function(req, res) {
         res.render('user/register');
@@ -36,7 +39,7 @@ const userControllers = {
         }
         if (req.body.recuerdame){
 
-            res.cookie('user', req.body.correo,{maxAge: 1000 * 60 * 3})
+            res.cookie('user', req.body.correo,{maxAge: 10000 * 60 * 3})
         }
         let all = todos();
         req.session.user = all.find(user => user.email == req.body.correo)

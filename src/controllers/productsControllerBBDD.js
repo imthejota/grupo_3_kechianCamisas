@@ -28,14 +28,19 @@ let productsController = {
         return res.redirect ('/');   
     },
     detail: (req, res) => {
-        // TODO asociaciones
-        db.Product.findByPk(req.params.id)
+        db.Product.findByPk(req.params.id, {
+            include: [{association: 'sizes'}]
+        })
         .then(function(product){
-            res.render('product/detail', { product })
+            console.log(req.params)
+            return res.render('product/detail', { product })
         })
     },
     edit: (req, res) => {
-        let pedidoProduct = db.Product.findByPk(req.params.id);
+        db.Product.findByPk(req.params.id)
+        .then(function (product){
+            return res.render('product/edit',{ product });
+        })
     },
     update: (req, res) => {
         db.Product.findByPk(req.params.id)
@@ -44,7 +49,6 @@ let productsController = {
                 name: req.body.name,
                 description: req.body.description,
                 image: req.files && req.files.length > 0 ? req.files[0].filename : elemento.image,
-                category: req.body.category,
                 price: req.body.price,
                 discount: req.body.discount,
                 
@@ -54,7 +58,7 @@ let productsController = {
                 }
             })
         }).then(() =>{
-            res.redirect('product/detail/' + req.params.id)
+            return res.redirect('/products/detail/' + req.params.id)
         })
     },
     productCart: (req, res) => {
@@ -66,6 +70,8 @@ let productsController = {
                 id: req.params.id
             }
         });
-        res.redirect('/product');
+        res.redirect('/products');
     }
 }
+
+module.exports = productsController

@@ -2,8 +2,9 @@
 
 let middleware = (req,res,next) => {
     if(req.session && req.session.user){
-        next()
+        return next()
     }
+    console.log(req.session)
     return res.redirect('/login')
 }
 
