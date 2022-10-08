@@ -13,7 +13,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
         category: {
-            type: dataTypes.INTEGER
+            type: dataTypes.STRING
         },
         price: {
             type: dataTypes.INTEGER

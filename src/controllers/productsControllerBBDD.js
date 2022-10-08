@@ -25,7 +25,7 @@ let productsController = {
             price: req.body.price,
             discount: req.body.discount
         })
-        return res.redirect ('/');   
+        return res.redirect ('/products/list');   
     },
     detail: (req, res) => {
         db.Product.findByPk(req.params.id, {

@@ -2,7 +2,7 @@ const { validationResult } = require("express-validator");
 const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
 
-// CRUD, LOGIN, MIDDLEWARES! 
+// CR, LOGIN, MIDDLEWARES!  + update usuarios + eliminar usuarios
 
 const userControllers = {
     register: function(req, res) {
