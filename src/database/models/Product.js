@@ -29,11 +29,11 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Product = sequelize.define(alias, cols, config);
 
-    Product.associate = function(models){
+    Product.associate = function(models)/* {
         Product.hasMany(models.Image, {
             as: "image",
             foreignKey:"product_id"
-        })
+        }) */
         Product.belongsToMany(models.Size, {
             as: "sizes",
             through: "product_size",

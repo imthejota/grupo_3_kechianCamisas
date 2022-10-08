@@ -4,7 +4,7 @@ VALUES (DEFAULT, "Las Flores", 1, 10000, 30,"a" ),(DEFAULT, "CamiSuli", 1, 12312
 
 
 INSERT INTO sizes (id, size)
-VALUES (DEFAULT, "Small"),(DEFAULT, "Medium"),(DEFAULT, "Large");
+VALUES (DEFAULT, "Small"),(DEFAULT, "Medium"),(DEFAULT, "Large"), (DEFAULT, "Extra large");
 
 
 INSERT INTO product_size (id, product_id, size_id)

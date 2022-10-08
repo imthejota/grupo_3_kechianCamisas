@@ -2,7 +2,9 @@ let db = require('../database/models')
 
 let productsController = {
     index: (req, res) => {
-        db.Product.findAll()
+        db.Product.findAll({
+            include: [{association: 'sizes'}]
+        })
         .then(function(products){
             return res.render('product/list', { products })
         })
