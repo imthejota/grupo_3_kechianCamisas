@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const { validationResult } = require("express-validator");
 
 const userControllersBBDD = {
-    profile: (req, res) => {
+    profile: (req, res) => { // TODO agregar la vista correspondiente, la ruta ya está creada
         db.User.findByPk(req.params.id)
         .then(user => res.send(user))
         .catch(error => res.send(error))
@@ -25,7 +25,7 @@ const userControllersBBDD = {
         if (req.body.recuerdame){
             res.cookie('user', req.body.correo,{maxAge: 10000 * 60 * 300})
         }
-        /*
+        /* EXPLICACION
         let user = db.User.findOne({where: { email: req.body.correo }})
         .then((usuario) => {
             return usuario
@@ -65,7 +65,6 @@ const userControllersBBDD = {
                     lastName: req.body.lastName,
                     location: req.body.location,
                     email: req.body.email,
-                    /* password: bcrypt.hashSync(req.body.password, 10), */
                     image: req.files && req.files.length > 0 ? req.files[0].filename : usuario.image
                 },{
                     where: { id: req.params.id }
