@@ -1,34 +1,37 @@
 const {body} = require("express-validator");
-const {todos} = require('../models/usersModel')
 const {compareSync} = require('bcrypt');
-
+const db = require('../database/models/')
 
 let email = body('correo').notEmpty().withMessage('Email no puede quedar vacio').bail().isEmail().withMessage('Email no valido').custom((value,{req}) => {
-    let users = todos()
-    let listOfEmails = users.map(user => user.email)
-    if(listOfEmails.indexOf(value) == -1){
-        throw new Error('Usuario no encontrado')
-    }
-    return true
+    return db.User.findAll()
+    .then(users => {
+        let listOfEmails = users.map(user => user.email)
+        console.log(listOfEmails)
+        if(listOfEmails.indexOf(value) == -1){
+            return Promise.reject ('Usuario no encontrado')
+        } else {
+            return true
+        }
+    }).catch(error => {throw new Error(error)})
+    
 })
 
 let password = body('contraseña').notEmpty().withMessage('Contraseña no valida').bail().isLength({min:4}).withMessage('Minimo 4 caracteres').custom((value,{req}) => {
-    let users = todos()
-    let result = users.find(user => {
-       // console.log( user.email, req.body.correo)
-        return user.email == req.body.correo
-
+    return db.User.findOne({
+        where: {email: req.body.correo}
     })
-
-    if(!result){
-        throw new Error('Credenciales invalidas')
-    }
-
-    if(!compareSync(value,result.password) ){
-        throw new Error('La contraseña no coincide')
-    }
-
-    return true
+    .then((user) => {
+        if(!user){
+            return Promise.reject ('Credenciales inválidas')
+        }
+        if(!compareSync(value,user.password) ){
+            return Promise.reject ('La contraseña no coincide')
+        } else {
+            return true
+        }
+        
+    }).catch((error) => {throw new Error(error)})
+    
 })
 
 let validaciones = [email,password]

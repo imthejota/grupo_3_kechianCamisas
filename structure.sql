@@ -8,7 +8,7 @@ CREATE TABLE products (
 	name VARCHAR(50) NOT NULL,
     description VARCHAR(200) NOT NULL,
     image TEXT(200) NOT NULL, /* eliminar cuando hagamos varias fotos en un prod */
-    admin BOOLEAN NOT NULL, 
+    category BOOLEAN NOT NULL, 
     price INT NOT NULL,
     discount INT NOT NULL
 );
@@ -33,7 +33,7 @@ CREATE TABLE users (
     location VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    category BOOLEAN NOT NULL,
+    admin BOOLEAN NOT NULL,
     image VARCHAR(100) NOT NULL
 );
 

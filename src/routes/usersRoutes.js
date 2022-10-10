@@ -1,6 +1,7 @@
 const {Router} = require('express');
 const router = Router(); 
 const userControllers = require('../controllers/usersController.js');
+const userControllersBBDD = require('../controllers/usersControllerBBDD.js')
 const path = require('path');
 const multer = require('multer');
 //const {existsSync, mkdirSync} = require('fs')
@@ -18,16 +19,18 @@ const fileUpload = multer({storage: multerDiskStorage});
 //agrrgando ruta de validacion
 const validatorLogin = require('../validations/login')
 
+
+router.get('/user/:id', userControllersBBDD.profile)
 // Ruta register
-router.get('/register', userControllers.register)
+router.get('/register', userControllersBBDD.register)
 // Ruta login
-router.get('/login', userControllers.login)
+router.get('/login', userControllersBBDD.login)
 //agregando ruta logout
-router.get('/register', userControllers.register)
+router.get('/register', userControllersBBDD.register)
 
 // Ruta logout
-router.post('/logout', userControllers.logout)
-router.post('/saveUser', fileUpload.single('image'), userControllers.save)
-router.post('/access', validatorLogin, userControllers.access)
+router.post('/logout', userControllersBBDD.logout)
+router.post('/saveUser', fileUpload.single('image'), userControllersBBDD.save)
+router.post('/access', validatorLogin, userControllersBBDD.access)
 
 module.exports = router;

@@ -15,19 +15,19 @@ module.exports = (sequelize, dataTypes) => {
         },
         location: {
             type: dataTypes.STRING
-         },
-         email: {
+        },
+        email: {
             type: dataTypes.STRING
-         },
-         password: {
+        },
+        password: {
             type: dataTypes.STRING
-         },
-         admin: {
-            type: dataTypes.BOOLEAN
-         },
-         image: {
+        },
+        admin: {
+            type: dataTypes.INTEGER
+        },
+        image: {
             type: dataTypes.STRING
-         }
+        }
     };
     let config = {
         tableName: 'users',

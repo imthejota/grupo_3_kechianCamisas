@@ -8,6 +8,7 @@ let productsController = {
         .then(function(products){
             return res.render('product/list', { products })
         })
+        .catch(error => res.send(error)) // TODO agrego catch
     },
     create: (req, res) => {
         return res.render ('product/crear')
@@ -25,7 +26,10 @@ let productsController = {
             price: req.body.price,
             discount: req.body.discount
         })
-        return res.redirect ('/products/list');   
+        .then(() => {
+            return res.redirect ('/products/list')
+        })
+        .catch(error => res.send(error)) // TODO Agrego catch   
     },
     detail: (req, res) => {
         db.Product.findByPk(req.params.id, {
@@ -35,12 +39,14 @@ let productsController = {
             console.log(req.params)
             return res.render('product/detail', { product })
         })
+        .catch(error => res.send(error)) // TODO Agrego catch
     },
     edit: (req, res) => {
         db.Product.findByPk(req.params.id)
         .then(function (product){
             return res.render('product/edit',{ product });
         })
+        .catch(error => res.send(error)) // TODO Agrego catch
     },
     update: (req, res) => {
         db.Product.findByPk(req.params.id)
@@ -60,6 +66,7 @@ let productsController = {
         }).then(() =>{
             return res.redirect('/products/detail/' + req.params.id)
         })
+        .catch(error => res.send(error)) // TODO Agrego catch
     },
     productCart: (req, res) => {
         res.render('product/cart');
@@ -69,8 +76,12 @@ let productsController = {
             where: {
                 id: req.params.id
             }
-        });
-        res.redirect('/products');
+        })
+        .then(() => {
+            res.redirect('/products')
+        })
+        .catch(error => res.send(error)) // TODO Agrego catch;
+        
     }
 }
 

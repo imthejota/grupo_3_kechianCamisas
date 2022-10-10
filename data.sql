@@ -13,7 +13,7 @@ VALUES (DEFAULT,5,1),(DEFAULT,4,2),(DEFAULT,2,3);
 
 
 INSERT INTO users (id, firstName,lastName,location,email,password,category, image)
-VALUES (DEFAULT,"mateo", "ga", "mendoza", "dh@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6C",0 ,"default.png"),(DEFAULT,"franco", "ma", "jujuy", "francoMa@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6FG",1,"default.png"),(DEFAULT,"augusto", "flo", "caba", "augustoflo@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAASDVRUzW3rp/tqQV7CbAanNffcBLG.6FG",1,"default.png");
+VALUES (DEFAULT,"Jonathan", "Kechian", "Mendoza", "j@kechian.com","$2a$10$S71t6BVaKWDDPEmietxwme0dN81mzhz5M0mL0LUUA6LqohqfV0Cmq",1 ,"default.png"),(DEFAULT,"franco", "ma", "jujuy", "francoMa@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6FG",1,"default.png"),(DEFAULT,"augusto", "flo", "caba", "augustoflo@kechian.com","$2a$10$twQ1dr4ocIusBY8no.KrmuNAASDVRUzW3rp/tqQV7CbAanNffcBLG.6FG",1,"default.png");
 
 
 INSERT INTO images (id, product_id, name)
