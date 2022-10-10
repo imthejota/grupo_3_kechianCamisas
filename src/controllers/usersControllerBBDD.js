@@ -42,12 +42,12 @@ const userControllersBBDD = {
             req.body.image = 'default.png';
         }
         db.User.create({
-            name: req.body.name,
-            description: req.body.description,
-            image: req.body.image,
-            category: req.body.category,
-            price: req.body.price,
-            discount: req.body.discount
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            ubicacion: req.body.location,
+            email: req.body.email,
+            password: req.body.password,
+            image: req.body.image
         })
         .then(() => res.redirect ('/'))
         .catch(error => res.send(error)) 
