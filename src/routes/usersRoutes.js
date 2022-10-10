@@ -34,7 +34,7 @@ router.get('/register', userControllersBBDD.register)
 router.post('/logout', userControllersBBDD.logout)
 router.post('/saveUser', fileUpload.single('image'), userControllersBBDD.save)
 router.post('/access', validatorLogin, userControllersBBDD.access)
-router.put('/user/:id', fileUpload.any(),  userControllersBBDD.update);
-router.delete('/user/delete/:id', isLogged , userControllersBBDD.destroy)
+router.put('/user/update/:id', fileUpload.any(),  userControllersBBDD.update);
+router.delete('/user/delete/:id', userControllersBBDD.destroy)
 
 module.exports = router;

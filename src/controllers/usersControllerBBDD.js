@@ -1,4 +1,5 @@
-let db = require('../database/models')
+const db = require('../database/models')
+const bcrypt = require('bcryptjs'); 
 const { validationResult } = require("express-validator");
 
 const userControllersBBDD = {
@@ -11,7 +12,7 @@ const userControllersBBDD = {
         console.log(req.session)
         res.render('user/login');
     },
-    access : (req,res) => {
+    access : async (req,res) => {
         const result = validationResult(req);
         if(!result.isEmpty()){
             let errores = result.mapped();
@@ -24,13 +25,16 @@ const userControllersBBDD = {
         if (req.body.recuerdame){
             res.cookie('user', req.body.correo,{maxAge: 10000 * 60 * 300})
         }
-        db.User.findOne({
-            where: { email: req.body.correo }
+        /*
+        let user = db.User.findOne({where: { email: req.body.correo }})
+        .then((usuario) => {
+            return usuario
         })
-            .then((user) => {
-                return req.session.user = user;
-            })
-            .then(() => { return res.redirect('/') })
+         */ 
+        let user = await db.User.findOne({where: { email: req.body.correo }}).catch(error => res.send(error))
+        req.session.user = user;
+        console.log(req.session.user);
+        return res.redirect('/')
     },
     register: function(req, res) {
         res.render('user/register');
@@ -44,9 +48,10 @@ const userControllersBBDD = {
         db.User.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
-            ubicacion: req.body.location,
+            location: req.body.location,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, 10),
+            admin: req.body.email.includes("@kechian.com")? 1 : 0,
             image: req.body.image
         })
         .then(() => res.redirect ('/'))
@@ -60,7 +65,7 @@ const userControllersBBDD = {
                     lastName: req.body.lastName,
                     location: req.body.location,
                     email: req.body.email,
-                    password: req.body.password,
+                    /* password: bcrypt.hashSync(req.body.password, 10), */
                     image: req.files && req.files.length > 0 ? req.files[0].filename : usuario.image
                 },{
                     where: { id: req.params.id }

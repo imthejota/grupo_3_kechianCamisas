@@ -24,7 +24,7 @@ let password = body('contraseña').notEmpty().withMessage('Contraseña no valida
         if(!user){
             return Promise.reject ('Credenciales inválidas')
         }
-        if(!compareSync(value,user.password) ){
+        if(!compareSync(value,user.password) ){ 
             return Promise.reject ('La contraseña no coincide')
         } else {
             return true

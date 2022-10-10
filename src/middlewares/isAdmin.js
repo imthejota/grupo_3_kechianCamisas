@@ -1,6 +1,6 @@
 const middleware = (req,res,next) => {
 
-	if(req.session.user.email.includes("@kechian")){
+	if(req.session.user.admin == 1){
 		return next()
 	}
 	
