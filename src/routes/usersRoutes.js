@@ -4,6 +4,8 @@ const userControllers = require('../controllers/usersController.js');
 const userControllersBBDD = require('../controllers/usersControllerBBDD.js')
 const path = require('path');
 const multer = require('multer');
+const isLogged = require('../middlewares/isLogged')
+/* const isAdmin = require ('../middlewares/isAdmin') */
 //const {existsSync, mkdirSync} = require('fs')
 const multerDiskStorage = multer.diskStorage({
     destination: (req, file, cb) =>
@@ -32,5 +34,7 @@ router.get('/register', userControllersBBDD.register)
 router.post('/logout', userControllersBBDD.logout)
 router.post('/saveUser', fileUpload.single('image'), userControllersBBDD.save)
 router.post('/access', validatorLogin, userControllersBBDD.access)
+router.put('/user/:id', fileUpload.any(),  userControllersBBDD.update);
+router.delete('/user/delete/:id', isLogged , userControllersBBDD.destroy)
 
 module.exports = router;

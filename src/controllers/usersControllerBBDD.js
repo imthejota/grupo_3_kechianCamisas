@@ -52,11 +52,27 @@ const userControllersBBDD = {
         .then(() => res.redirect ('/'))
         .catch(error => res.send(error)) 
     },
-    /*update:,*/
+    update: (req, res) => {
+        db.User.findByPk(req.params.id)
+            .then(usuario => {
+                return db.User.update({
+                    firstName: req.body.firstName,
+                    lastName: req.body.lastName,
+                    location: req.body.location,
+                    email: req.body.email,
+                    password: req.body.password,
+                    image: req.files && req.files.length > 0 ? req.files[0].filename : usuario.image
+                },{
+                    where: { id: req.params.id }
+                })
+            })
+            .then(() => res.redirect('/user/' + req.params.id))
+            .catch(error => res.send(error))
+    },
     destroy: (req, res) => {
         db.User.destroy({
             where: {
-                id: req.body.id,
+                id: req.params.id
             },
             force: true,
         }).then(() => {

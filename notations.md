@@ -1,1 +1,3 @@
-87 de app.js / const { appendFile } = require('fs'); // -> para qué lo estamos usando?
+BBDD user
+Location as null
+Admin as null

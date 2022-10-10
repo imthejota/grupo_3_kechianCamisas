@@ -29,7 +29,7 @@ let productsController = {
         .then(() => {
             return res.redirect ('/products/list')
         })
-        .catch(error => res.send(error)) // TODO Agrego catch   
+        .catch(error => res.send(error)) 
     },
     detail: (req, res) => {
         db.Product.findByPk(req.params.id, {
@@ -39,14 +39,14 @@ let productsController = {
             console.log(req.params)
             return res.render('product/detail', { product })
         })
-        .catch(error => res.send(error)) // TODO Agrego catch
+        .catch(error => res.send(error)) 
     },
     edit: (req, res) => {
         db.Product.findByPk(req.params.id)
         .then(function (product){
             return res.render('product/edit',{ product });
         })
-        .catch(error => res.send(error)) // TODO Agrego catch
+        .catch(error => res.send(error))
     },
     update: (req, res) => {
         db.Product.findByPk(req.params.id)
@@ -66,7 +66,7 @@ let productsController = {
         }).then(() =>{
             return res.redirect('/products/detail/' + req.params.id)
         })
-        .catch(error => res.send(error)) // TODO Agrego catch
+        .catch(error => res.send(error))
     },
     productCart: (req, res) => {
         res.render('product/cart');
