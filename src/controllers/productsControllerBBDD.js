@@ -8,7 +8,7 @@ let productsController = {
         .then(function(products){
             return res.render('product/list', { products })
         })
-        .catch(error => res.send(error)) // TODO agrego catch
+        .catch(error => res.send(error))
     },
     create: (req, res) => {
         return res.render ('product/crear')

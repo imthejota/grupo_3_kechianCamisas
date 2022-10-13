@@ -5,40 +5,21 @@
 
 <body>
     <%- include ('partials/header.ejs') %>
+
     <main>
-
-    <section class="fotosPrincipales">
-        <% if (locals.archivosPrincipales && archivosPrincipales.length > 0) { %>
+        <section class="fotosPrincipales">
+        <% if (products.length > 0) { %>
             <ul class="lista-producto">
-                <% archivosPrincipales.forEach(product => { %>
-                    <%- include('./partials/index.ejs',{product:product})  %>
-                <% }) %>
+                <% products.forEach(element => { %>
+                    <%- include('./partials/index.ejs',{element: element})  %>
+                        <% }) %>
             </ul>
-            <% } else if (locals.varFilter && varFilter.length > 0) {} else { %>
-                    <h2>
-                        <a>No hay productos <a href="/productos">Volver</a>
-                    </h2>
-                    <% } %>
-                
-                
-    </section>
-
-    <section class="fotosAbajo">
-        <% if (varFilter.length > 0) { %>
-            <ul class="lista-producto-2">
-                <% varFilter.forEach(element => { %>
-                    <%- include('./partials/index-filtro.ejs',{element:element})  %>
-                <% }) %>
-            </ul>
-        <% } %>
-    </section>
-
-  <!--   <section>
-        <a href="/lisos"><h2 class="titulo-filtro">Productos Lisos</h2></a>
-
-        <a href="/estampados"><h2 class="titulo-filtro">Productos Estampados</h2></a>
-    </section> -->
-
+            <% } else { %>
+                <h2>
+                    No hay productos <a href="/productos">Volver</a>
+                </h2>
+                <% } %>
+            </section>
     </main>
     <%- include ('partials/footer.ejs') %>
 

@@ -1,12 +1,10 @@
 <li class="caja-producto-oferta">
-    <a href="/products/detail/<%= product.id %>">
-            <div class="div-imagen-producto"><img src="/products/<%= product.image %>" class="imagen-oferta"></div>
+    <a href="/products/detail/<%= element.id %>">
+            <div class="div-imagen-producto"><img src="/products/<%= element.image %>" class="imagen-oferta"></div>
             <div class="caja-off">
                 <div class="texto">
-                    <a class="tipografia-nombre-producto"><%= product.name %></a>
-                        <div class="tipografia-oferta">
-                        <% let precioDescuento = ((100- product.discount) * product.price) / 100 %>
-                        </div>
+                    <a class="tipografia-nombre-producto"><%= element.name %></a>
+
                 </div>
             </div>
     </a>

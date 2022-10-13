@@ -46,23 +46,23 @@ server.use(require('./middlewares/user'))
 server.set('views', path.join(__dirname, './views'));
 server.set('view engine', 'ejs')
 
-const { todos , devolverN} = require('./models/productsModel.js')
+/* const { todos , devolverN} = require('./models/productsModel.js')  */
 
 // Ruta index
-server.get('/', function(req, res) {
-    let products = todos()
+/* server.get('/', function(req, res) {
+    let products = db.Product.findAll()
 
-    let archivosPrincipales = devolverN(todos(), 0, 4);
+    let archivosPrincipales = devolverN(products, 0, 4);
 
     let varFilter = [];
     for (var i = 5; i < products.length ; i++){
         varFilter.push(products[i]);
     };
     return res.render('index', { varFilter , archivosPrincipales });
-    });
+    }); */
 
 //Ruta index filtro lisos
-server.get('/lisos', function (req,res){
+/* server.get('/lisos', function (req,res){
     let products = todos();
     let varFilter = products.filter(product => product.category == "lisa");
 
@@ -75,11 +75,11 @@ server.get('/estampados', function (req,res){
     let varFilter = products.filter(product => product.category == "estampada");
 
     return res.render('index', { varFilter })
-});
+}); */
 
 //sequelize probando tablas
 //problema en el index significa que tengo un error en algun modelo
-const db = require('./database/models');
+const db = require('./database/models')
 server.get('/sequelize', function (req,res){
     db.Product.findAll() //nombre exportado
         .then((users) => { 
@@ -89,6 +89,8 @@ server.get('/sequelize', function (req,res){
         });
 });
 
+const rutaHome = require('./routes/homeRoutes.js')
+server.use(rutaHome);
 
 const rutasUser = require('./routes/usersRoutes.js')
 server.use(rutasUser);

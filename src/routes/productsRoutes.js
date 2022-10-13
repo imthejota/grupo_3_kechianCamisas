@@ -27,7 +27,8 @@ const multer = require('multer');
 const upload = multer({storage: multer.diskStorage({destination, filename})})
 
 const isLogged = require('../middlewares/isLogged')
-const isAdmin = require ('../middlewares/isAdmin')
+const isAdmin = require ('../middlewares/isAdmin');
+const productsController = require('../controllers/productsControllerBBDD');
 
 //middleware que solo permite acceder a ciertas funcionalidades si estoy logeado
 router.get('/list', productsControllers.index) // 3
