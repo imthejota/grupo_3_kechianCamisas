@@ -248,7 +248,7 @@ body {
     
     .fotosPrincipales{
         flex-wrap: nowrap;
-        width: 94%;
+        width: 100%;
     }
     .caja-producto-oferta:hover{
         box-shadow: 10px 15px 10px #242424;
