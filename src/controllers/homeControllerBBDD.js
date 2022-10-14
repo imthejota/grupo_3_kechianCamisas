@@ -4,10 +4,10 @@ const homeController = {
     home:(req, res) => {
         db.Product.findAll({
             include: [{association: 'sizes'}],
-            limit: 4 // agregar limit 4
+            limit: 4 
         })
         .then(function(products){
-            console.log(products)
+            /* console.log(products) */
             return res.render('index', { products })
         })
         .catch(error => res.send(error))
