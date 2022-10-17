@@ -10,7 +10,7 @@ VALUES (DEFAULT, "Small"),(DEFAULT, "Medium"),(DEFAULT, "Large"), (DEFAULT, "Ext
 
 
 INSERT INTO product_size (id, product_id, size_id)
-VALUES (DEFAULT,5,1),(DEFAULT,4,2),(DEFAULT,2,3);
+VALUES (DEFAULT,5,1),(DEFAULT,4,2),(DEFAULT,2,3); /* acá tira error porque es todo inventado y no dan los números */
 
 
 
