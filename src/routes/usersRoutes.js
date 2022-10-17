@@ -19,7 +19,7 @@ const multerDiskStorage = multer.diskStorage({
 })
 const fileUpload = multer({storage: multerDiskStorage});
 //agrrgando ruta de validacion
-const validatorLogin = require('../validations/login')
+const validatorLogin = require('../validations/loginValidations')
 
 
 router.get('/user/:id', userControllersBBDD.profile)

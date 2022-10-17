@@ -1,6 +1,6 @@
 const {body} = require("express-validator");
 const {compareSync} = require('bcrypt');
-const db = require('../database/models/')
+const db = require('../database/models')
 
 let email = body('correo').notEmpty().withMessage('Email no puede quedar vacio').bail().isEmail().withMessage('Email no valido').custom((value,{req}) => {
     return db.User.findAll()

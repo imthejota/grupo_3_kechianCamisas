@@ -46,37 +46,6 @@ server.use(require('./middlewares/user'))
 server.set('views', path.join(__dirname, './views'));
 server.set('view engine', 'ejs')
 
-/* const { todos , devolverN} = require('./models/productsModel.js')  */
-
-// Ruta index
-/* server.get('/', function(req, res) {
-    let products = db.Product.findAll()
-
-    let archivosPrincipales = devolverN(products, 0, 4);
-
-    let varFilter = [];
-    for (var i = 5; i < products.length ; i++){
-        varFilter.push(products[i]);
-    };
-    return res.render('index', { varFilter , archivosPrincipales });
-    }); */
-
-//Ruta index filtro lisos
-/* server.get('/lisos', function (req,res){
-    let products = todos();
-    let varFilter = products.filter(product => product.category == "lisa");
-
-    return res.render('index', { varFilter })
-});
-
-//Ruta index filtro estampados
-server.get('/estampados', function (req,res){
-    let products = todos();
-    let varFilter = products.filter(product => product.category == "estampada");
-
-    return res.render('index', { varFilter })
-}); */
-
 //sequelize probando tablas
 //problema en el index significa que tengo un error en algun modelo
 const db = require('./database/models')
