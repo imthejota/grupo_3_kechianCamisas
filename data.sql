@@ -1,3 +1,5 @@
+USE kechian;
+
 INSERT INTO products (id, name, category, price, discount, description)
 VALUES (DEFAULT, "Las Flores", 1, 10000, 30,"a" ),(DEFAULT, "CamiSuli", 1, 12312, 20,"b"),(DEFAULT, "CamiSaki", 1, 17569, 15,"c");
 

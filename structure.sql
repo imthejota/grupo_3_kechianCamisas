@@ -37,9 +37,4 @@ CREATE TABLE users (
     image VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE images (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    product_id INT NOT NULL,
-    name VARCHAR(50) NOT NULL,
-    FOREIGN KEY(product_id) REFERENCES products(id)
-);
+
