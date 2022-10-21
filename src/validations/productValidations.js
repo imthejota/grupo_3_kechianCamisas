@@ -13,13 +13,7 @@ const {body} = require("express-validator");
 const db = require('../database/models/')
 
 let nombre = body('name').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 5}).withMessage('Mínimo 5 caracteres')
-let description = body('description').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 20}).withMessage('Mínimo 20 caracteres')
-/* let image = body('image').custom((value,{req}) => {
-if(req.files.mimetype === 'application/pdf'){
-            return '.pdf'; // return "non-falsy" value to indicate valid data"
-        }else{
-            return false; // return "falsy" value to indicate invalid data
-        }
-    })
-.withMessage('Please only submit pdf documents.'), // custom error message that will be send back if the file in not a pdf
-} */
+let descripcion = body('description').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 20}).withMessage('Mínimo 20 caracteres')
+/* let talle =
+let categoria = */ 
+
