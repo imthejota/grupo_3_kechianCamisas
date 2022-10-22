@@ -26,7 +26,9 @@
                         </p>
                         <p class="precioDos">$<%= ((100-descuento) * product.price) / 100 %>
                         </p>
+                        <% if (descuento> 0) { %>
                         <p class="descuento">(<%= descuento %>% off)</p>
+                        <% } %> <!-- else cambia la clase? -->
                 </section>
                 <section class="detalle">
                     <p>
