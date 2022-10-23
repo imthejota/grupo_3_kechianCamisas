@@ -22,10 +22,10 @@
                 </div>
                 <section class="precios">
                     <% let precio=product.price; let descuento=product.discount; %>
-                        <p class="precioUno">$<%= product.price %>
-                        </p>
-                        <p class="precioDos">$<%= ((100-descuento) * product.price) / 100 %>
-                        </p>
+                    <% if (descuento> 0) { %>
+                        <p class="precioUno">$<%= product.price %></p>
+                        <% } %> <!-- else cambia la clase? -->
+                        <p class="precioDos">$<%= ((100-descuento) * product.price) / 100 %></p>
                         <% if (descuento> 0) { %>
                         <p class="descuento">(<%= descuento %>% off)</p>
                         <% } %> <!-- else cambia la clase? -->
