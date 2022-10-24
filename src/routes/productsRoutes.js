@@ -24,17 +24,7 @@ const filename = (req, file, cb) => {
 // Requiero multer
 const multer = require('multer');
 // Al multer le paso un objeto que tiene el multer.diskStorage y dentro del mismo paso otro objeto con las 2 constantes creadas antes
-const upload = multer({
-    storage: multer.diskStorage({destination, filename}),
-    fileFilter: (req, file, cb) => {
-        if (file.mimetype == "image/png" || file.mimetype == "image/jpg" || file.mimetype == "image/jpeg" || file.mimetype == "image/gif") {
-        cb(null, true);
-        } else {
-        cb(null, false);
-        return cb(new Error('Solo .png, .jpg and .jpeg son los formatos válidos!'));
-        } // de esta manera me tira el error haciendo mierda la vista
-    }
-})
+const upload = multer({storage: multer.diskStorage({destination, filename})})
 
 const isLogged = require('../middlewares/isLogged')
 const isAdmin = require ('../middlewares/isAdmin');
@@ -51,5 +41,3 @@ router.put('/actualizar/:id', upload.any(), productsControllers.update); // 6
 router.delete('/delete/:id', isLogged , productsControllers.delete); // 8
 
 module.exports = router;
-
-// TODO agregar un ternario en una ruta es posible?

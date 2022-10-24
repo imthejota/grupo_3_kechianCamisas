@@ -17,3 +17,11 @@ let descripcion = body('description').notEmpty().withMessage('Campo obligatorio'
 /* let talle =
 let categoria = */ 
 
+/* fileFilter: (req, file, cb) => {
+    if (file.mimetype == "image/png" || file.mimetype == "image/jpg" || file.mimetype == "image/jpeg" || file.mimetype == "image/gif") {
+    cb(null, true);
+    } else {
+    cb(null, false);
+    return cb(new Error('Solo .png, .jpg and .jpeg son los formatos válidos!'));
+    } // de esta manera me tira el error haciendo mierda la vista
+} */
