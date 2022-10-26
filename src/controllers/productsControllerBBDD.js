@@ -1,4 +1,5 @@
 let db = require('../database/models')
+const { validationResult } = require("express-validator");
 
 let productsController = {
     index: (req, res) => {
