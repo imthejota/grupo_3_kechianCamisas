@@ -14,14 +14,6 @@ const db = require('../database/models/')
 
 let nombre = body('name').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 5}).withMessage('Mínimo 5 caracteres')
 let descripcion = body('description').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 20}).withMessage('Mínimo 20 caracteres')
+let imagen = body('image').notEmpty().withMessage('Debes agregar una imagen').bail().custom((value,{req}) => {}    
 /* let talle =
 let categoria = */ 
-
-/* fileFilter: (req, file, cb) => {
-    if (file.mimetype == "image/png" || file.mimetype == "image/jpg" || file.mimetype == "image/jpeg" || file.mimetype == "image/gif") {
-    cb(null, true);
-    } else {
-    cb(null, false);
-    return cb(new Error('Solo .png, .jpg and .jpeg son los formatos válidos!'));
-    } // de esta manera me tira el error haciendo mierda la vista
-} */
