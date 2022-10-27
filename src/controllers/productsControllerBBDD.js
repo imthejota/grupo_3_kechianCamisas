@@ -25,9 +25,6 @@ let productsController = {
                 data: req.body
             })
         }
-        if (req.body.recuerdame){
-            res.cookie('user', req.body.correo,{maxAge: 10000 * 60 * 300})
-        }
         if (req.files && req.files.length > 0){
                 req.body.image = req.files[0].filename
             } else {
