@@ -11,15 +11,19 @@ de talles, colores, etc. que lleguen sean válidos en la base. */
 
 const {body} = require("express-validator");
 const db = require('../database/models/')
+const path = require('path')
 
 
 let nombre = body('name').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 5}).withMessage('Mínimo 5 caracteres')
 let descripcion = body('description').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 20}).withMessage('Mínimo 20 caracteres')
-/* let imagen = body('image').notEmpty().withMessage('Debes agregar una imagen').bail().custom((value) => {
-} */ 
+/* let imagen = body('image').custom((value, {req}) => {
+    let ext = path.extname('image');
+    if (ext != 'jpg' || ext !=  'jpeg'){
+        return Promise.reject ('Formato inválido')
+    }}) */
 
 /* son opcionales let talle =
 let categoria = */ 
 
-let validaciones = [nombre, descripcion]
+let validaciones = [nombre, descripcion/* , imagen */]
 module.exports = validaciones
