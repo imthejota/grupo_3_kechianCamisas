@@ -15,6 +15,19 @@ let productsController = {
         return res.render ('product/crear')
     },
     save: (req, res) => {
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            console.log(errores)
+            return res.render('product/crear',{
+                style:'crear',
+                errores: errores,
+                data: req.body
+            })
+        }
+        if (req.body.recuerdame){
+            res.cookie('user', req.body.correo,{maxAge: 10000 * 60 * 300})
+        }
         if (req.files && req.files.length > 0){
                 req.body.image = req.files[0].filename
             } else {
