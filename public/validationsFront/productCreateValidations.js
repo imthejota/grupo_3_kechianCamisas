@@ -3,7 +3,7 @@ window.addEventListener("load", function (){
     let camisas = document.querySelectorA("div .elemento")
 
     //terminar de arrmar el falta el html 
-    let = errores [""]  
+    let errores = []  
 
     camisas.addEventListener ("submit", function(e){
         e.preventDefault();
