@@ -9,30 +9,30 @@ console.log(formulario)
 
         let campoNombre = document.querySelector("#nombre");
         if (campoNombre.value == "") {
-            errores.push("El campo de nombre tiene que estar completo.")
+            errores.push("El nombre tiene que estar completo.")
         } else if (campoNombre.value.length < 2) {
-            errores.push("El campo de nombre debe tener al menos 2 caracteres.")
+            errores.push("El nombre debe tener al menos 2 caracteres.")
         }
 
         let campoApellido = document.querySelector("#apellido");
         if (campoApellido.value == "") {
-            errores.push("El campo de apellido tiene que estar completo.")
+            errores.push("El apellido tiene que estar completo.")
         } else if (campoApellido.value.length < 2) {
-            errores.push("El campo de apellido debe tener al menos 2 caracteres.")
+            errores.push("El apellido debe tener al menos 2 caracteres.")
         }
 
         let campoEmail = document.querySelector("#correoe");
         if (campoEmail.value == "") {
-            errores.push("El campo de email tiene que estar completo.")
+            errores.push("El email tiene que estar completo.")
         } else if (campoEmail.value.length < 2) {
-            errores.push("El campo de email debe tener al menos 2 caracteres.")
+            errores.push("El email debe tener al menos 2 caracteres.")
         }
 
         let campoContraseña = document.querySelector("#contra");
         if (campoContraseña.value == "") {
-            errores.push("El campo de contraseña tiene que estar completo.")
+            errores.push("La contraseña tiene que estar completa.")
         } else if (campoContraseña.value.length < 8) {
-            errores.push("El campo de contraseña debe tener al menos 8 caracteres.")
+            errores.push("La contraseña debe tener al menos 8 caracteres.")
         }
 
         
@@ -65,7 +65,7 @@ console.log(formulario)
         if (errores.length > 0) {
          
 
-            let ulErrores = document.querySelector("div.errores")
+            let ulErrores = document.querySelector("ul.ul-register-errores")
             ulErrores.innerHTML = "";
             for (let i = 0; i < errores.length; i++) {
                 console.log(campoImagen.value)
