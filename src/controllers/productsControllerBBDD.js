@@ -57,32 +57,33 @@ let productsController = {
         })
         .catch(error => res.send(error)) 
     },
-    edit: (req, res) => {
-        db.Product.findByPk(req.params.id)
-        .then(function (product){
-            return res.render('product/edit',{ product });
-        })
-        .catch(error => res.send(error))
+    edit: async (req, res) => {
+        try {
+            let sizes = await db.Size.findAll()
+            let product = await  db.Product.findByPk(req.params.id)
+            return res.render('product/edit',{ product, sizes });
+        } catch (error) {
+            res.send(error)
+        }
     },
-    update: (req, res) => {
-        db.Product.findByPk(req.params.id)
-        .then(elemento => {
-            return db.Product.update({
+    update: async (req, res) => {
+        try {
+            /* return res.send({data: req.body, file: req.files}) */
+            let product = await db.Product.findByPk(req.params.id)
+            await db.Product.update({
                 name: req.body.name,
                 description: req.body.description,
-                image: req.files && req.files.length > 0 ? req.files[0].filename : elemento.image,
+                image: req.files && req.files.length > 0 ? req.files[0].filename : product.image,
                 price: req.body.price,
                 discount: req.body.discount,
-                
             }, {
-                where: {
-                    id: req.params.id
-                }
+                where: {id: req.params.id}
             })
-        }).then(() =>{
+            await product.addSizes(req.body.sizes)
             return res.redirect('/products/detail/' + req.params.id)
-        })
-        .catch(error => res.send(error))
+        } catch (error) {
+            res.send(error)
+        }
     },
     productCart: (req, res) => {
         res.render('product/cart');
