@@ -49,6 +49,8 @@ window.addEventListener("load", function () {
                 ulErrores.innerHTML += "<li>" + errores[i] + "<li/>"
 
             }
+        }else{
+            formulario.submit()
         }
     })
 })
