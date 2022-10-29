@@ -35,11 +35,13 @@
                             <input class="grl" type="file" id="imagen" name="image" >
                         </div>
 
-                        <div>
-                            <label class="elemento" for="talle"></label>
-                                <% sizes.forEach(element => { %>
-                                    <input class="grl" type="checkbox" id="talle" name="sizes" value="<%= element.id %>"> <span><%= element.size %></span>
-                                <% }) %>
+                        <div class="checkTalles">
+                            <% sizes.forEach(element => { %>
+                                <div class="checkboxTalles">
+                                <input class="elemento checkbox" type="checkbox" id="talle" name="sizes" value="<%= element.id %>">
+                                <label class="elemento labelCheckbox" for="talle"><%= element.size %></label>
+                                </div>
+                            <% }) %>
                         </div>
 
                         <div>
