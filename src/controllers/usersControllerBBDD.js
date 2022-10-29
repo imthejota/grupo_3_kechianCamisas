@@ -57,6 +57,13 @@ const userControllersBBDD = {
         .then(() => res.redirect ('/'))
         .catch(error => res.send(error)) 
     },
+    edit: function(req, res) {
+        db.User.findByPk(req.params.id)
+        .then(function (user){
+            return res.render('user/editUser',{user});
+        })
+        .catch(error => res.send(error))
+    },
     update: (req, res) => {
         db.User.findByPk(req.params.id)
             .then(usuario => {

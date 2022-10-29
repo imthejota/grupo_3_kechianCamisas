@@ -10,34 +10,23 @@
             <form class="caja2" action="/user/update/<%= user.id %>?m=PUT" method="POST" enctype="multipart/form-data">
                 <p class="titulo"> Modificar Usuario </p>
 
-                <input type="hidden" name="id" value="<%= user.id %> ">
+                <input type="hidden" name="id" value="<%= user.id %>">
 
                 <p class="titulo2"> Información personal: </p>
 
                 <label for="nombre"></label>
-                <input type="text" id="nombre" name="firstName" value="<%= user.firstName %> "><br>
+                <input type="text" id="nombre" name="firstName" value="<%= user.firstName %>"><br>
 
                 <label for="apellido"></label>
-                <input type="text" id="apellido" name="lastName" value="<%= user.lastName %> "><br>
+                <input type="text" id="apellido" name="lastName" value="<%= user.lastName %>"><br>
 
                 <label for="ubicacion"></label>
-                <input type="text" id="ubicacion" name="location" value="<%= user.location %> "><br>
+                <input type="text" id="ubicacion" name="location" value="<%= user.location %>"><br>
 
-                <p class="titulo"> INFORMACIÓN DE CUENTA: </p>
-
-                <label for="correoe"></label>
-                <input type="email" id="correoe" name="email" value="<%= user.email %> "><br>
-
-                <label for="contra"></label>
-                <input type="password" id="contra" name="password" value="<%= user.password %> "><br>
+                <p class="titulo"> INFORMACIÓN DE CUENTA: </p> <br>
 
                 <label for="imagen">Imagen de perfil:</label>
-                <input type="file" id="imagen" name="image" value="<%= user.image %> "><br>
-
-                <div class="TerminosCondiciones">
-                    <input type="checkbox" id="condiciones" name="condiciones" value="condiciones">
-                    <label for="condiciones">He leído y acepto los términos y condiciones</label><br>
-                </div>
+                <input type="file" id="imagen" name="image" value="<%= user.image %>"><br>
 
                 <div class="botonesCrearInicio">
                     <div class="botonCrearCuenta">

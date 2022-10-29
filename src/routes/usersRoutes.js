@@ -30,11 +30,13 @@ router.get('/login', userControllersBBDD.login)
 //agregando ruta logout
 router.get('/register', userControllersBBDD.register)
 
+router.get('/user/update/:id', userControllersBBDD.edit)
+
 // Ruta logout
 router.post('/logout', userControllersBBDD.logout)
 router.post('/saveUser', fileUpload.single('image'), userControllersBBDD.save)
 router.post('/access', validatorLogin, userControllersBBDD.access)
-router.put('/user/update/:id', fileUpload.any(),  userControllersBBDD.update);
+router.put('/user/update/:id', fileUpload.any(),  userControllersBBDD.update)
 router.delete('/user/delete/:id', userControllersBBDD.destroy)
 
 module.exports = router;
