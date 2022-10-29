@@ -12,15 +12,18 @@ let productsController = {
         .catch(error => res.send(error))
     },
     create: (req, res) => {
-        return res.render ('product/crear')
+        db.Size.findAll().then( sizes => {
+            return res.render ('product/crear', 
+            {data: null, sizes})    
+        })
+        
     },
     save: (req, res) => {
         const result = validationResult(req);
         if(!result.isEmpty()){
             let errores = result.mapped();
-            console.log(errores)
+            console.log(req.body)
             return res.render('product/crear',{
-                style:'crear',
                 errores: errores,
                 data: req.body
             })
@@ -37,7 +40,9 @@ let productsController = {
             price: req.body.price,
             discount: req.body.discount
         })
-        .then(() => {
+        .then((product) => {
+            return product.addSizes(req.body.sizes)
+        }).then(() => {
             return res.redirect ('/products/list')
         })
         .catch(error => res.send(error)) 
@@ -47,7 +52,7 @@ let productsController = {
             include: [{association: 'sizes'}]
         })
         .then(function(product){
-            console.log(req.params)
+            console.log(product)
             return res.render('product/detail', { product })
         })
         .catch(error => res.send(error)) 

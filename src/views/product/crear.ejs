@@ -13,18 +13,18 @@
 
                         <div>
                             <label class="elemento" for="nombre-producto"></label>
-                            <input class="grl-top" type="text" id="name" name="name" placeholder="Nombre del producto" required>
+                            <input class="grl-top" type="text" id="name" name="name" placeholder="Nombre del producto" value="<%= data? data.name : "" %>" >
                         </div>
 
                         <div>
                             <label class="elemento" for="descripción"></label>
-                            <input class="grl" type="text" id="descripción" name="description" placeholder="Descripción" required>
+                            <input class="grl" type="text" id="descripción" name="description" placeholder="Descripción" value="<%= data? data.description : "" %>" >
                         </div>
 
 
                         <div>
                             <label class="elemento" for="categoria"></label>
-                            <select class="grl" type="text" id="categoria" name="category" placeholder="Categoría" required>
+                            <select class="grl" type="text" id="categoria" name="category" placeholder="Categoría">
                                 <option value="estampada">Estampada</option>
                                 <option value="lisa">Lisa</option>
                             </select>
@@ -32,27 +32,24 @@
 
                         <div>
                             <label class="elemento" for="imagen"></label>
-                            <input class="grl" type="file" id="imagen" name="image" required>
+                            <input class="grl" type="file" id="imagen" name="image" >
                         </div>
 
                         <div>
                             <label class="elemento" for="talle"></label>
-                            <select class="grl" type="number" id="talle" name="size"  required>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="extraLarge">Extra large</option>    
-                    </select><br>
+                                <% sizes.forEach(element => { %>
+                                    <input class="grl" type="checkbox" id="talle" name="sizes" value="<%= element.id %>"> <span><%= element.size %></span>
+                                <% }) %>
                         </div>
 
                         <div>
                             <label class="elemento" for="precio"></label>
-                            <input class="grl" type="number" id="precio" name="price" placeholder="Precio" required>
+                            <input class="grl" type="number" id="precio" name="price" placeholder="Precio" value="<%= data? data.price : "" %>">
                         </div>
 
                         <div>
                             <label class="elemento" for="descuento"></label>
-                            <input class="grl" type="number" id="descuento" name="discount" placeholder="Descuento" required>
+                            <input class="grl" type="number" id="descuento" name="discount" placeholder="Descuento"  value="<%= data? data.discount : "" %>">
                         </div>
 
 
