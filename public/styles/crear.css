@@ -80,7 +80,32 @@ body {
     font-family: 'Montserrat Subrayada', sans-serif;
 }
 
+.checkTalles{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
 
+.checkboxTalles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12px;
+    background: #555;
+    /* margin: 20px 10px; */
+    position: relative;
+    border-radius: 5px;
+}
+
+.labelCheckbox {
+    margin-left: 2%;
+    color: rgb(198, 138, 46);
+}
 
 /* DE ACA EN ADELANTE ES TABLET */
 

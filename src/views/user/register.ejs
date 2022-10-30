@@ -8,32 +8,35 @@
 
     <main>
 
-        <div class="errores">
-            <ul></ul>
-        </div>
+
 
         <div class="caja1">
+
             <form class="caja2" action="/saveUser" method="POST" enctype="multipart/form-data">
                 <p class="titulo"> CREAR CUENTA </p>
 
+                <div class="errores">
+                    <ul class="ul-register-errores">
+                    </ul>
+                </div>
                 <p class="titulo2"> Información personal: </p>
 
                 <label for="nombre"></label>
-                <input type="text" id="nombre" name="firstName" placeholder="Nombre" required><br>
+                <input type="text" id="nombre" name="firstName" placeholder="Nombre" ><br>
 
                 <label for="apellido"></label>
-                <input type="text" id="apellido" name="lastName" placeholder="Apellido" required><br>
+                <input type="text" id="apellido" name="lastName" placeholder="Apellido" ><br>
 
                 <label for="ubicacion"></label>
-                <input type="text" id="ubicacion" name="location" placeholder="Ubicación" required><br>
+                <input type="text" id="ubicacion" name="location" placeholder="Ubicación" ><br>
 
                 <p class="titulo"> INFORMACIÓN DE CUENTA: </p>
 
                 <label for="correoe"></label>
-                <input type="email" id="correoe" name="email" placeholder="E-mail" required><br>
+                <input type="email" id="correoe" name="email" placeholder="E-mail" ><br>
 
                 <label for="contra"></label>
-                <input type="password" id="contra" name="password" placeholder="Contraseña" required><br>
+                <input type="password" id="contra" name="password" placeholder="Contraseña" ><br>
 
                 <label for="imagen">Imagen de perfil:</label>
                 <input type="file" id="imagen" name="image"><br>
@@ -54,6 +57,9 @@
 
             </form>
         </div>
+        <script src="/validationsFront/userCreateValidations.js">
+
+        </script>
     </main>
 
     <%- include ('../partials/footer.ejs') %>

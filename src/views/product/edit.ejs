@@ -42,12 +42,9 @@
 
                         <div>
                             <label class="elemento" for="talle"></label>
-                            <select class="grl" type="number" id="talle" name="size" value="<%= product.size %>" >
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="extraLarge">Extra large</option>    
-                            </select><br>
+                                <% sizes.forEach(element => { %>
+                                    <input class="grl" type="checkbox" id="talle" name="sizes" value="<%= element.id %>"> <span><%= element.size %></span>
+                                <% }) %>
                         </div>
 
                         <div>

@@ -155,8 +155,18 @@ main {
 
 .errores {
     color: red;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.errores ul{
     list-style-type: none;
 }
+
+.errores ul li{
+    padding: 4px 0;
+}
+
 
 /* DE ACA EN ADELANTE ES TABLET */
 

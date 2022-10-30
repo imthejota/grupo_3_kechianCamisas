@@ -31,13 +31,15 @@
                         <% } %> <!-- else cambia la clase? -->
                 </section>
                 <section class="detalle">
-                    <p>
-                        <%= product.description %>
-                    </p>
-                    <p>Categoría: <%= product.category %>
-                    </p>
-                    <p>Talle: <%= product.size %>
-                    </p>
+                    <p><%= product.description %></p>
+                    <p>Categoría: <%= product.category %></p>
+                    <% if (product.sizes.length > 0) { %>
+                        <p>Talle: <select name="size" id="">
+                            <% product.sizes.forEach(element => { %>
+                            <option value=""><%= element.size %></option> 
+                            <% }) %>
+                        </select> </p>          
+                    <% } %>
                 </section>
                 <section class="finalDetalle">
                     <div class="botonesAnteultimos">
