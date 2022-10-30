@@ -13,10 +13,8 @@ let productsController = {
     },
     create: (req, res) => {
         db.Size.findAll().then( sizes => {
-            return res.render ('product/crear', 
-            {data: null, sizes})    
-        })
-        
+            return res.render ('product/crear', {data: null, sizes})    
+        }) 
     },
     save: (req, res) => {
         const result = validationResult(req);
