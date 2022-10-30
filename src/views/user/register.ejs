@@ -22,28 +22,76 @@
                 <p class="titulo2"> Información personal: </p>
 
                 <label for="nombre"></label>
-                <input type="text" id="nombre" name="firstName" placeholder="Nombre" ><br>
+                <input type="text" id="nombre" name="firstName" placeholder="Nombre" 
+                value="<%= locals.data && locals.data.firstName ? locals.data.firstName : null %>" 
+                >
+                <% if (locals.errores && locals.errores.firstName) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.firstName.msg %> 
+                    </p> 
+                <% } %>
+                <br>
 
                 <label for="apellido"></label>
-                <input type="text" id="apellido" name="lastName" placeholder="Apellido" ><br>
+                <input type="text" id="apellido" name="lastName" placeholder="Apellido" 
+                value="<%= locals.data && locals.data.lastName ? locals.data.lastName : null %>" 
+                >
+
+                <% if (locals.errores && locals.errores.lastName) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.lastName.msg %> 
+                    </p> 
+                <% } %><br>
 
                 <label for="ubicacion"></label>
-                <input type="text" id="ubicacion" name="location" placeholder="Ubicación" ><br>
+                <input type="text" id="ubicacion" name="location" placeholder="Ubicación" 
+                value="<%= locals.data && locals.data.location ? locals.data.location : null %>" 
+                >
+                <% if (locals.errores && locals.errores.location) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.location.msg %> 
+                    </p> 
+                <% } %><br>
 
                 <p class="titulo"> INFORMACIÓN DE CUENTA: </p>
 
                 <label for="correoe"></label>
-                <input type="email" id="correoe" name="email" placeholder="E-mail" ><br>
+                <input type="email" id="correoe" name="email" placeholder="E-mail" 
+                value="<%= locals.data && locals.data.email ? locals.data.email : null %>" 
+                >
+                <% if (locals.errores && locals.errores.email) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.email.msg %> 
+                    </p> 
+                <% } %><br>
 
                 <label for="contra"></label>
-                <input type="password" id="contra" name="password" placeholder="Contraseña" ><br>
+                <input type="password" id="contra" name="password" placeholder="Contraseña" >
+                <% if (locals.errores && locals.errores.password) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.password.msg %> 
+                    </p> 
+                <% } %><br>
 
                 <label for="imagen">Imagen de perfil:</label>
-                <input type="file" id="imagen" name="image"><br>
+                <input type="file" id="imagen" name="image">
+                <% if (locals.errores && locals.errores.image) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.image.msg %> 
+                    </p> 
+                <% } %><br>
 
                 <div class="TerminosCondiciones">
-                    <input type="checkbox" id="condiciones" name="condiciones" value="condiciones">
-                    <label for="condiciones">He leído y acepto los términos y condiciones</label><br>
+                    <input type="checkbox" id="condiciones" name="condiciones" value="condiciones"
+                    <%= locals.data && locals.data.condiciones ? "checked" : null %>
+                    >
+                    <label for="condiciones">He leído y acepto los términos y condiciones</label>
+                    <% if (locals.errores && locals.errores.condiciones) { %> 
+                        <p class="feedback">
+                            <%= locals.errores.condiciones.msg %> 
+                        </p> 
+                    <% } %> <br>
+
                 </div>
 
                 <div class="botonesCrearInicio">
@@ -57,9 +105,9 @@
 
             </form>
         </div>
-        <script src="/validationsFront/userCreateValidations.js">
+        <!-- <script src="/validationsFront/userCreateValidations.js">
 
-        </script>
+        </script> -->
     </main>
 
     <%- include ('../partials/footer.ejs') %>

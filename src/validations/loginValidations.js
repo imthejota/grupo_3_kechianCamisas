@@ -2,7 +2,10 @@ const {body} = require("express-validator");
 const {compareSync} = require('bcrypt');
 const db = require('../database/models/')
 
-let email = body('correo').notEmpty().withMessage('Campo obligatorio').bail().isEmail().withMessage('Email no valido').custom((value,{req}) => {
+let email = body('correo')
+.notEmpty().withMessage('Campo obligatorio').bail()
+.isEmail().withMessage('Email no valido')
+.custom((value,{req}) => {
     return db.User.findAll()
     .then(users => {
         let listOfEmails = users.map(user => user.email)
@@ -15,7 +18,10 @@ let email = body('correo').notEmpty().withMessage('Campo obligatorio').bail().is
     }).catch(error => {throw new Error(error)})
 })
 
-let password = body('contraseña').notEmpty().withMessage('Campo obligatorio').bail().isLength({min:4}).withMessage('Minimo 4 caracteres').custom((value,{req}) => {
+let password = body('contraseña')
+.notEmpty().withMessage('Campo obligatorio').bail()
+.isLength({min:4}).withMessage('Minimo 4 caracteres')
+.custom((value,{req}) => {
     return db.User.findOne({
         where: {email: req.body.correo}
     })
