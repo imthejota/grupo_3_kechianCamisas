@@ -1,6 +1,8 @@
 window.addEventListener("load", function () {
+    
     let formulario = document.querySelector("form.caja2");
-console.log(formulario)
+    console.log(formulario)
+    
     formulario.addEventListener("submit", function (e) {
         e.preventDefault();
         let errores = [];
