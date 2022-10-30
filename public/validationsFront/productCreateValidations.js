@@ -10,17 +10,17 @@ window.addEventListener("load", function (){
 
         let campoCamisa = document.querySelector("input#name")
         if (campoCamisa.value == "") {
-            errores.push("el nombre de la camisa es obligatoria")
+            errores.push("El nombre de la camisa es obligatorio")
         } else if (campoCamisa.value.length<5) {
             console.log (campoCamisa.value.length)
-            errores.push("campo nombre con almenos 5 carecteres")
+            errores.push("El campo nombre debe tener mínimo 5 carecteres")
         }
 
         let campoDescripcion = document.querySelector("input#descripcion")
         if (campoDescripcion.value == ""){
-            errores.push("El campo descripcion debe estar completo ")
+            errores.push("El campo descripción debe estar completo ")
         } else if (campoDescripcion.value.length<20){
-            errores.push("La descripcion debe tener al menos 20 caracteres")
+            errores.push("La descripción debe tener al menos 20 caracteres")
         }
         
         let campoImagen = document.querySelector("input#imagen")

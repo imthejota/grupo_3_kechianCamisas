@@ -7,8 +7,8 @@ const {body} = require("express-validator");
 const path = require('path')
 
 
-let nombre = body('name').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 5}).withMessage('Mínimo 5 caracteres')
-let descripcion = body('description').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 20}).withMessage('Mínimo 20 caracteres')
+let nombre = body('name').notEmpty().bail().isLength({min: 5})
+let descripcion = body('description').notEmpty().bail().isLength({min: 20})
 let imagen = body('image').custom((value, {req}) => {
     let archivo = req.files[0]
     if(archivo.mimetype === 'image/jpg' || archivo.mimetype === 'image/png' || archivo.mimetype === 'image/jpeg' || archivo.mimetype === 'image/gif'){
