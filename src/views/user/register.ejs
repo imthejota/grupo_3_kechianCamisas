@@ -7,9 +7,6 @@
     <%- include ('../partials/header.ejs') %>
 
     <main>
-
-
-
         <div class="caja1">
 
             <form class="caja2" action="/saveUser" method="POST" enctype="multipart/form-data">
@@ -25,7 +22,7 @@
                 <input type="text" id="nombre" name="firstName" placeholder="Nombre" 
                 value="<%= locals.data && locals.data.firstName ? locals.data.firstName : null %>" 
                 >
-                <% if (locals.errores && locals.errores.firstName) { %> 
+                <% if (locals.errores && locals.errores.firstName) { %>  
                     <p class="feedback">
                         <%= locals.errores.firstName.msg %> 
                     </p> 
@@ -105,9 +102,7 @@
 
             </form>
         </div>
-        <!-- <script src="/validationsFront/userCreateValidations.js">
-
-        </script> -->
+         <script src="/validationsFront/userCreateValidations.js"></script>
     </main>
 
     <%- include ('../partials/footer.ejs') %>

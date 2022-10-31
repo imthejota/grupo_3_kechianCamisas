@@ -2,7 +2,6 @@ window.addEventListener("load", function (){
 
     let formulario = document.querySelector("div form.c2")
 
-    
     formulario.addEventListener ("submit", function(e){
         e.preventDefault();
         
@@ -12,7 +11,7 @@ window.addEventListener("load", function (){
         if (campoCamisa.value == "") {
             errores.push("El nombre de la camisa es obligatorio")
         } else if (campoCamisa.value.length< 5) {
-            console.log (campoCamisa.value.length)
+            console.log (campoCamisa.value.length) 
             errores.push("El campo nombre debe tener mínimo 5 carecteres")
         }
 
@@ -27,7 +26,8 @@ window.addEventListener("load", function (){
         if (campoImagen.value == "") {
             errores.push("Imagen con tipo de archivo (JPG, JPEG, PNG, GIF).")
         }
-        if (errores.length>0){
+        console.log(errores)
+        if (errores.length > 0){
             let ulErrores = document.querySelector("div.errores")
             for (let i = 0; i < errores.length; i++) 
             {

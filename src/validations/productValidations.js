@@ -3,7 +3,6 @@
 de talles, colores, etc. que lleguen sean válidos en la base. */ 
 
 const {body} = require("express-validator");
-/* const db = require('../database/models/') */
 const path = require('path')
 
 

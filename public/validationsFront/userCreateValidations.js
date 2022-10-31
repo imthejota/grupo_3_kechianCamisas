@@ -5,7 +5,10 @@ console.log(formulario)
         e.preventDefault();
         let errores = [];
 
-        let campoNombre = document.querySelector("#nombre");
+        let campoNombre = document.querySelector("#nombre")
+        /* campoNombre.addEventListener('change', function (e){
+
+        }) */
         if (campoNombre.value == "") {
             errores.push("El nombre tiene que estar completo.")
         } else if (campoNombre.value.length < 2) {

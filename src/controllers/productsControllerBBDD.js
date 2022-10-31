@@ -19,11 +19,13 @@ let productsController = {
     save: (req, res) => {
         const result = validationResult(req);
         if(!result.isEmpty()){
-            let errores = result.mapped();
-            console.log(req.body)
-            return res.render('product/crear',{
-                errores: errores,
-                data: req.body
+            let errores = result.mapped()
+            return db.Size.findAll().then( sizes => {
+                return res.render('product/crear',{
+                    errores: errores,
+                    data: req.body,
+                    sizes: sizes
+                })
             })
         }
         if (req.files && req.files.length > 0){
