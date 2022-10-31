@@ -87,12 +87,17 @@ let productsController = {
         res.render('product/cart');
     },
     delete: (req, res) => {
-        db.Product.destroy({
+        db.Product_size.destroy({
             where: {
-                id: req.params.id
+                product_id: req.params.id 
             }
-        })
-        .then(() => {
+        }).then(() => {
+            db.Product.destroy({
+                where: {
+                    id: req.params.id
+                }  
+            })
+        }).then(() => {
             res.redirect('/products/list')
         })
         .catch(error => res.send(error)) // TODO Agrego catch;

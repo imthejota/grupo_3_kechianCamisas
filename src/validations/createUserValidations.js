@@ -1,20 +1,13 @@
 const {body} = require("express-validator");
 const db = require('../database/models/')
 
-let firstName = body('firstName')
-.notEmpty().withMessage('Campo obligatorio').bail()
-.isLength({min: 2}).withMessage('Mínimo 2 caracteres')
+let firstName = body('firstName').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 2}).withMessage('Mínimo 2 caracteres')
 
-let lastName = body('lastName')
-.notEmpty().withMessage('Campo obligatorio').bail()
-.isLength({min: 2}).withMessage('Mínimo 2 caracteres')
+let lastName = body('lastName').notEmpty().withMessage('Campo obligatorio').bail().isLength({min: 2}).withMessage('Mínimo 2 caracteres')
 
-let location = body('location')
-.notEmpty().withMessage('Campo obligatorio').bail()
+let location = body('location').notEmpty().withMessage('Campo obligatorio').bail()
 
-let email = body('email')
-.notEmpty().withMessage('Campo obligatorio').bail()
-.isEmail().withMessage('Email no valido')
+let email = body('email').notEmpty().withMessage('Campo obligatorio').bail().isEmail().withMessage('Email no valido')
 .custom((value,{req}) => {
     return db.User.findAll()
     .then(users => {
@@ -39,8 +32,6 @@ let password = body('password')
     }
 })
 
-
-
 let image = body('image')
 .custom((value, {req}) => {//chequea que la imagen sea un archivo válido (JPG, JPEG, PNG, GIF).
     let archivo = req.file
@@ -55,8 +46,7 @@ let image = body('image')
 }) 
 
 
-let condiciones = body('condiciones')
-.notEmpty().withMessage('Campo obligatorio').bail()
+let condiciones = body('condiciones').notEmpty().withMessage('Campo obligatorio').bail()
 
 
 let validaciones = [firstName, lastName, location, email, password, image, condiciones]
