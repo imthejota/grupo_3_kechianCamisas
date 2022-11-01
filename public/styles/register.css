@@ -51,6 +51,14 @@ main {
 
 .botonInicio {
     margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4%;
+    font-size: 16px;
+    padding: 2%;
+    background-color: var(--amarillo);
+    width: 60%%;
+    height: 33px;
+    border-radius: 11px;
 }
 
 .botonInicio a {
@@ -58,16 +66,25 @@ main {
     list-style: none;
     text-decoration: none;
     font-size: 16px;
-    color: rgb(198, 138, 46);
+    color: black;
 }
 
 .boton {
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 6%;
-    background-color: rgb(31, 56, 86);
+    background-color: var(--amarillo);
+    color: black;
     font-size: 16px;
-    color: rgb(198, 138, 46);
-    margin-top: 2%;
+}
+
+
+.botonCrearCuenta {
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4%;
+    padding: 2%;
+    background-color: var(--amarillo);
+    color: black;
+    border-radius: 11px;
 }
 
 .botonesCrearInicio {
