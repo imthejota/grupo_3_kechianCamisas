@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
         console.log(errores)
         
         if (errores.length > 0) {
-            let ulErrores = document.querySelector("div.errores")
+            let ulErrores = document.querySelector("ul.ul-login-errores")
             ulErrores.innerHTML = "";
             for (let i = 0; i < errores.length; i++) {
                 ulErrores.innerHTML += "<li>" + errores[i] + "<li/>"

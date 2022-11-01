@@ -80,7 +80,7 @@ body {
     padding: 2%;
     margin-bottom: 4%;
     font-size: 16px;
-    width: 60%%;
+    width: 60%;
     height: 33px;
     border-radius: 11px;
 }
@@ -92,7 +92,7 @@ body {
     padding: 2%;
     background-color: var(--amarillo);
     color: black;
-    width: 60%%;
+    width: 60%;
     height: 33px;
     border-radius: 11px;
 }
@@ -125,6 +125,15 @@ body {
 }
 
 
+.errores ul{
+    list-style-type: none;
+}
+
+
+.ul-login-errores{
+    text-align: center;
+    color: red;
+}
 
 /* DE ACA EN ADELANTE ES TABLET */
 
