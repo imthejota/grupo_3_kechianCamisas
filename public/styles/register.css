@@ -73,6 +73,8 @@ main {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--amarillo);
     color: black;
+    border-radius: 11px;
+    padding: 2%;
     font-size: 16px;
 }
 
