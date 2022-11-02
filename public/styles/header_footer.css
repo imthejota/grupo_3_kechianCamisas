@@ -49,6 +49,11 @@ header i {
     
 }
 
+header form[action="/logout"] button {
+background-color: unset;
+    border-style: none;
+    font-size: 1.3em;
+}
 /*Mateo: MENU BURGER INICIO*/
 
 #menuBurger{ /*Todo lo que sea el menuBurger esta aca */

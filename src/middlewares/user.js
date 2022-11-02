@@ -17,7 +17,7 @@ let middleware = async (req,res,next) => {
     if(req.session && req.session.user){
         user = req.session.user
     }
-    res.locals.user = user
+    res.locals.user = user 
 
     return next()
 }

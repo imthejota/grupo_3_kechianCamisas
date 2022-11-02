@@ -17,9 +17,10 @@
         <nav class="navAtras">
             <a class="productos" href="/products/list"> PRODUCTOS</a> 
             <a href="#" class="buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="/user/1" class="usuarioPefil" >Mi perfil</a>
             <a href="/products/cart" class="carrito" >CARRITO</a>
-            <% if (locals.user) { %>  
+            <% if (locals.user) {  %>
+                
+                <a href="/user/<%=(locals.user.id)%>" class="usuarioPefil" >Mi perfil</a> 
                 
                 <form action="/logout" method="post"><button type="submit"><i class="fa-solid fa-door-open"></i></button></form>
 
