@@ -25,7 +25,7 @@ body {
     height: 49vh;
     margin: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 45%;
     background-color: var(--azul);
     border-radius: 20px;
@@ -36,8 +36,10 @@ body {
 .fichaPerfilUsuario {
     flex-basis: 50%;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 2%
+    padding: 1%
 }
 
 .perfilUsuario {
@@ -50,7 +52,7 @@ body {
 .nombreUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .datoUsuario{
@@ -60,19 +62,19 @@ body {
 .apellidoUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .locacionUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .emailUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .tituloPerfilUsuario{
@@ -89,9 +91,10 @@ body {
     flex-direction: row;
 }
 
-/*
+
 .contenedorImagenUsuario{
-    flex-basis: 50%;
+    display: 
+    flex-basis: 40%;
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
@@ -99,6 +102,7 @@ body {
 
 .imagenUsuario {
     margin: auto;
+    max-width: 40%;
+    max-height: 40%px;
     
 }
-*/
