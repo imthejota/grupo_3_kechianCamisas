@@ -28,7 +28,7 @@ let password = body('password')
     if(checkPassword.test(value)){
         return true
     }else{
-        return Promise.reject('La contraseña debe contener letras mayúsculas, minúsculas, un número y un carácter especial')
+        return Promise.reject('La contraseña debe contener letras mayúsculas, minúsculas, un número y un caracter especial')
     }
 })
 
