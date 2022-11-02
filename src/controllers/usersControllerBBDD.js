@@ -3,10 +3,13 @@ const bcrypt = require('bcryptjs');
 const { validationResult } = require("express-validator");
 
 const userControllersBBDD = {
-    profile: (req, res) => { // TODO agregar la vista correspondiente, la ruta ya está creada
-        db.User.findByPk(req.params.id)
-        .then(user => res.send(user))
-        .catch(error => res.send(error))
+    profile: // TODO agregar la vista correspondiente, la ruta ya está creada
+        function(req, res) {
+            db.User.findByPk(req.params.id)
+            .then(function (user){
+                return res.render('user/userProfile',{user});
+            })
+            .catch(error => res.send(error))
     },
     login: function(req, res) {
         console.log(req.session)

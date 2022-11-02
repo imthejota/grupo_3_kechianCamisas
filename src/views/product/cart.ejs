@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head.ejs', {estilo: 'cart', titulo: 'Product Cart'}) %>
+
+<body>
+    <%- include ('../partials/header.ejs') %>
+
+    <main>
+        <div class="contenedorCart">
+            <div class="parent">
+                <div class="div1 titulo">
+                    <h3>Producto</h3>
+                </div>
+                <div class="div2 titulo">
+                    <h3>Precio</h3>
+                </div>
+                <div class="div3 titulo">
+                    <h3>Cant.</h3>
+                </div>
+                <div class="div4 titulo">
+                    <h3>Subtotal</h3>
+                </div>
+                <div class="div5">
+                    <i class="fa-duotone fa-x cancelar"></i>
+                    <img src="/images/camisa-1.jpg" class="miniatura" alt="">
+                    <p class="nombreProd">Camisa</p>
+                </div>
+                <div class="div6 num">
+                    <p>$7.990</p>
+                </div>
+                <div class="div7 num">
+                    <label for="unidades"></label>
+                    <input type="number" id="unidades" name="unidades" value="1" required><br>
+                </div>
+                <div class="div8 num">
+                    <p>$7.990</p>
+                </div>
+                <div class="div9">
+                    <i class="fa-duotone fa-x cancelar"></i>
+                    <img src="/images/camisa-1.jpg" class="miniatura" alt="">
+                    <p class="nombreProd">Camisa</p>
+                </div>
+                <div class="div10 num">
+                    <p>$8.990</p>
+                </div>
+                <div class="div11 num">
+                    <label for="unidades"></label>
+                    <input type="number" id="unidades" name="unidades" value="1" required><br>
+                </div>
+                <div class="div12 num">
+                    <p>$8.990</p>
+                </div>
+                <div class="div13">Total :</div>
+                <div class="div14">$16.980</div>
+            </div>
+            <div class="botonesCompra">
+                <div>
+                    <button class="botonVaciar botoncin">Vaciar carrito</button>
+                </div>
+                <div>
+                    <button class="botonSeguir botoncin">Seguir comprando</button>
+                </div>
+                <div>
+                    <button class="botonFinalizar botoncin">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+</body>

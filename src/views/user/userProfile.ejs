@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head.ejs', {estilo: 'perfilUsuario', titulo: 'Perfil de Usuario'}) %>
+
+<body>
+    <%- include ('../partials/header.ejs') %>
+    <main class="mainPerfilUsuario">
+        <section class="contenedorPerfilUsuario">
+            <section class="fichaPerfilUsuario">
+
+                <div class="tituloPerfilUsuario">
+                    <p class="perfilUsuario"> Perfil Usuario </p>
+                </div>
+
+                <div class="titulo">
+                    <p class="nombreUsuario">Nombre:</p>
+                    <h1 class="datoUsuario"><%= user.firstName%></h1>
+                </div>
+
+                <div class="titulo">
+                    <p class="apellidoUsuario">Apellido:</p>
+                    <h1 class="datoUsuario"><%= user.lastName%></h1>
+                </div>
+
+                <div class="titulo">
+                    <p class="locacionUsuario">Ubicación:</p>
+                    <h1 class="datoUsuario"><%= user.location%></h1>
+                </div>
+
+                <div class="titulo">
+                    <p class="emailUsuario">Email:</p>
+                    <h1 class="datoUsuario"><%= user.email%></h1>
+                </div>
+            </section>
+        </section>
+    </main>         
+    
+    <%- include ('../partials/footer.ejs') %>
+</body>
