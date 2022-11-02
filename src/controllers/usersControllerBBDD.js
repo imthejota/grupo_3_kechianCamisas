@@ -81,16 +81,17 @@ const userControllersBBDD = {
             .catch(error => res.send(error))
     },
     destroy: (req, res) => {
+        console.log(req.params.id);
         db.User.destroy({
             where: {
                 id: req.params.id
-            },
-            force: true,
-        }).then(() => {
+            }
+        }).then((user) => {
+            console.log(user);
             delete req.session.user;
             res.cookie('user', null, { maxAge: -1 });
-            return res.redirect("/");
-        }).catch(error => res.send(error));
+            return res.redirect('/');
+        }).catch(error => res.send(error))
     },
     logout: (req,res) => {
         delete req.session.user

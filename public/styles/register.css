@@ -38,6 +38,16 @@ main {
     flex-direction: column;
 }
 
+.formularioUsuario {
+    color: rgb(198, 138, 46);
+    font-family: 'Montserrat', sans-serif;
+    width: 35%;
+    padding: 2%;
+    background-color: rgb(31, 56, 86);
+    border-radius: 2%;
+    flex-direction: column;
+}
+
 .titulo {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -45,8 +55,24 @@ main {
     
 }
 
+.modificarUsuario {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    margin-bottom: 7%;
+    
+}
+
 .titulo2 {
     margin-top: 4%;
+}
+
+.informacionPersonal {
+    margin-bottom: 3%;
+}
+
+.informacionCuenta{
+    margin-bottom: 1%;
 }
 
 .botonInicio {
@@ -70,12 +96,31 @@ main {
     margin-top: 2%;
 }
 
+.boton1 {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(31, 56, 86);
+    font-size: 16px;
+    color: rgb(198, 138, 46);
+    margin-top: 2%;
+}
+
 .botonesCrearInicio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 5%;
+}
+
+.botonesCrearInicio1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagen{
+    margin-bottom: 5%;
 }
 
 #nombre {
@@ -88,6 +133,16 @@ main {
     margin-bottom: 1.4%;
 }
 
+#nombre1 {
+    border-radius: 5px;
+    background-color: rgb(140, 154, 156);
+    padding: 1.3%;
+    width: 100%;
+    color: black;
+    margin-top: 1.4%;
+    margin-bottom: 3%;
+}
+
 #apellido {
     border-radius: 5px;
     background-color: rgb(140, 154, 156);
@@ -96,6 +151,16 @@ main {
     color: black;
     margin-top: 1.4%;
     margin-bottom: 1.4%;
+}
+
+#apellido1 {
+    border-radius: 5px;
+    background-color: rgb(140, 154, 156);
+    padding: 1.3%;
+    width: 100%;
+    color: black;
+    margin-top: 1.4%;
+    margin-bottom: 3%;
 }
 
 #dni {

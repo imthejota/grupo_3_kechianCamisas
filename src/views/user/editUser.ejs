@@ -7,40 +7,39 @@
     <%- include ('../partials/header.ejs') %>
     <main>
         <div class="caja1">
-            <form class="caja2" action="/user/update/<%= user.id %>?m=PUT" method="POST" enctype="multipart/form-data">
-                <p class="titulo"> Modificar Usuario </p>
+            <div class="formularioUsuario">
+                <form action="/user/update/<%= user.id %>?m=PUT" method="POST" enctype="multipart/form-data">
+                    <p class="modificarUsuario"> Modificar Usuario </p>
 
-                <input type="hidden" name="id" value="<%= user.id %>">
+                    <input type="hidden" name="id" value="<%= user.id %>">
 
-                <p class="titulo2"> Información personal: </p>
+                    <p class="informacionPersonal"> Información personal: </p>
 
-                <label for="nombre"></label>
-                <input type="text" id="nombre" name="firstName" value="<%= user.firstName %>"><br>
+                    <label for="nombre1"></label>
+                    <input type="text" id="nombre1" name="firstName" value="<%= user.firstName %>"><br>
 
-                <label for="apellido"></label>
-                <input type="text" id="apellido" name="lastName" value="<%= user.lastName %>"><br>
+                    <label for="apellido1"></label>
+                    <input type="text" id="apellido1" name="lastName" value="<%= user.lastName %>"><br>
 
-                <label for="ubicacion"></label>
-                <input type="text" id="ubicacion" name="location" value="<%= user.location %>"><br>
+                    <label for="ubicacion"></label>
+                    <input type="text" id="ubicacion" name="location" value="<%= user.location %>"><br>
 
-                <p class="titulo"> INFORMACIÓN DE CUENTA: </p> <br>
+                    <p class="informacionCuenta"> INFORMACIÓN DE CUENTA: </p> <br>
 
-                <label for="imagen">Imagen de perfil:</label>
-                <input type="file" id="imagen" name="image" value="<%= user.image %>"><br>
+                    <label for="imagen">Imagen de perfil:</label>
+                    <input type="file" id="imagen" name="image" value="<%= user.image %>"><br>
 
-                <div class="botonesCrearInicio">
-                    <div class="botonCrearCuenta">
-                        <button type="submit" class="boton">Guardar</button><br>
+                    <div class="botonesCrearInicio1">
+                        <button type="submit" class="boton1">Guardar</button><br>
                     </div>
+                </form>
 
-                    <form method="POST" action="/user/delete/<%= user.id %>?m=DELETE" class="botonCrearCuenta">
-                        <button type="submit" class="boton">Eliminar</button>
-                    </form>
-
-                </div>
-
-            </form>
+                <form class="botonesCrearInicio1" method="POST" action="/user/delete/<%= user.id %>?m=DELETE">
+                    <button type="submit" class="boton1">Eliminar</button>
+                </form>
+            </div>
         </div>
+            
     </main>
 
     <%- include ('../partials/footer.ejs') %>
