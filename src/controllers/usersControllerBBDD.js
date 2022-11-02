@@ -43,6 +43,15 @@ const userControllersBBDD = {
         res.render('user/register');
     },
     save: function(req, res) {
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            return res.render('user/register',{
+                errores: errores,
+                data: req.body
+            })
+        }
+
         if(req.file){
             req.body.image = req.file.filename;
         } else {
