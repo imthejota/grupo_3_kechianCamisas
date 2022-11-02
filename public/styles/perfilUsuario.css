@@ -47,34 +47,43 @@ body {
     color: rgb(198, 138, 46);
     font-size: 20px;
     justify-content: center;
+    font-weight: bold;
+    border-bottom: 2px solid #c6873e;
+}
+
+.datoUsuario{
+    margin-left: 4%;
+    color: white;
+    font-weight: normal;
 }
 
 .nombreUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.datoUsuario{
-    margin-left: 2%;
-}
 
 .apellidoUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .locacionUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .emailUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .tituloPerfilUsuario{
@@ -93,7 +102,7 @@ body {
 
 
 .contenedorImagenUsuario{
-    display: 
+    /*display:*/ 
     flex-basis: 40%;
     display: flex;
     box-sizing: border-box;
