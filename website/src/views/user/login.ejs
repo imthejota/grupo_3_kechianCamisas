@@ -16,7 +16,7 @@
                 
                 <div class="elemento2">
                     <label for="correo"></label>
-                    <input type="email" id="correo" name="correo"  >
+                    <input type="email" placeholder="Email" id="correo" name="correo"  >
 
                     <% if (locals.errores && locals.errores.correo) { %>
                         <p class="feedback">
@@ -28,7 +28,7 @@
 
                 <div class="elemento3">
                     <label for="contraseña"></label>
-                    <input type="password" id="contraseña" name="contraseña" value="<%= locals.errores && !locals.errores.contraseña && locals.data ? locals.data.contraseña : null %>" >
+                    <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" value="<%= locals.errores && !locals.errores.contraseña && locals.data ? locals.data.contraseña : null %>" >
 
                     <% if (locals.errores && locals.errores.contraseña) { %>
                         <p class="feedback">

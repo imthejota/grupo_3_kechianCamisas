@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
 
         let campoEmail = document.querySelector("#correo");
         if (campoEmail.value == "") {
-            errores.push("Mail obligatorio")
+            errores.push("Email obligatorio")
         }
 
         let campoContraseña = document.querySelector("#contraseña");

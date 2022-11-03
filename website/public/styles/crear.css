@@ -107,6 +107,30 @@ body {
     color: rgb(198, 138, 46);
 }
 
+
+/*Mateo: Estetica de errores en crear producto*/
+
+.errores{
+    list-style: none;
+    background-color: rgb(31 56 86);
+    color: red;
+    font-weight: 500;
+    
+}
+
+.errores li {
+    padding-top: 10px;
+}
+
+/*Mateo: testeando algo*/
+.campoCamisa input#name {
+    background-color: black;
+}
+
+/*Mateo: fin de lo que estuve trabajando*/
+
+
+
 /* DE ACA EN ADELANTE ES TABLET */
 
 @media (min-width:480px) {

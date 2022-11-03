@@ -101,16 +101,21 @@ body {
 }
 
 #botonConfig{
-    padding-left: 15px;    
+    padding-left: 17px;    
 }
 
 .perfilConfig{
-    border: solid rgb(43, 28, 28);
+    border: solid rgb(198, 138, 46);
     padding: 8px;
     background-color: rgb(31, 56, 86);
     color: rgb(198, 138, 46);
     border-radius: 10%;
 }
+
+.perfilConfig:hover {/*boton hover*/
+    background-color: rgb(31, 43, 56);
+    color: white;
+  }
 
 
 
@@ -122,7 +127,11 @@ body {
     overflow: hidden;
 }
 
+
+/*Mateo: estoy trabajando con esto, cualquier cosa me avisan*/
 .imagenUsuario {
     margin: auto;
-    width: 100% ;   
+    width: 100% ;   /*Mateo: */
+    height: 95%;/*Mateo: Tamaño de ALTURA de la imagen. Estoy probando con diferentes imagenes para ver como van quedando */
+    border-radius: 13px;/*Mateo: si no le gusta lo pueden sacar. Nada mas dobla los bordes de la imagen*/
 }

@@ -42,11 +42,20 @@ main {
     display: flex;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
-    
+    font-weight: 600;   
 }
 
+.tituloInfo {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    font-weight: 600;  
+    padding-top: 10px; 
+}
+
+
 .titulo2 {
-    margin-top: 4%;
+    margin-top: 1%;
 }
 
 .botonInicio {
