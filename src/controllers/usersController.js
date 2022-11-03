@@ -1,4 +1,5 @@
 const { validationResult } = require("express-validator");
+const { UPDATE } = require("sequelize/types/query-types.js");
 const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
 
@@ -42,6 +43,7 @@ const userControllers = {
             res.cookie('user', req.body.correo,{maxAge: 10000 * 60 * 3})
         }
         let all = todos();
+        
         req.session.user = all.find(user => user.email == req.body.correo)
         return res.redirect('/')
     },
@@ -49,7 +51,16 @@ const userControllers = {
         delete req.session.user
         res.cookie('user', null,{maxAge: -1})
         return res.redirect('/')
-    }
+    },
+    editUser: (req,res) => {        
+        // Para el  de configurar perfil
+        let user = todos (req.params.user)
+        return res.render ("edit",{
+            user
+        })
+        
+    },
+ 
 }
 
 module.exports = userControllers;

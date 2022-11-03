@@ -46,9 +46,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
     font-size: 20px;
-    justify-content: center;
+    padding-left: 73px;
     font-weight: bold;
-    border-bottom: 2px solid #c6873e;
+    
 }
 
 .datoUsuario{
@@ -100,6 +100,19 @@ body {
     flex-direction: row;
 }
 
+#botonConfig{
+    padding-left: 15px;    
+}
+
+.perfilConfig{
+    border: solid rgb(43, 28, 28);
+    padding: 8px;
+    background-color: rgb(31, 56, 86);
+    color: rgb(198, 138, 46);
+    border-radius: 10%;
+}
+
+
 
 .contenedorImagenUsuario{
     /*display:*/ 
@@ -111,6 +124,5 @@ body {
 
 .imagenUsuario {
     margin: auto;
-    width: 100% ;
-    
+    width: 100% ;   
 }

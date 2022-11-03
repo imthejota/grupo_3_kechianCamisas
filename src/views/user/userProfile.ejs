@@ -9,7 +9,7 @@
         <section class="contenedorPerfilUsuario">
             
             <picture class="contenedorImagenUsuario">
-                <img class="imagenUsuario" src="/users/<%=user.image%>" alt="">
+                <img class="imagenUsuario" src="/users/<%=user.image%>" alt=""> 
             </picture> 
 
             <section class="fichaPerfilUsuario">
@@ -36,7 +36,12 @@
                     <p class="emailUsuario">Email:</p>
                     <h1 class="datoUsuario"><%= user.email%></h1>
                 </div>
-                <button type="reset" class=""></button>
+                
+                <div" id="botonConfig">
+                    <button type="submit" class="perfilConfig">Configurar Perfil</button>
+                    <button type="submit" class="NO ASIGNADA"></button>
+                </div>   
+            
             </section>
             
             

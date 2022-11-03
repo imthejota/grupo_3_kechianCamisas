@@ -39,5 +39,5 @@ router.get('/cart', productsControllers.productCart); // ?
 router.post('/guardar', [upload.any(), validatorProduct], productsControllers.save) // 2
 router.put('/actualizar/:id', [upload.any(), validatorProduct], productsControllers.update); // 6
 router.delete('/delete/:id', [isLogged] , productsControllers.delete); // 8
-
+router.get ('/userEdit', productsControllers.edit)//Mateo. 
 module.exports = router;
