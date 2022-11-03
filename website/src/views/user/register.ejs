@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head.ejs', {estilo: 'register', titulo: 'Registro'}) %>
+
+<body>
+    <%- include ('../partials/header.ejs') %>
+
+    <main>
+        <div class="caja1">
+
+            <form class="caja2" action="/saveUser" method="POST" enctype="multipart/form-data">
+                <p class="titulo"> CREAR CUENTA </p>
+
+                <div class="errores">
+                    <ul class="ul-register-errores"> 
+                    </ul>
+                </div>
+                <p class="titulo2"> Información personal: </p>
+
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="firstName" placeholder="Nombre" 
+                value="<%= locals.data && locals.data.firstName ? locals.data.firstName : null %>" 
+                >
+                <% if (locals.errores && locals.errores.firstName) { %>  
+                    <p class="feedback">
+                        <%= locals.errores.firstName.msg %> 
+                    </p> 
+                <% } %>
+                <br>
+
+                <label for="apellido"></label>
+                <input type="text" id="apellido" name="lastName" placeholder="Apellido" 
+                value="<%= locals.data && locals.data.lastName ? locals.data.lastName : null %>" 
+                >
+
+                <% if (locals.errores && locals.errores.lastName) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.lastName.msg %> 
+                    </p> 
+                <% } %><br>
+
+                <label for="ubicacion"></label>
+                <input type="text" id="ubicacion" name="location" placeholder="Ubicación" 
+                value="<%= locals.data && locals.data.location ? locals.data.location : null %>" 
+                >
+                <% if (locals.errores && locals.errores.location) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.location.msg %> 
+                    </p> 
+                <% } %><br>
+
+                <p class="titulo"> INFORMACIÓN DE CUENTA: </p>
+
+                <label for="correoe"></label>
+                <input type="email" id="correoe" name="email" placeholder="E-mail" 
+                value="<%= locals.data && locals.data.email ? locals.data.email : null %>" 
+                >
+                <% if (locals.errores && locals.errores.email) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.email.msg %> 
+                    </p> 
+                <% } %><br>
+
+                <label for="contra"></label>
+                <input type="password" id="contra" name="password" placeholder="Contraseña" >
+                <% if (locals.errores && locals.errores.password) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.password.msg %> 
+                    </p> 
+                <% } %><br>
+
+                <label for="imagen">Imagen de perfil:</label>
+                <input type="file" id="imagen" name="image">
+                <% if (locals.errores && locals.errores.image) { %> 
+                    <p class="feedback">
+                        <%= locals.errores.image.msg %> 
+                    </p> 
+                <% } %><br>
+
+                <div class="TerminosCondiciones">
+                    <input type="checkbox" id="condiciones" name="condiciones" value="condiciones"
+                    <%= locals.data && locals.data.condiciones ? "checked" : null %>
+                    >
+                    <label for="condiciones">He leído y acepto los términos y condiciones</label>
+                    <% if (locals.errores && locals.errores.condiciones) { %> 
+                        <p class="feedback">
+                            <%= locals.errores.condiciones.msg %> 
+                        </p> 
+                    <% } %> <br>
+
+                </div>
+
+                <div class="botonesCrearInicio">
+                    <div class="botonCrearCuenta">
+                        <button type="submit" class="boton">CREAR CUENTA</button><br>
+                    </div>
+                    <!-- <div class="botonInicio">
+                        <a href="/login">INICIAR SESION</a>
+                    </div> -->
+                </div>
+
+            </form>
+        </div>
+         <script src="/validationsFront/userCreateValidations.js"></script>
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+</body>
+
+</html>

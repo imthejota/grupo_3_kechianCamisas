@@ -1,0 +1,263 @@
+:root {
+    --amarillo: rgb(198, 138, 46);
+    --grisClaro: rgb(149, 154, 156);
+    --grisAzulado: rgb(87, 102, 115);
+    --azul: rgb(31, 56, 86);
+    --grisObscuro: rgb(55, 59, 59);
+}
+
+.lista-producto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+    width: 80%;
+    justify-content: space-around;
+}
+
+
+
+.fotosPrincipales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fotosAbajo{
+    margin-bottom: 10%;
+    width: 100%;
+}
+.lista-producto-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+ul {
+    list-style:none
+}
+
+.imagen-oferta {
+    border-top-left-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-top-right-radius: 20px;
+    /*le da el radio a la oferta*/
+}
+
+.div-imagen-producto {
+    width: 100%;
+    /* ancho de la imagen dentro de la caja*/
+    margin: auto;
+    /*coloca la imagen en el centro*/
+}
+
+.descuento {
+    font-weight: 700;
+    display: flex;
+}
+
+img {
+    width: 100%
+}
+
+.p-filtro {
+    font-size: 0.8em;
+}
+
+body {
+    background-image: url(/images/fondo.jpg);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caja-producto-oferta {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 30vw;
+    border-radius: 20px;
+    height: 40vh;     
+}
+
+
+
+
+.caja-off {
+    background-color: var(--amarillo);
+    border-bottom-right-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-bottom-left-radius: 20px;
+    /*le da el radio a la oferta*/
+}
+.caja-off-filtro {
+    background-color: var(--grisClaro);
+    border-bottom-right-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-bottom-left-radius: 20px;
+    /*le da el radio a la oferta*/ 
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    
+}
+
+.imagen-oferta {
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    /*le da el radio a la oferta*/
+    border-top-right-radius: 20px;
+    /*le da el radio a la oferta*/
+    
+}
+
+.div-imagen-producto {
+    width: 100%;
+    height: 100%;
+    /* ancho de la imagen dentro de la caja*/
+    margin: auto;
+    /*coloca la imagen en el centro*/
+}
+
+.tipografia-nombre-producto {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight:bolder; */
+    font-size: 1em;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.tipografia-nombre-producto-filtro {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 1.0em;
+}
+
+.tipografia-oferta {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;  
+    
+}
+
+
+
+.titulo-filtro {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--azul);
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.caja-producto-filtro{
+    width: 20vw;
+    height: 30vh;
+}
+
+
+
+
+
+/* DE ACA EN ADELANTE ES TABLET */
+
+@media (min-width:480px) {
+    .lista-producto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 2%;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .fotosAbajo{
+        display: flex;
+        justify-content: center;
+    }
+    .lista-producto-2{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+        width: 80%;
+        justify-content: space-evenly;
+        margin-top: 2%;
+    }
+    .producto-caja {
+        width: 20%;
+    }
+    .fotosPrincipales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 2%;
+    }
+    .caja-producto-oferta {
+        width: 20vw;
+        border-radius: 20px;
+        height: 55vh;     
+    }    
+    
+}
+
+
+
+
+
+/* DE ACA EN ADELANTE ES COMPUTADORA */
+
+@media (min-width:800px) {
+    .lista-producto{
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .caja-producto-oferta {
+        margin-top: 3%;
+        width: 22%;
+    }
+
+    .caja-producto-filtro {
+        margin-top: 3%;
+        width: 17%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .producto-caja {
+        margin: none;
+        width: 10%;
+    }
+    main {
+        padding-left: 2%;
+        padding-right: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fotosPrincipales{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .caja-producto-oferta:hover{
+        box-shadow: 10px 15px 10px #242424;
+        transition: box-shadow 0.3s ease-in-out;
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+        
+    }
+    .lista-producto-2{
+        margin-bottom: -5%;
+    }
+}

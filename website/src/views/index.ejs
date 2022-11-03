@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('partials/head.ejs', {estilo: 'index', titulo: 'Kechian'}) %>
+
+<body>
+    <%- include ('partials/header.ejs') %>
+
+    <main>
+        <section class="fotosPrincipales">
+        <% if (products.length > 0) { %>
+            <ul class="lista-producto">
+                <% products.forEach(element => { %>
+                    <%- include('./partials/index.ejs',{element: element})  %>
+                        <% }) %>
+            </ul>
+            <% } else { %>
+                <h2>
+                    No hay productos <a href="/productos">Volver</a>
+                </h2>
+                <% } %>
+            </section>
+            <section class="fotosAbajo">
+                    <ul class="lista-producto-2">
+                        <li class="caja-producto-filtro caja-producto-oferta">
+                                <div class="div-imagen-producto"><img src="/images/camisa-4.jpg" class="imagen-oferta imagen-baja"></div>
+                                <div class="caja-off-filtro">
+                                    <div class="texto">
+                                        <a class="tipografia-nombre-producto-filtro">Estampadas
+                                        </a>
+                                            <div class="tipografia-oferta precios">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="caja-producto-filtro caja-producto-oferta">
+                            <div class="div-imagen-producto"><img src="/images/camisa-2.jpg" class="imagen-oferta imagen-baja"></div>
+                            <div class="caja-off-filtro">
+                                <div class="texto">
+                                    <a class="tipografia-nombre-producto-filtro">Lisas
+                                    </a>
+                                        <div class="tipografia-oferta precios">
+                                        </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    </ul>
+            </section>
+    </main>
+    <%- include ('partials/footer.ejs') %>
+
+</body>
+
+</html>

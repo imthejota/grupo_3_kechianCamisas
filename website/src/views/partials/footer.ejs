@@ -1,0 +1,38 @@
+<footer >
+    <div class="noventa">
+        <article class="ayuda">
+            <h3 class="">AYUDA</h3>
+            <section class="alinea">
+                <p>Preguntas frecuentes</p>
+                <p>Cambios y devoluciones</p>
+                <p>Envíos</p>
+            </section>
+        </article>
+        <article class="empresa">
+            <h3 class="">EMPRESA</h3>
+            <section class="alinea">
+                <% if (locals.user && locals.user.email.includes("@kechian")) { %> <!-- usar el mismo if para la vista de productos -->
+                <a href="/products/crear" class="">Crear</a>
+                <a href="/products" class="">Modificar</a>
+                <% } %>   
+                <p>Sobre nosotros</p>
+            </section>
+        </article>
+        <article class="contacto">
+            <h3 class="">CONTACTO</h3>
+            <section class="alinea">
+                <p>Atención al cliente</p>
+                <p>kechian.ba@gmail.com</p>
+                <p>11-1234-5678</p>
+            </section>
+        </article>
+        <article class="redes">
+            <h3 class="">REDES</h3>
+            <section class="iconosRedes alinea">
+                <a href="https://instagram.com/kechian.ba " target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/kechian.ba" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5491124068789&app=facebook&entry_point=page_cta" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </section>
+        </article>
+    </div>
+</footer>

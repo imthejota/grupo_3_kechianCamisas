@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head.ejs', {estilo: 'editarUsuario', titulo: 'Modificar Usuario'}) %>
+
+<body>
+    <%- include ('../partials/header.ejs') %>
+    <main>
+        <div class="caja1">
+            <div class="formularioUsuario">
+                <form action="/user/update/<%= user.id %>?m=PUT" method="POST" enctype="multipart/form-data">
+                    <p class="modificarUsuario"> Modificar Usuario </p>
+
+                    <p class="informacionPersonal"> Información personal: </p>
+
+                    <label for="nombreUsuario"></label>
+                    <input type="text" id="nombreUsuario" name="firstName" value="<%=user.firstName%>"><br>
+
+                    <label for="apellidoUsuario"></label>
+                    <input type="text" id="apellidoUsuario" name="lastName" value="<%=user.lastName%>"><br>
+
+                    <label for="ubicacionUsuario"></label>
+                    <input type="text" id="ubicacionUsuario" name="location" value="<%=user.location%>"><br>
+
+                    <p class="informacionCuenta"> INFORMACIÓN DE CUENTA: </p> <br>
+
+                    <label for="imagenUsuario">Imagen de perfil:</label>
+                    <input type="file" id="imagenUsuario" name="image" value="<%=user.image%>"><br>
+
+                    <div class="botonesCrearInicioUsuario">
+                        <button type="submit" class="botonUsuario">Guardar</button><br>
+                    </div>
+                </form>
+
+                <form class="botonesCrearInicioUsuario" method="POST" action="/user/delete/<%=user.id%>?m=DELETE">
+                    <button type="submit" class="botonUsuario">Eliminar</button>
+                </form>
+            </div>
+        </div>
+            
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+</body>
+
+</html>
+
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+</body>
+
+</html>

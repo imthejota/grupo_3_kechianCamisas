@@ -1,0 +1,218 @@
+:root {
+    --amarillo: rgb(198, 138, 46);
+    --grisClaro: rgb(149, 154, 156);
+    --grisAzulado: rgb(87, 102, 115);
+    --azul: rgb(31, 56, 86);
+    --grisObscuro: rgb(55, 59, 59);
+}
+
+img {
+    width: 100%;
+    /*border-top-left-radius: 3%;*/
+    /*border-bottom-left-radius: 3%;*/
+    border-radius: 21px 21px 0px 0px; /*Mateo: acomede los bordes para que no se salgan del cuadrado*/
+    
+}
+
+body {
+    background-image: url(/images/fondo.jpg);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainDetail {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorDetalle {
+    height: 70vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: var(--azul);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #242424;
+    
+}
+
+.contenedorImagenDetalle{
+    flex-basis: 50%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.imagenDetalle {
+    margin: auto;
+    
+}
+
+.nombreDetalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--amarillo);
+    border-bottom-left-radius: 20px;
+    align-items: center;
+}
+
+.fichaDetalle {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%
+}
+
+.nombreProd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-color: var(--amarillo);
+}
+
+.nombreCamisa {
+    display: none;
+}
+
+.precios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.precioUno {
+    color: rgb(225, 221, 221);
+    text-decoration: line-through;
+    text-decoration-color: rgb(165, 94, 94);
+    font-size: 1.5em;
+    
+}
+
+.precioDos,
+.descuento {
+    color: var(--amarillo);
+}
+
+.precioDos {
+    font-size: 26px;
+}
+
+.descuento {
+    font-size: 1.5em;
+}
+
+.detalle {
+    color: rgb(225, 221, 221);
+    height: 100%;
+}
+
+.detalle p,
+.finalDetalle {
+    margin-top: 5%;
+}
+
+.cantidadUnidades {
+    color: rgb(225, 221, 221);
+    display: flex;
+    flex: wrap;
+    white-space: pre;
+}
+
+.finalDetalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputUnidades input {
+    width: 59%;
+    margin-left: 20%;
+}
+
+.añadir {
+    background-color: var(--amarillo);
+    min-width: fit-content;
+    width: 30%;
+    font-family: Montserrat, sans-serif;
+}
+
+.botonesAnteultimos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonesFinales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    align-items: center;
+    
+}
+
+
+.editarProducto button {
+    background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    /* font-style: italic; */
+    color: black;
+    width: 201%;
+    height: 33px;
+    border-radius: 11px;
+}
+
+button .editProdA {
+    text-decoration: none;
+    color: black;
+}
+
+
+.botonEliminar {
+    background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    width: 168%;
+    height: 33px;
+    /* font-style: italic; */
+    border-radius: 11px;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+
+@media (min-width: 480px) {}
+
+@media (min-width:800px) {
+    .contenedorDetalle {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        background-color: var(--azul);
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px #242424;
+    }
+    .nombreCamisa {
+        display: flex;
+        color: var(--amarillo);
+        text-transform: uppercase;
+        margin-bottom: 8%;
+    }
+}

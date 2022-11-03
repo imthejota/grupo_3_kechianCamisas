@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "firstName": "Nombrecito",
+    "lastName": "Apellidito",
+    "location": "rincon",
+    "email": "elmail@mail.com",
+    "password": "shalalala",
+    "category": "ni idea",
+    "image": ""
+  },
+  {
+    "id": 1,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "Santa Fe",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$F3BAL/lUDhvmoQwtM67t6.Bl8T.Qwk.DLP4U74QHezI/XshKB41De",
+    "category": "cliente"
+  },
+  {
+    "id": 1,
+    "firstName": "Trinidad",
+    "lastName": "Echeva",
+    "location": "Santa Fe",
+    "email": "trinieche13@gmail.com",
+    "password": "$2a$10$BSv92IDwkkKp5FdGGaN04ebCdORQjeBGnc..j64bzy3Or5cqfMlEi",
+    "image": "user-1662317008498.png",
+    "category": "cliente"
+  },
+  {
+    "id": 1,
+    "firstName": "Facu",
+    "lastName": "Echevarria",
+    "location": "Rosario",
+    "email": "faceche131313@gmail.com",
+    "password": "$2a$10$tAzNX3cWGYdwLdZCXVn7D.hj4u14lbBl36k8lpP.ecuOIXckrietq",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 1,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "dghj",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$Kuzr1QnVMH1CUMKB/UNkfuFIMdoSpf912Nz7W6on0UWW2V4DQbMrW",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 2,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "rrrrrrrrrrrr",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$0hkNskBSBIgH0MxG/MvKIujxMIprXo1r9sdopZtFxIN6fJie1f.t2",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 3,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "hhhhhhhhh",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$w8pg7q3yMgZXK5b3Vh9KOuTYnBiD99pHh8v2j1NcV3RF8FmroIJXq",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 4,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "hjk",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$HPo.GElYpbZSM7pJxipjjemWOMDqwXibmH5M9BVFUZZQDiAgVU2XC",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 5,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "Mendoza",
+    "email": "jkechian@gmail.com",
+    "password": "$2a$10$QQp0QTeWj2YAYIoUMeLgpum8GdyNPuNaU1WWXZy14rxA1wriGCRHu",
+    "image": "user-1662334707139.jpg",
+    "category": "cliente"
+  },
+  {
+    "id": 6,
+    "firstName": "Ulises ",
+    "lastName": "Magnarelli",
+    "location": "mi casa ",
+    "email": "uli.magnarelli@gmail.com",
+    "password": "$2a$10$j7m9wKGGKFx2KB7S0BXKr.QQl4aWrH.vyUz1au5.eweg6ZLe6bx9q",
+    "image": "user-1662379417905.jpeg",
+    "category": "cliente"
+  },
+  {
+    "id": 7,
+    "firstName": "mateo",
+    "lastName": "ga",
+    "location": "calle",
+    "email": "dh@kechian.com",
+    "password": "$2a$10$twQ1dr4ocIusBY8no.KrmuNAVRUzW3rp/tqQV7CbAanNffcBLG.6C",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 8,
+    "firstName": "mateo",
+    "lastName": "gaa",
+    "location": "calle",
+    "email": "mateo@gmail.com",
+    "password": "$2a$10$jafpW.WpXJZosjkzwQJRt.ET7lKlmdOLU53hhWsG.Kw1LTXlME.2O",
+    "image": "default.png",
+    "category": "cliente"
+  },
+  {
+    "id": 9,
+    "firstName": "trinidad",
+    "lastName": "echevarria",
+    "location": "las heras ",
+    "email": "trinidad@kchain.com",
+    "password": "$2a$10$FuHLmdba5y/6k8XK7nlumu8GyQEZ5yb9x.QtbMxnQuBWxfPr0cxKO",
+    "image": "default.png",
+    "category": "Cliente"
+  },
+  {
+    "id": 10,
+    "firstName": "tri",
+    "lastName": "eche",
+    "location": "Rosario",
+    "email": "trinidad@kchain",
+    "password": "$2a$10$5OPrPtH6lYpuT1S3tzsYoeMH6rtdBuRVt9ptIfY9ULPpGuTBxnTrm",
+    "image": "default.png",
+    "category": "Administrador"
+  },
+  {
+    "id": 11,
+    "firstName": "Trinidad",
+    "lastName": "Echevarria",
+    "location": "Santa Fe",
+    "email": "faceche13@kechian.com",
+    "password": "$2a$10$VHEoykQ5fq7Jy1T8AFPPdOBxHF9DFqvWIe.jBBIEHxrg0Y8RpAX0K",
+    "image": "default.png",
+    "category": "Administrador"
+  },
+  {
+    "id": 12,
+    "firstName": "Facundo",
+    "lastName": "Echevarria",
+    "location": "Rosario",
+    "email": "faceche13@gmail.com",
+    "password": "$2a$10$Nv.4F2BFx2miAdZALefUiO7rxyQmLmZ6EukNBJqfU6e1ViswEq5ne",
+    "image": "default.png",
+    "category": "Cliente"
+  },
+  {
+    "id": 13,
+    "firstName": "trinidad",
+    "lastName": "echevarria",
+    "location": "Santa Fe",
+    "email": "trinidadmeche@kchain.com",
+    "password": "$2a$10$bCfaQQU3eQn9YnKb.yV4wOsIJ6A3WmBQJCZO9GNQPwKs6lI/HyPrW",
+    "image": "default.png",
+    "category": "Cliente"
+  },
+  {
+    "id": 14,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "Mendoza",
+    "email": "j@kechian.com.ar",
+    "password": "$2a$10$YeU9xihjAMWcZKe5dpgyTuHh.KsGcrfj8SmgTFhyRTuZiNAn9Uu9e",
+    "image": "user-1663209188602.jpg",
+    "category": "Administrador"
+  },
+  {
+    "id": 15,
+    "firstName": "Prueba",
+    "lastName": "Lalala",
+    "location": "Porteñin",
+    "email": "da@da.com",
+    "password": "$2a$10$eVrDd78K6um6nvcJsuBve.bAEc/22xdly.1GnJiyJ41YUfjEpQ2pq",
+    "image": "user-1663623756494.jpg",
+    "category": "Cliente"
+  },
+  {
+    "id": 16,
+    "firstName": "asdsadsa",
+    "lastName": "asdsa",
+    "location": "sadsdsa",
+    "email": "asdas@sdas",
+    "password": "$2a$10$Fus2FRUylVe8zvAEVAlEEeaC97L5tbw7hjcr7ru9uJjDJS1KLcbiO",
+    "image": "default.png",
+    "category": "Cliente"
+  },
+  {
+    "id": 17,
+    "firstName": "Jonathan",
+    "lastName": "Kechian",
+    "location": "lala",
+    "email": "1@kechian.com.ar",
+    "password": "$2a$10$S71t6BVaKWDDPEmietxwme0dN81mzhz5M0mL0LUUA6LqohqfV0Cmq",
+    "image": "user-1665268937836.jpg",
+    "category": "Administrador"
+  }
+]

@@ -1,0 +1,152 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+    text-decoration:none;
+}
+
+/*mateo: la clase "noventa" esta tomando el footer y el main.
+para solucionar la posicion del "box" de "list", decidi meter un margin, pero OJO ESE "MARGIN:9%" TOCA EL FOOTER*/
+.noventa{
+    margin: 9%;
+}
+/*mateo:esto hice*/
+
+main {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+main ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+
+.listaProducto{
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    padding: 2%;
+    background-color: rgb(31, 56, 86);
+    border-radius: 2%;
+    
+}
+
+.listaProducto a {
+    color: rgb(198, 138, 46);
+}
+
+.listaProducto button{
+    background-color: antiquewhite;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+.listaProducto nav a{
+    color: aliceblue;
+    text-decoration:underline;
+}
+    
+
+
+.listaProducto li{
+    padding: 12px;
+    border-radius: 5px;
+
+}
+
+/*mateo:aca termine*/
+
+body {
+    background-image: url(/images/fondo.jpg);
+    background-position: top-;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.modificar {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: rgb(198, 138, 46);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.c1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.c2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    padding: 2%;
+    background-color: rgb(31, 56, 86);
+    border-radius: 2%;
+}
+
+.elemento {
+    display: flex;
+    align-items: left;
+    
+}
+
+.grl-top {
+    background-color: rgb(140, 154, 156);
+    border-radius: 5px;
+    padding: 1.5%;
+    width: 100%;
+    margin-bottom: 6%;
+    color: black;
+    margin-top: 6%;
+}
+
+.grl {
+    background-color: rgb(140, 154, 156);
+    border-radius: 5px;
+    padding: 1.5%;
+    width: 100%;
+    margin-bottom: 6%;
+    color: black;
+}
+
+
+.modificar {
+    margin-bottom: 1%;
+}
+
+.modificar a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(198, 138, 46);
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+
+/* DE ACA EN ADELANTE ES TABLET */
+
+@media (min-width:480px) {
+    .c2 {
+        width: 50%;
+    }
+}
+
+/* DE ACA EN ADELANTE ES COMPUTADORA */
+
+@media (min-width:800px) {
+    .c2 {
+        width: 35%;
+    }
+}
