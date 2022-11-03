@@ -24,11 +24,11 @@ let password = body('password')
 .notEmpty().withMessage('Campo obligatorio').bail()
 .isLength({min:8}).withMessage('Minimo 8 caracteres')
 .custom((value, {req}) => {//Chequea que la contraseña tenga letras mayúsculas, minúsculas, un número y un carácter especial.
-    let checkPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])");
+    let checkPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\_\*-])");
     if(checkPassword.test(value)){
         return true
     }else{
-        return Promise.reject('La contraseña debe contener letras mayúsculas, minúsculas, un número y un carácter especial')
+        return Promise.reject('La contraseña debe contener letras mayúsculas, minúsculas, un número y un caracter especial')
     }
 })
 
