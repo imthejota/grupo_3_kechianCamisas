@@ -26,6 +26,7 @@ body {
     margin: 5%;
     display: flex;
     flex-direction: row;
+    display: flex;
     width: 45%;
     background-color: var(--azul);
     border-radius: 20px;
@@ -34,19 +35,22 @@ body {
 }
 
 .fichaPerfilUsuario {
-    flex-basis: 50%;
+    flex-basis: 60%;
     display: flex;
-    align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
     padding: 1%
+}
+
+.contenedorFicha {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .perfilUsuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
     font-size: 20px;
-    padding-left: 73px;
     font-weight: bold;
     
 }
@@ -88,7 +92,7 @@ body {
 
 .tituloPerfilUsuario{
     margin-top: 4%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
 }
@@ -100,12 +104,17 @@ body {
     flex-direction: row;
 }
 
-#botonConfig{
-    padding-left: 17px;    
+.botonConfig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfilConfig{
-    border: solid rgb(198, 138, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(198, 138, 46);
     padding: 8px;
     background-color: rgb(31, 56, 86);
     color: rgb(198, 138, 46);
@@ -115,12 +124,11 @@ body {
 .perfilConfig:hover {/*boton hover*/
     background-color: rgb(31, 43, 56);
     color: white;
-  }
+}
 
 
 
 .contenedorImagenUsuario{
-    /*display:*/ 
     flex-basis: 40%;
     display: flex;
     box-sizing: border-box;

@@ -11,10 +11,11 @@
             <picture class="contenedorImagenUsuario">
                 <img class="imagenUsuario" src="/users/<%=user.image%>" alt=""> 
             </picture> 
-
+            
             <section class="fichaPerfilUsuario">
+                <div class="contenedorficha">
                 <div class="tituloPerfilUsuario">
-                    <p class="perfilUsuario"><%= user.firstName%> <%= user.lastName%> </p>
+                    <p class="perfilUsuario">Mi Perfil</p>
                 </div>
 
                 <div class="titulo">
@@ -36,8 +37,8 @@
                     <p class="emailUsuario">Email:</p>
                     <h1 class="datoUsuario"><%= user.email%></h1>
                 </div>
-                
-                <div" id="botonConfig">
+            </div>
+                <div" id="botonConfig" class="botonConfig">
                     <button type="submit" class="perfilConfig">Configurar Perfil</button>
                     <button type="submit" class="NO ASIGNADA"></button>
                 </div>   
