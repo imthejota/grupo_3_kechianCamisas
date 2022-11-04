@@ -19,16 +19,18 @@ const multerDiskStorage = multer.diskStorage({
 const fileUpload = multer({storage: multerDiskStorage});
 const validatorLogin = require('../validations/loginValidations')
 const createUserValidations = require('../validations/createUserValidations')
+const isUser = require("../middlewares/isUser")
 
-router.get('/user/:id', userControllersBBDD.profile)
+router.get('/user/:id', isUser ,userControllersBBDD.profile)
 router.get('/register', userControllersBBDD.register)
 router.get('/login', userControllersBBDD.login)
 router.get('/register', userControllersBBDD.register)
-router.get('/user/update/:id', userControllersBBDD.edit)
+router.get('/user/update/:id', isUser ,userControllersBBDD.edit)
 router.post('/logout', userControllersBBDD.logout)
 router.post('/saveUser', fileUpload.single('image'), createUserValidations, userControllersBBDD.save)
 router.post('/access', validatorLogin, userControllersBBDD.access)
-router.put('/user/update/:id', fileUpload.any(),  userControllersBBDD.update)
+router.put('/user/update/:id', fileUpload.any(), isUser ,userControllersBBDD.update)
 router.delete('/user/delete/:id', userControllersBBDD.destroy)
+
 
 module.exports = router;

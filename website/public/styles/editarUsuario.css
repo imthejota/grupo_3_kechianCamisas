@@ -42,6 +42,9 @@ main {
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     margin-bottom: 7%;   
+    font-weight: 600;
+    text-decoration: underline;
+    
 }
 
 .informacionPersonal {

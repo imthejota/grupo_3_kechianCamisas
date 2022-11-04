@@ -64,7 +64,7 @@ const userControllersBBDD = {
             location: req.body.location,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
-            admin: req.body.email.includes("@kechian.com")? 1 : 0,
+            admin: req.body.email.includes("@kechian.com")? 1 : 0, /*Solucionar esto*/ 
             image: req.body.image
         })
         .then(() => res.redirect ('/'))
