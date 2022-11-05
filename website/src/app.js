@@ -4,6 +4,7 @@ const port = process.env.PORT || 2020;
 const path = require('path');
 const public = path.join(__dirname, '../public');
 const statics = express.static(public);
+const cors = require('cors')
 const start = () => console.log('Starting server in http://localhost:2020');
 
 //Agregando express-validator
@@ -26,6 +27,7 @@ server.listen(port, start());
 server.use(statics);
 
 server.use (express.urlencoded({extended:true}));
+server.use(cors())
 
 server.use(methodOverride("m"));
 
@@ -67,3 +69,5 @@ server.use(rutasUser);
 const rutasProduct = require('./routes/productsRoutes.js');
 server.use('/products', rutasProduct);
 
+const rutasProductApi = require('./routes/productApiRoutes')
+server.use('/api', rutasProductApi)
