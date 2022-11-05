@@ -1,3 +1,4 @@
+const { urlencoded } = require('express')
 let db = require('../../database/models')
 
 let productsController = {
@@ -11,6 +12,18 @@ let productsController = {
             })
         })
         .catch(error => res.send(error))
+    },
+    detail: (req, res) => {
+        db.Product.findByPk(req.params.id, {
+            include: [{association: 'sizes'}]
+        })
+        .then((product) => {
+            return res.json({
+                product
+                /* url: */
+            })
+        })
+        .catch(error => res.send(error)) 
     }
 }
 
