@@ -5,8 +5,8 @@ let productsController = {
     list: (req, res) => { 
         db.Product.findAll({include: [{association: 'sizes'}]})
         .then(products => {
-            return res.json({
-                count: products.length,
+            return res.status(200).json({
+                count: products.length - 1,
                 countByCategory:  { // ? tiene que haber una mejor manera de hacerlo general
                     lisas: products.filter(products => products.category == "lisa").length,
                     estampadas: products.filter(products => products.category == "estampada").length,
@@ -23,7 +23,6 @@ let productsController = {
         .then((product) => {
             return res.json({
                 product
-                /* url: */
             })
         })
         .catch(error => res.send(error)) 
