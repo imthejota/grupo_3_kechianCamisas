@@ -7,7 +7,7 @@ let productsController = {
         .then(products => {
             return res.json({
                 count: products.length,
-                countByCategory:  {
+                countByCategory:  { // ? tiene que haber una mejor manera de hacerlo general
                     lisas: products.filter(products => products.category == "lisa").length,
                     estampadas: products.filter(products => products.category == "estampada").length,
                 },

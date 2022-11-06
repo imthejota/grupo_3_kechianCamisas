@@ -102,7 +102,7 @@ let productsController = {
         }).then(() => {
             res.redirect('/products/list')
         })
-        .catch(error => res.send(error)) // TODO Agrego catch;
+        .catch(error => res.send(error))
         
     }
 }
