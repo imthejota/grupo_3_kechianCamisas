@@ -7,3 +7,4 @@ router.get('/products/:id', productsControllers.detail)
 
 
 module.exports = router;
+

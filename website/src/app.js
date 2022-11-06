@@ -71,3 +71,6 @@ server.use('/products', rutasProduct);
 
 const rutasProductApi = require('./routes/productApiRoutes')
 server.use('/api', rutasProductApi)
+
+
+// ! middleware para manejar errores en caso de no cargar una vista no existente
