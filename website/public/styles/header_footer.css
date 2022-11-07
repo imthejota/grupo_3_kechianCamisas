@@ -15,7 +15,36 @@
 
 .navCentro {
     display: flex;
-    flex-basis: 50vw;
+    flex-basis: 80vw;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    display: flex;
+    width: 0.05vw;
+    height: 0.05vh;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5%;
+    margin: 2%;
+}
+
+.toggle span{
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: var(--amarillo);
+    border-radius: 4px;
+    transition: 0.5s;
+
+}
+.toggle span:nth-child(1){
+    transform: translateY(-8px);
+}
+
+.toggle span:nth-child(2){
+    transform: translateY(8px);
 }
 
 header { 
@@ -45,7 +74,7 @@ header i {
 
 .fa-bars { 
     color: var(--amarillo);
-    padding-top: 42px;
+    
     
 }
 
@@ -204,9 +233,6 @@ footer {
         display: flex;
         padding: 100px;
         align-content: center;
-    }
-    .fa-bars{
-        padding-top: 86px;
     }
 }
 
