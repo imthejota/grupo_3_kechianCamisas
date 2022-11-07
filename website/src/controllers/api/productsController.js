@@ -25,7 +25,7 @@ let productsController = {
             return res.status(200).send({
                 meta: {
                     status: 200,
-                    count: products.length - 1,
+                    count: products.length,
                     countByCategory: {
                         lisas: products.filter(products => products.category == "lisa").length,
                         estampadas: products.filter(products => products.category == "estampada").length,
@@ -37,12 +37,23 @@ let productsController = {
         .catch(error => res.send(error))
     },
     detail: (req, res) => {
-        db.Product.findByPk(req.params.id, {
-            include: ['sizes']
-        })
+        db.Product.findByPk(req.params.id, {include: ['sizes']})
         .then((product) => {
+            let producto = { // ! esto debería ser con un for in ?
+                id: product.dataValues.id,
+                name: product.dataValues.name,
+                description: product.dataValues.description,
+                category: product.dataValues.category,
+                size: product.dataValues.sizes,
+                price: product.dataValues.price,
+                discount: product.dataValues.discount,
+                imageUrl: "http://localhost:2020/products/" + product.dataValues.image
+            };
             return res.status(200).send({
-                product
+                meta:{
+                    status: 200
+                },
+                producto
             })
         })
         .catch(error => res.send(error)) 
