@@ -29,6 +29,7 @@
     padding: 5%;
     margin: 2%;
     overflow: hidden;
+    z-index: 100;
 }
 
 .toggle span{
