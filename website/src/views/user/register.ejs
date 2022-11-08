@@ -27,7 +27,7 @@
                         <%= locals.errores.firstName.msg %> 
                     </p> 
                 <% } %>
-                <br>
+                
 
                 <label for="apellido"></label>
                 <input type="text" id="apellido" name="lastName" placeholder="Apellido" 
@@ -38,7 +38,7 @@
                     <p class="feedback">
                         <%= locals.errores.lastName.msg %> 
                     </p> 
-                <% } %><br>
+                <% } %>
 
                 <label for="ubicacion"></label>
                 <input type="text" id="ubicacion" name="location" placeholder="Ubicación" 
@@ -48,7 +48,7 @@
                     <p class="feedback">
                         <%= locals.errores.location.msg %> 
                     </p> 
-                <% } %><br>
+                <% } %>
 
                 <p class="tituloInfo"> INFORMACIÓN DE CUENTA: </p>
 
@@ -60,7 +60,7 @@
                     <p class="feedback">
                         <%= locals.errores.email.msg %> 
                     </p> 
-                <% } %><br>
+                <% } %>
 
                 <label for="contra"></label>
                 <input type="password" id="contra" name="password" placeholder="Contraseña" >
@@ -68,7 +68,7 @@
                     <p class="feedback">
                         <%= locals.errores.password.msg %> 
                     </p> 
-                <% } %><br>
+                <% } %>
 
                 <label for="imagen">Imagen de perfil:</label>
                 <input type="file" id="imagen" name="image">
@@ -76,7 +76,7 @@
                     <p class="feedback">
                         <%= locals.errores.image.msg %> 
                     </p> 
-                <% } %><br>
+                <% } %>
 
                 <div class="TerminosCondiciones">
                     <input type="checkbox" id="condiciones" name="condiciones" value="condiciones"
@@ -87,7 +87,7 @@
                         <p class="feedback">
                             <%= locals.errores.condiciones.msg %> 
                         </p> 
-                    <% } %> <br>
+                    <% } %> 
 
                 </div>
 
@@ -95,9 +95,6 @@
                     <div class="botonCrearCuenta">
                         <button type="submit" class="boton">CREAR CUENTA</button><br>
                     </div>
-                    <!-- <div class="botonInicio">
-                        <a href="/login">INICIAR SESION</a>
-                    </div> -->
                 </div>
 
             </form>
