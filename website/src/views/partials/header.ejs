@@ -28,11 +28,22 @@
 
             <% } %> 
         </nav>
-        <nav class="menuMobile">
-            <a href="">Probando</a>
-            <a href="">Probando2</a>
-            <a href="">Probando3</a>
-        </nav>
+        
     
 </header>
+<nav class="menuMobile">
+    <a class="productos" href="/products/list"> Productos </a> 
+    <a href="">Carrito</a>
+    <% if (locals.user) {  %>
+        
+        <a href="/user/<%=(locals.user.id)%>" class="usuarioPefil" >Mi perfil</a> 
+        
+        <form action="/logout" method="post"><button type="submit"><i class="fa-solid fa-door-open"></i></button></form>
 
+    <% }else{  %>
+        
+    <a href="/login" class="logIn">Inicia sesión</a>
+
+    <% } %> 
+    
+</nav>

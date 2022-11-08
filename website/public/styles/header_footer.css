@@ -71,10 +71,11 @@
 }
 .menuMobile{
     width: 100vw;
+    height: 30vh;
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: rgba(31, 56, 86, .80)
 }
 
