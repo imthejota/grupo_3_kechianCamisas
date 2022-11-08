@@ -50,6 +50,7 @@
                         </div>
                         <button class="añadir">Añadir al carrito</button>
                     </div>
+                    <% if (locals.user && locals.user.admin == 1) { %>
                     <div class="botonesFinales">
                         <nav class="editarProducto">
                             <button><a class="editProdA"href="/products/editar/<%= product.id %>">Editar</a></button>
@@ -58,6 +59,7 @@
                             <button type="submit" class="botonEliminar">Eliminar</button>
                         </form>
                     </div>
+                    <% } %> 
                 </section>
             </section>
         </section>
