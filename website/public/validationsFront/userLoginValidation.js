@@ -1,19 +1,18 @@
 window.addEventListener("load", function () {
     
     let formulario = document.querySelector("form.caja2");
-    console.log(formulario)
     
     formulario.addEventListener("submit", function (e) {
         e.preventDefault();
         let errores = [];
 
         let campoEmail = document.querySelector("#correo");
-        if (campoEmail.value == "") {
+        if (campoEmail.value == "" || !campoEmail.value.includes('@')){
             errores.push("Email obligatorio")
         }
-
-        let campoContraseña = document.querySelector("#contraseña");
-        if (campoContraseña.value == "") {
+    
+        let campoContrasena = document.querySelector("#contraseña");
+        if (campoContrasena.value == "") {
             errores.push("Contraseña obligatoria")
         } 
         
