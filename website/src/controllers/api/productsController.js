@@ -39,7 +39,7 @@ let productsController = {
     detail: (req, res) => {
         db.Product.findByPk(req.params.id, {include: ['sizes']})
         .then((product) => {
-            let producto = { // ! esto debería ser con un for in ?
+            let producto = {
                 id: product.dataValues.id,
                 name: product.dataValues.name,
                 description: product.dataValues.description,
