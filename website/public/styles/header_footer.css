@@ -66,11 +66,9 @@
 .menuMobile a{
     text-decoration: none;
     color: var(--amarillo);
-    opacity: 100%;
 }
 .menuMobile{
     width: 100vw;
-    /* height: 30vh; */
     display: block;
     position: fixed;
     top: 0;
