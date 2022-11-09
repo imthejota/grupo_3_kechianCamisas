@@ -108,7 +108,7 @@ body {
 }
 
 
-/*Mateo: Estetica de errores en crear producto*/
+
 
 .errores{
     list-style: none;
@@ -122,12 +122,6 @@ body {
     padding-top: 10px;
 }
 
-/*Mateo: testeando algo*/
-.campoCamisa input#name {
-    background-color: black;
-}
-
-/*Mateo: fin de lo que estuve trabajando*/
 
 
 

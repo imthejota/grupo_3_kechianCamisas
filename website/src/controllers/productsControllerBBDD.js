@@ -1,13 +1,22 @@
 let db = require('../database/models')
 const { validationResult } = require("express-validator");
+const { Op } = require("sequelize"); 
 
 let productsController = {
     index: (req, res) => {
+        let search = req.query && req.query.search ? req.query.search : "" 
         db.Product.findAll({
-            include: [{association: 'sizes'}]
+            include: [{association: 'sizes'}],
+            where:{
+                name: {
+                    [Op.like]: "%" + search + "%"
+                }
+            }
+
+
         })
         .then(function(products){
-            return res.render('product/list', { products })
+            return res.render('product/list', { products, search: req.query && req.query.search ? req.query.search : ""  })
         })
         .catch(error => res.send(error))
     },

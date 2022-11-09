@@ -10,6 +10,7 @@
     
     <main class="fotosPrincipales">
     <% if (products.length > 0) { %>
+        <h3> <%= search == "" ? "" : "Resultados de la busqueda" %> </h3>
         <ul class="lista-producto">
             <% products.forEach(element => { %>
                 <%- include('../partials/product.ejs',{element:element})  %>

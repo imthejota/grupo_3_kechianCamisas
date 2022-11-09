@@ -10,7 +10,7 @@ img {
     width: 100%;
     /*border-top-left-radius: 3%;*/
     /*border-bottom-left-radius: 3%;*/
-    border-radius: 21px 21px 0px 0px; /*Mateo: acomede los bordes para que no se salgan del cuadrado*/
+    border-radius: 21px 21px 0px 0px; 
     
 }
 

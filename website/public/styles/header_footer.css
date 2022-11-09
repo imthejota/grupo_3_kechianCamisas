@@ -122,7 +122,7 @@ background-color: unset;
     border-style: none;
     font-size: 1.3em;
 }
-/*Mateo: MENU BURGER INICIO*/
+/* MENU BURGER INICIO*/
 
 #menuBurger{ /*Todo lo que sea el menuBurger esta aca */
     display: flex;
