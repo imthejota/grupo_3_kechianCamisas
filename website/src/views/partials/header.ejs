@@ -31,18 +31,19 @@
         
     
 </header>
+<!-- (sí, está afuera del header.. shhhh) -->
 <nav class="menuMobile">
-    <a class="productos" href="/products/list"> Productos </a> 
-    <a href="">Carrito</a>
+    <a class="productos" href="/products/list"> PRODUCTOS </a> 
+    <a href="">CARRITO</a>
     <% if (locals.user) {  %>
         
-        <a href="/user/<%=(locals.user.id)%>" class="usuarioPefil" >Mi perfil</a> 
+        <a href="/user/<%=(locals.user.id)%>" class="usuarioPefil" >MI PERFIL</a> 
         
         <form action="/logout" method="post"><button type="submit"><i class="fa-solid fa-door-open"></i></button></form>
 
     <% }else{  %>
         
-    <a href="/login" class="logIn">Inicia sesión</a>
+    <a href="/login" class="logIn">INICIA SESION</a>
 
     <% } %> 
     

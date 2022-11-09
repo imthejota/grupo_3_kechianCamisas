@@ -67,23 +67,28 @@
     text-decoration: none;
     color: var(--amarillo);
     opacity: 100%;
-
 }
 .menuMobile{
     width: 100vw;
-    height: 30vh;
-    display: none;
-    flex-direction: column;
+    /* height: 30vh; */
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(31, 56, 86, .80)
+    background-color: rgba(31, 56, 86, .80);
 }
 
 .menuMobile.active{
+    left: 0;
     display: flex;
     position: absolute;
     flex-direction: column;
+    transition: 0.4s;
 }
+
 
 
 header { 
