@@ -12,11 +12,9 @@ let productsController = {
                     [Op.like]: "%" + search + "%"
                 }
             }
-
-
         })
         .then(function(products){
-            return res.render('product/list', { products, search: req.query && req.query.search ? req.query.search : ""  })
+            return res.render('product/list', { products, search/* ! : req.query && req.query.search ? req.query.search : ""   */})
         })
         .catch(error => res.send(error))
     },
