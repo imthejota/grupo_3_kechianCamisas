@@ -5,7 +5,8 @@ function User() {
     return (
       <div>
   
-    
+  Estos son los Usuarios
+
       
         
       </div>

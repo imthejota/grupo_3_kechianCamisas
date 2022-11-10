@@ -1,8 +1,10 @@
 
 import './App.css'
 import Header from './components/Header';
+import PanelList from './components/PanelList';
 
-import Lista from './components/List';
+
+import Lista from './components/PanelList';
 import Product from './components/Product';
 import User from './components/User';
 
@@ -11,8 +13,8 @@ function App() {
     <div>
 
     <Header/>
-    <User/>
-    <Product/>
+
+    <PanelList/>
     
       
     </div>

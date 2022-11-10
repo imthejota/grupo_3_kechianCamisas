@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import './App.css'
-import Header from './components/Header';
+import Product from './User';
 
-import Lista from './components/List';
+import User from './Product';
 
-function App() {
+function PanelList() {
   return (
     <div>
 
@@ -15,4 +14,4 @@ function App() {
   )
 }
 
-export default App;
+export default PanelList;
