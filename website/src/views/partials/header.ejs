@@ -14,11 +14,13 @@
          
         <nav class="navAtras">
             <a class="productos" href="/products/list"> PRODUCTOS</a> 
-            <a href="#" class="buscar"><i class="fa-solid fa-magnifying-glass"></i></a> 
             <form action="/products/list" method="get"><!--Mateo:me lleva a la vista-->
                 <input type="text" name="search" class="buscador" id="search">
                 <button class="buscar" id="searchBoton"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
+
+            <a href="http://localhost:3000" class="buscar"> DASHBOARD</a> 
+
             <a href="/products/cart" class="carrito" >CARRITO</a>
             <% if (locals.user) {  %>
                 
