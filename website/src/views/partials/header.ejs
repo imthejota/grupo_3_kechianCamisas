@@ -18,10 +18,10 @@
                 <input type="text" name="search" class="buscador" id="search">
                 <button class="buscar" id="searchBoton"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-
-            <a href="http://localhost:3000" class="buscar"> DASHBOARD</a> 
-
             <a href="/products/cart" class="carrito" >CARRITO</a>
+            <% if (locals.user && locals.user.admin == 1) { %>  
+                <a href="http://localhost:3000" class="buscar"> DASHBOARD</a> 
+                <% } %> 
             <% if (locals.user) {  %>
                 
                 <a href="/user/<%=(locals.user.id)%>" class="usuarioPefil" >MI PERFIL</a> 
