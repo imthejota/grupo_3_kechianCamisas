@@ -6,7 +6,8 @@ class Product extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            productos: []
+            productos: [],
+            meta:{}
         }
 }
     async componentDidMount() {
@@ -14,7 +15,7 @@ class Product extends Component {
             let request = await fetch('http://localhost:2020/api/products')
             let response = await request.json()
             this.setState({
-                ...this.state, productos: response.products
+                ...this.state, productos: response.products, meta: response.meta
             })
         } catch (error) {
             throw new Error(error)
@@ -26,7 +27,7 @@ class Product extends Component {
             let request = await fetch('http://localhost:2020/api/products')
             let response = await request.json()
             this.setState({
-                ...this.state, productos: response.products
+                ...this.state, productos: response.products, meta: response.meta
             })
         } catch (error) {
             throw new Error(error)
@@ -35,7 +36,9 @@ class Product extends Component {
     render() {
         return (
             <>
-                {this.state.productos.map((item, i) => <li key={i}>{item.name}</li>)}
+            <div>Total de productos: {this.state.meta.count}</div>
+            <div>{this.state.productos.map((item, i) => <li key={i}>{item.id}, {item.name}, {item.description}</li>)}</div>
+            
             </>
         )
     }
