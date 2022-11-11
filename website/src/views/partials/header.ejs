@@ -41,6 +41,9 @@
 <nav class="menuMobile">
     <a class="productos" href="/products/list"> PRODUCTOS </a> 
     <a href="">CARRITO</a>
+    <% if (locals.user && locals.user.admin == 1) { %>  
+        <a href="http://localhost:3000" class="buscar"> DASHBOARD</a> 
+        <% } %> 
     <% if (locals.user) {  %>
         
         <a href="/user/<%=(locals.user.id)%>" class="usuarioPefil" >MI PERFIL</a> 
