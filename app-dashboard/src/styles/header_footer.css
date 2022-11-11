@@ -305,7 +305,7 @@ footer {
     .navAtras {
         display: flex;
         justify-content: space-around;
-        flex-basis: 60vw;
+        flex-basis: 40vw;
     }
     .fa-bars {
         display: none;
