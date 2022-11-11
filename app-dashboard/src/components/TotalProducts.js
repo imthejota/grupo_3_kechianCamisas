@@ -1,14 +1,22 @@
 import React,{Component} from 'react'
-const endpoint = "http://localhost:2020/api/users/"
+import '../styles/header.css'
+const endpoint = "http://localhost:2020/api/products/"
 
 
-export default class TotalUsers  extends Component {
+
+
+
+
+
+
+ class TotalProducts  extends Component {
 
 
     constructor(props){
         super(props)
         this.state={
-        users : []
+        products : [],
+        meta:{}
         }
     }
 
@@ -16,7 +24,7 @@ export default class TotalUsers  extends Component {
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, users:data.splice(0,10)})
+            this.setState({...this.state, products: data.products, meta: data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -26,7 +34,7 @@ export default class TotalUsers  extends Component {
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, users:data.splice(0,10)})
+            this.setState({...this.state, products:data.products, meta: data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -38,11 +46,13 @@ export default class TotalUsers  extends Component {
         return (
 
             <main>
-                <h2>Total Usuarios</h2>
-                <ul>{this.state.users.map(users => <li key={users.id}>{users.name}</li> )}</ul>
+                <h2 className='links-header-dash'>Total Productos</h2>
+                <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li> )}</ul>
             </main>
 
 
         );
     }
 }
+
+export default TotalProducts
