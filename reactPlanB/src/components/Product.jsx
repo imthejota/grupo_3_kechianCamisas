@@ -38,7 +38,6 @@ class Product extends Component {
             <>
             <div>Total de productos: {this.state.meta.count}</div>
             <div>{this.state.productos.map((item, i) => <li key={i}>{item.id}, {item.name}, {item.description}</li>)}</div>
-            
             </>
         )
     }
