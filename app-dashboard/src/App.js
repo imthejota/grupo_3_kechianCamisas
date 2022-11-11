@@ -1,25 +1,30 @@
-
 import './App.css'
+import React, {Component} from 'react'
 import Header from './components/Header';
-import PanelList from './components/PanelList';
+import { Switch,Route } from 'react-router-dom';
+import TotalProducts from "./pages/TotalProducts";
+import TotalUsers from "./pages/TotalUsers";
 
 
-import Lista from './components/PanelList';
-import Product from './components/Product';
-import User from './components/User';
+ class App extends Component {
+  render() { 
+    return (
 
-function App() {
-  return (
-    <div>
+      <div>
 
-    <Header/>
+      <Header/>
+  
+      <Switch>
+       <Route exact path="/TotalUsers" component={TotalUsers}/>
+       <Route exact path="/TotalProducts" component={TotalProducts}/>
 
-    <PanelList/>
-    
-      
-    </div>
-  )
+  
+      </Switch>
+        
+      </div>
+
+    )
+  }
 }
 
-export default App;
-
+export default App
