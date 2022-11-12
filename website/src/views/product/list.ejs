@@ -17,9 +17,10 @@
                     <% }) %>
         </ul>
         <% } else { %>
-            <h2>
-                No hay productos <a href="/productos">Volver</a>
-            </h2>
+        <div class="noHay">
+            <h2>No hay productos!</h2>
+            <button class="volver"><a class="aVolver" href="/products/list">Volver</a></button>
+        </div>
             <% } %>
             <% if (locals.user && locals.user.admin == 1) { %>  
                 <nav class="add-product">

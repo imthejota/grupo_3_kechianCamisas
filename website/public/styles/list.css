@@ -28,6 +28,33 @@ img{
     margin-top: 5%;
 }
 
+.noHay {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.volver {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4%;
+    font-size: 16px;
+    padding: 8px;
+    background-color: var(--amarillo);
+    width: 30%;
+    height: 33px;
+    border-radius: 11px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.aVolver {
+    color: black;
+}
+
 
 .caja-producto-oferta {
     background-color: white;
