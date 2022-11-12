@@ -22,11 +22,10 @@
                         <p class="feedback">
                             <%= locals.errores.correo.msg %> 
                         </p> 
-                    <% } %>     
-                    <br>
+                    <% } %>      
                 </div>
 
-                <div class="elemento3">
+                <div class="elemento2">
                     <label for="contraseña"></label>
                     <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" value="<%= locals.errores && !locals.errores.contraseña && locals.data ? locals.data.contraseña : null %>" >
 
@@ -35,16 +34,14 @@
                             <%= locals.errores.contraseña.msg %> 
                         </p> 
                     <% } %>  
-                    
-                    
                 </div>
 
                 <div class="elemento4">
                     <input type="checkbox" id="recuerdame" name="recuerdame" value="recuerdame">
-                    <label for="recuerdame">Recuérdame</label><br>
+                    <label for="recuerdame">Recuérdame</label>
                 </div>
 
-                <a href="#" class="elemento5">¿Olvidaste tu contraseña?</a><br>
+                <a href="#" class="elemento5">¿Olvidaste tu contraseña?</a>
 
                 <div class="boton_IniciarSesion">
                 <button type="submit" class="boton">INICIAR SESIÓN</button>

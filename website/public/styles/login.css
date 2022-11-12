@@ -44,13 +44,14 @@ body {
 }
 
 .elemento2 {
+    height: 10vh;
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 .elemento3 {
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 .elemento4 {
@@ -94,7 +95,7 @@ body {
     padding: 8px;
     background-color: var(--amarillo);
     color: black;
-    width: 60%;
+    width: 70%;
     height: 33px;
     border-radius: 11px;
 }
@@ -124,6 +125,12 @@ body {
 
 .feedback{
     color: red;
+    display: flex;
+    width: 80%;
+}
+
+p.feedback{
+    width: 80%;
 }
 
 
