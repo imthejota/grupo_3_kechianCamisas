@@ -21,25 +21,26 @@ body {
     justify-content: center;
 }
 
+
 .contenedorPerfilUsuario {
-    height: 49vh;
+    height: 50vh;
     margin: 5%;
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width: 50%;
     background-color: var(--azul);
     border-radius: 20px;
     box-shadow: 10px 10px 5px #242424;
-    
 }
 
 .fichaPerfilUsuario {
-    flex-basis: 50%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
     flex-direction: column;
-    padding: 1%
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 1%; */
+    width: 100%;
+    font-size: 0.65em;
 }
 
 .perfilUsuario {
@@ -93,15 +94,59 @@ body {
 
 
 .contenedorImagenUsuario{
-    flex-basis: 40%;
-    display: flex;
-    box-sizing: border-box;
-    overflow: hidden;
+    display: none;
 }
 
 .imagenUsuario {
     margin: auto;
-    max-width: 40%;
-    max-height: 40%px;
+    max-width: 80%;
+    max-height: 80%px;
     
 }
+
+.botonConfig {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4%;
+    font-size: 16px;
+    padding: 8px;
+    background-color: var(--amarillo);
+    
+    width: 70%;
+    height: 33px;
+    border-radius: 11px;
+    text-decoration: none;
+}
+
+a.perfilConfig{
+    text-decoration: none;
+    background-color: var(--amarillo);
+    color: black;
+}
+
+
+
+@media (min-width:800px) {
+    .contenedorImagenUsuario{
+        display: flex;
+        width: 100%;
+        flex-basis: 40%;
+        box-sizing: border-box;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fichaPerfilUsuario {
+        flex-basis: 60%;
+        font-size: 1em;
+        align-items: center;
+    }
+    
+    .contenedorFicha {
+        display: flex;
+        justify-content: center;
+    }
+}
+
