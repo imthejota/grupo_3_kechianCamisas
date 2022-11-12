@@ -25,7 +25,18 @@ img{
     justify-content: space-around;
     padding-bottom: 2%;
     gap: 2rem;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.resultados{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 2.5%;
+
 }
 
 .noHay {
@@ -34,6 +45,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .volver {
