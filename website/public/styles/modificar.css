@@ -27,6 +27,11 @@ main ul{
  
 }
 
+.elemento {
+    display: flex;
+    align-items: left;
+}
+
 .listaProducto{
     align-items: center;
     text-align: center;
@@ -60,6 +65,33 @@ main ul{
     padding: 12px;
     border-radius: 5px;
 
+} 
+
+.checkTalles{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.checkboxTalles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12px;
+    background: #555;
+    /* margin: 20px 10px; */
+    position: relative;
+    border-radius: 5px;
+}
+
+.labelCheckbox {
+    margin-left: 2%;
+    color: rgb(198, 138, 46);
 }
 
 /*mateo:aca termine*/

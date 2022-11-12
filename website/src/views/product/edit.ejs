@@ -26,7 +26,7 @@
                         </div>
 
 
-                        
+                         
                         <div>
                             <label class="elemento" for="categoria"></label>
                             <select class="grl" type="text" id="categoria" name="category" value="<%= product.category %>">
@@ -40,10 +40,14 @@
                             <input class="grl" type="file" id="imagen" name="image" value="<%= product.image %>" >
                         </div>
 
-                        <div>
-                            <label class="elemento" for="talle"></label>
-                                <% sizes.forEach(element => { %>
-                                    <input class="grl" type="checkbox" id="talle" name="sizes" value="<%= element.id %>"> <span><%= element.size %></span>
+                        <div class="checkTalles">
+                            <% sizes.forEach(element=> { %>
+                                <div class="checkboxTalles">
+                                    <input class="elemento checkbox" type="checkbox" id="talle" name="sizes" value="<%= element.id %>">
+                                    <label class="elemento labelCheckbox" for="talle">
+                                        <%= element.size %>
+                                    </label>
+                                </div>
                                 <% }) %>
                         </div>
 
