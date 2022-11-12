@@ -51,6 +51,7 @@ main {
     justify-content: center;
     font-weight: 600;  
     padding-top: 10px; 
+    margin-top: 5%;
 }
 
 
@@ -200,8 +201,12 @@ main {
 }
 
 .titImagen{
-    margin-top: 1%;
+    margin-top: 4%;
     margin-bottom: 2%;
+}
+
+.terminosCondiciones{
+    margin-top: 5%;
 }
 
 

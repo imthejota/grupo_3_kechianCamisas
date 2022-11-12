@@ -70,7 +70,7 @@
                     </p> 
                 <% } %>
 
-                <label for="imagen">Imagen de perfil:</label>
+                <label class="titImagen" for="imagen">Imagen de perfil:</label>
                 <input type="file" id="imagen" name="image">
                 <% if (locals.errores && locals.errores.image) { %> 
                     <p class="feedback">
@@ -78,7 +78,7 @@
                     </p> 
                 <% } %>
 
-                <div class="TerminosCondiciones">
+                <div class="terminosCondiciones">
                     <input type="checkbox" id="condiciones" name="condiciones" value="condiciones"
                     <%= locals.data && locals.data.condiciones ? "checked" : null %>
                     >
@@ -87,7 +87,7 @@
                         <p class="feedback">
                             <%= locals.errores.condiciones.msg %> 
                         </p> 
-                    <% } %> 
+                    <% } %>  
 
                 </div>
 

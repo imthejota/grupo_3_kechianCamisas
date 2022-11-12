@@ -46,7 +46,7 @@ console.log(formulario)
                 return true
             } else {
                 return false
-            }
+            } 
         }
         let campoImagen = document.querySelector("#imagen");
         if (campoImagen.value == "") {
@@ -55,6 +55,11 @@ console.log(formulario)
             errores.push("La imagen debe ser un archivo válido(JPG, JPEG, PNG, GIF).")
         }
         
+        let campoCondiciones = document.querySelector('#condiciones');
+        if (!campoCondiciones.checked){
+            errores.push("Debes aceptar las condiciones")
+        }
+
         console.log(errores)
         
         if (errores.length > 0) {
