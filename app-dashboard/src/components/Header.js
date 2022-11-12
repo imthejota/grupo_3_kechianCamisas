@@ -13,10 +13,7 @@ export default class Header extends Component {
                     <nav class="navCentro">
                         <Link to="/"><img class="logo" src={logo} alt=""/> </Link>
                     </nav> 
-
-
-
-
+                    
                     <nav class="navAtras">
                         <Link to="http://localhost:2020" class="buscar"> Volver al sitio </Link>
                     </nav>
