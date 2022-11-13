@@ -1,14 +1,12 @@
 import './App.css'
 import React, {Component} from 'react'
 import Header from './components/Header';
-
 import { Link, Route } from 'react-router-dom';
 
 
 import TotalProducts from "./components/TotalProducts";
 import TotalUsers from './components/TotalUsers';
 import ListUsers from "./components/ListUsers";
-/* import Home  from './components/Home'; */
 import ListadoProductos from "./components/ListadoProductos";
 import UPC from "./components/UPC";
 import UUC from "./components/UUC";
@@ -20,12 +18,9 @@ import UUC from "./components/UUC";
     return (
 
       <>
-
-
       <Header/>
       <main>
       <section classname="listado">
-      {/* <Link to='/Home'>Home</Link> */}
       <h3><Link to='/TotalProducts'>Total de productos</Link></h3>
       <h3><Link to='/TotalUsers'>Total de usuarios</Link></h3>
       <h3><Link to='/ListUsers'>Listado de usuarios</Link></h3>
@@ -36,7 +31,6 @@ import UUC from "./components/UUC";
       
 
       <section>
-      {/* <Route exact path='/Home' component={Home}/> */}
       <Route exact path='/TotalProducts' component={TotalProducts}/>
       <Route exact path='/TotalUsers' component={TotalUsers}/>
       <Route exact path='/ListUsers' component={ListUsers}/>
