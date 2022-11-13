@@ -22,23 +22,26 @@ import UUC from "./components/UUC";
 
 
       <Header/>
+      <main>
       <section classname="listado">
       {/* <Link to='/Home'>Home</Link> */}
-      <Link to='/TotalProducts'>Total de productos</Link>
-      <Link to='/TotalUsers'>Total de Usuarios</Link>
-      <Link to='/ListadoProductos'>Listado de productos</Link>
-      <Link to='/UPC'>Último producto creado</Link>
-      <Link to='/UUC'>Último usuario creado</Link>
+      <h3><Link to='/TotalProducts'>Total de productos</Link></h3>
+      <h3><Link to='/TotalUsers'>Total de Usuarios</Link></h3>
+      <h3><Link to='/ListadoProductos'>Listado de productos</Link></h3>
+      <h3><Link to='/UPC'>Último producto creado</Link></h3>
+      <h3><Link to='/UUC'>Último usuario creado</Link></h3>
       </section>
       
 
-      
+      <section>
       {/* <Route exact path='/Home' component={Home}/> */}
       <Route exact path='/TotalProducts' component={TotalProducts}/>
       <Route exact path='/TotalUsers' component={TotalUsers}/>
       <Route exact path='/ListadoProductos' component={ListadoProductos}/>
       <Route exact path='/UPC' component={UPC}/>
       <Route exact path='/UUC' component={UUC}/>
+      </section>
+      </main>
 
 
 

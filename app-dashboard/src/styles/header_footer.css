@@ -295,8 +295,8 @@ footer {
     }
     .navCentro {
         display: flex;
-        justify-content: space-between;
-        flex-basis: 20vw;
+        justify-content: space-around;
+        flex-basis: 50vw;
     }
     .navDesktop {
         display: flex;
@@ -305,7 +305,7 @@ footer {
     .navAtras {
         display: flex;
         justify-content: space-around;
-        flex-basis: 40vw;
+        flex-basis: 50vw;
     }
     .fa-bars {
         display: none;
