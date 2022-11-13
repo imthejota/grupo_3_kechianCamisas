@@ -15,7 +15,7 @@ export default class Header extends Component {
                     </nav> 
                     
                     <nav class="navAtras">
-                        <Link to="http://localhost:2020" class="buscar"> Volver al sitio </Link>
+                        <a href="http://localhost:2020" class="buscar"> Volver al sitio </a>
                     </nav>
                     
 
@@ -25,6 +25,4 @@ export default class Header extends Component {
     );
   }
 }
- 
-
 
