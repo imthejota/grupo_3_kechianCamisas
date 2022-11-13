@@ -164,6 +164,17 @@ body {
     color: rgb(198, 138, 46);
     font-family: 'Montserrat Subrayada', sans-serif;
 }
+.boton {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4%;
+    font-size: 0.75em;
+    padding: 8px;
+    background-color: var(--amarillo);
+    color: black;
+    width: 70%;
+    height: 33px;
+    border-radius: 11px;
+}
 
 
 
@@ -172,6 +183,9 @@ body {
 @media (min-width:480px) {
     .c2 {
         width: 50%;
+    }
+    .boton{
+        font-size: 1em;
     }
 }
 
