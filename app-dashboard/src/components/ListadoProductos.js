@@ -9,8 +9,7 @@ const endpoint = "http://localhost:2020/api/products/"
     constructor(props){
         super(props)
         this.state={
-        products : [],
-        meta:{}
+        products : []
         }
     }
 
@@ -18,7 +17,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, products: data.products, meta: data.meta})
+            this.setState({...this.state, products: data.products})
         }catch (error){
             return new Error(error)
         }
@@ -28,7 +27,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, products:data.products, meta: data.meta})
+            this.setState({...this.state, products: data.products})
         }catch (error){
             return new Error(error)
         }
@@ -38,11 +37,10 @@ const endpoint = "http://localhost:2020/api/products/"
 
     render() { 
         return (
-
-            <main>
-                <h2 className='links-header-dash'>Listado de Productos:</h2>
+                <section>
+                <h3 className='links-header-dash'>Listado de productos</h3>
                 <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li> )}</ul>
-            </main>
+                </section>
 
 
         );

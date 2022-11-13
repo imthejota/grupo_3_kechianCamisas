@@ -11,7 +11,7 @@ export default class Header extends Component {
                 <header>
                     
                     <nav class="navCentro">
-                        <Link to="/"><img class="logo" src={logo} alt=""/> </Link>
+                        <Link to="/"><img classname="logo" src={logo} alt=""/> </Link>
                     </nav> 
                     
                     <nav class="navAtras">

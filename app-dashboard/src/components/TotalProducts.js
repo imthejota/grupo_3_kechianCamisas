@@ -3,22 +3,19 @@ const endpoint = "http://localhost:2020/api/products/"
 
 
 
- class TotalProducts  extends Component {
+ class TotalProducts extends Component {
 
 
     constructor(props){
         super(props)
-        this.state={
-        products : [],
-        meta:{}
-        }
+        this.state = {meta:{}}
     }
 
     async componentWillMount(){
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, products: data.products, meta: data.meta})
+            this.setState({...this.state, meta: data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -28,7 +25,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, products:data.products, meta: data.meta})
+            this.setState({...this.state, meta: data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -38,13 +35,7 @@ const endpoint = "http://localhost:2020/api/products/"
 
     render() { 
         return (
-
-            <main>
-                <h2 className='links-header-dash'>Total Productos:</h2>
-                <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li> )}</ul>
-            </main>
-
-
+            <h3 className='links-header-dash'>Total de productos: {this.state.meta.count}</h3>
         );
     }
 }

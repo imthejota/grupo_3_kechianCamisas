@@ -7,7 +7,7 @@ import { Link, Route } from 'react-router-dom';
 
 import TotalProducts from "./components/TotalProducts";
 import TotalUsers from "./components/TotalUsers";
-import Home  from './components/Home';
+/* import Home  from './components/Home'; */
 import ListadoProductos from "./components/ListadoProductos";
 import UPC from "./components/UPC";
 import UUC from "./components/UUC";

@@ -13,79 +13,10 @@
     box-sizing: border-box;
 }
 
-.navCentro {
-    display: flex;
-    flex-basis: 80vw;
-    align-items: center;
+img {
+    width: 30%
 }
 
-.toggle {
-    position: relative;
-    display: flex;
-    width: 0.05vw;
-    height: 0.05vh;
-    justify-content: center;
-    cursor: pointer;
-    padding: 5%;
-    margin: 2%;
-    overflow: hidden;
-    z-index: 100;
-}
-
-.toggle span{
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background: var(--amarillo);
-    border-radius: 4px;
-    transition: 0.5s;
-
-}
-.toggle span:nth-child(1){
-    transform: translateY(-8px);
-}
-
-.toggle.active span:nth-child(1){ 
-    transform: translateY(0px) rotate(45deg);
-    transition-delay: 0.25s;
-}
-
-.toggle span:nth-child(2){
-    transform: translateY(8px);
-}
-
-.toggle.active span:nth-child(2){
-    transform: translateY(0px) rotate(315deg);
-    transition-delay: 0.25s;
-}
-
-.toggle.active span:nth-child(3){
-    transform: translateX(60px)
-}
-
-.menuMobile a{
-    text-decoration: none;
-    color: var(--amarillo);
-}
-.menuMobile{
-    width: 100vw;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    min-height: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgba(31, 56, 86, .80);
-}
-
-.menuMobile.active{
-    left: 0;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    transition: 0.4s;
-}
 
 header { 
     height: 15vh;
@@ -101,75 +32,6 @@ header {
     overflow: hidden;
 }
 
-header i {
-    color: var(--amarillo);
-}
-
-
-
-.logo {
-    width: 50%;
-    height: auto;
-}
-
-.fa-bars { 
-    color: var(--amarillo);
-    
-    
-}
-
-header form[action="/logout"] button {
-background-color: unset;
-    border-style: none;
-    font-size: 1.3em;
-}
-/* MENU BURGER INICIO*/
-
-#menuBurger{ /*Todo lo que sea el menuBurger esta aca */
-    display: flex;
-    flex-flow:column wrap ; /*combina el flex direction con el wrap*/  
-    justify-content: center;
-    position: fixed;
-    width: 111px;
-    height: 100vw;
-    left: 100vw;
-    top: 135px;
-    transition:all 300ms ;
-    color: var(--azul); 
-    background-color: rgba(31, 56, 86, .95);/*el 95 es la TRANSPARENCIA DEL FONDO en donde se encuntra el SubMenu ya desplegado*/
-    
-}
-
-#menuBurger:target{    
-left: 74vw;
-transition:all 300ms ;
-}
-
-
-/*textos dentro del subMenu*/
-#menuBurger a{ /*ataco a dentro de las etiquetas a. OSEA A LOS TEXTOS*/
-    display: flex;
-    padding-bottom: 50px;
-    justify-content: center;
-    color: aliceblue;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600; /*grosor de las letras*/
-    
-}
-
-
-
-/*MENU BURGER FIN*/
-
-
-nav div a {
-    color: var(--amarillo);
-}
-
-.navDesktop {
-    display: none;
-}
 
 .navAdelante {
     display: flex;
@@ -178,51 +40,6 @@ nav div a {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-}
-
-.navAtras {
-    display: none;
-}
-
-.alinea p {
-    display: none;
-}
-
-.alinea a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-decoration: none;
-    color: var(--amarillo);
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 0.5rem;
-    color: var(--amarillo);
-    background-color: var(--azul);
-    min-height: fit-content;
-}
-
-.noventa {
-    margin: 1%;
-}
-
-.ayuda,
-.empresa,
-.contacto,
-.redes {
-    margin: 2%;
-}
-
-.inputBuscar{
-    display: none;
 }
 
 /* DE ACA EN ADELANTE ES TABLET */
@@ -280,19 +97,6 @@ footer {
 /* DE ACA EN ADELANTE ES COMPUTADORA */
 
 @media (min-width:800px) {
-    .toggle{
-        display: none;
-    }
-    .menuMobile{
-        display: none;
-    }
-    .indice {
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
-    .home {
-        margin-left: 2%;
-    }
     .navCentro {
         display: flex;
         justify-content: space-around;
