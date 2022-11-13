@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import '../styles/header.css'
 const endpoint = "http://localhost:2020/api/users/" /*ACA A EL ENDPOINT CON LA API DE USUARIOS*/ 
 
 
@@ -40,8 +39,8 @@ export default class TotalUsers  extends Component {
         return (
 
             <main>
-                <h2 className='links-header-dash'>Total Usuarios</h2>
-                <ul>{this.state.users.map(users => <li key={users.id}>{users.name}</li> )}</ul>
+                <h2>Total Usuarios:</h2>
+                <ul>{this.state.users.map(users => <li key={users.id}>{users.firstName}</li> )}</ul>
             </main>
 
 

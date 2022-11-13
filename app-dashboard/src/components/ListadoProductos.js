@@ -3,7 +3,7 @@ const endpoint = "http://localhost:2020/api/products/"
 
 
 
- class TotalProducts  extends Component {
+ class ListadoProductos  extends Component {
 
 
     constructor(props){
@@ -40,7 +40,7 @@ const endpoint = "http://localhost:2020/api/products/"
         return (
 
             <main>
-                <h2 className='links-header-dash'>Total Productos:</h2>
+                <h2 className='links-header-dash'>Listado de Productos:</h2>
                 <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li> )}</ul>
             </main>
 
@@ -49,4 +49,4 @@ const endpoint = "http://localhost:2020/api/products/"
     }
 }
 
-export default TotalProducts
+export default ListadoProductos

@@ -1,16 +1,17 @@
+//UUC = ULTIMO USUARIO CREADO
+
 import React,{Component} from 'react'
-const endpoint = "http://localhost:2020/api/products/"
+const endpoint = "http://localhost:2020/api/users/" 
 
 
-
- class TotalProducts  extends Component {
+export default class UUC extends Component {
 
 
     constructor(props){
         super(props)
         this.state={
-        products : [],
-        meta:{}
+        users : []
+            
         }
     }
 
@@ -18,7 +19,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, products: data.products, meta: data.meta})
+            this.setState({...this.state, users:data.users, meta:data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -28,7 +29,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, products:data.products, meta: data.meta})
+            this.setState({...this.state, users:data.users, meta:data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -40,8 +41,8 @@ const endpoint = "http://localhost:2020/api/products/"
         return (
 
             <main>
-                <h2 className='links-header-dash'>Total Productos:</h2>
-                <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li> )}</ul>
+                <h2>Ultimo usuario creado:</h2>
+                <ul>{this.state.users.map(users => <li key={users.id}>{users.firstName}</li> )}</ul>
             </main>
 
 
@@ -49,4 +50,3 @@ const endpoint = "http://localhost:2020/api/products/"
     }
 }
 
-export default TotalProducts
