@@ -1,12 +1,15 @@
 import React,{Component} from 'react'
-import { Link } from 'react-router-dom'
-const endpoint = "http://localhost:2020/api/products/"
+const endpoint = "http://localhost:2020/api/users/" /*ACA A EL ENDPOINT CON LA API DE USUARIOS*/ 
 
- class UPC  extends Component {
+
+export default class ListUsers  extends Component {
+
+
     constructor(props){
         super(props)
         this.state={
-        last:{}
+        users : []
+            
         }
     }
 
@@ -14,7 +17,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, last: data.products[data.products.length - 1]})
+            this.setState({...this.state, users:data.users, meta:data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -24,7 +27,7 @@ const endpoint = "http://localhost:2020/api/products/"
         try{
             let request = await fetch(endpoint)
             let data = await request.json()
-            this.setState({...this.state, last: data.products[data.products.length - 1]})
+            this.setState({...this.state, users:data.users, meta:data.meta})
         }catch (error){
             return new Error(error)
         }
@@ -35,18 +38,11 @@ const endpoint = "http://localhost:2020/api/products/"
     render() { 
         return (
             <section>
-                <h3>Último producto creado</h3>
-                <ul>
-                    <li>ID: {this.state.last.id}</li>
-                    <li>Nombre: {this.state.last.name}</li>
-                    <Link to={this.state.last.url}></Link>
-                    
-                </ul>
+                <h3>Listado de usuarios</h3>
+                <ul>{this.state.users.map(users => <li key={users.id}>ID: {users.id}, Nombre completo: {users.firstName} {users.lastName}</li> )}</ul>
             </section>
 
 
         );
     }
 }
-
-export default UPC

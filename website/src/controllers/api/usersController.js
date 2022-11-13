@@ -9,12 +9,13 @@ let usersController = {
                 let objeto = {
                     id: e.id,
                     firstName: e.firstName,
+                    lastName: e.lastName,
                     email: e.email,
                     detail: "http://localhost:2020/api/users/" + e.id
                 }
                 info.push(objeto)
             });
-            return res.status(200).send({
+            return res.status(200).send({ 
                 meta: {
                     status: 200,
                     count: users.length

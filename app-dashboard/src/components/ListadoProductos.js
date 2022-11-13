@@ -1,11 +1,7 @@
 import React,{Component} from 'react'
 const endpoint = "http://localhost:2020/api/products/"
 
-
-
- class ListadoProductos  extends Component {
-
-
+class ListadoProductos  extends Component {
     constructor(props){
         super(props)
         this.state={
@@ -39,7 +35,7 @@ const endpoint = "http://localhost:2020/api/products/"
         return (
                 <section>
                 <h3 className='links-header-dash'>Listado de productos</h3>
-                <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li> )}</ul>
+                <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li>)}</ul>
                 </section>
 
 
