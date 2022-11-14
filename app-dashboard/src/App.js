@@ -19,7 +19,7 @@ import UUC from "./components/UUC";
 
       <>
       <Header/>
-      <main>
+      <main> //! CORREGIR TODO, son PANELES NO LINKS
       <section classname="listado">
       <h3><Link to='/TotalProducts'>Total de productos</Link></h3>
       <h3><Link to='/TotalUsers'>Total de usuarios</Link></h3>
