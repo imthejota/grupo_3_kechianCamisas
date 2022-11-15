@@ -38,7 +38,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    /* padding: 1%; */
+    padding: 2%;
     width: 100%;
     font-size: 0.65em;
 }
@@ -50,33 +50,17 @@ body {
     justify-content: center;
 }
 
-.nombreUsuario {
+.usuario {
     font-family: 'Montserrat', sans-serif;
     color: rgb(198, 138, 46);
-    font-size: 15px;
+    font-size: 0.8rem;
 }
 
 .datoUsuario{
     margin-left: 2%;
+    font-size: 0.8rem;
 }
 
-.apellidoUsuario {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(198, 138, 46);
-    font-size: 15px;
-}
-
-.locacionUsuario {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(198, 138, 46);
-    font-size: 15px;
-}
-
-.emailUsuario {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(198, 138, 46);
-    font-size: 15px;
-}
 
 .tituloPerfilUsuario{
     margin-top: 4%;
@@ -86,7 +70,6 @@ body {
 }
 
 .titulo{
-    margin-left: 5%;
     margin-bottom: 4%;
     display: flex;
     flex-direction: row;
@@ -104,7 +87,7 @@ body {
     
 }
 
-.botonConfig {
+/* .botonConfig {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -112,18 +95,39 @@ body {
     font-size: 16px;
     padding: 8px;
     background-color: var(--amarillo);
-    
+    color: var(--amarillo);
     width: 70%;
     height: 33px;
     border-radius: 11px;
     text-decoration: none;
+} */
+.botonConfig{
+    display: flex;
+    justify-content: center;
+    background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;
+    /* font-style: italic; */
+    color: black;
+    width: 70%;
+    
+    height: 33px;
+    border-radius: 11px;
 }
 
-a.perfilConfig{
-    text-decoration: none;
+
+
+.perfilConfig {
+    
     background-color: var(--amarillo);
+    font-family: Montserrat, sans-serif;    
+}
+
+.aPerfilConfig {
+    text-decoration: none;
     color: black;
 }
+
+
 
 
 
@@ -140,10 +144,13 @@ a.perfilConfig{
 
     .fichaPerfilUsuario {
         flex-basis: 60%;
-        font-size: 1em;
+        font-size: 1rem;
         align-items: center;
     }
     
+    .usuario, .datoUsuario{
+        font-size: 1rem;
+    }
     .contenedorFicha {
         display: flex;
         justify-content: center;

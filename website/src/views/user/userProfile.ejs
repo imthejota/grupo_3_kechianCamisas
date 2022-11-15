@@ -19,34 +19,34 @@
                 </div>
 
                 <div class="titulo"> 
-                    <p class="nombreUsuario">Nombre:</p>
+                    <p class="usuario">Nombre:</p>
                     <h1 class="datoUsuario"><%= user.firstName%></h1>
                 </div>
 
                 <div class="titulo">
-                    <p class="apellidoUsuario">Apellido:</p>
+                    <p class="usuario">Apellido:</p>
                     <h1 class="datoUsuario"><%= user.lastName%></h1>
                 </div>
 
                 <div class="titulo">
-                    <p class="locacionUsuario">Ubicación:</p>
+                    <p class="usuario">Ubicación:</p>
                     <h1 class="datoUsuario"><%= user.location%></h1>
                 </div>
 
                 <div class="titulo">
-                    <p class="emailUsuario">Email:</p>
+                    <p class="usuario">Email:</p>
                     <h1 class="datoUsuario"><%= user.email%></h1>
                 </div>
             </div>
                 <div id="botonConfig" class="botonConfig">
-                <button><a class="perfilConfig" href="/user/update/<%= user.id %>">EDITAR PERFIL</a></button>
+                <button class="perfilConfig"><a class="aPerfilConfig" href="/user/update/<%= user.id %>">Editar perfil</a></button>
                 </div>   
             </section>
             
                         
             
             
-
+ 
         </section>
     </main>         
     
