@@ -13,7 +13,7 @@ let productsController = {
                 }
             } 
         })
-        .then(function(products){
+        .then(function(products){ 
             return res.render('product/list', { products, search/* ! : req.query && req.query.search ? req.query.search : ""   */})
         })
         .catch(error => res.send(error))
@@ -43,7 +43,7 @@ let productsController = {
             name: req.body.name,
             description: req.body.description,
             image: req.body.image,
-            category: req.body.category,
+            category_id: parseInt(req.body.category),
             price: req.body.price,
             discount: req.body.discount
         })
@@ -56,7 +56,7 @@ let productsController = {
     },
     detail: (req, res) => {
         db.Product.findByPk(req.params.id, {
-            include: [{association: 'sizes'}]
+            include: [{association: 'sizes'}, 'category' ]
         })
         .then(function(product){
             console.log(product)
@@ -81,6 +81,7 @@ let productsController = {
                 name: req.body.name,
                 description: req.body.description,
                 image: req.files && req.files.length > 0 ? req.files[0].filename : product.image,
+                category_id: parseInt(req.body.category),
                 price: req.body.price,
                 discount: req.body.discount,
             }, {

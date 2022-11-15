@@ -32,7 +32,7 @@
                 </section>
                 <section class="detalle">
                     <p><%= product.description %></p>
-                    <p>Categoría: <%= product.category %></p>
+                    <p>Categoría: <%= product.category.name %></p>
                     <% if (product.sizes.length > 0) { %>
                         <p>Talle: <select name="size" id="">
                             <% product.sizes.forEach(element => { %>

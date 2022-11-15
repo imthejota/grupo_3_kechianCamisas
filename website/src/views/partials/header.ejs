@@ -20,7 +20,7 @@
             </form>
             <a href="/products/cart" class="carrito" >CARRITO</a>
             <% if (locals.user && locals.user.admin == 1) { %>  
-                <a href="http://localhost:3000" class="buscar"> DASHBOARD</a> 
+                <a href="http://localhost:3000" class="buscar" target="_blank"> DASHBOARD</a> 
                 <% } %> 
             <% if (locals.user) {  %>
                 
@@ -42,7 +42,7 @@
     <a class="productos" href="/products/list"> PRODUCTOS </a> 
     <a href="">CARRITO</a>
     <% if (locals.user && locals.user.admin == 1) { %>  
-        <a href="http://localhost:3000" class="buscar"> DASHBOARD</a> 
+        <a href="http://localhost:3000" class="buscar" target="_blank"> DASHBOARD</a> 
         <% } %> 
     <% if (locals.user) {  %>
         

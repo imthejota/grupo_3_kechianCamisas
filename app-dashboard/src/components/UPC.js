@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import { Link } from 'react-router-dom'
 const endpoint = "http://localhost:2020/api/products/"
 
  class UPC  extends Component {
@@ -34,13 +33,14 @@ const endpoint = "http://localhost:2020/api/products/"
 
 
     render() { 
+        
         return (
             <section>
                 <h3>Último producto creado:</h3>
                 <ul>
                     <li>ID: {this.state.last.id}</li>
                     <li>Nombre: {this.state.last.name}</li>
-                    <li><Link to={this.state.last.url}></Link></li>
+                    <li><a href={this.state.last.url}>Detalle del producto</a></li>
                     
                 </ul>
             </section>
