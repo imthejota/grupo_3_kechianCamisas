@@ -3,6 +3,11 @@ CREATE DATABASE kechian;
 
 USE kechian;
 
+CREATE TABLE categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL
+);
+
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
@@ -13,11 +18,6 @@ CREATE TABLE products (
     discount INT NOT NULL,
     category_id INT NOT NULL,
     FOREIGN KEY(category_id) REFERENCES categories(id)
-);
-
-CREATE TABLE categories (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE sizes (
@@ -43,5 +43,3 @@ CREATE TABLE users (
     admin BOOLEAN NOT NULL,
     image VARCHAR(100) NOT NULL
 );
-
-

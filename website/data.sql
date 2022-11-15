@@ -13,7 +13,7 @@ INSERT INTO sizes (size)
 VALUES ("Small"),("Medium"),("Large"),("Extra large");
 
 INSERT INTO product_size (product_id, size_id)
-VALUES (1,2),(2,4),(3,1),(4,3); /* acá tira error porque es todo inventado y no dan los números */
+VALUES (1,2),(2,4),(3,1),(4,3); 
 
 INSERT INTO users (firstName, lastName, location, email, password, admin, image)
 VALUES ("Jonathan", "Kechian", "Mendoza", "j@kechian.com","$2a$10$S71t6BVaKWDDPEmietxwme0dN81mzhz5M0mL0LUUA6LqohqfV0Cmq",1 ,"default.png"),
