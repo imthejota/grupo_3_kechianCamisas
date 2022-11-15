@@ -35,7 +35,8 @@ const endpoint = "http://localhost:2020/api/products/"
 
     render() { 
         return (
-            <h3 className='links-header-dash'>Total de productos: {this.state.meta.count}</h3>
+            
+            <h3 className='total-products'>Total de productos: {this.state.meta.count}</h3>
         );
     }
 }

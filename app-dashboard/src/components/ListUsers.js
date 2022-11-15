@@ -37,8 +37,8 @@ export default class ListUsers  extends Component {
 
     render() { 
         return (
-            <section>
-                <h3>Listado de usuarios</h3>
+            <section className='list-users'>
+                <h3>Listado de usuarios:</h3>
                 <ul>{this.state.users.map(users => <li key={users.id}>ID: {users.id}, Nombre completo: {users.firstName} {users.lastName}</li> )}</ul>
             </section>
 

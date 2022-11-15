@@ -36,7 +36,7 @@ export default class UUC extends Component {
     render() { 
         return (
             <section>
-                <h3>Último usuario creado</h3>
+                <h3>Último usuario creado:</h3>
                 <ul>
                     <li>ID: {this.state.last.id}</li>
                     <li>Nombre: {this.state.last.firstName}</li>

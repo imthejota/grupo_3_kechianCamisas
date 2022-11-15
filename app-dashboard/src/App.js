@@ -1,15 +1,14 @@
 import './App.css'
 import React, {Component} from 'react'
 import Header from './components/Header';
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
 
-import TotalProducts from "./components/TotalProducts";
-import TotalUsers from './components/TotalUsers';
+
+import Home from './components/Home';
 import ListUsers from "./components/ListUsers";
 import ListadoProductos from "./components/ListadoProductos";
-import UPC from "./components/UPC";
-import UUC from "./components/UUC";
+
 
 
 
@@ -19,24 +18,20 @@ import UUC from "./components/UUC";
 
       <>
       <Header/>
-      <main> //! CORREGIR TODO, son PANELES NO LINKS
+      <main> 
       <section classname="listado">
-      <h3><Link to='/TotalProducts'>Total de productos</Link></h3>
-      <h3><Link to='/TotalUsers'>Total de usuarios</Link></h3>
-      <h3><Link to='/ListUsers'>Listado de usuarios</Link></h3>
-      <h3><Link to='/ListadoProductos'>Listado de productos</Link></h3>
-      <h3><Link to='/UPC'>Último producto creado</Link></h3>
-      <h3><Link to='/UUC'>Último usuario creado</Link></h3>
+      <h3 className='links'><Link to="/">Pagina principal </Link></h3>
+      <h3 className='links'><Link to='/usuarios'>Listado de usuarios</Link></h3>
+      <h3 className='links'><Link to='/productos'>Listado de productos</Link></h3>
       </section>
       
 
       <section>
-      <Route exact path='/TotalProducts' component={TotalProducts}/>
-      <Route exact path='/TotalUsers' component={TotalUsers}/>
-      <Route exact path='/ListUsers' component={ListUsers}/>
-      <Route exact path='/ListadoProductos' component={ListadoProductos}/>
-      <Route exact path='/UPC' component={UPC}/>
-      <Route exact path='/UUC' component={UUC}/>
+      <Switch>
+      <Route exact path='/' component={Home}/>
+      <Route exact path='/usuarios' component={ListUsers}/>
+      <Route exact path='/productos' component={ListadoProductos}/>
+      </Switch>
       </section>
       </main>
 

@@ -35,7 +35,7 @@ const endpoint = "http://localhost:2020/api/products/"
     render() { 
         return (
             <section>
-                <h3>Último producto creado</h3>
+                <h3>Último producto creado:</h3>
                 <ul>
                     <li>ID: {this.state.last.id}</li>
                     <li>Nombre: {this.state.last.name}</li>

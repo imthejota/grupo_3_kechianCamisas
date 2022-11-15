@@ -1,15 +1,25 @@
-import React,{Component} from 'react'
+import React,{Component, Fragment} from 'react'
+import UPC from './UPC';
+import UUC from './UUC';
+import TotalUsers from './TotalUsers';
+import TotalProducts from './TotalProducts';
+
+
+
 
 
 class Home extends Component {
     render() { 
         return (
 
-            
-            <h2 className='links-header-dash'>
-                Soy el home
-            </h2>
-            
+            <section className='home'>
+            <Fragment>
+                <TotalProducts/>
+                <TotalUsers/>
+                <UUC/>
+                <UPC/>
+            </Fragment>
+            </section>
         );
     }
 }
