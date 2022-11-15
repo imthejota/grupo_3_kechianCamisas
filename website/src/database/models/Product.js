@@ -12,9 +12,9 @@ module.exports = (sequelize, dataTypes) => {
         description: {
             type: dataTypes.STRING
         },
-        category: {
+        /*category: {
             type: dataTypes.STRING
-        },
+        },*/
         price: {
             type: dataTypes.INTEGER
         },
@@ -23,6 +23,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         image: {
             type: dataTypes.STRING
+        },
+        category_id: {
+            type: dataTypes.INTEGER
         }
     };
     let config = {
@@ -41,6 +44,12 @@ module.exports = (sequelize, dataTypes) => {
             through: "product_size",
             foreignKey:"product_id",
             otherKey:"size_id",
+            timestamps:false
+        });
+
+        Product.belongsTo(models.Category, {
+            as: "category",
+            foreignKey: "category_id",
             timestamps:false
         });
     }

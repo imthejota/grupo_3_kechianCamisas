@@ -8,9 +8,16 @@ CREATE TABLE products (
 	name VARCHAR(50) NOT NULL,
     description VARCHAR(200) NOT NULL,
     image TEXT(200) NOT NULL, /* eliminar cuando hagamos varias fotos en un prod */
-    category BOOLEAN NOT NULL, 
+    /*category BOOLEAN NOT NULL,*/
     price INT NOT NULL,
-    discount INT NOT NULL
+    discount INT NOT NULL,
+    category_id INT NOT NULL,
+    FOREIGN KEY(category_id) REFERENCES categories(id)
+);
+
+CREATE TABLE categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE sizes (
