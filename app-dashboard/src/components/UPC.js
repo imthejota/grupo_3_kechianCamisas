@@ -25,11 +25,12 @@ const endpoint = "http://localhost:2020/api/products/"
             let request = await fetch(endpoint)
             let data = await request.json()
             this.setState({...this.state, last: data.products[data.products.length - 1]})
+            console.log(this.state.last)
         }catch (error){
             return new Error(error)
         }
     }
-
+    
 
 
     render() { 
@@ -39,7 +40,7 @@ const endpoint = "http://localhost:2020/api/products/"
                 <ul>
                     <li>ID: {this.state.last.id}</li>
                     <li>Nombre: {this.state.last.name}</li>
-                    <Link to={this.state.last.url}></Link>
+                    <li><Link to={this.state.last.url}></Link></li>
                     
                 </ul>
             </section>

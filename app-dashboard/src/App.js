@@ -19,7 +19,7 @@ import ListadoProductos from "./components/ListadoProductos";
       <>
       <Header/>
       <main> 
-      <section classname="listado">
+      <section>
       <h3 className='links'><Link to="/">Pagina principal </Link></h3>
       <h3 className='links'><Link to='/usuarios'>Listado de usuarios</Link></h3>
       <h3 className='links'><Link to='/productos'>Listado de productos</Link></h3>
@@ -33,6 +33,7 @@ import ListadoProductos from "./components/ListadoProductos";
       <Route exact path='/productos' component={ListadoProductos}/>
       </Switch>
       </section>
+      
       </main>
 
 

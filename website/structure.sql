@@ -12,8 +12,7 @@ CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
     description VARCHAR(200) NOT NULL,
-    image VARCHAR(100) NOT NULL, /* eliminar cuando hagamos varias fotos en un prod */
-    /*category BOOLEAN NOT NULL,*/
+    image VARCHAR(100) NOT NULL,
     price INT NOT NULL,
     discount INT NOT NULL,
     category_id INT NOT NULL,

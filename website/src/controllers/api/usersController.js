@@ -5,7 +5,7 @@ let usersController = {
         db.User.findAll()
         .then(users => {
             let info = []
-            users.forEach(e => {
+            users.map(e => {
                 let objeto = {
                     id: e.id,
                     firstName: e.firstName,

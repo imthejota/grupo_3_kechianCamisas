@@ -5,7 +5,7 @@ let productsController = {
         db.Product.findAll({include: ['sizes']})
         .then(products => {
             let info = []
-            products.forEach(element => {
+            products.map(element => {
                 let objeto = {
                     id: element.id,
                     name: element.name,
