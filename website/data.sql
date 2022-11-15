@@ -1,13 +1,13 @@
 USE kechian;
 
+INSERT INTO categories (name)
+VALUES ("Lisa"),("Estampada");
+
 INSERT INTO products (name, price, discount, description, category_id)
 VALUES ("Camisa Rovira", 8500, 30,"Camisa de lino con cuello sin botones. Moldería Classic fit. Composición: 50% lino, 50% rayón",1),
 ("Camisa Vedell", 7000, 20,"Camisa de poplin a cuadros con cuello italiano. Moldería Slim fit. Composición: 100% algodón", 2),
 ("Camisa Wescott", 6500, 15,"Camisa de lino con spandex a rayas y cuello solapa. Moldería Slim fit. Composición: 50% lino, 50% rayón", 2),
 ("Camisa Anglet", 9000, 10, "Camisa de poplin con cuello italiano. Moldería Classic fit. Composición: 100% algodón", 1);
-
-INSERT INTO categories (name)
-VALUES ("Lisa"),("Estampada");
 
 INSERT INTO sizes (size)
 VALUES ("Small"),("Medium"),("Large"),("Extra large");
