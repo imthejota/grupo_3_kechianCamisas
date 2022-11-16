@@ -67,7 +67,7 @@ const userControllersBBDD = {
             admin: req.body.email.includes("@kechian.com")? 1 : 0, /*Solucionar esto*/ 
             image: req.body.image
         })
-        .then(() => res.redirect ('/'))
+        .then(() => res.render('user/login'))
         .catch(error => res.send(error)) 
     },
     edit: function(req, res) {

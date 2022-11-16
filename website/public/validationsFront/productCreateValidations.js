@@ -25,10 +25,11 @@ window.addEventListener("load", function (){
         let campoImagen = document.querySelector("input#imagen")
         if (campoImagen.value == "") {
             errores.push("Imagen con tipo de archivo (JPG, JPEG, PNG, GIF).")
-        }
+        } 
         console.log(errores)
         if (errores.length > 0){
             let ulErrores = document.querySelector("div.errores")
+            ulErrores.innerHTML = "";
             for (let i = 0; i < errores.length; i++) 
             {
                 ulErrores.innerHTML += "<li>" + errores[i] + "<li/>"

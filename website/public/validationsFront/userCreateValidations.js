@@ -7,7 +7,7 @@ console.log(formulario)
 
         let campoNombre = document.querySelector("#nombre")
         /* campoNombre.addEventListener('change', function (e){
-
+ 
         }) */
         if (campoNombre.value == "") {
             errores.push("El nombre tiene que estar completo.")

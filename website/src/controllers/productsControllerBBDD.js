@@ -16,7 +16,7 @@ let productsController = {
             } 
         })
         .then(function(products){ 
-            return res.render('product/list', { products, search/* ! : req.query && req.query.search ? req.query.search : ""   */})
+            return res.render('product/list', { products, search})
         })
         .catch(error => res.send(error))
     },
