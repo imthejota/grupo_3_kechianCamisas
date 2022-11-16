@@ -32,8 +32,6 @@ const endpoint = "http://localhost:2020/api/products/"
         }
     }
     
-
-
     render() { 
         
         return (
@@ -42,7 +40,8 @@ const endpoint = "http://localhost:2020/api/products/"
                 <ul>
                     <li>ID: {this.state.last.id}</li>
                     <li>Nombre: {this.state.last.name}</li>
-                    <li><a className = {styles.url} href={this.state.last.url}>Clic aquí para ver el detalle</a></li>
+                    <li><a className = {styles.url} href={this.state.last.url}>Detalle completo</a></li>
+                    
                     
                 </ul>
             </section>
