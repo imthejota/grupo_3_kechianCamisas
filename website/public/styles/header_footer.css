@@ -171,7 +171,9 @@ footer {
     background-color: var(--azul);
     min-height: fit-content;
 }
-
+.circulo-footer{
+    padding-bottom: 10px;
+}
 .noventa {
     margin: 1%;
 }
