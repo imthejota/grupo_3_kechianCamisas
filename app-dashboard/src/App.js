@@ -1,4 +1,5 @@
 import './App.css'
+import styles from './app.module.css'
 import React, {Component} from 'react'
 import Header from './components/Header';
 import { Link, Route, Switch } from 'react-router-dom';

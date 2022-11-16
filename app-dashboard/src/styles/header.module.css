@@ -1,0 +1,45 @@
+:root {
+    --amarillo: rgb(198, 138, 46);
+}
+
+.header { 
+    height: 15vh;
+    width: 100%;
+    background-color: var(--azul);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navCentro {
+    display: flex;
+    margin-left: 20%;
+    flex-basis: 50vw;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 30%;
+}
+
+a {
+    width: 80%;
+    justify-content: center;
+}
+
+.navAtras {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 50vw;
+}
+
+.volver {
+    text-decoration: none;
+    color: var(--amarillo);
+    font-size: 1.2rem;
+}
+

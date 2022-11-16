@@ -1,4 +1,5 @@
-import '../styles/header_footer.css'
+import styles from '../styles/header.module.css'
+/* import '../styles/header_footer.css' */
 import logo from '../assets/logoKechian.png'
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
@@ -7,21 +8,15 @@ import {Link} from 'react-router-dom'
 export default class Header extends Component {
   render() { 
     return (
-
-                <header>
+            <header className={styles.header}>
+              <nav className={styles.navCentro}>
+                <Link to="/"><img classname={styles.logo} src={logo} alt=""/> </Link>
+              </nav>  
                     
-                    <nav class="navCentro">
-                        <Link to="/"><img classname="logo" src={logo} alt=""/> </Link>
-                    </nav> 
-                    
-                    <nav class="navAtras">
-                        <a href="http://localhost:2020" class="buscar"> Volver al sitio </a>
-                    </nav>
-                    
-
-        </header>
-
-
+              <nav className={styles.navAtras}>
+                <a className={styles.volver} href="http://localhost:2020"> Volver al sitio </a>
+              </nav>     
+            </header>
     );
   }
 }
