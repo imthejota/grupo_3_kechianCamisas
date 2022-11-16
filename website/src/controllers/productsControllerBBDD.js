@@ -1,5 +1,6 @@
 let db = require('../database/models')
 const { validationResult } = require("express-validator");
+const {unlinkSync} = require('fs') 
 const { Op } = require("sequelize"); 
 
 let productsController = {
@@ -75,7 +76,6 @@ let productsController = {
     },
     update: async (req, res) => {
         try {
-            /* return res.send({data: req.body, file: req.files}) */
             let product = await db.Product.findByPk(req.params.id)
             await db.Product.update({
                 name: req.body.name,
@@ -102,6 +102,10 @@ let productsController = {
                 product_id: req.params.id 
             }
         }).then(() => {
+            /* if (db.Product.image != 'default.png'){
+                let file = resolve(__dirname, '..', '..', 'public', 'products', db.Product.image)
+                unlinkSync(file)
+            } */
             db.Product.destroy({
                 where: {
                     id: req.params.id

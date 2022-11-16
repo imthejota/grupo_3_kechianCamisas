@@ -76,3 +76,5 @@ const rutasUserApi = require('./routes/userApiRoutes')
 server.use('/api', rutasUserApi)
 
 // ! middleware para manejar errores en caso de no cargar una vista no existente
+const errorHandler = require('./middlewares/errorHandler')
+server.use(errorHandler)
