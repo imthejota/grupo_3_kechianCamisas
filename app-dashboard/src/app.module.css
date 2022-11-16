@@ -6,12 +6,6 @@
   --grisOscuro: rgb(55, 59, 59);
 }
 
-.header {
-    width: 30%;
-    img {
-      width: 30%
-    }
-}
 
 * {
   margin: 0;

@@ -109,12 +109,11 @@ ul {
 
 .imagen-oferta {
     border-top-left-radius: 20px;
-    /*le da el radio a la oferta*/
     border-top-right-radius: 20px;
-    /*le da el radio a la oferta*/
     width: 100%;
     height: 100%; 
     object-fit: cover;
+    /* overflow-y: hidden; */
 }
 
 .div-imagen-producto {

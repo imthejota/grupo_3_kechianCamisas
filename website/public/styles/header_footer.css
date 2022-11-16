@@ -119,49 +119,11 @@ header i {
 }
 
 header form[action="/logout"] button {
-background-color: unset;
+    background-color: unset;
     border-style: none;
-    font-size: 1.3em;
-}
-/* MENU BURGER INICIO*/
-
-#menuBurger{ /*Todo lo que sea el menuBurger esta aca */
+    font-size: 1.2em;
     display: flex;
-    flex-flow:column wrap ; /*combina el flex direction con el wrap*/  
-    justify-content: center;
-    position: fixed;
-    width: 111px;
-    height: 100vw;
-    left: 100vw;
-    top: 135px;
-    transition:all 300ms ;
-    color: var(--azul); 
-    background-color: rgba(31, 56, 86, .95);/*el 95 es la TRANSPARENCIA DEL FONDO en donde se encuntra el SubMenu ya desplegado*/
-    
 }
-
-#menuBurger:target{    
-left: 74vw;
-transition:all 300ms ;
-}
-
-
-/*textos dentro del subMenu*/
-#menuBurger a{ /*ataco a dentro de las etiquetas a. OSEA A LOS TEXTOS*/
-    display: flex;
-    padding-bottom: 50px;
-    justify-content: center;
-    color: aliceblue;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600; /*grosor de las letras*/
-    
-}
-
-
-
-/*MENU BURGER FIN*/
-
 
 nav div a {
     color: var(--amarillo);
@@ -269,17 +231,12 @@ footer {
     .alinea a {
         display: none;
     }
-    #menuBurger { /*Mateo: adaptacion del menuburger*/
-        display: flex;
-        padding: 100px;
-        align-content: center;
-    }
 }
 
 
 /* DE ACA EN ADELANTE ES COMPUTADORA */
 
-@media (min-width:800px) {
+@media (min-width:800px) { 
     .toggle{
         display: none;
     }
@@ -372,9 +329,6 @@ footer {
     .logo {
         width: 100%;
         height: auto;
-    }
-    #menuBurger{
-        display: none;
     }
     .inputBuscar:hover{
         display: flex ;
