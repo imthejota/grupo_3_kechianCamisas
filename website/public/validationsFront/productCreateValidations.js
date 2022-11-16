@@ -26,6 +26,11 @@ window.addEventListener("load", function (){
         if (campoImagen.value == "") {
             errores.push("Imagen con tipo de archivo (JPG, JPEG, PNG, GIF).")
         } 
+
+        let campoDescuento = document.querySelector("input#descuento")
+        if (campoDescuento.value == "") {
+            errores.push("En caso de no tener descuento debes poner 0.")
+        } 
         console.log(errores)
         if (errores.length > 0){
             let ulErrores = document.querySelector("div.errores")
