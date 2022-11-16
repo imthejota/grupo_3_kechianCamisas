@@ -1,6 +1,7 @@
 let db = require('../database/models')
 const { validationResult } = require("express-validator");
 const {unlinkSync} = require('fs') 
+const {resolve} = require('path')
 const { Op } = require("sequelize"); 
 
 let productsController = {
@@ -102,10 +103,6 @@ let productsController = {
                 product_id: req.params.id 
             }
         }).then(() => {
-            /* if (db.Product.image != 'default.png'){
-                let file = resolve(__dirname, '..', '..', 'public', 'products', db.Product.image)
-                unlinkSync(file)
-            } */
             db.Product.destroy({
                 where: {
                     id: req.params.id
