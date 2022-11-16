@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
+import styles from '../styles/totalProducts.module.css'
 const endpoint = "http://localhost:2020/api/products/"
+
 
 
 
@@ -36,7 +38,7 @@ const endpoint = "http://localhost:2020/api/products/"
     render() { 
         return (
             
-            <h3 className='total-products'>Total de productos: {this.state.meta.count}</h3>
+            <h3 className={styles.totalProducts}>Total de productos: {this.state.meta.count}</h3>
         );
     }
 }

@@ -28,29 +28,18 @@ section {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  height: 65vh;
+  height: 80vh;
+  padding: 2%;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
-
+  padding: 0 30px;  
 }
+
 
 section ul li{
   list-style: none;
 }
 
-
-h3 Link {
-  text-decoration: none;
-  color: black;
-}
-
-
-.home{
-  background-color: var(--azul);
-  color: var(--amarillo);
-  border-radius: 5%;
-}
 
 .list-users{
   list-style: none;

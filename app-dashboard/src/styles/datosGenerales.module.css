@@ -1,0 +1,11 @@
+.datosGenerales{
+    background-color: var(--azul);
+    color: var(--amarillo);
+    border-radius: 5%;
+}
+
+.division {
+    border: 1px solid var(--amarillo);
+    width: 120%;
+    margin-bottom: 3%;
+}

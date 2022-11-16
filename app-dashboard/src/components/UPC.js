@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
+import styles from '../styles/upc.module.css'
 const endpoint = "http://localhost:2020/api/products/"
+
 
  class UPC  extends Component {
     constructor(props){
@@ -40,7 +42,7 @@ const endpoint = "http://localhost:2020/api/products/"
                 <ul>
                     <li>ID: {this.state.last.id}</li>
                     <li>Nombre: {this.state.last.name}</li>
-                    <li><a href={this.state.last.url}>Detalle del producto</a></li>
+                    <li><a className = {styles.url} href={this.state.last.url}>Clic aquí para ver el detalle</a></li>
                     
                 </ul>
             </section>
