@@ -35,7 +35,7 @@ class ListadoProductos  extends Component {
         return (
                 <section className='list-products' >
                 <h3 className='links-header-dash'>Listado de productos:</h3>
-                <ul>{this.state.products.map(products => <li key={products.id}>{products.name}</li>)}</ul>
+                <ul>{this.state.products.map(products => <li key={products.id}><li>ID: {products.id} - Nombre: {products.name}</li></li>)}</ul>
                 </section>
 
 

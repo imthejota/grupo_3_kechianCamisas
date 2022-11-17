@@ -77,9 +77,9 @@ body {
 .caja-producto-oferta {
     margin-top: 10%;
     margin-bottom: 5%;
-    width: 30vw;
+    width: 60vw;
     border-radius: 20px;
-    height: 40vh;     
+    height: 70vh;     
 }
 
 
@@ -139,7 +139,7 @@ body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight:bolder;
-    font-size: 1.0em;
+    font-size: 0.75em;
 }
 
 .tipografia-oferta {
@@ -181,6 +181,9 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
+    .tipografia-nombre-producto-filtro{
+        font-size: 1rem;
+    }
     .fotosAbajo{
         display: flex;
         justify-content: center;
@@ -201,12 +204,12 @@ body {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-top: 2%;
+        margin-top: 1%;
     }
     .caja-producto-oferta {
-        width: 20vw;
+        width: 40vw;
         border-radius: 20px;
-        height: 55vh;     
+        height: 70vh;     
     }    
     
 }

@@ -335,4 +335,10 @@ footer {
     .inputBuscar:hover{
         display: flex ;
     }
+
+    .navAtras a:hover {
+        transform: scale(120%);
+        color: var(--amarillo);
+        z-index: 900;
+    }
 }
