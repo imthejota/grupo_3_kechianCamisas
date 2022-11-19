@@ -97,23 +97,26 @@ let productsController = {
     productCart: (req, res) => {
         res.render('product/cart');
     },
-    delete: (req, res) => {
-        db.Product_size.destroy({
-            where: {
-                product_id: req.params.id 
-            }
-        }).then(() => {
-            /* let productoABorrar = db.Product.findByPk(req.params.id);  */
-            db.Product.destroy({
+    delete: async (req, res) => {
+        try {
+            let productoABorrar = await db.Product.findByPk(req.params.id);
+            let imagen = await productoABorrar.dataValues.image;
+            let filePath = await path.resolve(__dirname, '..', '..', 'public', 'products', imagen)
+            await fs.unlinkSync(filePath)
+            await db.Product_size.destroy({
+                where: {
+                    product_id: req.params.id
+                }
+            })
+            await db.Product.destroy({
                 where: {
                     id: req.params.id
-                }  
+                }
             })
-        }).then(() => {
             res.redirect('/products/list')
-        })
-        .catch(error => res.send(error))    
-        
+        } catch (error) {
+            res.send(error)
+        }
     }
 }
 
