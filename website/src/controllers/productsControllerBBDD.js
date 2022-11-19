@@ -1,7 +1,7 @@
 let db = require('../database/models')
 const { validationResult } = require("express-validator");
-const {unlinkSync} = require('fs') 
-const {resolve} = require('path')
+const fs = require('fs')    
+const path = require('path')
 const { Op } = require("sequelize"); 
 
 let productsController = {
@@ -103,6 +103,7 @@ let productsController = {
                 product_id: req.params.id 
             }
         }).then(() => {
+            /* let productoABorrar = db.Product.findByPk(req.params.id);  */
             db.Product.destroy({
                 where: {
                     id: req.params.id
@@ -111,7 +112,7 @@ let productsController = {
         }).then(() => {
             res.redirect('/products/list')
         })
-        .catch(error => res.send(error))
+        .catch(error => res.send(error))    
         
     }
 }
