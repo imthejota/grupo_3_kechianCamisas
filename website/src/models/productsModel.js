@@ -23,8 +23,6 @@ let model = {
         producto.size = data.size;
         producto.price = parseInt(data.price);
         producto.discount = parseInt(data.discount);
-        
-        
         return producto;
     },
     escribir: (data) => {

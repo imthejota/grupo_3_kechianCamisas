@@ -5,7 +5,7 @@ const endpoint = "http://localhost:2020/api/products/"
 
 
 
- class TotalProducts extends Component {
+class TotalProducts extends Component {
 
 
     constructor(props){
