@@ -1,3 +1,4 @@
+/* import React, {Component} from 'react' */
 import React, {Component} from 'react'
 const endpoint = "http://localhost:2020/api/products/"
 
@@ -29,17 +30,28 @@ class ListadoProductos  extends Component {
         }
     }
 
-
-
-    render() { 
-        return (
-                <section className='list-products' >
-                <h3 className='links-header-dash'>Listado de productos:</h3>
-                <ul>{this.state.products.map(products => <li key={products.id}><li>ID: {products.id} - Nombre: {products.name}</li></li>)}</ul>
-                </section>
-
-
-        );
+    render() {
+/* export default function ListadoProductos() {
+    const [prods, setProds] = useState()
+    useEffect(() => {
+        const api = async () => {
+            try {
+                let request = await fetch(endpoint)
+                let data = await request.json()
+                setProds(data)
+            } catch (error) {
+                console.error(error)
+            }
+        }
+        api()
+    }, [])
+    console.log(prods) */
+    return (
+        <section className='list-products' >
+            <h3 className='links-header-dash'>Listado de productos:</h3>
+            <ul>{this.state.products.map(e => <li key={e.id}>ID: {e.id} - Nombre: {e.name}</li>)}</ul>
+        </section>
+    )
     }
 }
 
