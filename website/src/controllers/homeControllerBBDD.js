@@ -7,7 +7,6 @@ const homeController = {
             limit: 4 
         })
         .then(function(products){
-            /* console.log(products) */
             return res.render('index', { products })
         })
         .catch(error => res.send(error))
