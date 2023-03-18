@@ -1,9 +1,6 @@
 const { validationResult } = require("express-validator");
-const { UPDATE } = require("sequelize/types/query-types.js");
 const {  uno, generar, escribir, todos }  = require ("../models/usersModel.js");
 
-
-// CR, LOGIN, MIDDLEWARES!  + update usuarios + eliminar usuarios
 
 const userControllers = {
     register: function(req, res) {

@@ -19,20 +19,15 @@ server.listen(port, start());
 
 // Middlewares
 server.use(statics);
-
 server.use (express.urlencoded({extended:true}));
 server.use(cors())
-
 server.use(methodOverride("m"));
-
 server.use(session({
     secret: "Secreto",
     resave: true,
     saveUninitialized: true
 }));
-
 server.use(cookie())
-
 server.use(require('./middlewares/user'))
 
 

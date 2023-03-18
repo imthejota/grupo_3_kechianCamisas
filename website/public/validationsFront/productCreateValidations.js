@@ -5,7 +5,7 @@ window.addEventListener("load", function (){
     formulario.addEventListener ("submit", function(e){
         e.preventDefault();
         
-        let errores = []  
+        let errores = []
 
         let campoCamisa = document.querySelector("input#name")
         if (campoCamisa.value == "") {
@@ -45,3 +45,4 @@ window.addEventListener("load", function (){
     })
 
 })
+

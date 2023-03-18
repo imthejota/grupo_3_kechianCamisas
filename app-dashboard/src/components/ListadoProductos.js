@@ -1,4 +1,3 @@
-/* import React, {Component} from 'react' */
 import React, {Component} from 'react'
 const endpoint = "http://localhost:2020/api/products/"
 

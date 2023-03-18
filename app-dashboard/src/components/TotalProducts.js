@@ -10,7 +10,7 @@ class TotalProducts extends Component {
 
     constructor(props){
         super(props)
-        this.state = {meta:{}}
+        this.state = {meta:{}, error:null}
     }
 
     async componentWillMount(){
@@ -19,7 +19,7 @@ class TotalProducts extends Component {
             let data = await request.json()
             this.setState({...this.state, meta: data.meta})
         }catch (error){
-            return new Error(error)
+            this.setState({...this.state, error: error})
         }
     }
 
@@ -29,13 +29,16 @@ class TotalProducts extends Component {
             let data = await request.json()
             this.setState({...this.state, meta: data.meta})
         }catch (error){
-            return new Error(error)
+            this.setState({...this.state, error: error})
         }
     }
 
 
 
     render() { 
+        if (this.state.error){
+            return <h3 className={styles.totalProducts}>Something went wrong :(</h3>
+        }
         return (
             
             <h3 className={styles.totalProducts}>Total de productos: {this.state.meta.count}</h3>

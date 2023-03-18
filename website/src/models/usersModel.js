@@ -27,7 +27,7 @@ let model = {
         else{ 
             nuevo.category = "Cliente"
         }
-       return nuevo;
+        return nuevo;
     },
     escribir: (listadoNuevo) => { 
         let nuevoJson = JSON.stringify(listadoNuevo, null, 2);
